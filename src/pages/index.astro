@@ -45,7 +45,7 @@ import Layout from '../layouts/Layout.astro';
         clear. This is achieved through Educational and Ambassadorial initiatives around the world.
       </p>
       <div class="initiative-btns">
-        <a href="/content" class="init-btn">Educational</a>
+        <a href="/educational" class="init-btn">Educational</a>
         <a href="/ambassadorial" class="init-btn">Ambassadorial</a>
       </div>
     </div>
@@ -286,7 +286,7 @@ import Layout from '../layouts/Layout.astro';
     background: var(--cream);
     text-align: center;
   }
-  .subscribe-inner { max-width: 480px; margin: 0 auto; }
+  .subscribe-inner { max-width: 860px; margin: 0 auto; }
   .subscribe-inner h2 {
     font-family: var(--font-serif);
     font-size: 1.1rem;
@@ -295,46 +295,36 @@ import Layout from '../layouts/Layout.astro';
     color: var(--dark);
     margin-bottom: 1.5rem;
   }
-  .sub-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+  .brevo-wrap { width: 100%; }
+  .brevo-wrap .sib-form { background-color: transparent !important; }
+  .brevo-wrap #sib-container {
+    max-width: 100% !important;
+    border-radius: 0 !important;
+    border-color: var(--cream-dark) !important;
   }
-  .sub-form input {
-    width: 100%;
-    padding: 0.65rem 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0;
-    font-family: var(--font-sans);
-    font-size: 0.9rem;
-    color: var(--text);
-    background: var(--white);
+  .brevo-wrap .sib-form-block p,
+  .brevo-wrap .sib-form-block,
+  .brevo-wrap .entry__label,
+  .brevo-wrap .entry__specification,
+  .brevo-wrap .sib-form-message-panel__inner-text,
+  .brevo-wrap input.input {
+    font-family: 'Marcellus', Georgia, serif !important;
+  }
+  .brevo-wrap .sib-form-block__button {
+    font-family: 'Marcellus', Georgia, serif !important;
+    background-color: var(--dark) !important;
+    border-radius: 0 !important;
+    letter-spacing: 0.1em;
+  }
+  .brevo-wrap .sib-form-block__button:hover {
+    background-color: var(--gold) !important;
+  }
+  .brevo-wrap input.input {
+    border-radius: 0 !important;
+  }
+  .brevo-wrap input.input:focus {
+    border-color: var(--gold) !important;
     outline: none;
-    transition: border-color 0.2s;
-  }
-  .sub-form input:focus { border-color: var(--gold); }
-  .sub-form button {
-    margin-top: 0.25rem;
-    padding: 0.7rem 2rem;
-    background: var(--dark);
-    color: var(--white);
-    font-family: var(--font-serif);
-    font-size: 0.82rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    transition: background 0.2s;
-    align-self: center;
-  }
-  .sub-form button:hover { background: var(--gold); }
-  .sub-thanks {
-    display: none;
-    font-family: var(--font-serif);
-    color: var(--gold);
-    margin-top: 1rem;
-    font-size: 0.95rem;
-    letter-spacing: 0.08em;
   }
 
   @media (max-width: 768px) {

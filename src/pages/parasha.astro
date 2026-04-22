@@ -1,13 +1,148 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-const parashiot = [
-  { book: "Bereshit", portions: ["Bereshit","Noah","Lekh Lekha","Vayera","Haye Sarah","Toledot","Vayetse","Vayishlah","Vayesheb","Mikkets","Vayiggash","Vayhee"] },
-  { book: "Shemot", portions: ["Shemot","Vaera","Bo","Beshalah","Yitro","Mishpatim","Terumah","Tetsaveh","Ki Tissa","Vayakhel","Pekude"] },
-  { book: "Vayikra", portions: ["Vayikra","Tsav","Shemini","Tazria","Metzora","Ahare Mot","Kedoshim","Emor","Behar","Behukkothai"] },
-  { book: "Bemidbar", portions: ["Bemidbar","Naso","Behaalotekha","Shelah Lekha","Korah","Hukkat","Balak","Pinehas","Mattot","Mase"] },
-  { book: "Debarim", portions: ["Debarim","Vaethanan","Ekeb","Reeh","Shofetim","Ki Tetse","Ki Tabo","Nitsabim","Vayelekh","Haazinu","VeZot HaBerakhah"] },
+type PDF = { lang: string; file: string };
+type Clip = { title: string; url: string };
+type Parasha = {
+  name: string;
+  shiurTitle?: string;
+  shiurUrl?: string;
+  summaryUrl?: string;
+  clips?: Clip[];
+  pdfs?: PDF[];
+};
+type Book = { book: string; portions: Parasha[] };
+
+const books: Book[] = [
+  {
+    book: "Bereshit",
+    portions: [
+      { name: "Bereshit", shiurTitle: "Bereshit 2025 — What Does it All MEAN?", shiurUrl: "https://www.youtube.com/watch?v=cBEOtDjJYWk" },
+      { name: "Noah", shiurTitle: "Noah 2025 — Who is Righteous?", shiurUrl: "https://www.youtube.com/watch?v=gh7fm1GUNRM" },
+      { name: "Lekh Lekha", shiurTitle: "Lekh Lekha 2025 — Be On the Other Side", shiurUrl: "https://www.youtube.com/watch?v=L4TdruYCCYA" },
+      { name: "Vayera", shiurTitle: "Vayera 2025 — Is God Paying Attention?", shiurUrl: "https://www.youtube.com/watch?v=2EM_N1Uv1t8" },
+      { name: "Haye Sarah", shiurTitle: "Haye Sarah 2025 — What's Holding You Back?", shiurUrl: "https://www.youtube.com/watch?v=AOInDIgbrLw" },
+      { name: "Toledot", shiurTitle: "Toledot 2025 — It's All Happening Now", shiurUrl: "https://www.youtube.com/watch?v=uDu3WUdgwV0" },
+      { name: "Vayetse", shiurTitle: "Vayishlah 2025 — Wrestling with the World", shiurUrl: "https://www.youtube.com/watch?v=1dsXSZ2UNhc" },
+      { name: "Vayishlah" },
+      { name: "Vayesheb", shiurTitle: "When a Family Breaks (Part 1)", shiurUrl: "https://www.youtube.com/watch?v=UvAlmAFrzp8" },
+      { name: "Mikkets", shiurTitle: "When a Family Breaks (Part 2)", shiurUrl: "https://www.youtube.com/watch?v=pB-kaxgSm2c" },
+      { name: "Vayiggash", shiurTitle: "What Happens When You Heal Your Pain?", shiurUrl: "https://www.youtube.com/watch?v=ElE6CWNUcHk" },
+      { name: "Vayhee", shiurTitle: "What Does it Mean to Be a Jew Today?", shiurUrl: "https://www.youtube.com/watch?v=JwQr7-jfnqU" },
+    ],
+  },
+  {
+    book: "Shemot",
+    portions: [
+      { name: "Shemot", shiurTitle: "Freedom Isn't What You Think It Is", shiurUrl: "https://www.youtube.com/watch?v=fChQJgcksRI", summaryUrl: "https://www.youtube.com/watch?v=A0fuGoHQSoI" },
+      { name: "Vaera", shiurTitle: "Can You Let Go?", shiurUrl: "https://youtu.be/2WtcR7ygysk", summaryUrl: "https://www.youtube.com/watch?v=KGgvstj5riw" },
+      { name: "Bo", shiurTitle: "Why We Bargain With Reality", shiurUrl: "https://www.youtube.com/watch?v=eiNE5BN37ao", summaryUrl: "https://www.youtube.com/watch?v=uGuOKRqXhtw" },
+      { name: "Beshalah", shiurTitle: "Where is God?", shiurUrl: "https://www.youtube.com/watch?v=PAYfcE2sBnI", summaryUrl: "https://www.youtube.com/watch?v=xDEut9lhaqI" },
+      { name: "Yitro", shiurTitle: "Sinai and the Jewish Soul", shiurUrl: "https://www.youtube.com/watch?v=gdac6-0-ubU", summaryUrl: "https://www.youtube.com/watch?v=Bjle-RodiVo", clips: [
+        { title: "The Ideological War", url: "https://www.youtube.com/watch?v=FizymnteDH4" },
+      ], pdfs: [
+        { lang: "English", file: "Yitro_RJD.pdf" },
+      ]},
+      { name: "Mishpatim", shiurTitle: "What Matters Most?", shiurUrl: "https://www.youtube.com/watch?v=rLZTOEAztOE", summaryUrl: "https://www.youtube.com/watch?v=urPUsJQENvE", clips: [
+        { title: "The Mistake we Make", url: "https://www.youtube.com/watch?v=pEG5KCxLL1c" },
+      ], pdfs: [
+        { lang: "English", file: "Mishpatim_RJD.pdf" },
+      ]},
+      { name: "Terumah", shiurTitle: "Are You Getting Old?", shiurUrl: "https://www.youtube.com/watch?v=R3i8tJ5Zn3Q", summaryUrl: "https://www.youtube.com/watch?v=cuUlvCqIbfw", clips: [
+        { title: "Covenant & Curiosity", url: "https://www.youtube.com/watch?v=pf8Q4q8SI34" },
+        { title: "Can We Build a House for God? (Clip #2)", url: "https://www.youtube.com/watch?v=feDmFbL00ak" },
+      ], pdfs: [
+        { lang: "English", file: "Teruma_RJD.pdf" },
+      ]},
+      { name: "Tetsaveh", shiurTitle: "Are You Afraid of the Light?", shiurUrl: "https://www.youtube.com/watch?v=naOZFrNXBKI", summaryUrl: "https://www.youtube.com/watch?v=pSmh-jjZVSM", clips: [
+        { title: "Aharon Wasn't JEALOUS", url: "https://www.youtube.com/watch?v=FwnFbJAxbas" },
+        { title: "Let There Be LIGHT", url: "https://www.youtube.com/watch?v=37nknYOtxMU" },
+        { title: "Who is the LIGHT Concealed For?", url: "https://www.youtube.com/watch?v=O2AdTPrC_Yc" },
+      ], pdfs: [
+        { lang: "English", file: "Tesave_RJD.pdf" },
+        { lang: "Hebrew", file: "Tesave_RJD__Hebrew_.pdf" },
+        { lang: "Spanish", file: "Tesave_RJD__Spanish_.pdf" },
+      ]},
+      { name: "Ki Tissa", shiurTitle: "Changing the Course of Jewish History", shiurUrl: "https://www.youtube.com/watch?v=6Qv3czut1G0", summaryUrl: "https://www.youtube.com/watch?v=h47a_zmz4fk", clips: [
+        { title: "Why God Won't Abandon His People", url: "https://www.youtube.com/watch?v=YGpNX3WtK8o" },
+      ], pdfs: [
+        { lang: "English", file: "Ki_Tisa_RJD.pdf" },
+        { lang: "Hebrew", file: "Ki_Tisa_RJD__Hebrew_.pdf" },
+        { lang: "Spanish", file: "Ki_Tisa_RJD__Spanish_.pdf" },
+      ]},
+      { name: "Vayakhel-Pekude", shiurTitle: "The Indestructible Jewish Heart", shiurUrl: "https://www.youtube.com/watch?v=IwRYIUCyj0w", summaryUrl: "https://www.youtube.com/watch?v=TEIcPOByouw", clips: [
+        { title: "Circumcising Your Heart", url: "https://www.youtube.com/watch?v=HJOXEXnzUUI" },
+        { title: "God Loves Us", url: "https://www.youtube.com/watch?v=I3b8UceTwac" },
+        { title: "The MOST Important Way to Be in The World", url: "https://www.youtube.com/watch?v=kWGdVhUXlcQ" },
+      ], pdfs: [
+        { lang: "English", file: "VP_RJD__English_ (1).pdf" },
+        { lang: "Spanish", file: "VP_RJD__Spanish_.pdf" },
+        { lang: "French", file: "VP_RJD__French_.pdf" },
+      ]},
+    ],
+  },
+  {
+    book: "Vayikra",
+    portions: [
+      { name: "Vayikra", shiurTitle: "Life's Inherent Violence", shiurUrl: "https://www.youtube.com/watch?v=2XHrJ1rshUU", summaryUrl: "https://www.youtube.com/watch?v=KeyIWXg-IGE", clips: [
+        { title: "You Can't Remove Aggression—Only Channel It", url: "https://www.youtube.com/watch?v=wPWlTzZVZYg" },
+      ], pdfs: [
+        { lang: "English", file: "RJD_Vayikra.pdf" },
+        { lang: "Spanish", file: "RJD_Vayikra__Spanish_.pdf" },
+      ]},
+      { name: "Tsav", shiurTitle: "There is no Freedom in the Bible!", shiurUrl: "https://www.youtube.com/watch?v=1-osTNyEfdk", summaryUrl: "https://www.youtube.com/watch?v=PHcOMDGV9z4", pdfs: [
+        { lang: "Hebrew", file: "RJD_Tsav__Hebrew_.pdf" },
+        { lang: "French", file: "RJD_Tsav__French_.pdf" },
+      ]},
+      { name: "Shemini" },
+      { name: "Tazria-Metsora", shiurTitle: "Healing Through Gratitude", shiurUrl: "https://www.youtube.com/watch?v=NW_QEsmx3j0", clips: [
+        { title: "Your Feed Is Filling Your Mind", url: "https://www.youtube.com/watch?v=2UWWWUmCfdk" },
+      ], pdfs: [
+        { lang: "English", file: "RJD_Tazria_Metsora.pdf" },
+        { lang: "Spanish", file: "RJD_Tazria_Metsora__Spanish_.pdf" },
+        { lang: "French", file: "RJD_Tazria_Metsora__French_.pdf" },
+      ]},
+      { name: "Ahare Mot-Kedoshim", pdfs: [
+        { lang: "English", file: "RJD_AK.pdf" },
+      ]},
+      { name: "Emor" },
+      { name: "Behar" },
+      { name: "Behukkothai" },
+    ],
+  },
+  {
+    book: "Bemidbar",
+    portions: [
+      { name: "Bemidbar" }, { name: "Naso" }, { name: "Behaalotekha" },
+      { name: "Shelah Lekha" }, { name: "Korah" }, { name: "Hukkat" },
+      { name: "Balak" }, { name: "Pinehas" }, { name: "Mattot-Mase" },
+    ],
+  },
+  {
+    book: "Debarim",
+    portions: [
+      { name: "Debarim" }, { name: "Vaethanan" }, { name: "Ekeb" },
+      { name: "Reeh" }, { name: "Shofetim" }, { name: "Ki Tetse" },
+      { name: "Ki Tabo" }, { name: "Nitsabim-Vayelekh" }, { name: "Haazinu" },
+      { name: "VeZot HaBerakhah" },
+    ],
+  },
 ];
+
+const langColors: Record<string, string> = {
+  "English": "var(--dark)",
+  "Hebrew": "#7a5c1e",
+  "Spanish": "#5a3e8c",
+  "French": "#1a5276",
+};
+
+function ytThumb(url: string) {
+  const long = url.match(/[?&]v=([^&]+)/);
+  if (long) return `https://img.youtube.com/vi/${long[1]}/mqdefault.jpg`;
+  const short = url.match(/youtu\.be\/([^?&]+)/);
+  if (short) return `https://img.youtube.com/vi/${short[1]}/mqdefault.jpg`;
+  return null;
+}
 ---
 
 <Layout title="The Parasha" description="Weekly parasha audio and video from Rabbi Joseph Dweck.">
@@ -18,115 +153,272 @@ const parashiot = [
     <div class="gold-rule"></div>
   </section>
 
+  <!-- SPOTIFY -->
   <section class="section" style="background:var(--cream);">
     <div class="container">
-      <div class="parasha-intro">
-        <img src="/images/4959e2_5d51496856514536ba5f3e6d8a3c432b.png" alt="The Parasha" class="parasha-hero-img" />
-        <div class="parasha-intro-text">
-          <h2 class="section-title">The Weekly Parasha</h2>
-          <div class="gold-divider"></div>
-          <p>
-            Enjoy a selection of audio and video recordings on the parasha from Rabbi Dweck,
-            covering every weekly Torah portion throughout the Jewish year. From the creation of
-            the world in Bereshit to the final blessing of Moshe in VeZot HaBerakhah, Rabbi Dweck
-            brings the ancient text to life with depth, clarity, and contemporary relevance.
-          </p>
-          <div class="parasha-links">
-            <a href="https://youtube.com/channel/UCqIwxvf2D0JEgg0LOXZcFsA" target="_blank" rel="noopener" class="btn btn-solid">Watch on YouTube</a>
-            <a href="https://www.sephardi.org.uk/senior-rabbi/blog/touring-talmud/" target="_blank" rel="noopener" class="btn">Touring the Talmud</a>
-          </div>
-        </div>
+      <h2 class="section-title">Listen on Spotify</h2>
+      <div class="gold-divider"></div>
+      <div class="spotify-wrap">
+        <iframe
+          src="https://open.spotify.com/embed/show/4K5FOrrlOXRepm29ENnj1S?utm_source=generator&theme=0"
+          width="100%" height="352" frameborder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
       </div>
     </div>
   </section>
 
+  <!-- YOUTUBE PLAYLISTS -->
   <section class="section">
     <div class="container">
-      <h2 class="section-title">Browse by Book</h2>
+      <h2 class="section-title">Watch on YouTube</h2>
       <div class="gold-divider"></div>
-      {parashiot.map((book) => (
+      <div class="yt-grid">
+
+        <div class="yt-block">
+          <h3>Parasha Lectures</h3>
+          <div class="yt-embed-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/NW_QEsmx3j0?list=PL2-vi4QcKgTSy_iM9Pm3mQZtAnXV6ePNn"
+              title="Parasha Lectures" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy"
+            ></iframe>
+          </div>
+          <a href="https://www.youtube.com/watch?v=NW_QEsmx3j0&list=PL2-vi4QcKgTSy_iM9Pm3mQZtAnXV6ePNn" target="_blank" rel="noopener" class="btn" style="margin-top:1rem;">Full Playlist →</a>
+        </div>
+
+        <div class="yt-block">
+          <h3>Parasha Summaries</h3>
+          <div class="yt-embed-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/PHcOMDGV9z4?list=PL2-vi4QcKgTQ1lZDbJV_G1XfDxlONQzNQ"
+              title="Parasha Summaries" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy"
+            ></iframe>
+          </div>
+          <a href="https://www.youtube.com/watch?v=PHcOMDGV9z4&list=PL2-vi4QcKgTQ1lZDbJV_G1XfDxlONQzNQ" target="_blank" rel="noopener" class="btn" style="margin-top:1rem;">Full Playlist →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BROWSE BY BOOK -->
+  <section class="section" style="background:var(--cream);">
+    <div class="container">
+      <h2 class="section-title">Browse by Parasha</h2>
+      <div class="gold-divider"></div>
+      {books.map(book => (
         <div class="book-section">
           <h3 class="book-title">{book.book}</h3>
           <div class="parasha-grid">
-            {book.portions.map((parasha) => (
-              <a
-                href={`https://youtube.com/channel/UCqIwxvf2D0JEgg0LOXZcFsA`}
-                target="_blank"
-                rel="noopener"
-                class="parasha-chip"
-              >
-                {parasha}
-              </a>
-            ))}
+            {book.portions.map(p => {
+              const thumb = p.shiurUrl ? ytThumb(p.shiurUrl) : null;
+              const hasContent = p.shiurUrl || (p.pdfs && p.pdfs.length > 0);
+              return (
+                <div class={`p-card ${hasContent ? 'p-card--active' : 'p-card--plain'}`}>
+                  {p.shiurUrl && thumb ? (
+                    <a href={p.shiurUrl} target="_blank" rel="noopener" class="p-thumb-link">
+                      <div class="p-thumb">
+                        <img src={thumb} alt={p.shiurTitle ?? p.name} loading="lazy" />
+                        <div class="p-play">▶</div>
+                      </div>
+                    </a>
+                  ) : null}
+                  <div class="p-body">
+                    <span class="p-name">{p.name}</span>
+                    {p.shiurTitle && p.shiurUrl && (
+                      <a href={p.shiurUrl} target="_blank" rel="noopener" class="p-shiur-title">{p.shiurTitle}</a>
+                    )}
+                    <div class="p-links">
+                      {p.summaryUrl && (
+                        <a href={p.summaryUrl} target="_blank" rel="noopener" class="p-summary-btn">▶ Nutshell</a>
+                      )}
+                    </div>
+                    {p.clips && p.clips.length > 0 && (
+                      <div class="p-clips">
+                        {p.clips.map(clip => (
+                          <a href={clip.url} target="_blank" rel="noopener" class="p-clip-link">✂ {clip.title}</a>
+                        ))}
+                      </div>
+                    )}
+                    {p.pdfs && p.pdfs.length > 0 && (
+                      <div class="lang-btns">
+                        {p.pdfs.map(({ lang, file }) => (
+                          <a
+                            href={`/parasha/${file}`}
+                            target="_blank"
+                            rel="noopener"
+                            class="lang-btn"
+                            style={`border-color:${langColors[lang] ?? 'var(--dark)'};color:${langColors[lang] ?? 'var(--dark)'}`}
+                          >
+                            {lang}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       ))}
     </div>
   </section>
 
-  <section class="section" style="background:var(--dark); text-align:center;">
-    <div class="container">
-      <h2 class="section-title" style="color:var(--cream);">Discover More</h2>
-      <div class="gold-divider" style="margin:0.5rem auto 1.5rem;"></div>
-      <p style="color:rgba(255,255,255,0.7); max-width:560px; margin:0 auto 2rem;">
-        Enjoy a selection of audio and video recordings on the parasha from Rabbi Dweck.
-        Join our community and embark on a journey of learning and growth.
-      </p>
-      <a href="https://youtube.com/channel/UCqIwxvf2D0JEgg0LOXZcFsA" target="_blank" rel="noopener" class="btn btn-solid">Watch on YouTube →</a>
-    </div>
-  </section>
-
 </Layout>
 
 <style>
-  .parasha-intro {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 3rem;
-    align-items: center;
-  }
-  .parasha-hero-img {
-    width: 100%;
-    border-top: 4px solid var(--gold);
-    box-shadow: 8px 8px 0 var(--cream-dark);
-  }
-  .parasha-intro-text p { color: var(--text); line-height: 1.8; margin-bottom: 1.5rem; }
-  .parasha-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .container { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
 
-  .book-section { margin-bottom: 2.5rem; }
+  /* Spotify */
+  .spotify-wrap { max-width: 700px; border-radius: 12px; overflow: hidden; }
+
+  /* YouTube */
+  .yt-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  .yt-block h3 {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.04em;
+  }
+  .yt-embed-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  .yt-embed-wrap iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: none;
+  }
+
+  /* Browse by book */
+  .book-section { margin-bottom: 3rem; }
   .book-title {
     font-family: var(--font-serif);
-    font-size: 1.2rem;
-    color: var(--gold);
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    color: var(--gold);
     border-bottom: 1px solid var(--cream-dark);
     padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
   }
   .parasha-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-  }
-  .parasha-chip {
-    display: inline-block;
-    padding: 0.4rem 1rem;
-    border: 1px solid var(--gold);
-    color: var(--dark);
-    font-family: var(--font-serif);
-    font-size: 0.82rem;
-    letter-spacing: 0.06em;
-    transition: background 0.2s, color 0.2s;
-    border-radius: 2px;
-  }
-  .parasha-chip:hover {
-    background: var(--gold);
-    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
   }
 
-  @media (max-width: 768px) {
-    .parasha-intro { grid-template-columns: 1fr; }
-    .parasha-hero-img { max-width: 280px; margin: 0 auto; }
+  /* Parasha cards */
+  .p-card {
+    background: var(--white);
+    border: 1px solid var(--cream-dark);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  .p-card--active { border-top: 3px solid var(--gold); }
+  .p-card--plain { border-top: 3px solid var(--cream-dark); }
+  .p-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+
+  .p-thumb-link { display: block; }
+  .p-thumb {
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background: #000;
+  }
+  .p-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0.9; transition: opacity 0.2s; }
+  .p-thumb:hover img { opacity: 0.7; }
+  .p-play {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.2s;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  }
+  .p-thumb:hover .p-play { opacity: 1; }
+
+  .p-body { padding: 0.75rem; display: flex; flex-direction: column; gap: 0.5rem; flex: 1; }
+  .p-name {
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--dark);
+    letter-spacing: 0.04em;
+  }
+  .p-shiur-title {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    line-height: 1.4;
+    display: block;
+  }
+  .p-shiur-title:hover { color: var(--gold); }
+
+  .p-links { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  .p-summary-btn {
+    font-family: var(--font-serif);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.55rem;
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    transition: background 0.2s, color 0.2s;
+  }
+  .p-summary-btn:hover { background: var(--gold); color: var(--white); }
+
+  .p-clips { display: flex; flex-direction: column; gap: 0.25rem; }
+  .p-clip-link {
+    font-size: 0.72rem;
+    color: var(--text-light);
+    line-height: 1.3;
+    transition: color 0.2s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .p-clip-link:hover { color: var(--gold); }
+
+  .lang-btns { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: auto; padding-top: 0.25rem; }
+  .lang-btn {
+    font-family: var(--font-serif);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.55rem;
+    border: 1px solid;
+    transition: background 0.2s, color 0.2s;
+  }
+  .lang-btn:hover {
+    background: var(--gold) !important;
+    color: var(--white) !important;
+    border-color: var(--gold) !important;
+  }
+
+  @media (max-width: 680px) {
+    .yt-grid { grid-template-columns: 1fr; }
+    .reader-grid { grid-template-columns: 1fr 1fr; }
   }
 </style>

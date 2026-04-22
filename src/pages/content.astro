@@ -1,66 +1,141 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const items = [
+  {
+    href: '/video',
+    title: 'Video',
+    label: 'Watch',
+    img: '/images/The Parasha.png',
+    desc: 'A growing library of recorded lectures, shiurim, and talks — from the weekly Parasha to deep philosophical discussions.',
+  },
+  {
+    href: '/audio',
+    title: 'Audio',
+    label: 'Listen',
+    img: '/images/The Thought for the Day.png',
+    desc: 'Listen to Rabbi Dweck's shiurim and lectures on Spotify, Apple Podcasts, and all major podcast platforms.',
+  },
+  {
+    href: '/writings',
+    title: 'Writings',
+    label: 'Read',
+    img: '/images/Perspectives.png',
+    desc: 'Thought-provoking essays and the This Is Judaism Substack — exploring what Judaism is, what it means, and why it matters.',
+  },
+];
 ---
 
-<Layout title="Content" description="Explore Rabbi Dweck's writings, video, audio, parasha, and perspectives.">
+<Layout title="Content" description="Explore Rabbi Dweck's video, audio, and writings.">
 
   <section class="page-hero">
     <h1>Content</h1>
-    <p>Writings, video, audio, and more from Rabbi Joseph Dweck</p>
+    <p>Video, audio, and writings from Rabbi Joseph Dweck</p>
     <div class="gold-rule"></div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="card-grid">
-
-        <a href="/parasha" class="card">
-          <img class="card-img" src="/images/4959e2_1396aa8b41ef425d80e0c61b8d265e39.jpg" alt="The Parasha" />
-          <div class="card-body">
-            <h3>The Parasha</h3>
-            <p>Audio and video recordings on the weekly Torah portion from Rabbi Dweck across the entire yearly cycle.</p>
-            <span class="btn" style="margin-top:1rem; font-size:0.78rem;">Explore →</span>
-          </div>
-        </a>
-
-        <a href="/perspectives" class="card">
-          <img class="card-img" src="/images/4959e2_b8bd16ceb7914834bc6425156df89bb0.avif" alt="Perspectives" />
-          <div class="card-body">
-            <h3>Perspectives</h3>
-            <p>A digital series of bite-size 1–3 minute meditations on Judaism's major ideas across two seasons.</p>
-            <span class="btn" style="margin-top:1rem; font-size:0.78rem;">Watch →</span>
-          </div>
-        </a>
-
-        <a href="/writings" class="card">
-          <img class="card-img" src="/images/4959e2_2f333107d2e447378fbea2398fa78ce8.png" alt="Writings" />
-          <div class="card-body">
-            <h3>Writings</h3>
-            <p>Thought-provoking essays by Rabbi Dweck for individual and family reading, plus the This Is Judaism Substack.</p>
-            <span class="btn" style="margin-top:1rem; font-size:0.78rem;">Read →</span>
-          </div>
-        </a>
-
-        <a href="/video" class="card">
-          <img class="card-img" src="/images/4959e2_c020170c08ed4ec6a22933dacd1f1f10.png" alt="Video" />
-          <div class="card-body">
-            <h3>Video</h3>
-            <p>A growing library of recorded lectures, shiurim, and talks available on YouTube and beyond.</p>
-            <span class="btn" style="margin-top:1rem; font-size:0.78rem;">Watch →</span>
-          </div>
-        </a>
-
-        <a href="/audio" class="card">
-          <img class="card-img" src="/images/4959e2_4b9b31d3c03d4e9c84f60c45f7c0b188.png" alt="Audio" />
-          <div class="card-body">
-            <h3>Audio</h3>
-            <p>Listen to Rabbi Dweck's lectures and shiurim on The Parasha with Rabbi Dweck, available on Spotify and more.</p>
-            <span class="btn" style="margin-top:1rem; font-size:0.78rem;">Listen →</span>
-          </div>
-        </a>
-
+      <div class="feature-grid">
+        {items.map(item => (
+          <a href={item.href} class="feature-card">
+            <div class="feature-img-wrap">
+              <img src={item.img} alt={item.title} />
+              <div class="feature-overlay">
+                <span class="feature-cta">{item.label} →</span>
+              </div>
+            </div>
+            <div class="feature-body">
+              <h2>{item.title}</h2>
+              <div class="feature-rule"></div>
+              <p>{item.desc}</p>
+            </div>
+          </a>
+        ))}
       </div>
     </div>
   </section>
 
 </Layout>
+
+<style>
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+  .section { padding: 3rem 0 5rem; }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    color: var(--dark);
+    transition: transform 0.25s;
+  }
+  .feature-card:hover { transform: translateY(-4px); }
+
+  .feature-img-wrap {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+  }
+  .feature-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  .feature-card:hover .feature-img-wrap img { transform: scale(1.04); }
+
+  .feature-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 55%);
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .feature-card:hover .feature-overlay { opacity: 1; }
+  .feature-cta {
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--white);
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 2px;
+  }
+
+  .feature-body {
+    padding: 1.5rem 0.25rem 0;
+  }
+  .feature-body h2 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: var(--dark);
+    margin-bottom: 0.6rem;
+  }
+  .feature-rule {
+    width: 36px;
+    height: 2px;
+    background: var(--gold);
+    margin-bottom: 0.85rem;
+  }
+  .feature-body p {
+    font-size: 0.92rem;
+    line-height: 1.75;
+    color: var(--text-light);
+  }
+
+  @media (max-width: 768px) {
+    .feature-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+    .feature-overlay { opacity: 1; }
+  }
+</style>

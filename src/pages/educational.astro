@@ -1,0 +1,118 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const projects = [
+  {
+    img: '/images/41wi3EECdHS__SL500_.jpg',
+    title: 'Podcast: Humans Being',
+    desc: 'Rabbi Dweck speaks to thinkers and creators from across society about the meaning and value of what they do. The podcast explores how the wisdom of Jewish tradition and thought can be applied in today\'s world.',
+    cta: 'Click here',
+    href: 'https://www.rabbijosephdweck.com/humansbeing',
+  },
+  {
+    img: '/images/Untitled design (8.png',
+    title: 'Sephardic She\'elot — Rabbinical Council of America',
+    desc: 'A worldwide WhatsApp group moderated by Senior Rabbi Dweck, to give members of the RCA access to Sephardi Rabbis for various legal questions.',
+    cta: 'Click here',
+    href: 'https://chat.whatsapp.com/HONcznKDXy6KqXHI2Hptoj',
+  },
+  {
+    img: '/images/Copy of THE SEPHARDI HABURA.png',
+    title: 'The Ḥabura',
+    desc: 'An online Jewish educational platform dedicated to studying Torah and Judaism, with over 300 students from over 15 countries around the world.',
+    cta: 'Explore',
+    href: 'https://www.thehabura.com',
+  },
+  {
+    img: '/images/rjd-app-preview.webp',
+    title: 'RJD Mobile App',
+    desc: 'Access Rabbi Dweck\'s content, shiurim, and resources on the go. Available on iPhone.',
+    cta: 'Click here',
+    href: 'https://www.rabbijosephdweck.com/app',
+  },
+];
+---
+
+<Layout title="Educational Projects" description="Rabbi Dweck's educational initiatives — podcast, learning platform, mobile app and more.">
+
+  <section class="page-hero">
+    <h1>Educational Projects</h1>
+    <div class="gold-rule"></div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      {projects.map((p, i) => (
+        <div class={`project-row ${i % 2 === 1 ? 'project-row--flip' : ''}`}>
+          <div class="project-img">
+            <img src={p.img} alt={p.title} />
+          </div>
+          <div class="project-text">
+            <h2>{p.title}</h2>
+            <div class="gold-rule-sm"></div>
+            <p>{p.desc}</p>
+            <a href={p.href} target="_blank" rel="noopener" class="btn">{p.cta} →</a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .container { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+  .section { padding: 2rem 0 5rem; }
+
+  .project-row {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 3.5rem;
+    align-items: center;
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--cream-dark);
+  }
+  .project-row:last-child { border-bottom: none; }
+  .project-row--flip { direction: rtl; }
+  .project-row--flip > * { direction: ltr; }
+
+  .project-img img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    display: block;
+  }
+  .project-row:last-child .project-img img {
+    max-height: 340px;
+    max-width: 160px;
+    margin: 0 auto;
+  }
+
+  .project-text h2 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--dark);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+  }
+  .gold-rule-sm {
+    width: 40px;
+    height: 2px;
+    background: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .project-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+    max-width: 560px;
+  }
+
+  @media (max-width: 700px) {
+    .project-row { grid-template-columns: 1fr; gap: 1.5rem; }
+    .project-row--flip { direction: ltr; }
+    .project-img img { max-height: 200px; max-width: 240px; }
+  }
+</style>
