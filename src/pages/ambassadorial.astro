@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const tours = [
+  {
+    href: "/westcoast23",
+    title: "West Coast Tour 2023",
+    desc: "Synagogues, schools, and Jewish institutions across Los Angeles and Seattle.",
+    img: "/images/4959e2_0010e152bb624662834d02c50bbbdac7.png",
+    year: "2023",
+  },
+  {
+    href: "/eastcoast2022",
+    title: "East Coast Tour 2022",
+    desc: "Chicago, Manhattan, Brooklyn, and Great Neck — synagogues, yeshivot, and Yeshiva University.",
+    img: "/images/4959e2_d5f10b4ae9754298b324cf7b94396fed.png",
+    year: "2022",
+  },
+  {
+    href: "/israel2022",
+    title: "Israel Trip 2022",
+    desc: "Meetings with leading Rabbinic figures including the Rishon Lezion and Rabbi Asher Weiss.",
+    img: "/images/4959e2_441dfeb95b34482481873f177b0c4755.png",
+    year: "2022",
+  },
+  {
+    href: "/switzerland2022",
+    title: "Visit to Zurich 2022",
+    desc: "Rabbi Dweck's visit to the Jewish community of Zurich, Switzerland.",
+    img: "/images/4959e2_2710bdf5964a44b7b52f95241118c2b4.png",
+    year: "2022",
+  },
+  {
+    href: "/nj22",
+    title: "New Jersey Summer 2022",
+    desc: "Senior Rabbi Dweck spends the summer with the New Jersey Jewish community.",
+    img: "/images/4959e2_c74be12280a04fb8a5c80f9df3b2ebb5.png",
+    year: "2022",
+  },
+  {
+    href: "/holland22",
+    title: "Amsterdam 2022",
+    desc: "Visiting the historic Spanish & Portuguese Community of Amsterdam, Holland.",
+    img: "/images/4959e2_57bf27da0c274853b1c232cca3db45a3.png",
+    year: "2022",
+  },
+  {
+    href: "/mexico21",
+    title: "Mexico Visit 2021",
+    desc: "Senior Rabbi Dweck's visit to the Sephardi community of Mexico.",
+    img: "/images/4959e2_67ff548b96a74de784ab26be70c296aa.png",
+    year: "2021",
+  },
+];
+---
+
+<Layout title="Ambassadorial Tours" description="Rabbi Dweck's global ambassadorial speaking tours.">
+
+  <section class="page-hero">
+    <h1>Ambassadorial</h1>
+    <p>Rabbi Dweck's global speaking tours and community visits</p>
+    <div class="gold-rule"></div>
+  </section>
+
+  <section class="section" style="background:var(--cream);">
+    <div class="container">
+      <p class="amb-intro">
+        Rabbi Dweck regularly travels the world as an ambassador of the S&amp;P Sephardi Community,
+        visiting Jewish communities across North America, Israel, Europe, and Latin America. These tours
+        bring him to synagogues, schools, universities, and institutions where he speaks, teaches, and
+        strengthens ties between communities.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">All Tours</h2>
+      <div class="gold-divider"></div>
+      <div class="tours-list">
+        {tours.map((tour) => (
+          <a href={tour.href} class="tour-row">
+            <img src={tour.img} alt={tour.title} />
+            <div class="tour-info">
+              <span class="tour-year">{tour.year}</span>
+              <h3>{tour.title}</h3>
+              <p>{tour.desc}</p>
+              <span class="btn" style="margin-top:1rem; font-size:0.78rem;">View Gallery →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .amb-intro {
+    font-size: 1.05rem;
+    color: var(--text);
+    line-height: 1.8;
+    max-width: 780px;
+  }
+  .tours-list { display: flex; flex-direction: column; gap: 2rem; }
+  .tour-row {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    border: 1px solid var(--cream-dark);
+    border-left: 4px solid var(--gold);
+    padding: 1.5rem;
+    transition: box-shadow 0.25s, transform 0.25s;
+    background: var(--white);
+  }
+  .tour-row:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.08); transform: translateX(4px); }
+  .tour-row img { width: 100%; height: 160px; object-fit: cover; }
+  .tour-year {
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-family: var(--font-serif);
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+  .tour-info h3 { font-size: 1.2rem; margin-bottom: 0.4rem; color: var(--dark); }
+  .tour-info p { font-size: 0.9rem; color: var(--text-light); line-height: 1.6; }
+
+  @media (max-width: 640px) {
+    .tour-row { grid-template-columns: 1fr; }
+    .tour-row img { height: 200px; }
+  }
+</style>

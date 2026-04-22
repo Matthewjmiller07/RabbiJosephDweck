@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+const images = [
+  "/images/4959e2_441dfeb95b34482481873f177b0c4755.png",
+  "/images/4959e2_cfe1844edba14510a83fb25c54139200.png",
+  "/images/4959e2_7a116e72e8cb494ea7742b24c564ca1b.png",
+  "/images/4959e2_b44f5007d1234074b568595f743ee316.png",
+  "/images/4959e2_e5518c0a038f4e26a0ecaa12a5384818.png",
+  "/images/4959e2_60d669b69cd543c5a8e723bf781ed8a0.png",
+];
+---
+<Layout title="Israel Trip — June 2022" description="Senior Rabbi Dweck's visit to Israel in June 2022.">
+  <section class="page-hero">
+    <h1>Israel Trip — June 2022</h1>
+    <p>Jerusalem · Meetings with leading Rabbinic figures</p>
+    <div class="gold-rule"></div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="tour-intro">
+        <p>Senior Rabbi Dweck visited Israel to meet with leading Rabbinic figures such as the Rishon Lezion Rabbi Yitzhak Yosef, the Yemenite Chief Rabbi Ratzon Arusi, and leading Halakhic decisor Rabbi Asher Weiss.</p>
+      </div>
+      <div class="photo-grid">
+        {images.map((src, i) => <img src={src} alt={`Israel Trip 2022 photo ${i+1}`} />)}
+      </div>
+      <div style="margin-top:2.5rem;">
+        <a href="/ambassadorial" class="btn">← All Tours</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+<style>
+  .tour-intro { margin-bottom: 2.5rem; }
+  .tour-intro p { font-size: 1.1rem; color: var(--text); line-height: 1.8; max-width: 700px; border-left: 4px solid var(--gold); padding-left: 1.25rem; }
+</style>

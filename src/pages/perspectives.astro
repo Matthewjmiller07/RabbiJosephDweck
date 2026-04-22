@@ -1,0 +1,155 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Perspectives" description="Perspectives — a digital video series by Rabbi Joseph Dweck on Judaism's major ideas.">
+
+  <section class="page-hero">
+    <h1>Perspectives</h1>
+    <p>Bite-size meditations on Judaism's major ideas</p>
+    <div class="gold-rule"></div>
+  </section>
+
+  <section class="section" style="background:var(--cream);">
+    <div class="container">
+      <div class="persp-intro">
+        <div class="persp-text">
+          <h2 class="section-title">About the Series</h2>
+          <div class="gold-divider"></div>
+          <p>
+            <strong>Perspectives</strong> is a digital series of 1–3 minute episodes featuring Senior Rabbi Dweck.
+            Each episode offers a 'bite size' meditation on Judaism's major ideas — accessible, profound, and
+            thought-provoking for viewers of all backgrounds.
+          </p>
+          <p>
+            Now in its second season, Perspectives covers timeless topics like Shabbat, Pesah, and Shabuot,
+            building on Season 1's explorations of God, Prayer, and Suffering.
+          </p>
+        </div>
+        <div class="persp-img">
+          <img src="/images/4959e2_b8bd16ceb7914834bc6425156df89bb0.png" alt="Perspectives Series" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="season-block">
+        <div class="season-header">
+          <span class="season-badge">Season 2 — New</span>
+          <h2 class="section-title">Season 2</h2>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="episode-grid">
+          <div class="episode-card">
+            <div class="episode-num">S2 · E1</div>
+            <h3>Shabbat</h3>
+            <p>A meditation on the meaning and depth of the Jewish day of rest.</p>
+          </div>
+          <div class="episode-card">
+            <div class="episode-num">S2 · E2</div>
+            <h3>Pesah</h3>
+            <p>Exploring the themes of freedom, redemption, and the Passover experience.</p>
+          </div>
+          <div class="episode-card">
+            <div class="episode-num">S2 · E3</div>
+            <h3>Shabuot</h3>
+            <p>The festival of the giving of the Torah — revelation, covenant, and meaning.</p>
+          </div>
+        </div>
+        <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="https://www.youtube.com/playlist?list=PL2-vi4QcKgTSGcfSo3p2Tsr33Vp9fYLDJ" target="_blank" rel="noopener" class="btn btn-solid">Watch All Season 2 Episodes →</a>
+          <a href="https://drive.google.com/drive/u/2/folders/1DVB_TbAndBi0DUzJqJvMUSUK6nTzdjJn?usp=sharing" target="_blank" rel="noopener" class="btn">Full-Length Lectures</a>
+        </div>
+      </div>
+
+      <div class="season-block" style="margin-top:4rem;">
+        <div class="season-header">
+          <span class="season-badge season-badge-light">Season 1</span>
+          <h2 class="section-title">Season 1</h2>
+          <div class="gold-divider"></div>
+        </div>
+        <div class="episode-grid">
+          <div class="episode-card">
+            <div class="episode-num">S1 · E1</div>
+            <h3>Rabbi Dweck on God</h3>
+            <p>What does Judaism say about the nature of God? A concise and powerful exploration.</p>
+          </div>
+          <div class="episode-card">
+            <div class="episode-num">S1 · E2</div>
+            <h3>Rabbi Dweck on Prayer</h3>
+            <p>The meaning of Jewish prayer — who we are speaking to and why it matters.</p>
+          </div>
+          <div class="episode-card">
+            <div class="episode-num">S1 · E3</div>
+            <h3>Rabbi Dweck on Suffering</h3>
+            <p>How Judaism approaches suffering, pain, and the human condition.</p>
+          </div>
+        </div>
+        <div style="margin-top:2rem;">
+          <a href="https://www.youtube.com/watch?v=-bQ4gSF86w0&list=PL2-vi4QcKgTQxdpTqu-0Dju8Vado7Np6S" target="_blank" rel="noopener" class="btn btn-solid">Watch All Season 1 Episodes →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .persp-intro {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 3.5rem;
+    align-items: center;
+  }
+  .persp-text p { color: var(--text); line-height: 1.8; margin-bottom: 1rem; }
+  .persp-img img {
+    width: 100%;
+    border-top: 4px solid var(--gold);
+    box-shadow: 8px 8px 0 var(--cream-dark);
+  }
+
+  .season-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--white);
+    font-family: var(--font-serif);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.9rem;
+    margin-bottom: 0.75rem;
+    border-radius: 2px;
+  }
+  .season-badge-light {
+    background: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+  }
+
+  .episode-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+  .episode-card {
+    background: var(--cream);
+    border-left: 4px solid var(--gold);
+    padding: 1.5rem;
+  }
+  .episode-num {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-family: var(--font-serif);
+    margin-bottom: 0.5rem;
+  }
+  .episode-card h3 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+  .episode-card p { font-size: 0.88rem; color: var(--text-light); }
+
+  @media (max-width: 768px) {
+    .persp-intro { grid-template-columns: 1fr; }
+  }
+</style>

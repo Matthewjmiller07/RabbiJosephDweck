@@ -1,0 +1,131 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Mental Health Awareness" description="The SRO's efforts in raising mental health awareness in Jewish communities.">
+
+  <section class="page-hero">
+    <h1>Gentle Mental Health Awareness</h1>
+    <p>The SRO's efforts in raising mental health awareness in our Jewish communities</p>
+    <div class="gold-rule"></div>
+  </section>
+
+  <section class="section" style="background:var(--cream);">
+    <div class="container">
+      <div class="mh-intro">
+        <div class="mh-text">
+          <h2 class="section-title">Our Commitment</h2>
+          <div class="gold-divider"></div>
+          <p>
+            Stay updated and find out more about the SRO's efforts in raising mental health awareness
+            in our Jewish communities. Rabbi Dweck has been a passionate advocate for addressing mental
+            health with sensitivity, wisdom, and the lens of Jewish tradition.
+          </p>
+          <p>
+            Through publications, community events, and training programmes, the Senior Rabbi's Office
+            is committed to ensuring that mental health is treated with the seriousness and compassion
+            it deserves within our community.
+          </p>
+        </div>
+        <div class="mh-img">
+          <img
+            src="/images/4959e2_2b10f93487cc4a488a17da54a81f2cd7.jpg"
+            alt="Mental Health Awareness"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Resources &amp; Initiatives</h2>
+      <div class="gold-divider"></div>
+      <div class="mh-resources">
+
+        <a
+          href="https://www.rabbijosephdweck.com/_files/ugd/4959e2_713ff94bb8734380b6d908bfdfe79d4a.pdf"
+          target="_blank"
+          rel="noopener"
+          class="resource-card"
+        >
+          <div class="resource-icon">📄</div>
+          <div class="resource-body">
+            <h3>Rabbi Dweck on Mental Health Awareness Week 2022</h3>
+            <p>Rabbi Dweck's statement and reflections on Mental Health Awareness Week, exploring Judaism's approach to mental wellbeing.</p>
+            <span class="btn" style="margin-top:1rem; font-size:0.78rem;">Read Document →</span>
+          </div>
+        </a>
+
+        <a href="/course" class="resource-card">
+          <div class="resource-icon">🎓</div>
+          <div class="resource-body">
+            <h3>Judaism &amp; Mental Health Tour — Rabbi Yoni Rosensweig in London</h3>
+            <p>Rabbi Yoni Rosensweig's groundbreaking visit to London to address the intersection of Judaism, mental health, and Halakha.</p>
+            <span class="btn" style="margin-top:1rem; font-size:0.78rem;">Learn More →</span>
+          </div>
+        </a>
+
+        <a href="/course" class="resource-card">
+          <div class="resource-icon">📚</div>
+          <div class="resource-body">
+            <h3>Training Course: Mental Health &amp; Halakha</h3>
+            <p>An 8-day training course in London for rabbis and community leaders on navigating mental health challenges through the lens of Jewish law.</p>
+            <span class="btn" style="margin-top:1rem; font-size:0.78rem;">View Course →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--dark);">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-title" style="color:var(--cream);">Stay Updated</h2>
+      <div class="gold-divider" style="margin:0.5rem auto 1.5rem;"></div>
+      <p style="color:rgba(255,255,255,0.7); max-width:520px; margin:0 auto 2rem;">
+        Subscribe to receive updates on mental health initiatives and resources from Rabbi Dweck's office.
+      </p>
+      <a href="https://chat.whatsapp.com/HONcznKDXy6KqXHI2Hptoj" target="_blank" rel="noopener" class="btn btn-solid">Join WhatsApp Community →</a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .mh-intro {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 3.5rem;
+    align-items: center;
+  }
+  .mh-text p { color: var(--text); line-height: 1.8; margin-bottom: 1rem; }
+  .mh-img img {
+    width: 100%;
+    border-top: 4px solid var(--gold);
+    box-shadow: 8px 8px 0 var(--cream-dark);
+  }
+
+  .mh-resources { display: flex; flex-direction: column; gap: 1.5rem; }
+  .resource-card {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    border: 1px solid var(--cream-dark);
+    border-left: 4px solid var(--gold);
+    padding: 1.5rem;
+    background: var(--white);
+    transition: box-shadow 0.25s, transform 0.25s;
+  }
+  .resource-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.08); transform: translateX(4px); }
+  .resource-icon { font-size: 2.5rem; text-align: center; padding-top: 0.25rem; }
+  .resource-body h3 { font-size: 1.1rem; margin-bottom: 0.4rem; color: var(--dark); }
+  .resource-body p { font-size: 0.9rem; color: var(--text-light); line-height: 1.6; }
+
+  @media (max-width: 768px) {
+    .mh-intro { grid-template-columns: 1fr; }
+    .resource-card { grid-template-columns: 1fr; }
+    .resource-icon { text-align: left; }
+  }
+</style>

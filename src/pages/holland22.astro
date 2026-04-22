@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+const images = [
+  "/images/4959e2_57bf27da0c274853b1c232cca3db45a3.png",
+  "/images/4959e2_4b9b31d3c03d4e9c84f60c45f7c0b188.png",
+  "/images/4959e2_2b10f93487cc4a488a17da54a81f2cd7.jpg",
+  "/images/4959e2_f3b6e07c8d8d464e8c3e0aefed887c49.png",
+  "/images/4959e2_8d316cc4c3a940f9aec626daddfc6a61.png",
+  "/images/4959e2_a2272213c7ba446282752dd41204c725.png",
+];
+---
+<Layout title="Visit to Amsterdam 2022" description="Senior Rabbi Dweck visits the Spanish & Portuguese Community of Amsterdam, Holland.">
+  <section class="page-hero">
+    <h1>Amsterdam, Holland</h1>
+    <p>Spanish & Portuguese Community of Amsterdam · 2022</p>
+    <div class="gold-rule"></div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="tour-intro">
+        <p>Senior Rabbi Dweck visited the Spanish & Portuguese Community of Amsterdam, Holland — one of the oldest and most historically significant Sephardi Jewish communities in the world. This visit deepened ties between the S&P communities of London and Amsterdam.</p>
+      </div>
+      <div class="photo-grid">
+        {images.map((src, i) => <img src={src} alt={`Amsterdam visit photo ${i+1}`} />)}
+      </div>
+      <div style="margin-top:2.5rem;">
+        <a href="/ambassadorial" class="btn">← All Tours</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+<style>
+  .tour-intro { margin-bottom: 2.5rem; }
+  .tour-intro p { font-size: 1.1rem; color: var(--text); line-height: 1.8; max-width: 700px; border-left: 4px solid var(--gold); padding-left: 1.25rem; }
+</style>

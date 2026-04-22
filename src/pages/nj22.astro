@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+const images = [
+  "/images/4959e2_2710bdf5964a44b7b52f95241118c2b4.avif",
+  "/images/4959e2_c74be12280a04fb8a5c80f9df3b2ebb5.avif",
+  "/images/4959e2_f3b6e07c8d8d464e8c3e0aefed887c49.avif",
+  "/images/4959e2_2f333107d2e447378fbea2398fa78ce8.avif",
+  "/images/4959e2_1244e8d93c234241acbf9bcac711ccdd.png",
+  "/images/4959e2_df702ae6a84340b4a5736e6ea124e321.png",
+  "/images/4959e2_d11b14e3653f47a0905ebad663fb85d5.png",
+];
+---
+<Layout title="Senior Rabbi Dweck Spends Summer in New Jersey" description="Senior Rabbi Dweck spends the summer with the New Jersey Jewish community.">
+  <section class="page-hero">
+    <h1>Summer in New Jersey</h1>
+    <p>New Jersey, USA · Summer 2022</p>
+    <div class="gold-rule"></div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="tour-intro">
+        <p>Senior Rabbi Dweck spent another summer in New Jersey, as scholar-in-residence for the Sephardic Community Alliance.</p>
+      </div>
+      <div class="photo-grid">
+        {images.map((src, i) => <img src={src} alt={`New Jersey summer 2022 photo ${i+1}`} />)}
+      </div>
+      <div style="margin-top:2.5rem;">
+        <a href="/ambassadorial" class="btn">← All Tours</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+<style>
+  .tour-intro { margin-bottom: 2.5rem; }
+  .tour-intro p { font-size: 1.1rem; color: var(--text); line-height: 1.8; max-width: 700px; border-left: 4px solid var(--gold); padding-left: 1.25rem; }
+</style>

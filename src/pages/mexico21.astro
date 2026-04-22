@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+const images = [
+  "/images/4959e2_67ff548b96a74de784ab26be70c296aa.png",
+  "/images/4959e2_c020170c08ed4ec6a22933dacd1f1f10.png",
+  "/images/4959e2_fd5ddaf5347a4c4b963f193a1298ec5c.png",
+  "/images/4959e2_b72254c05af74de480857c0be925665a.png",
+  "/images/4959e2_dfc1d0572c9a4f0d9aeb7db905d1aee3.png",
+  "/images/4959e2_fe1715d92e4340c28df1285bec8377d4.png",
+];
+---
+<Layout title="Senior Rabbi Dweck's Visit to Mexico" description="Senior Rabbi Dweck's visit to the Sephardi community of Mexico City.">
+  <section class="page-hero">
+    <h1>Visit to Mexico</h1>
+    <p>Mexico City · 2021</p>
+    <div class="gold-rule"></div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="tour-intro">
+        <p>Senior Rabbi Dweck visited the thriving Sephardi community of Mexico, engaging with community leaders, delivering lectures, and strengthening the relationship between the S&P Sephardi Community of London and the Mexican Jewish community.</p>
+      </div>
+      <div class="photo-grid">
+        {images.map((src, i) => <img src={src} alt={`Mexico visit photo ${i+1}`} />)}
+      </div>
+      <div style="margin-top:2.5rem;">
+        <a href="/ambassadorial" class="btn">← All Tours</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+<style>
+  .tour-intro { margin-bottom: 2.5rem; }
+  .tour-intro p { font-size: 1.1rem; color: var(--text); line-height: 1.8; max-width: 700px; border-left: 4px solid var(--gold); padding-left: 1.25rem; }
+</style>

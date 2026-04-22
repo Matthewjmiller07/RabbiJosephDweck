@@ -1,0 +1,137 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Training Course: Mental Health & Halakha" description="8-day training course for rabbis and community leaders on Mental Health and Halakha.">
+
+  <section class="page-hero">
+    <h1>Training Course for Rabbis &amp; Community Leaders</h1>
+    <p>Mental Health &amp; Halakha</p>
+    <div class="gold-rule"></div>
+  </section>
+
+  <section class="section">
+    <div class="container course-layout">
+      <div class="course-text">
+        <div class="course-badge">8-Day Course · London</div>
+        <h2 class="section-title">Mental Health &amp; Halakha</h2>
+        <div class="gold-divider"></div>
+        <p>
+          An intensive 8-day training course in London spread across April, May, and June 2023,
+          designed for rabbis and community leaders who work with individuals and families navigating
+          mental health challenges.
+        </p>
+        <p>
+          The course brings together leading experts in Jewish law and mental health to equip
+          community leaders with the knowledge, sensitivity, and practical tools to support
+          those in need — all within the framework of Halakha.
+        </p>
+        <p>
+          <strong>Please register your interest below and we will be in touch!</strong>
+        </p>
+
+        <form class="interest-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="First Name" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Last Name" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email Address" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" />
+          </div>
+          <button type="submit" class="btn btn-solid">Register Interest →</button>
+          <p class="form-thanks" id="formThanks" style="display:none; color:var(--gold); margin-top:1rem; font-family:var(--font-serif);">Thank you — we will be in touch!</p>
+        </form>
+      </div>
+      <div class="course-img">
+        <img
+          src="/images/SRO Mental Health Course (2.png"
+          alt="SRO Mental Health Course"
+        />
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<script>
+  function handleSubmit(e: Event) {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    form.style.display = 'none';
+    const thanks = document.getElementById('formThanks');
+    if (thanks) thanks.style.display = 'block';
+  }
+</script>
+
+<style>
+  .course-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 4rem;
+    align-items: start;
+  }
+  .course-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--white);
+    font-family: var(--font-serif);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 0.35rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+  }
+  .course-text p { color: var(--text); line-height: 1.8; margin-bottom: 1rem; }
+
+  .interest-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 480px;
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .form-group { display: flex; flex-direction: column; gap: 0.35rem; }
+  .form-group label {
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: var(--font-serif);
+    color: var(--text-light);
+  }
+  .form-group input {
+    padding: 0.65rem 0.9rem;
+    border: 1px solid var(--cream-dark);
+    border-radius: 2px;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    color: var(--text);
+    background: var(--white);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .form-group input:focus { border-color: var(--gold); }
+
+  .course-img img {
+    width: 100%;
+    border-top: 4px solid var(--gold);
+    box-shadow: 8px 8px 0 var(--cream-dark);
+  }
+
+  @media (max-width: 900px) {
+    .course-layout { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+</style>

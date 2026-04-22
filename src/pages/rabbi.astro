@@ -1,0 +1,156 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="The Rabbi" description="Learn about Rabbi Joseph Dweck, Senior Rabbi of the S&P Sephardi Community of the United Kingdom.">
+
+  <section class="page-hero">
+    <h1>The Rabbi</h1>
+    <p>Senior Rabbi · Scholar · Teacher · Leader</p>
+    <div class="gold-rule"></div>
+  </section>
+
+  <section class="section">
+    <div class="container bio-layout">
+      <div class="bio-image">
+        <img src="/images/4959e2_907223b5254d4732be686e319c59f1ad.png" alt="Rabbi Joseph Dweck" />
+      </div>
+      <div class="bio-text">
+        <h2 class="section-title">Rabbi Joseph Dweck</h2>
+        <div class="gold-divider"></div>
+        <p>
+          Rabbi Joseph Dweck is the Senior Rabbi of the S&amp;P Sephardi Community of the United Kingdom —
+          one of the oldest and most storied Jewish communities in the English-speaking world. Born and raised
+          in Brooklyn, New York, Rabbi Dweck received a comprehensive religious education spanning traditional
+          yeshivot and academic institutions in the United States and Israel.
+        </p>
+        <p>
+          He is widely regarded as one of the most dynamic and intellectually rigorous Orthodox rabbis of his
+          generation. His approach to Jewish law, philosophy, and community is characterized by depth,
+          openness, and an abiding commitment to truth.
+        </p>
+        <p>
+          Rabbi Dweck serves the Spanish &amp; Portuguese Jews' Congregation in London (Bevis Marks),
+          the oldest synagogue in continuous use in Britain. Under his leadership, the community has
+          experienced significant growth and renewal, attracting Jews from all backgrounds who are drawn
+          to his distinctive voice.
+        </p>
+        <p>
+          He is a popular speaker at universities, think tanks, and institutions across the world, and
+          his lectures — covering topics from Talmudic law to Jewish philosophy to contemporary ethics —
+          are followed by tens of thousands of people globally.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section roles-section" style="background: var(--cream);">
+    <div class="container">
+      <h2 class="section-title" style="text-align:center;">Roles &amp; Responsibilities</h2>
+      <div class="gold-divider" style="margin: 0.5rem auto 2.5rem;"></div>
+      <div class="roles-grid">
+        <div class="role-card">
+          <div class="role-icon">✡</div>
+          <h3>Senior Rabbi</h3>
+          <p>Senior Rabbi of the S&amp;P Sephardi Community of the United Kingdom, serving the historic Spanish &amp; Portuguese Jews' Congregation.</p>
+        </div>
+        <div class="role-card">
+          <div class="role-icon">📖</div>
+          <h3>Scholar</h3>
+          <p>A prolific scholar in Talmud, Halakha, and Jewish philosophy, with a deep knowledge of both Sephardic and broader Jewish tradition.</p>
+        </div>
+        <div class="role-card">
+          <div class="role-icon">🎙</div>
+          <h3>Teacher</h3>
+          <p>Weekly parasha classes, Perspectives video series, and hundreds of recorded lectures available worldwide.</p>
+        </div>
+        <div class="role-card">
+          <div class="role-icon">🌍</div>
+          <h3>Ambassador</h3>
+          <p>Global speaking tours across North America, Israel, Europe, and Latin America, building bridges across communities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Educational Work</h2>
+      <div class="gold-divider"></div>
+      <div class="edu-grid">
+        <a href="/parasha" class="edu-item">
+          <img src="/images/4959e2_25486457ec4445b6bb96ac5ac4ec6169.png" alt="The Parasha" />
+          <h3>The Parasha</h3>
+          <p>Weekly Torah commentary</p>
+        </a>
+        <a href="/perspectives" class="edu-item">
+          <img src="/images/4959e2_b8bd16ceb7914834bc6425156df89bb0.png" alt="Perspectives" />
+          <h3>Perspectives</h3>
+          <p>Bite-size video meditations</p>
+        </a>
+        <a href="/writings" class="edu-item">
+          <img src="/images/4959e2_2f333107d2e447378fbea2398fa78ce8.png" alt="Writings" />
+          <h3>Writings</h3>
+          <p>Essays &amp; Substack</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .bio-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .bio-image img {
+    width: 100%;
+    border-top: 4px solid var(--gold);
+    box-shadow: 10px 10px 0 var(--cream-dark);
+  }
+  .bio-text p { margin-bottom: 1rem; color: var(--text); line-height: 1.8; }
+
+  .roles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  .role-card {
+    background: var(--white);
+    border: 1px solid var(--cream-dark);
+    border-top: 3px solid var(--gold);
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+  .role-icon { font-size: 2rem; margin-bottom: 1rem; }
+  .role-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+  .role-card p { font-size: 0.9rem; color: var(--text-light); }
+
+  .edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 2rem;
+  }
+  .edu-item {
+    display: block;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  .edu-item:hover { transform: translateY(-4px); }
+  .edu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top: 3px solid var(--gold);
+    margin-bottom: 1rem;
+  }
+  .edu-item h3 { font-size: 1.1rem; color: var(--dark); margin-bottom: 0.25rem; }
+  .edu-item p { font-size: 0.85rem; color: var(--text-light); }
+
+  @media (max-width: 768px) {
+    .bio-layout { grid-template-columns: 1fr; }
+  }
+</style>

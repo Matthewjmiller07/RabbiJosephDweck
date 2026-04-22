@@ -1,0 +1,115 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Writings" description="Essays and writings by Rabbi Joseph Dweck.">
+
+  <section class="page-hero">
+    <h1>Writings</h1>
+    <p>Thought-provoking essays for individual and family reading throughout the year</p>
+    <div class="gold-rule"></div>
+  </section>
+
+  <section class="section" style="background:var(--cream);">
+    <div class="container writings-intro">
+      <div>
+        <h2 class="section-title">Explore Rabbi Dweck's Writings</h2>
+        <div class="gold-divider"></div>
+        <p>
+          Enjoy a selection of thought-provoking essays written by Rabbi Dweck, for individual and
+          family reading throughout the year. From weekly parasha reflections to deeper philosophical
+          inquiries, these writings offer a window into Rabbi Dweck's unique approach to Jewish life and thought.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="writing-platforms">
+
+        <a href="https://josephdweck.substack.com/" target="_blank" rel="noopener" class="platform-card featured">
+          <div class="platform-badge">Featured</div>
+          <div class="platform-icon">✍️</div>
+          <h3>This Is Judaism</h3>
+          <p class="platform-sub">Substack Newsletter</p>
+          <p>Rabbi Dweck's Substack publication — a regular newsletter exploring what Judaism is, what it means, and why it matters in the modern world.</p>
+          <span class="btn btn-solid" style="margin-top:1.5rem;">Read on Substack →</span>
+        </a>
+
+        <a href="https://www.sephardi.org.uk/senior-rabbi/blog/touring-talmud/" target="_blank" rel="noopener" class="platform-card">
+          <div class="platform-icon">📜</div>
+          <h3>Touring the Talmud</h3>
+          <p class="platform-sub">Sephardi.org.uk</p>
+          <p>A guided journey through the Talmud — accessible, enlightening essays for anyone curious about this foundational text of Jewish law and lore.</p>
+          <span class="btn" style="margin-top:1.5rem;">Read More →</span>
+        </a>
+
+        <a href="https://drive.google.com/drive/u/2/folders/1EfQfpBeBYzGW4yHVCpt5HOSYkO0nG0-V" target="_blank" rel="noopener" class="platform-card">
+          <div class="platform-icon">📖</div>
+          <h3>Pirke Abot</h3>
+          <p class="platform-sub">Ethics of Our Fathers</p>
+          <p>Rabbi Dweck's commentary on Pirke Abot — the classic Jewish ethical tractate — available to read and download.</p>
+          <span class="btn" style="margin-top:1.5rem;">Read Commentary →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--dark); text-align:center;">
+    <div class="container">
+      <h2 class="section-title" style="color:var(--cream);">Stay Updated</h2>
+      <div class="gold-divider" style="margin:0.5rem auto 1.5rem;"></div>
+      <p style="color:rgba(255,255,255,0.7); max-width:520px; margin:0 auto 2rem;">
+        Subscribe to Rabbi Dweck's Substack to receive new essays and writings directly in your inbox.
+      </p>
+      <a href="https://josephdweck.substack.com/" target="_blank" rel="noopener" class="btn btn-solid">Subscribe on Substack →</a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .writings-intro p { color: var(--text); line-height: 1.8; max-width: 720px; }
+
+  .writing-platforms {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  .platform-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border: 1px solid var(--cream-dark);
+    border-top: 3px solid var(--gold);
+    padding: 2rem 1.75rem;
+    transition: box-shadow 0.25s, transform 0.25s;
+    position: relative;
+  }
+  .platform-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.1); transform: translateY(-3px); }
+  .platform-card.featured { border-top-color: var(--gold); background: var(--cream); }
+  .platform-badge {
+    position: absolute;
+    top: -1px; right: 1.5rem;
+    background: var(--gold);
+    color: var(--white);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.75rem;
+    font-family: var(--font-serif);
+  }
+  .platform-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+  .platform-card h3 { font-size: 1.3rem; margin-bottom: 0.25rem; }
+  .platform-sub {
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-family: var(--font-serif);
+    margin-bottom: 0.75rem;
+  }
+  .platform-card p { font-size: 0.9rem; color: var(--text-light); line-height: 1.6; flex: 1; }
+</style>

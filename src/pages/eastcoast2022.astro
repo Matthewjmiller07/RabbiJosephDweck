@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+const images = [
+  "/images/4959e2_d5f10b4ae9754298b324cf7b94396fed.png",
+  "/images/4959e2_8c6993c6e1ed4f22b2317ab4d5f8867ff003.jpg",
+  "/images/4959e2_12d6cb81470d4e1aa944359c241248fc.png",
+  "/images/4959e2_731837074f9648b48917514cac1fdc52.png",
+  "/images/4959e2_bb7dfce1528c4eebb8fad641dd9f87af.png",
+  "/images/4959e2_a831cd905a41424ba81f3f29bccea8bc.png",
+];
+---
+<Layout title="East Coast Tour 2022" description="Senior Rabbi Dweck's 2022 East Coast speaking tour — Chicago, Manhattan, Brooklyn, Great Neck.">
+  <section class="page-hero">
+    <h1>East Coast Tour 2022</h1>
+    <p>Chicago · Manhattan · Brooklyn · Great Neck</p>
+    <div class="gold-rule"></div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="tour-intro">
+        <p>Senior Rabbi Dweck's East Coast Tour included Chicago, Manhattan, Brooklyn, and Great Neck. He spoke at and visited synagogues, Yeshiva high schools, The Beth Din of Chicago, Yeshiva University, and more.</p>
+      </div>
+      <div class="photo-grid">
+        {images.map((src, i) => <img src={src} alt={`East Coast Tour 2022 photo ${i+1}`} />)}
+      </div>
+      <div style="margin-top:2.5rem;">
+        <a href="/ambassadorial" class="btn">← All Tours</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+<style>
+  .tour-intro { margin-bottom: 2.5rem; }
+  .tour-intro p { font-size: 1.1rem; color: var(--text); line-height: 1.8; max-width: 700px; border-left: 4px solid var(--gold); padding-left: 1.25rem; }
+</style>

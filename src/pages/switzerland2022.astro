@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+const images = [
+  "/images/4959e2_1c41b5bb95c5459795b33fabf0a9214a.avif",
+  "/images/4959e2_b8bd16ceb7914834bc6425156df89bb0.avif",
+  "/images/4959e2_25486457ec4445b6bb96ac5ac4ec6169.avif",
+  "/images/4959e2_24d5b7e8a9834d98bad961ede68de502.avif",
+];
+---
+<Layout title="Rabbi Dweck's Visit to Zurich" description="Senior Rabbi Dweck's visit to the Jewish community of Zurich, Switzerland.">
+  <section class="page-hero">
+    <h1>Visit to Zurich</h1>
+    <p>Zurich, Switzerland · 2022</p>
+    <div class="gold-rule"></div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="tour-intro">
+        <p>Rabbi Dweck was invited to visit the Jewish community of Zurich in September 2022. He spent time visiting and giving talks to various congregations and Noam school, and also met with Zurich's Chief Rabbi Noam Hertig.</p>
+      </div>
+      <div class="photo-grid">
+        {images.map((src, i) => <img src={src} alt={`Zurich visit photo ${i+1}`} />)}
+      </div>
+      <div style="margin-top:2.5rem;">
+        <a href="/ambassadorial" class="btn">← All Tours</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+<style>
+  .tour-intro { margin-bottom: 2.5rem; }
+  .tour-intro p { font-size: 1.1rem; color: var(--text); line-height: 1.8; max-width: 700px; border-left: 4px solid var(--gold); padding-left: 1.25rem; }
+</style>

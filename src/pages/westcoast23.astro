@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+const images = [
+  "/images/4959e2_0010e152bb624662834d02c50bbbdac7.png",
+  "/images/4959e2_d5d49da4368d4f95b0b26f43e9d311ae.png",
+  "/images/4959e2_6ff90c23731d417a8f2353f2c21aea87.png",
+  "/images/4959e2_82b25f5582ae403196a0293498dc2c12.png",
+  "/images/4959e2_61c5f8c9af4947dfa9fe89e9e9e8f2f2.png",
+  "/images/4959e2_dfc1d0572c9a4f0d9aeb7db905d1aee3.png",
+];
+---
+<Layout title="West Coast Tour 2023" description="Senior Rabbi Dweck's 2023 West Coast speaking tour — Los Angeles and Seattle.">
+  <section class="page-hero">
+    <h1>West Coast Tour 2023</h1>
+    <p>Los Angeles · Seattle</p>
+    <div class="gold-rule"></div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="tour-intro">
+        <p>Senior Rabbi Dweck's speaking tour featured a variety of synagogues, schools, and Jewish institutions across Los Angeles and Seattle.</p>
+      </div>
+      <div class="photo-grid">
+        {images.map((src, i) => <img src={src} alt={`West Coast Tour 2023 photo ${i+1}`} />)}
+      </div>
+      <div style="margin-top:2.5rem;">
+        <a href="/ambassadorial" class="btn">← All Tours</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+<style>
+  .tour-intro { margin-bottom: 2.5rem; }
+  .tour-intro p { font-size: 1.1rem; color: var(--text); line-height: 1.8; max-width: 700px; border-left: 4px solid var(--gold); padding-left: 1.25rem; }
+</style>

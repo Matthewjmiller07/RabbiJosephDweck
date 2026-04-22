@@ -1,0 +1,132 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const parashiot = [
+  { book: "Bereshit", portions: ["Bereshit","Noah","Lekh Lekha","Vayera","Haye Sarah","Toledot","Vayetse","Vayishlah","Vayesheb","Mikkets","Vayiggash","Vayhee"] },
+  { book: "Shemot", portions: ["Shemot","Vaera","Bo","Beshalah","Yitro","Mishpatim","Terumah","Tetsaveh","Ki Tissa","Vayakhel","Pekude"] },
+  { book: "Vayikra", portions: ["Vayikra","Tsav","Shemini","Tazria","Metzora","Ahare Mot","Kedoshim","Emor","Behar","Behukkothai"] },
+  { book: "Bemidbar", portions: ["Bemidbar","Naso","Behaalotekha","Shelah Lekha","Korah","Hukkat","Balak","Pinehas","Mattot","Mase"] },
+  { book: "Debarim", portions: ["Debarim","Vaethanan","Ekeb","Reeh","Shofetim","Ki Tetse","Ki Tabo","Nitsabim","Vayelekh","Haazinu","VeZot HaBerakhah"] },
+];
+---
+
+<Layout title="The Parasha" description="Weekly parasha audio and video from Rabbi Joseph Dweck.">
+
+  <section class="page-hero">
+    <h1>The Parasha</h1>
+    <p>Audio and video recordings on the weekly Torah portion from Rabbi Dweck</p>
+    <div class="gold-rule"></div>
+  </section>
+
+  <section class="section" style="background:var(--cream);">
+    <div class="container">
+      <div class="parasha-intro">
+        <img src="/images/4959e2_5d51496856514536ba5f3e6d8a3c432b.png" alt="The Parasha" class="parasha-hero-img" />
+        <div class="parasha-intro-text">
+          <h2 class="section-title">The Weekly Parasha</h2>
+          <div class="gold-divider"></div>
+          <p>
+            Enjoy a selection of audio and video recordings on the parasha from Rabbi Dweck,
+            covering every weekly Torah portion throughout the Jewish year. From the creation of
+            the world in Bereshit to the final blessing of Moshe in VeZot HaBerakhah, Rabbi Dweck
+            brings the ancient text to life with depth, clarity, and contemporary relevance.
+          </p>
+          <div class="parasha-links">
+            <a href="https://youtube.com/channel/UCqIwxvf2D0JEgg0LOXZcFsA" target="_blank" rel="noopener" class="btn btn-solid">Watch on YouTube</a>
+            <a href="https://www.sephardi.org.uk/senior-rabbi/blog/touring-talmud/" target="_blank" rel="noopener" class="btn">Touring the Talmud</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Browse by Book</h2>
+      <div class="gold-divider"></div>
+      {parashiot.map((book) => (
+        <div class="book-section">
+          <h3 class="book-title">{book.book}</h3>
+          <div class="parasha-grid">
+            {book.portions.map((parasha) => (
+              <a
+                href={`https://youtube.com/channel/UCqIwxvf2D0JEgg0LOXZcFsA`}
+                target="_blank"
+                rel="noopener"
+                class="parasha-chip"
+              >
+                {parasha}
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--dark); text-align:center;">
+    <div class="container">
+      <h2 class="section-title" style="color:var(--cream);">Discover More</h2>
+      <div class="gold-divider" style="margin:0.5rem auto 1.5rem;"></div>
+      <p style="color:rgba(255,255,255,0.7); max-width:560px; margin:0 auto 2rem;">
+        Enjoy a selection of audio and video recordings on the parasha from Rabbi Dweck.
+        Join our community and embark on a journey of learning and growth.
+      </p>
+      <a href="https://youtube.com/channel/UCqIwxvf2D0JEgg0LOXZcFsA" target="_blank" rel="noopener" class="btn btn-solid">Watch on YouTube →</a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .parasha-intro {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  .parasha-hero-img {
+    width: 100%;
+    border-top: 4px solid var(--gold);
+    box-shadow: 8px 8px 0 var(--cream-dark);
+  }
+  .parasha-intro-text p { color: var(--text); line-height: 1.8; margin-bottom: 1.5rem; }
+  .parasha-links { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+  .book-section { margin-bottom: 2.5rem; }
+  .book-title {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid var(--cream-dark);
+    padding-bottom: 0.5rem;
+  }
+  .parasha-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  .parasha-chip {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--gold);
+    color: var(--dark);
+    font-family: var(--font-serif);
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    transition: background 0.2s, color 0.2s;
+    border-radius: 2px;
+  }
+  .parasha-chip:hover {
+    background: var(--gold);
+    color: var(--white);
+  }
+
+  @media (max-width: 768px) {
+    .parasha-intro { grid-template-columns: 1fr; }
+    .parasha-hero-img { max-width: 280px; margin: 0 auto; }
+  }
+</style>
