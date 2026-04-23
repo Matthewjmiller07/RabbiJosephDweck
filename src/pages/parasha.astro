@@ -129,6 +129,127 @@ const books: Book[] = [
   },
 ];
 
+// ── Spotify RSS episodes (parsed from feed) ──────────────────────────────────
+// Only full shiurim — nutshells/clips are excluded by the isFull filter below.
+// Each item: { title, url, year }
+type SpotifyEp = { title: string; url: string; year: number };
+
+const rssItems: SpotifyEp[] = [
+  { title: "Healing Through Gratitude | Tazria-Metsora 2026", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Healing-Through-Gratitude--Tazria-Metsora-2026-e3hvshe", year: 2026 },
+  { title: "There is no Freedom in the Bible! | Tsav-Shabbat HaGadol 2026", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/There-is-no-Freedom-in-the-Bible---Tsav-Shabbat-HaGadol-2026-e3h17ri", year: 2026 },
+  { title: "Life's Inherent Violence | Vayikra 2026", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Lifes-Inherent-Violence--Vayikra-2026-e3gku9c", year: 2026 },
+  { title: "The Indestructible Jewish Heart | Vayakhel-Pekude 2026", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/The-Indestructible-Jewish-Heart--Vayakhel-Pekude-2026-e3g9lff", year: 2026 },
+  { title: "Changing the Course of Jewish History | Ki Tisa 2026", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Changing-the-Course-of-Jewish-History--Ki-Tisa-2026-e3fuplm", year: 2026 },
+  { title: "Are You Afraid of the Light? | Tesave 2026", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Are-You-Afraid-of-the-Light---Tesave-2026-e3fispa", year: 2026 },
+  { title: "Are You Getting Old? | Teruma 2026", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Are-You-Getting-Old---Teruma-2026-e3f8s5a", year: 2026 },
+  { title: "What Matters Most? | Mishpatim 2026", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/What-Matters-Most---Mishpatim-2026-e3evbqa", year: 2026 },
+  { title: "Yitro 2026 - Sinai and the Jewish Soul", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Yitro-2026---Sinai-and-the-Jewish-Soul-e3el7j5", year: 2026 },
+  { title: "Where is God? - Beshalah 2026", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Where-is-God----Beshalah-2026-e3ea1j1", year: 2026 },
+  { title: "Why We Bargain With Reality", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Why-We-Bargain-With-Reality-e3duhqn", year: 2026 },
+  { title: "Va'era 2026 - Can You Let Go?", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Vaera-2026---Can-You-Let-Go-e3dklil", year: 2026 },
+  { title: "Freedom Isn't What You Think It Is", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Freedom-Isnt-What-You-Think-It-Is-e3da3dc", year: 2026 },
+  { title: "What Does it Mean to Be a Jew Today?", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/What-Does-it-Mean-to-Be-a-Jew-Today-e3d198c", year: 2025 },
+  { title: "Vayigash 2025 - What Happens When You Heal Your Pain?", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Vayigash-2025---What-Happens-When-You-Heal-Your-Pain-e3cnpa6", year: 2025 },
+  { title: "When a Family Breaks (Part 2)", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/When-a-Family-Breaks-Part-2-e3chaop", year: 2025 },
+  { title: "Vayesheb 2025 - When a Family Breaks", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Vayesheb-2025---When-a-Family-Breaks-e3c563b", year: 2025 },
+  { title: "Vayishlah 2025 - Wrestling with the World", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Vayishlah-2025---Wrestling-with-the-World-e3bqmp4", year: 2025 },
+  { title: "Vayetse 2025 - Selfishness or Self-development?", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Vayetse-2025---Selfishness-or-Self-development-e3biv8f", year: 2025 },
+  { title: "Toledot 2025", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Toledot-2025", year: 2025 },
+  { title: "Vayishlah 2023 - Wrestling with the World", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Vayishlah-2023---Wrestling-with-the-World-e2fsocc", year: 2023 },
+  { title: "Ahare-Kedoshim 2023 - Self-Care as the Highest Jewish Ideal", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Ahare-Kedoshim-2023-Self-Care-as-the-Highest-Jewish-Ideal-e2352p8", year: 2023 },
+  { title: "Tazria-Metsora 2023 Healing the Soul", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Tazria-Metsora-2023-Healing-the-Soul-e22o8tn", year: 2023 },
+  { title: "Shemini 2022 - Why Kosher", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Shemini-2022---Why-Kosher-e22c5t1", year: 2022 },
+  { title: "Tsav-Shabbat HaGadol 2023 - Sacrifice and Freedom", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Tsav-Shabbat-HaGadol-2023--Sacrifice-and-Freedom-e21drjt", year: 2023 },
+  { title: "Vayikra 2023 - Bring in the Blood and Guts", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Vayikra-2023---Bring-in-the-Blood-and-Guts-e2125ud", year: 2023 },
+  { title: "Vayakhel-Pekude 2023 - Sacred Creativity", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Vayakhel-Pekude-2023---Sacred-Creativity-e20hecf", year: 2023 },
+  { title: "Ki Tisa 2023 - Finding Favour", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Ki-Tisa-2023---Finding-Favour-e204nq6", year: 2023 },
+  { title: "Tetsave 2023 - Remember it Well", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Tetsave-2023---Remember-it-Well-e1vp2nh", year: 2023 },
+  { title: "Teruma 2023 - Torah Must Move!", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Teruma-2023---Torah-Must-Move-e1veb8m", year: 2023 },
+  { title: "Mishpatim 2023 - The Sacred Standard", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Mishpatim-2023---The-Sacred-Standard-e1v36tp", year: 2023 },
+  { title: "Yitro 2023 - Torah is not for Angels!", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Yitro-2023---Torah-is-not-for-Angels-e1unrhj", year: 2023 },
+  { title: "Beshalah 2023 - Secure Attachment", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Beshalah-2023---Secure-Attachment-e1ucife", year: 2023 },
+  { title: "Bo 2023 - Say What You Mean", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Bo-2023---Say-What-You-Mean-e1u27kc", year: 2023 },
+  { title: "Va'era 2023 - Be the Change", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Vaera-2023---Be-the-Change-e1tntv2", year: 2023 },
+  { title: "Shemot 2023 - Latitude Without a Net", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Shemot-2023---Latitude-Without-a-Net-e1tdhkf", year: 2023 },
+  { title: "Vayigash 2022 - How to Be Jewish", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Vayigash-2022---How-to-Be-Jewish-e1ssat9", year: 2022 },
+  { title: "Mikets 2022 - Spy Games", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Mikets-2022---Spy-Games-e1sk3v0", year: 2022 },
+  { title: "Vayesheb 2022 - Integrity for the Win", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Vayesheb-2022---Integrity-for-the-Win-e1sa632", year: 2022 },
+  { title: "Vayishlah 2022 - Israel is Our Name", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Vayishlah-2022---Israel-is-Our-Name-e1rvpp8", year: 2022 },
+  { title: "Vayetse 2022 - Kiss the Sky", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Vayetse-2022---Kiss-the-Sky-e1rk4df", year: 2022 },
+  { title: "Toledot 2022 Esav's Legacy", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Toledot-2022-Esavs-Legacy-e1r90ot", year: 2022 },
+  { title: "Haye Sarah 2022 - If Everything is Special...", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Haye-Sarah-2022---If-Everything-is-Special-e1queq7", year: 2022 },
+  { title: "Vayera 2022 - A Difficult Truth", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Vayera-2022---A-Difficult-Truth-e1qimf1", year: 2022 },
+  { title: "Lekh Lekha 2022 - Freedom Before Covenant", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Lekh-Lekha-2022---Freedom-Before-Covenant-e1q7uhq", year: 2022 },
+  { title: "Noah 2022 - God Binds Himself for the World", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Noah-2022---God-Binds-Himself-for-the-World-e1pssbb", year: 2022 },
+  { title: "Bereshit 2022 - Create Yourself!", url: "https://podcasters.spotify.com/pod/show/joseph-dweck/episodes/Bereshit-2022---Create-Yourself-e1psm3j", year: 2022 },
+];
+
+// Normalise a string for fuzzy parasha matching
+function normP(s: string): string {
+  return s
+    .toLowerCase()
+    // strip years and common suffixes
+    .replace(/\b(20\d\d)\b/g, '')
+    .replace(/shabbat hagadol/gi, '')
+    // spelling variants → canonical
+    .replace(/\bvaera\b|\bva'era\b|\bva'era\b/g, 'vaera')
+    .replace(/\bvayigash\b|\bvayiggash\b/g, 'vayiggash')
+    .replace(/\bvayesheb\b|\bvayeshev\b/g, 'vayesheb')
+    .replace(/\bmikets\b|\bmikkets\b/g, 'mikkets')
+    .replace(/\bvayishlah\b|\bvayishlach\b/g, 'vayishlah')
+    .replace(/\bvayetse\b|\bvayetzei\b/g, 'vayetse')
+    .replace(/\btoledot\b|\btoldot\b/g, 'toledot')
+    .replace(/\bhaye sarah\b|\bchayei sarah\b/g, 'haye sarah')
+    .replace(/\bvayera\b|\bvayeira\b/g, 'vayera')
+    .replace(/\blekh lekha\b|\blech lecha\b/g, 'lekh lekha')
+    .replace(/\bbereshit\b|\bbereishit\b/g, 'bereshit')
+    .replace(/\bnoah\b|\bnoach\b/g, 'noah')
+    .replace(/\bvayhee\b|\bvayhi\b|\bvayehi\b/g, 'vayhee')
+    .replace(/\bshemot\b|\bshemoth\b/g, 'shemot')
+    .replace(/\bbeshalah\b|\bbeshallach\b/g, 'beshalah')
+    .replace(/\byitro\b|\bjethro\b/g, 'yitro')
+    .replace(/\bmishpatim\b/g, 'mishpatim')
+    .replace(/\bteruma\b|\bterumah\b/g, 'terumah')
+    .replace(/\btetsave\b|\btetsaveh\b|\btesave\b|\btezave\b/g, 'tetsaveh')
+    .replace(/\bki tisa\b|\bki tissa\b/g, 'ki tissa')
+    .replace(/\bvayakhel[-\s]pekude\b|\bvayakhel pekude\b/g, 'vayakhel-pekude')
+    .replace(/\bvayikra\b/g, 'vayikra')
+    .replace(/\btsav\b|\btzav\b/g, 'tsav')
+    .replace(/\bshemini\b/g, 'shemini')
+    .replace(/\btazria[-\s]metsora\b|\btazria metsora\b|\btazria-metzora\b/g, 'tazria-metsora')
+    .replace(/\bahare[-\s]mot[-\s]kedoshim\b|\bahare[-\s]kedoshim\b|\bacharei kedoshim\b/g, 'ahare mot-kedoshim')
+    .replace(/[^a-z\s-]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// Build map: canonical name → episodes sorted newest first
+const spotifyMap = new Map<string, SpotifyEp[]>();
+
+// Exclude nutshells/clips — only full shiurim
+const NUTSHELL_RE = /nutshell|clip\s*#?\d*/i;
+
+for (const ep of rssItems) {
+  if (NUTSHELL_RE.test(ep.title)) continue;
+  const norm = normP(ep.title);
+  // Try to match against each canonical parasha name
+  for (const book of books) {
+    for (const p of book.portions) {
+      const canon = normP(p.name);
+      if (norm.includes(canon)) {
+        const existing = spotifyMap.get(p.name) ?? [];
+        existing.push(ep);
+        spotifyMap.set(p.name, existing);
+        break;
+      }
+    }
+  }
+}
+// Sort each list newest→oldest
+for (const [k, v] of spotifyMap) {
+  spotifyMap.set(k, v.sort((a, b) => b.year - a.year));
+}
+
 const langColors: Record<string, string> = {
   "English": "var(--dark)",
   "Hebrew": "#7a5c1e",
@@ -217,7 +338,10 @@ function ytThumb(url: string) {
           <div class="parasha-grid">
             {book.portions.map(p => {
               const thumb = p.shiurUrl ? ytThumb(p.shiurUrl) : null;
-              const hasContent = p.shiurUrl || (p.pdfs && p.pdfs.length > 0);
+              const episodes = spotifyMap.get(p.name) ?? [];
+              const latestEp = episodes[0];
+              const olderEps = episodes.slice(1);
+              const hasContent = p.shiurUrl || (p.pdfs && p.pdfs.length > 0) || episodes.length > 0;
               return (
                 <div class={`p-card ${hasContent ? 'p-card--active' : 'p-card--plain'}`}>
                   {p.shiurUrl && thumb ? (
@@ -243,6 +367,23 @@ function ytThumb(url: string) {
                         {p.clips.map(clip => (
                           <a href={clip.url} target="_blank" rel="noopener" class="p-clip-link">✂ {clip.title}</a>
                         ))}
+                      </div>
+                    )}
+                    {latestEp && (
+                      <div class="p-spotify">
+                        <div class="p-spotify-row">
+                          <a href={latestEp.url} target="_blank" rel="noopener" class="p-spotify-btn">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                            Listen {latestEp.year}
+                          </a>
+                        </div>
+                        {olderEps.length > 0 && (
+                          <div class="p-older-list">
+                            {olderEps.map(ep => (
+                              <a href={ep.url} target="_blank" rel="noopener" class="p-older-link">{ep.year}</a>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     )}
                     {p.pdfs && p.pdfs.length > 0 && (
@@ -400,6 +541,38 @@ function ytThumb(url: string) {
     text-overflow: ellipsis;
   }
   .p-clip-link:hover { color: var(--gold); }
+
+  .p-spotify { display: flex; flex-direction: column; align-items: flex-start; gap: 0.3rem; margin-top: 0.1rem; }
+  .p-spotify-row { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+  .p-spotify-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: var(--font-serif);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.55rem;
+    background: transparent;
+    border: 1px solid #1db954;
+    color: #1db954;
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+  }
+  .p-spotify-btn:hover { background: #1db954; color: #fff; }
+
+  .p-older-list { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+  .p-older-link {
+    font-size: 0.65rem;
+    font-family: var(--font-serif);
+    border: 1px solid #1db954;
+    color: #1db954;
+    padding: 0.1rem 0.4rem;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    white-space: nowrap;
+  }
+  .p-older-link:hover { opacity: 1; }
 
   .lang-btns { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: auto; padding-top: 0.25rem; }
   .lang-btn {

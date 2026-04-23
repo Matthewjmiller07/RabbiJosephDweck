@@ -403,21 +403,55 @@ const { title, description = "Welcome to the official website of Rabbi Joseph Dw
   .photo-grid img:hover { opacity: 0.9; }
 
   @media (max-width: 768px) {
-    .header-inner { flex-wrap: wrap; height: auto; padding: 1rem 1.5rem; }
-    .nav-toggle { display: flex; order: 2; margin-left: auto; }
-    .social-links { order: 3; width: 100%; justify-content: center; padding-bottom: 0.5rem; display: none; }
+    .header-inner {
+      flex-wrap: nowrap;
+      height: 64px;
+      padding: 0 1.25rem;
+      align-items: center;
+    }
+    .logo { height: 46px; }
+    .nav-toggle { display: flex; margin-left: auto; flex-shrink: 0; }
+    .social-links { display: none; }
     .main-nav {
-      order: 4;
-      width: 100%;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      border-top: 1px solid var(--cream-dark);
+      border-bottom: 3px solid var(--gold);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.35s ease;
+      z-index: 99;
+      flex: none;
     }
-    .main-nav.open { max-height: 800px; }
+    .main-nav.open { max-height: 480px; }
     .main-nav ul { flex-direction: column; gap: 0; }
-    .main-nav > ul > li > a { display: block; padding: 0.75rem 0; border-bottom: 1px solid var(--cream-dark); font-size: 0.9rem; }
-    .dropdown { position: static; box-shadow: none; border: none; border-top: none; background: var(--cream); opacity: 1; visibility: visible; transform: none; display: none; padding-left: 1rem; }
-    .has-dropdown.active .dropdown { display: flex; }
+    .main-nav > ul > li > a {
+      display: block;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--cream-dark);
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+    }
+    .dropdown {
+      position: static;
+      box-shadow: none;
+      border: none;
+      border-top: none;
+      background: var(--cream);
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      display: none;
+      min-width: unset;
+      width: 100%;
+    }
+    .dropdown li { display: block; }
+    .dropdown li a { padding: 0.75rem 1.5rem 0.75rem 2.5rem; font-size: 0.82rem; }
+    .has-dropdown.active .dropdown { display: block; }
     .has-dropdown > a::after { content: ' ▾'; }
   }
 </style>
