@@ -274,6 +274,14 @@ function ytThumb(url: string) {
     <div class="gold-rule"></div>
   </section>
 
+  <!-- APP CALLOUT -->
+  <div class="app-banner">
+    <div class="container">
+      <span class="app-banner-text">Also available on the Rabbi Dweck App</span>
+      <a href="https://RabbiJosephDweck.com/app" target="_blank" rel="noopener" class="app-banner-btn">Get the App →</a>
+    </div>
+  </div>
+
   <!-- SPOTIFY -->
   <section class="section" style="background:var(--cream);">
     <div class="container">
@@ -301,13 +309,13 @@ function ytThumb(url: string) {
           <h3>Parasha Lectures</h3>
           <div class="yt-embed-wrap">
             <iframe
-              src="https://www.youtube.com/embed/NW_QEsmx3j0?list=PL2-vi4QcKgTSy_iM9Pm3mQZtAnXV6ePNn"
+              src="https://www.youtube.com/embed/imIDe_9JQaE?list=PL2-vi4QcKgTSy_iM9Pm3mQZtAnXV6ePNn"
               title="Parasha Lectures" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen loading="lazy"
             ></iframe>
           </div>
-          <a href="https://www.youtube.com/watch?v=NW_QEsmx3j0&list=PL2-vi4QcKgTSy_iM9Pm3mQZtAnXV6ePNn" target="_blank" rel="noopener" class="btn" style="margin-top:1rem;">Full Playlist →</a>
+          <a href="https://www.youtube.com/watch?v=imIDe_9JQaE&list=PL2-vi4QcKgTSy_iM9Pm3mQZtAnXV6ePNn" target="_blank" rel="noopener" class="btn" style="margin-top:1rem;">Full Playlist →</a>
         </div>
 
         <div class="yt-block">
@@ -415,6 +423,37 @@ function ytThumb(url: string) {
 
 <style>
   .container { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* App banner */
+  .app-banner {
+    background: var(--dark);
+    padding: 0.75rem 1.5rem;
+  }
+  .app-banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+  .app-banner-text {
+    font-family: var(--font-serif);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    color: var(--cream);
+  }
+  .app-banner-btn {
+    font-family: var(--font-serif);
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    border: 1px solid var(--gold);
+    padding: 0.3rem 1rem;
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+  }
+  .app-banner-btn:hover { background: var(--gold); color: var(--white); }
 
   /* Spotify */
   .spotify-wrap { max-width: 700px; border-radius: 12px; overflow: hidden; }
