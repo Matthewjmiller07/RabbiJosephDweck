@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Robert Alter English Bible Readings</title>
+    <link>https://rabbijosephdweck.netlify.app</link>
+    <description>English readings from Robert Alter's translation of the Hebrew Bible, read by Rabbi Joseph Dweck. Covers the weekly Torah portions (parashiot) from Genesis through Deuteronomy.</description>
+    <language>en-us</language>
+    <copyright>Rabbi Joseph Dweck</copyright>
+    <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    <itunes:summary>English readings from Robert Alter's celebrated translation of the Hebrew Bible, covering the weekly Torah portions (parashiot).</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Rabbi Joseph Dweck</itunes:name>
+      <itunes:email>matthewjmiller07@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://rabbijosephdweck.netlify.app/favicon.png"/>
+    <itunes:category text="Religion &amp; Spirituality">
+      <itunes:category text="Judaism"/>
+    </itunes:category>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+
+    <item>
+      <title>Bereshit</title>
+      <description>Robert Alter's English reading of Bereshit (Genesis), chapters 1–7</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/01Alter.Bereshit.1-7.mp3" length="34686732" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/01Alter.Bereshit.1-7.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:41:00 +0000</pubDate>
+      <itunes:title>Bereshit</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Noah</title>
+      <description>Robert Alter's English reading of Noah (Genesis)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/02Alter.Noah.mp3" length="6013575" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/02Alter.Noah.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:41:00 +0000</pubDate>
+      <itunes:title>Noah</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Vayera</title>
+      <description>Robert Alter's English reading of Vayera (Genesis)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/04Alter.Vayera.mp3" length="6656695" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/04Alter.Vayera.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:42:00 +0000</pubDate>
+      <itunes:title>Vayera</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Haye Sarah</title>
+      <description>Robert Alter's English reading of Haye Sarah (Genesis)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/05Alter.Haye%20Sarah.mp3" length="4785387" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/05Alter.Haye%20Sarah.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:42:00 +0000</pubDate>
+      <itunes:title>Haye Sarah</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Toledot</title>
+      <description>Robert Alter's English reading of Toledot (Genesis)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/06Alter.Toledot.mp3" length="4543823" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/06Alter.Toledot.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:42:00 +0000</pubDate>
+      <itunes:title>Toledot</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Vayetse</title>
+      <description>Robert Alter's English reading of Vayetse (Genesis)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/07Alter.Vayetse.mp3" length="6414374" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/07Alter.Vayetse.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:42:00 +0000</pubDate>
+      <itunes:title>Vayetse</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Vayishlah</title>
+      <description>Robert Alter's English reading of Vayishlah (Genesis)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/08Alter.Vayishlah.mp3" length="6659229" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/08Alter.Vayishlah.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:43:00 +0000</pubDate>
+      <itunes:title>Vayishlah</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Vayesheb</title>
+      <description>Robert Alter's English reading of Vayesheb (Genesis)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/09Alter.Vayesheb.mp3" length="4880052" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/09Alter.Vayesheb.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:43:00 +0000</pubDate>
+      <itunes:title>Vayesheb</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Mikets</title>
+      <description>Robert Alter's English reading of Mikets (Genesis)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/10Alter.Mikets.mp3" length="6189833" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/10Alter.Mikets.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:44:00 +0000</pubDate>
+      <itunes:title>Mikets</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Vayigash</title>
+      <description>Robert Alter's English reading of Vayigash (Genesis)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/11Alter.Vayigash.mp3" length="5134286" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/11Alter.Vayigash.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:44:00 +0000</pubDate>
+      <itunes:title>Vayigash</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Vayhi</title>
+      <description>Robert Alter's English reading of Vayhi (Genesis)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/12Alter.Vayhi.mp3" length="3903965" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/12Alter.Vayhi.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:46:00 +0000</pubDate>
+      <itunes:title>Vayhi</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Shemot</title>
+      <description>Robert Alter's English reading of Shemot (Exodus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/13Alter.Shemot.mp3" length="5568293" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/13Alter.Shemot.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:46:00 +0000</pubDate>
+      <itunes:title>Shemot</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Vaera</title>
+      <description>Robert Alter's English reading of Vaera (Exodus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/14Alter.Vaera.mp3" length="5459741" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/14Alter.Vaera.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:41:00 +0000</pubDate>
+      <itunes:title>Vaera</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Bo</title>
+      <description>Robert Alter's English reading of Bo (Exodus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/15Alter.Bo.mp3" length="5075818" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/15Alter.Bo.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:48:00 +0000</pubDate>
+      <itunes:title>Bo</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Beshalah</title>
+      <description>Robert Alter's English reading of Beshalah (Exodus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/16Alter.Beshalah.mp3" length="5352289" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/16Alter.Beshalah.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:48:00 +0000</pubDate>
+      <itunes:title>Beshalah</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Yitro</title>
+      <description>Robert Alter's English reading of Yitro (Exodus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/17Alter.Yitro.mp3" length="3341290" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/17Alter.Yitro.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:51:00 +0000</pubDate>
+      <itunes:title>Yitro</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Mishpatim</title>
+      <description>Robert Alter's English reading of Mishpatim (Exodus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/18Alter.Mishpatim.mp3" length="4548719" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/18Alter.Mishpatim.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:48:00 +0000</pubDate>
+      <itunes:title>Mishpatim</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Teruma</title>
+      <description>Robert Alter's English reading of Teruma (Exodus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/19Alter.Teruma.mp3" length="3642903" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/19Alter.Teruma.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:51:00 +0000</pubDate>
+      <itunes:title>Teruma</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Tetsave</title>
+      <description>Robert Alter's English reading of Tetsave (Exodus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/20Alter.Tetsave.mp3" length="4318233" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/20Alter.Tetsave.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:49:00 +0000</pubDate>
+      <itunes:title>Tetsave</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Ki Tisa</title>
+      <description>Robert Alter's English reading of Ki Tisa (Exodus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/21Alter.Ki%20Tisa.mp3" length="6364425" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/21Alter.Ki%20Tisa.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:49:00 +0000</pubDate>
+      <itunes:title>Ki Tisa</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Vayakhel-Pekude</title>
+      <description>Robert Alter's English reading of Vayakhel-Pekude (Exodus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/22Alter.Vayakhel-Pekude.mp3" length="7922425" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/22Alter.Vayakhel-Pekude.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:50:00 +0000</pubDate>
+      <itunes:title>Vayakhel-Pekude</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Vayikra</title>
+      <description>Robert Alter's English reading of Vayikra (Leviticus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/23Alter.Vayikra.mp3" length="5493158" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/23Alter.Vayikra.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:51:00 +0000</pubDate>
+      <itunes:title>Vayikra</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Shemini</title>
+      <description>Robert Alter's English reading of Shemini (Leviticus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/25Alter.Shemini.mp3" length="3718115" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/25Alter.Shemini.mp3</guid>
+      <pubDate>Wed, 14 Apr 2021 07:52:00 +0000</pubDate>
+      <itunes:title>Shemini</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Tazria</title>
+      <description>Robert Alter's English reading of Tazria (Leviticus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/26Alter.Tazria.m4a" length="5467061" type="audio/mp4"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/26Alter.Tazria.m4a</guid>
+      <pubDate>Thu, 27 May 2021 04:48:00 +0000</pubDate>
+      <itunes:title>Tazria</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Metsora</title>
+      <description>Robert Alter's English reading of Metsora (Leviticus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/27Alter.Metsora.m4a" length="21274982" type="audio/mp4"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/27Alter.Metsora.m4a</guid>
+      <pubDate>Thu, 27 May 2021 04:48:00 +0000</pubDate>
+      <itunes:title>Metsora</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Ahare Mot</title>
+      <description>Robert Alter's English reading of Ahare Mot (Leviticus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/28Alter.AhareMot.m4a" length="6042704" type="audio/mp4"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/28Alter.AhareMot.m4a</guid>
+      <pubDate>Thu, 27 May 2021 04:48:00 +0000</pubDate>
+      <itunes:title>Ahare Mot</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Kedoshim</title>
+      <description>Robert Alter's English reading of Kedoshim (Leviticus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/29Alter.Kedoshim.m4a" length="4754829" type="audio/mp4"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/29Alter.Kedoshim.m4a</guid>
+      <pubDate>Thu, 27 May 2021 04:48:00 +0000</pubDate>
+      <itunes:title>Kedoshim</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Emor</title>
+      <description>Robert Alter's English reading of Emor (Leviticus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/30Alter.Emor.mp3" length="5731640" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/30Alter.Emor.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:48:00 +0000</pubDate>
+      <itunes:title>Emor</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Behar-Behukotai</title>
+      <description>Robert Alter's English reading of Behar-Behukotai (Leviticus)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/31BB.Alter.mp3" length="6618636" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/31BB.Alter.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:48:00 +0000</pubDate>
+      <itunes:title>Behar-Behukotai</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Bemidbar</title>
+      <description>Robert Alter's English reading of Bemidbar (Numbers), chapters 1–7</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/32Bemidbar.Alter.1-7.m4a" length="10546529" type="audio/mp4"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/32Bemidbar.Alter.1-7.m4a</guid>
+      <pubDate>Thu, 27 May 2021 04:49:00 +0000</pubDate>
+      <itunes:title>Bemidbar</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Naso</title>
+      <description>Robert Alter's English reading of Naso (Numbers)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/33Naso.Alter.m4a" length="12031542" type="audio/mp4"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/33Naso.Alter.m4a</guid>
+      <pubDate>Thu, 27 May 2021 04:49:00 +0000</pubDate>
+      <itunes:title>Naso</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Behaalotekha</title>
+      <description>Robert Alter's English reading of Behaalotekha (Numbers)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/34Bhltkha.m4a" length="9638100" type="audio/mp4"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/34Bhltkha.m4a</guid>
+      <pubDate>Thu, 27 May 2021 04:49:00 +0000</pubDate>
+      <itunes:title>Behaalotekha</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Shelah Lekha</title>
+      <description>Robert Alter's English reading of Shelah Lekha (Numbers), chapters 1–7</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/35Shelah.Alter.1-7.mp3" length="26035395" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/35Shelah.Alter.1-7.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:50:00 +0000</pubDate>
+      <itunes:title>Shelah Lekha</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Korah</title>
+      <description>Robert Alter's English reading of Korah (Numbers), chapters 1–7</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/36Korah.Alter.1-7.mp3" length="25500720" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/36Korah.Alter.1-7.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:50:00 +0000</pubDate>
+      <itunes:title>Korah</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Hukkat-Balak</title>
+      <description>Robert Alter's English reading of Hukkat-Balak (Numbers), chapters 1–7</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/37H-B.Alter.1-7.mp3" length="48961292" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/37H-B.Alter.1-7.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:50:00 +0000</pubDate>
+      <itunes:title>Hukkat-Balak</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Pinehas</title>
+      <description>Robert Alter's English reading of Pinehas (Numbers), chapters 1–7</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/38Pinehas.Alter.1-7.mp3" length="36951235" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/38Pinehas.Alter.1-7.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:50:00 +0000</pubDate>
+      <itunes:title>Pinehas</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Mattot-Mase</title>
+      <description>Robert Alter's English reading of Mattot-Mase (Numbers), chapters 1–7</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/39MM.Alter.1-7.mp3" length="49998457" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/39MM.Alter.1-7.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:51:00 +0000</pubDate>
+      <itunes:title>Mattot-Mase</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Debarim</title>
+      <description>Robert Alter's English reading of Debarim (Deuteronomy), chapters 1–7</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/40DBRM.Alter.1-7.mp3" length="27119372" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/40DBRM.Alter.1-7.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:51:00 +0000</pubDate>
+      <itunes:title>Debarim</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Vaethanan</title>
+      <description>Robert Alter's English reading of Vaethanan (Deuteronomy), chapters 1–7</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/41Alter.VTHNN.1-7.mp3" length="6151040" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/41Alter.VTHNN.1-7.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:51:00 +0000</pubDate>
+      <itunes:title>Vaethanan</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Ekeb</title>
+      <description>Robert Alter's English reading of Ekeb (Deuteronomy), chapters 1–7</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/42Alter.Ekeb.1-7.mp3" length="30039235" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/42Alter.Ekeb.1-7.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:51:00 +0000</pubDate>
+      <itunes:title>Ekeb</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Re'eh</title>
+      <description>Robert Alter's English reading of Re'eh (Deuteronomy), chapters 1–7</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/43Alter.Re%27eh.1-7.mp3" length="32171349" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/43Alter.Re%27eh.1-7.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:52:00 +0000</pubDate>
+      <itunes:title>Re'eh</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Shofetim</title>
+      <description>Robert Alter's English reading of Shofetim (Deuteronomy), chapters 1–7</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/44Alter.Shofetim.1-7.mp3" length="24748080" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/44Alter.Shofetim.1-7.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:52:00 +0000</pubDate>
+      <itunes:title>Shofetim</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Ki Tetse</title>
+      <description>Robert Alter's English reading of Ki Tetse (Deuteronomy), chapters 1–7</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/45Alter.Tetse.1-7.mp3" length="27084263" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/45Alter.Tetse.1-7.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:52:00 +0000</pubDate>
+      <itunes:title>Ki Tetse</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Ki Tabo</title>
+      <description>Robert Alter's English reading of Ki Tabo (Deuteronomy), chapters 1–7</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/46Ki%20Tabo.Alter.1-7.mp3" length="31578160" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/46Ki%20Tabo.Alter.1-7.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:52:00 +0000</pubDate>
+      <itunes:title>Ki Tabo</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Nitsavim-Vayelekh</title>
+      <description>Robert Alter's English reading of Nitsavim-Vayelekh (Deuteronomy)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/47Alter.Nitsavim-Vayelekh.mp3" length="19320880" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/47Alter.Nitsavim-Vayelekh.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:53:00 +0000</pubDate>
+      <itunes:title>Nitsavim-Vayelekh</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Ha'azinu</title>
+      <description>Robert Alter's English reading of Ha'azinu (Deuteronomy)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/Alter.Ha%27azinu.mp3" length="2152181" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/Alter.Ha%27azinu.mp3</guid>
+      <pubDate>Mon, 03 Oct 2022 05:26:00 +0000</pubDate>
+      <itunes:title>Ha'azinu</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>Vezot Haberakhah</title>
+      <description>Robert Alter's English reading of Vezot Haberakhah (Deuteronomy)</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/48Alter.Berakha.mp3" length="2090583" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/48Alter.Berakha.mp3</guid>
+      <pubDate>Thu, 27 May 2021 04:53:00 +0000</pubDate>
+      <itunes:title>Vezot Haberakhah</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+    <item>
+      <title>English Reading for Shavuot</title>
+      <description>Robert Alter's English reading for Shavuot</description>
+      <enclosure url="https://rabbijosephdweck.netlify.app/audio/English%20Reading%20for%20Shabuot%20I.RJD.mp3" length="2412080" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://rabbijosephdweck.netlify.app/audio/English%20Reading%20for%20Shabuot%20I.RJD.mp3</guid>
+      <pubDate>Thu, 27 May 2020 07:22:00 +0000</pubDate>
+      <itunes:title>English Reading for Shavuot</itunes:title>
+      <itunes:author>Rabbi Joseph Dweck</itunes:author>
+    </item>
+  </channel>
+</rss>
