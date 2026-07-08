@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thought for the Day — Rabbi Joseph Dweck</title>
+<link rel="icon" href="assets/seal.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Frank+Ruhl+Libre:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FDFCFA;
+    --ink: #23201C;
+    --crimson: #8B0A1A;
+    --crimson-soft: #A64752;
+    --meta: #8A8072;
+    --hairline: #E7E1D8;
+    --mint: #E3F1EA;
+    --wash: #F7F4EF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  a { color: var(--crimson); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  :focus-visible { outline: 2px solid var(--crimson); outline-offset: 3px; border-radius: 2px; }
+
+  .label {
+    font-family: "Marcellus", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--meta);
+  }
+
+  /* ── Masthead ─────────────────────────────── */
+  header {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 2.2rem 1.5rem 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    border-bottom: 1px solid var(--hairline);
+  }
+  header img.seal { width: 74px; height: 74px; flex: none; }
+  header .masthead-title {
+    font-family: "Marcellus", serif;
+    font-size: clamp(1.35rem, 3.4vw, 1.9rem);
+    letter-spacing: 0.08em;
+    line-height: 1.15;
+  }
+  header .masthead-sub {
+    font-family: "Marcellus", serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--crimson);
+    margin-top: 0.3rem;
+  }
+  header .site-link {
+    margin-left: auto;
+    text-align: right;
+    flex: none;
+  }
+  header .site-link a {
+    font-family: "Marcellus", serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  @media (max-width: 640px) {
+    header { flex-wrap: wrap; }
+    header .site-link { margin-left: 88px; margin-top: -0.6rem; text-align: left; }
+  }
+
+  /* ── The thought (reading page) ───────────── */
+  main { max-width: 700px; margin: 0 auto; padding: 0 1.5rem; }
+  article { padding: 3rem 0 2.6rem; animation: settle 0.5s ease both; }
+  @keyframes settle { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+  .thought-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .thought-meta .sep { color: var(--hairline); }
+  .thought-meta .num { color: var(--crimson); }
+
+  h1.thought-title {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-size: clamp(1.7rem, 5vw, 2.5rem);
+    line-height: 1.2;
+    text-align: center;
+    margin: 1.1rem auto 0;
+    max-width: 15em;
+  }
+  .thought-rule {
+    width: 52px;
+    height: 1px;
+    background: var(--crimson);
+    margin: 1.6rem auto;
+    border: 0;
+  }
+
+  /* ── Audio ribbon ─────────────────────────── */
+  .player {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    max-width: 26rem;
+    margin: 0 auto 2.4rem;
+  }
+  .play-btn {
+    flex: none;
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    border: 1px solid var(--crimson);
+    background: transparent;
+    color: var(--crimson);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .play-btn:hover { background: var(--crimson); color: var(--paper); }
+  .play-btn svg { width: 15px; height: 15px; display: block; }
+  .track {
+    flex: 1;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .track .rail { position: relative; width: 100%; height: 2px; background: var(--hairline); }
+  .track .fill { position: absolute; inset: 0 auto 0 0; width: 0%; background: var(--crimson); }
+  .player time {
+    font-family: "Marcellus", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--meta);
+    flex: none;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ── Transcript ───────────────────────────── */
+  .transcript { font-size: 1.28rem; line-height: 1.75; }
+  .transcript p { margin-bottom: 1.1em; }
+  .transcript p:first-of-type::first-letter {
+    font-family: "Marcellus", serif;
+    font-size: 3.15em;
+    line-height: 0.82;
+    float: left;
+    padding: 0.07em 0.12em 0 0;
+    color: var(--crimson);
+  }
+  .transcript .sent[data-t] { cursor: pointer; transition: background 0.3s ease; border-radius: 3px; }
+  .transcript .sent[data-t]:hover { background: rgba(139, 10, 26, 0.05); }
+  .transcript .sent.current {
+    background: linear-gradient(transparent 68%, rgba(139, 10, 26, 0.13) 68%);
+  }
+  .transcript .he { font-family: "Frank Ruhl Libre", serif; font-size: 0.94em; }
+  .transcript .tl { font-style: italic; }
+  body.mode-he .transcript .tl { display: none; }
+  body.mode-tl .transcript .he { display: none; }
+
+  .hebrew-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.15rem;
+    margin-top: 2.4rem;
+  }
+  .hebrew-toggle .label { margin-right: 0.6rem; }
+  .hebrew-toggle button {
+    font-family: "Marcellus", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    color: var(--meta);
+    padding: 0.28rem 0.75rem;
+    cursor: pointer;
+  }
+  .hebrew-toggle button[aria-pressed="true"] {
+    color: var(--crimson);
+    border-color: var(--crimson);
+  }
+
+  .no-transcript {
+    text-align: center;
+    color: var(--meta);
+    font-style: italic;
+    padding: 1.4rem 0;
+  }
+
+  .blurb {
+    text-align: center;
+    font-style: italic;
+    color: var(--meta);
+    max-width: 30em;
+    margin: 0 auto 2rem;
+  }
+
+  /* ── Contents ─────────────────────────────── */
+  .contents-band { border-top: 1px solid var(--hairline); background: var(--wash); }
+  .contents { max-width: 1020px; margin: 0 auto; padding: 2.8rem 1.5rem 4rem; }
+  .contents-head {
+    display: flex;
+    align-items: baseline;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.6rem;
+  }
+  .contents-head h2 {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .contents-head .count { color: var(--meta); font-style: italic; }
+  .contents-tools {
+    margin-left: auto;
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .search {
+    font-family: "EB Garamond", serif;
+    font-size: 1rem;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--ink);
+    width: 15rem;
+    max-width: 100%;
+  }
+  .search::placeholder { color: var(--meta); font-style: italic; }
+  .filters { display: flex; gap: 0.35rem; }
+  .filters button {
+    font-family: "Marcellus", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.32rem 0.8rem;
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--meta);
+    cursor: pointer;
+  }
+  .filters button[aria-pressed="true"] {
+    border-color: var(--crimson);
+    color: var(--crimson);
+  }
+
+  .month {
+    font-family: "Marcellus", serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--meta);
+    margin: 2rem 0 0.6rem;
+  }
+  .month:first-of-type { margin-top: 0.4rem; }
+
+  .toc { list-style: none; }
+  .toc li { border-bottom: 1px dotted var(--hairline); }
+  .toc a.row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    padding: 0.62rem 0.2rem;
+    color: var(--ink);
+  }
+  .toc a.row:hover { text-decoration: none; background: rgba(139, 10, 26, 0.035); }
+  .toc a.row:hover .toc-title { color: var(--crimson); }
+  .toc .toc-num {
+    font-family: "Marcellus", serif;
+    font-size: 0.78rem;
+    color: var(--crimson-soft);
+    flex: none;
+    width: 2.6rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .toc .toc-title { font-size: 1.12rem; }
+  .toc .leader {
+    flex: 1;
+    min-width: 2rem;
+    border-bottom: 1px dotted var(--hairline);
+    transform: translateY(-0.3em);
+  }
+  .toc .toc-chip {
+    flex: none;
+    font-family: "Marcellus", serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--meta);
+    padding: 0.12rem 0.55rem;
+    border-radius: 999px;
+    background: var(--wash);
+    border: 1px solid var(--hairline);
+  }
+  .toc .toc-chip.pearls { background: var(--mint); }
+  .toc .toc-date {
+    flex: none;
+    font-family: "Marcellus", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: var(--meta);
+    width: 6.2rem;
+    text-align: right;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .toc li.playing .toc-num::before { content: "▸ "; color: var(--crimson); }
+  @media (max-width: 640px) {
+    .toc .toc-chip, .toc .leader { display: none; }
+    .toc a.row { flex-wrap: wrap; }
+    .toc .toc-date { margin-left: auto; }
+  }
+
+  .empty-results {
+    padding: 2.5rem 0;
+    text-align: center;
+    color: var(--meta);
+    font-style: italic;
+  }
+
+  footer {
+    border-top: 1px solid var(--hairline);
+    padding: 2.2rem 1.5rem 3rem;
+    text-align: center;
+    color: var(--meta);
+    font-size: 0.95rem;
+  }
+  footer .verse {
+    font-family: "Frank Ruhl Libre", serif;
+    color: var(--crimson);
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+  }
+</style>
+</head>
+<body class="mode-both">
+
+<header>
+  <img class="seal" src="assets/seal.png" alt="Seal of the Office of Rabbi Dweck">
+  <div>
+    <div class="masthead-title">Thought for the Day</div>
+    <div class="masthead-sub">Rabbi Joseph Dweck</div>
+  </div>
+  <div class="site-link">
+    <a href="https://www.rabbijosephdweck.com" target="_blank" rel="noopener">rabbijosephdweck.com</a>
+  </div>
+</header>
+
+<main>
+  <article id="thought"></article>
+</main>
+
+<div class="contents-band">
+  <section class="contents" aria-label="All thoughts">
+    <div class="contents-head">
+      <h2>Contents</h2>
+      <span class="count" id="count"></span>
+      <div class="contents-tools">
+        <input class="search" id="search" type="search" placeholder="Search the thoughts…" aria-label="Search thoughts">
+        <div class="filters" id="filters" role="group" aria-label="Filter by series"></div>
+      </div>
+    </div>
+    <div id="toc-wrap"></div>
+  </section>
+</div>
+
+<footer>
+  <div class="verse">כִּי עִמְּךָ מְקוֹר חַיִּים בְּאוֹרְךָ נִרְאֶה אוֹר</div>
+  <div>For with You is the fountain of life; in Your light we see light. — Psalms 36:10</div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  const episodes = window.TFTD_DATA || [];
+  const byGuid = new Map(episodes.map(e => [e.guid, e]));
+  const $ = sel => document.querySelector(sel);
+
+  const state = { query: "", series: "all" };
+  const SERIES = [
+    { key: "all", label: "All" },
+    { key: "Thought For the Day", label: "Thoughts" },
+    { key: "Pearls From Pirke Abot", label: "Pirke Abot" },
+  ];
+
+  const audio = new Audio();
+  let playingGuid = null;
+
+  /* ── helpers ── */
+  const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const mmss = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+  const prettyDate = iso => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+  const monthOf = iso => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { month: "long", year: "numeric" });
+
+  // Transcript fragment -> HTML. Input may contain <i>transliteration</i>
+  // after Hebrew words; everything else is escaped. Hebrew runs get a .he span.
+  function fragmentHTML(text) {
+    return esc(text)
+      .replace(/&lt;i&gt;([\s\S]*?)&lt;\/i&gt;/g, '<span class="tl">$1</span>')
+      .replace(/([֐-׿][֐-׿\s'’"״׳,.\-]*[֐-׿]|[֐-׿]+)/g,
+               '<span class="he" dir="rtl">$1</span>');
+  }
+
+  // Sentences ([startTime, text]) -> paragraphs of sentence spans,
+  // roughly three sentences per paragraph.
+  function transcriptHTML(ep) {
+    if (ep.sentences && ep.sentences.length) {
+      const paras = [];
+      let cur = [];
+      for (const [t, s] of ep.sentences) {
+        if (cur.length >= 3) { paras.push(cur); cur = []; }
+        cur.push([t, s]);
+      }
+      if (cur.length) paras.push(cur);
+      if (paras.length > 1 && paras[paras.length - 1].length === 1) {
+        paras[paras.length - 2].push(...paras.pop());
+      }
+      return paras.map(p =>
+        `<p>${p.map(([t, s]) =>
+          `<span class="sent"${t !== null ? ` data-t="${t}"` : ""}>${fragmentHTML(s)}</span>`
+        ).join(" ")}</p>`).join("");
+    }
+    const paras = ep.transcript.split(/\n\s*\n|\n/).map(p => p.trim()).filter(Boolean);
+    return paras.map(p => `<p>${fragmentHTML(p)}</p>`).join("");
+  }
+
+  const playIcon = '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3 1.5v13l11-6.5z"/></svg>';
+  const pauseIcon = '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3 1.5h3.6v13H3zM9.4 1.5H13v13H9.4z"/></svg>';
+
+  /* ── reading page ── */
+  function renderThought(guid) {
+    const ep = byGuid.get(guid) || episodes[0];
+    if (!ep) return;
+    playingGuid = null;
+    audio.pause();
+    audio.src = ep.audio_local || ep.audio_url;
+    audio.onerror = () => {
+      if (ep.audio_local && audio.src.includes(ep.audio_local)) {
+        audio.src = ep.audio_url; // fall back to the feed's remote copy
+      }
+    };
+
+    const numLine = [
+      ep.number ? `<span class="num">№ ${ep.number}</span>` : "",
+      ep.series ? `<span class="sep">·</span><span>${esc(ep.series)}</span>` : "",
+      ep.date ? `<span class="sep">·</span><span>${prettyDate(ep.date)}</span>` : "",
+    ].join("");
+
+    const body = ep.transcript
+      ? `<div class="transcript">${transcriptHTML(ep)}</div>
+         <div class="hebrew-toggle" role="group" aria-label="Hebrew word display">
+           <span class="label">Hebrew words</span>
+           <button data-mode="mode-he">עברית</button>
+           <button data-mode="mode-both">Both</button>
+           <button data-mode="mode-tl">English</button>
+         </div>`
+      : `${ep.blurb ? `<p class="blurb">${esc(ep.blurb)}</p>` : ""}
+         <p class="no-transcript">Transcript on its way — press play to listen.</p>`;
+
+    $("#thought").innerHTML = `
+      <div class="thought-meta label">${numLine}</div>
+      <h1 class="thought-title">${esc(ep.short_title)}</h1>
+      <hr class="thought-rule">
+      <div class="player">
+        <button class="play-btn" id="play" aria-label="Play">${playIcon}</button>
+        <div class="track" id="track" role="slider" aria-label="Seek" tabindex="0"
+             aria-valuemin="0" aria-valuemax="${ep.duration}" aria-valuenow="0">
+          <div class="rail"><div class="fill" id="fill"></div></div>
+        </div>
+        <time id="time">0:00 / ${mmss(ep.duration || 0)}</time>
+      </div>
+      ${body}
+    `;
+    $("#thought").style.animation = "none";
+    void $("#thought").offsetWidth;
+    $("#thought").style.animation = "";
+
+    wirePlayer(ep);
+    wireToggle();
+    markPlayingRow();
+    document.title = `${ep.short_title} — Thought for the Day`;
+  }
+
+  function wirePlayer(ep) {
+    const btn = $("#play"), fill = $("#fill"), time = $("#time"), track = $("#track");
+    btn.addEventListener("click", () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+    audio.onplay = () => { btn.innerHTML = pauseIcon; btn.setAttribute("aria-label", "Pause"); playingGuid = ep.guid; markPlayingRow(); };
+    audio.onpause = () => {
+      btn.innerHTML = playIcon;
+      btn.setAttribute("aria-label", "Play");
+      sents.forEach(s => s.classList.remove("current"));
+    };
+    audio.onended = () => { playingGuid = null; markPlayingRow(); };
+    const sents = Array.from(document.querySelectorAll(".sent[data-t]"));
+    sents.forEach(s => s.addEventListener("click", () => {
+      audio.currentTime = parseFloat(s.dataset.t);
+      if (audio.paused) audio.play();
+    }));
+    audio.ontimeupdate = () => {
+      const d = audio.duration || ep.duration || 1;
+      fill.style.width = `${(audio.currentTime / d) * 100}%`;
+      time.textContent = `${mmss(audio.currentTime)} / ${mmss(d)}`;
+      track.setAttribute("aria-valuenow", Math.floor(audio.currentTime));
+      if (sents.length && !audio.paused) {
+        let cur = null;
+        for (const s of sents) {
+          if (parseFloat(s.dataset.t) <= audio.currentTime + 0.15) cur = s; else break;
+        }
+        sents.forEach(s => s.classList.toggle("current", s === cur));
+      }
+    };
+    const seek = x => {
+      const r = track.getBoundingClientRect();
+      const d = audio.duration || ep.duration || 0;
+      audio.currentTime = Math.max(0, Math.min(1, (x - r.left) / r.width)) * d;
+    };
+    track.addEventListener("click", e => seek(e.clientX));
+    track.addEventListener("keydown", e => {
+      if (e.key === "ArrowRight") audio.currentTime += 5;
+      if (e.key === "ArrowLeft") audio.currentTime -= 5;
+    });
+  }
+
+  function wireToggle() {
+    document.querySelectorAll(".hebrew-toggle button").forEach(b => {
+      b.setAttribute("aria-pressed", document.body.classList.contains(b.dataset.mode));
+      b.addEventListener("click", () => {
+        document.body.className = b.dataset.mode;
+        localStorage.setItem("tftd-hebrew-mode", b.dataset.mode);
+        wireToggle();
+      });
+    });
+  }
+
+  /* ── contents ── */
+  function visibleEpisodes() {
+    const q = state.query.toLowerCase();
+    return episodes.filter(e => {
+      if (state.series !== "all" && e.series !== state.series) return false;
+      if (!q) return true;
+      return (e.title + " " + (e.blurb || "") + " " + (e.transcript || "")).toLowerCase().includes(q);
+    });
+  }
+
+  function renderTOC() {
+    const eps = visibleEpisodes();
+    $("#count").textContent = state.query || state.series !== "all"
+      ? `${eps.length} of ${episodes.length} thoughts`
+      : `${episodes.length} thoughts`;
+
+    if (!eps.length) {
+      $("#toc-wrap").innerHTML = `<p class="empty-results">Nothing matches — try a different word.</p>`;
+      return;
+    }
+    let html = "", month = "";
+    for (const e of eps) {
+      const m = e.date ? monthOf(e.date) : "Undated";
+      if (m !== month) {
+        if (month) html += "</ul>";
+        html += `<h3 class="month">${m}</h3><ul class="toc">`;
+        month = m;
+      }
+      const chipClass = e.series === "Pearls From Pirke Abot" ? "toc-chip pearls" : "toc-chip";
+      const day = e.date ? new Date(e.date + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : "";
+      html += `<li data-guid="${e.guid}">
+        <a class="row" href="#t=${encodeURIComponent(e.guid)}">
+          <span class="toc-num">${e.number ? "№ " + e.number : "—"}</span>
+          <span class="toc-title">${esc(e.short_title)}</span>
+          <span class="leader" aria-hidden="true"></span>
+          ${e.series ? `<span class="${chipClass}">${e.series === "Pearls From Pirke Abot" ? "Pirke Abot" : "Thought"}</span>` : ""}
+          <span class="toc-date">${day} · ${mmss(e.duration || 0)}</span>
+        </a>
+      </li>`;
+    }
+    html += "</ul>";
+    $("#toc-wrap").innerHTML = html;
+    markPlayingRow();
+  }
+
+  function markPlayingRow() {
+    document.querySelectorAll(".toc li").forEach(li =>
+      li.classList.toggle("playing", li.dataset.guid === playingGuid));
+  }
+
+  function renderFilters() {
+    $("#filters").innerHTML = SERIES.map(s =>
+      `<button data-series="${s.key}" aria-pressed="${state.series === s.key}">${s.label}</button>`).join("");
+    document.querySelectorAll("#filters button").forEach(b =>
+      b.addEventListener("click", () => { state.series = b.dataset.series; renderFilters(); renderTOC(); }));
+  }
+
+  /* ── routing ── */
+  function currentGuid() {
+    const m = location.hash.match(/^#t=(.+)$/);
+    return m ? decodeURIComponent(m[1]) : null;
+  }
+  window.addEventListener("hashchange", () => {
+    renderThought(currentGuid());
+    window.scrollTo({ top: 0, behavior: "instant" });
+  });
+
+  $("#search").addEventListener("input", e => { state.query = e.target.value.trim(); renderTOC(); });
+
+  /* ── init ── */
+  const savedMode = localStorage.getItem("tftd-hebrew-mode");
+  if (savedMode) document.body.className = savedMode;
+  renderFilters();
+  renderTOC();
+  renderThought(currentGuid());
+})();
+</script>
+</body>
+</html>
