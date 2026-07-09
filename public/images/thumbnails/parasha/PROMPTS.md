@@ -6,6 +6,81 @@ punch with the site's existing dignified/gold-navy-cream brand.
 
 All images: 16:9, quality "high".
 
+## Round 2 note (thumb_5–8)
+
+After reviewing the actual live channel (youtube.com/rabbijosephdweck), the recent
+uploads (Pinehas 2026, Balak 2024, Hukat 2025) use a dark, moody, metallic-bevel-text
+style that reads as "too intense and not really on brand" for this site. The channel
+also has an older cream/gold-bordered "The Parasha With Rabbi Dweck" template (seen on
+"Life is Not Fair | Korah 2026") that matches the site's actual dignified identity far
+better. Round 2 refines that cream template directly, using this week's real parasha
+(Matot-Masei) as a live, usable example instead of a generic placeholder.
+
+## parasha_thumb_5_classic_refresh.jpg — "Classic Refresh"
+A refined, higher-fidelity version of the channel's existing cream/gold template.
+
+> YouTube thumbnail, 16:9. Elegant, dignified design on a warm cream/ivory parchment
+> background with a soft golden vignette glow in the corners, framed by a thin
+> double-line gold border. Bottom-left: a photorealistic portrait of the man in the
+> reference image from the chest up, wearing a dark navy suit and burgundy tie, warm
+> gentle smile, soft natural window light from the left, photographed against a plain
+> soft cream backdrop that blends into the background. On the right two-thirds: small
+> tracked-out navy small-caps text reads 'THE PARASHA WITH RABBI DWECK' with a tiny
+> ornate gold flourish divider beneath it; then large elegant bold navy serif headline
+> text, two lines, reading 'THE POWER OF A PROMISE'; beneath that another small
+> ornate gold flourish divider; then smaller navy serif text reading 'MATOT-MASEI
+> 2026'. Calm, refined, editorial, magazine-cover quality, no dark vignette, no
+> metallic bevel text, no clickbait elements.
+
+## parasha_thumb_6_warm_interior.jpg — "Warm Interior"
+Same template with a softly blurred synagogue interior glowing through the cream wash for extra depth.
+
+> YouTube thumbnail, 16:9. Elegant, dignified design in warm cream and gold tones,
+> framed by a thin double-line gold border. Instead of flat parchment, the background
+> subtly reveals a softly blurred, warmly lit historic synagogue interior with golden
+> arches, glowing through a light cream color-wash overlay so it stays soft and calm,
+> not dramatic or dark. Bottom-left: photorealistic portrait of the man in the
+> reference image from the chest up, wearing a dark navy suit and burgundy tie, warm
+> relaxed smile, gentle natural lighting. On the right two-thirds: small tracked-out
+> navy small-caps text reads 'THE PARASHA WITH RABBI DWECK' with a tiny ornate gold
+> flourish beneath; large elegant bold navy serif headline, two lines, reading 'THE
+> POWER OF A PROMISE'; small ornate gold flourish; smaller navy serif subtitle
+> reading 'MATOT-MASEI 2026'. Refined, warm, editorial magazine-cover quality, no
+> heavy dark vignette, no metallic bevel text, no clickbait elements.
+
+## parasha_thumb_7_monogram_accent.jpg — "Monogram Accent"
+Adds a small gold Torah-scroll emblem for a touch more premium branding.
+
+> YouTube thumbnail, 16:9. Elegant, dignified design on a warm cream/ivory parchment
+> background with a soft golden vignette glow in the corners, framed by a thin
+> double-line gold border. At the top center, a small refined gold emblem of an open
+> Torah scroll line-icon. Below it, small tracked-out navy small-caps text reads 'THE
+> PARASHA WITH RABBI DWECK' with a tiny ornate gold flourish divider beneath. Bottom-
+> left: photorealistic portrait of the man in the reference image from the chest up,
+> wearing a dark navy suit and burgundy tie, warm gentle smile, soft natural window
+> light from the left. On the right two-thirds beneath the emblem and label: large
+> elegant bold navy serif headline, two lines, reading 'THE POWER OF A PROMISE'; a
+> small ornate gold flourish; smaller navy serif text reading 'MATOT-MASEI 2026'.
+> Calm, refined, premium editorial quality, no dark vignette, no metallic bevel text,
+> no clickbait elements.
+
+## parasha_thumb_8_bolder_cream.jpg — "Bolder Cream"
+Slightly bigger/bolder headline and a gold underline for more thumbnail pop, still fully within the cream/navy palette.
+
+> YouTube thumbnail, 16:9. Elegant dignified design on a warm cream/ivory parchment
+> background with a soft golden vignette glow in the corners, framed by a thin
+> double-line gold border. Bottom-left: photorealistic portrait of the man in the
+> reference image from the chest up, wearing a dark navy suit and burgundy tie, warm
+> confident smile, soft natural light, slightly larger and closer crop than a
+> standard portrait for extra presence. On the right two-thirds: small tracked-out
+> navy small-caps text reads 'THE PARASHA WITH RABBI DWECK' with a tiny gold flourish
+> beneath; then a noticeably large, bold navy serif headline in two lines reading
+> 'THE POWER OF A PROMISE', with a thin solid gold underline rule beneath the
+> headline for emphasis; then smaller navy serif text reading 'MATOT-MASEI 2026'.
+> Slightly bolder and higher contrast than a typical elegant design for stronger
+> thumbnail readability at small sizes, but still warm, refined, and dignified — no
+> metallic bevel text, no red accents, no dark moody vignette, no clickbait elements.
+
 ## parasha_thumb_1_gold_dome.jpg — "Gold Dome"
 Closest to the current site branding — photographic instead of blank white.
 
