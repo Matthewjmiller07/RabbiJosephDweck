@@ -81,11 +81,12 @@ Slightly bigger/bolder headline and a gold underline for more thumbnail pop, sti
 > thumbnail readability at small sizes, but still warm, refined, and dignified — no
 > metallic bevel text, no red accents, no dark moody vignette, no clickbait elements.
 
-## Round 3 — "One Nation Under God" episode
+## Round 3 — "Matot-Mas'ei: One Nation Under God" episode
 
 Specific episode thumbnail, same cream/gold template. Explicitly excludes the round
 stained-glass dome/rose window seen in round 2's "Warm Interior" — the user flagged
-it as too clear/in-focus and not wanted in frame at all.
+it as too clear/in-focus and not wanted in frame at all. Includes the "MATOT-MASEI
+2026" subtitle line for consistency with the other episode thumbnails.
 
 ### one_nation_under_god_1_plain_parchment.jpg — flat parchment, no architecture
 
@@ -99,9 +100,10 @@ it as too clear/in-focus and not wanted in frame at all.
 > parchment texture. On the right two-thirds: small tracked-out navy small-caps text
 > reads 'THE PARASHA WITH RABBI DWECK' with a tiny ornate gold flourish divider
 > beneath it; then large elegant bold navy serif headline text, two lines, reading
-> 'ONE NATION UNDER GOD'; beneath that another small ornate gold flourish divider.
-> Calm, refined, editorial, magazine-cover quality, no dark vignette, no metallic
-> bevel text, no clickbait elements, no windows of any kind.
+> 'ONE NATION UNDER GOD'; beneath that another small ornate gold flourish divider;
+> then smaller navy serif text reading 'MATOT-MASEI 2026'. Calm, refined, editorial,
+> magazine-cover quality, no dark vignette, no metallic bevel text, no clickbait
+> elements, no windows of any kind.
 
 ### one_nation_under_god_2_blurred_interior.jpg — soft blurred synagogue bokeh, no window
 
@@ -117,9 +119,9 @@ it as too clear/in-focus and not wanted in frame at all.
 > against the blurred background. On the right two-thirds: small tracked-out navy
 > small-caps text reads 'THE PARASHA WITH RABBI DWECK' with a tiny ornate gold
 > flourish beneath; large elegant bold navy serif headline, two lines, reading 'ONE
-> NATION UNDER GOD'; small ornate gold flourish beneath. Refined, warm, editorial
-> magazine-cover quality, no heavy dark vignette, no metallic bevel text, no
-> clickbait elements, no windows.
+> NATION UNDER GOD'; small ornate gold flourish beneath; then smaller navy serif
+> text reading 'MATOT-MASEI 2026'. Refined, warm, editorial magazine-cover quality,
+> no heavy dark vignette, no metallic bevel text, no clickbait elements, no windows.
 
 ## parasha_thumb_1_gold_dome.jpg — "Gold Dome"
 Closest to the current site branding — photographic instead of blank white.

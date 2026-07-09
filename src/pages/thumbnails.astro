@@ -1,0 +1,115 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const round2 = [
+  { src: '/images/thumbnails/parasha/parasha_thumb_5_classic_refresh.jpg', label: 'Classic Refresh' },
+  { src: '/images/thumbnails/parasha/parasha_thumb_6_warm_interior.jpg', label: 'Warm Interior' },
+  { src: '/images/thumbnails/parasha/parasha_thumb_7_monogram_accent.jpg', label: 'Monogram Accent' },
+  { src: '/images/thumbnails/parasha/parasha_thumb_8_bolder_cream.jpg', label: 'Bolder Cream' },
+];
+
+const round1 = [
+  { src: '/images/thumbnails/parasha/parasha_thumb_1_gold_dome.jpg', label: 'Gold Dome' },
+  { src: '/images/thumbnails/parasha/parasha_thumb_2_editorial_split.jpg', label: 'Editorial Split' },
+  { src: '/images/thumbnails/parasha/parasha_thumb_3_warm_light.jpg', label: 'Warm Light' },
+  { src: '/images/thumbnails/parasha/parasha_thumb_4_bold_contrast.jpg', label: 'Bold Contrast' },
+];
+
+const episode = [
+  { src: '/images/thumbnails/parasha/one_nation_under_god_1_plain_parchment.jpg', label: 'Plain Parchment' },
+  { src: '/images/thumbnails/parasha/one_nation_under_god_2_blurred_interior.jpg', label: 'Blurred Interior' },
+];
+---
+
+<Layout title="Thumbnail Concepts" description="YouTube thumbnail concepts for The Parasha with Rabbi Dweck.">
+
+  <section class="page-hero">
+    <h1>Thumbnail Concepts</h1>
+    <p>Draft options for The Parasha With Rabbi Dweck — for review only, not linked in site navigation</p>
+    <div class="gold-rule"></div>
+  </section>
+
+  <section class="section" style="background:var(--cream);">
+    <div class="container">
+      <h2 class="section-title">Matot-Mas&rsquo;ei: One Nation Under God (current episode)</h2>
+      <div class="gold-divider"></div>
+      <p class="round-note">Current episode thumbnail options — window/dome removed per feedback.</p>
+      <div class="thumb-grid">
+        {episode.map((t) => (
+          <figure class="thumb-card">
+            <img src={t.src} alt={t.label} loading="lazy" />
+            <figcaption>{t.label}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Round 2 — Cream/Gold Template</h2>
+      <div class="gold-divider"></div>
+      <p class="round-note">Refined to match the channel&rsquo;s existing dignified cream/gold template, using Matot-Mas&rsquo;ei as a live example.</p>
+      <div class="thumb-grid">
+        {round2.map((t) => (
+          <figure class="thumb-card">
+            <img src={t.src} alt={t.label} loading="lazy" />
+            <figcaption>{t.label}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--cream);">
+    <div class="container">
+      <h2 class="section-title">Round 1 — Initial Concepts</h2>
+      <div class="gold-divider"></div>
+      <p class="round-note">Early explorations, before comparing against the live channel&rsquo;s actual brand.</p>
+      <div class="thumb-grid">
+        {round1.map((t) => (
+          <figure class="thumb-card">
+            <img src={t.src} alt={t.label} loading="lazy" />
+            <figcaption>{t.label}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="prompts-link">
+        Full prompts for every image: <a href="https://github.com/Matthewjmiller07/RabbiJosephDweck/blob/main/public/images/thumbnails/parasha/PROMPTS.md" target="_blank" rel="noopener">PROMPTS.md on GitHub</a>
+      </p>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .round-note { color: var(--text-light); margin-bottom: 1.75rem; max-width: 700px; }
+
+  .thumb-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  .thumb-card {
+    margin: 0;
+    border: 1px solid var(--cream-dark);
+    border-top: 3px solid var(--gold);
+    overflow: hidden;
+    background: var(--white);
+  }
+  .thumb-card img { width: 100%; display: block; }
+  .thumb-card figcaption {
+    padding: 0.85rem 1.1rem;
+    font-size: 0.9rem;
+    color: var(--dark);
+    font-weight: 600;
+  }
+
+  .prompts-link { color: var(--text-light); }
+  .prompts-link a { color: var(--gold); }
+</style>
