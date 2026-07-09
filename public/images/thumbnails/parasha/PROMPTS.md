@@ -81,6 +81,46 @@ Slightly bigger/bolder headline and a gold underline for more thumbnail pop, sti
 > thumbnail readability at small sizes, but still warm, refined, and dignified — no
 > metallic bevel text, no red accents, no dark moody vignette, no clickbait elements.
 
+## Round 3 — "One Nation Under God" episode
+
+Specific episode thumbnail, same cream/gold template. Explicitly excludes the round
+stained-glass dome/rose window seen in round 2's "Warm Interior" — the user flagged
+it as too clear/in-focus and not wanted in frame at all.
+
+### one_nation_under_god_1_plain_parchment.jpg — flat parchment, no architecture
+
+> YouTube thumbnail, 16:9. Elegant, dignified design on a warm cream/ivory parchment
+> background with a soft golden vignette glow in the corners, framed by a thin
+> double-line gold border. Bottom-left: a photorealistic portrait of the man in the
+> reference image from the chest up, wearing a dark navy suit and burgundy tie, warm
+> confident smile, soft natural window light from the left, photographed against a
+> plain soft cream backdrop that blends into the background — absolutely no round
+> window, rose window, or dome visible anywhere in the image, just soft plain warm
+> parchment texture. On the right two-thirds: small tracked-out navy small-caps text
+> reads 'THE PARASHA WITH RABBI DWECK' with a tiny ornate gold flourish divider
+> beneath it; then large elegant bold navy serif headline text, two lines, reading
+> 'ONE NATION UNDER GOD'; beneath that another small ornate gold flourish divider.
+> Calm, refined, editorial, magazine-cover quality, no dark vignette, no metallic
+> bevel text, no clickbait elements, no windows of any kind.
+
+### one_nation_under_god_2_blurred_interior.jpg — soft blurred synagogue bokeh, no window
+
+> YouTube thumbnail, 16:9. Elegant, dignified design in warm cream and gold tones,
+> framed by a thin double-line gold border. The background subtly reveals a softly
+> blurred, warmly lit historic synagogue interior with golden arches and columns,
+> heavily out of focus and low contrast, glowing through a light cream color-wash
+> overlay so it stays soft and calm — the architecture must be indistinct bokeh only,
+> with no round window, rose window, or dome shape visible anywhere, just soft
+> blurred arches and warm light. Bottom-left: photorealistic portrait of the man in
+> the reference image from the chest up, wearing a dark navy suit and burgundy tie,
+> warm relaxed confident smile, gentle natural lighting, in sharp focus contrasted
+> against the blurred background. On the right two-thirds: small tracked-out navy
+> small-caps text reads 'THE PARASHA WITH RABBI DWECK' with a tiny ornate gold
+> flourish beneath; large elegant bold navy serif headline, two lines, reading 'ONE
+> NATION UNDER GOD'; small ornate gold flourish beneath. Refined, warm, editorial
+> magazine-cover quality, no heavy dark vignette, no metallic bevel text, no
+> clickbait elements, no windows.
+
 ## parasha_thumb_1_gold_dome.jpg — "Gold Dome"
 Closest to the current site branding — photographic instead of blank white.
 
