@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" id="htmlRoot">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>נהלי מסעדות — אגף הכשרות הארצי</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Assistant:wght@300;400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --parchment:#F5EFE0;
+    --parchment-deep:#EDE4CC;
+    --ink:#26241E;
+    --ink-soft:#5b564a;
+    --navy:#1E2A38;
+    --navy-tint:#2E3F52;
+    --gold:#A8813C;
+    --gold-soft:#C9A85F;
+    --maroon:#7A2E2A;
+    --maroon-soft:#a8453f;
+    --line:#D9CDA9;
+    --paper-shadow: 0 1px 0 rgba(38,36,30,0.06);
+    --font-body: 'Assistant', sans-serif;
+    --font-display: 'Frank Ruhl Libre', serif;
+  }
+  html.lang-en{
+    --font-body: 'Assistant', 'Source Serif 4', sans-serif;
+    --font-display: 'Source Serif 4', serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--parchment);
+    color:var(--ink);
+    font-family:var(--font-body);
+    min-height:100vh;
+  }
+  body::before{
+    content:"";
+    position:fixed; inset:0;
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(168,129,60,0.06), transparent 40%),
+      radial-gradient(circle at 85% 75%, rgba(122,46,42,0.05), transparent 45%);
+    pointer-events:none;
+    z-index:0;
+  }
+  .app{
+    position:relative;
+    z-index:1;
+    display:grid;
+    grid-template-columns: 320px 1fr;
+    max-width:1400px;
+    margin:0 auto;
+    min-height:100vh;
+  }
+  html.lang-en .app{ grid-template-columns: 1fr 320px; }
+
+  /* ---------- Header ---------- */
+  .masthead{
+    grid-column: 1 / -1;
+    background: linear-gradient(180deg, var(--navy) 0%, #17212C 100%);
+    color:#EDE7D6;
+    padding: 28px 36px 26px;
+    display:flex;
+    align-items:center;
+    gap:22px;
+    border-bottom: 3px solid var(--gold);
+  }
+  .seal{
+    width:64px; height:64px; flex:none;
+    border-radius:50%;
+    border:2px solid var(--gold-soft);
+    display:flex; align-items:center; justify-content:center;
+    position:relative;
+    background: radial-gradient(circle at 35% 30%, #2b3b4d, #17212c 70%);
+  }
+  .seal::before{
+    content:"";
+    position:absolute; inset:6px;
+    border:1px dashed rgba(201,168,95,0.55);
+    border-radius:50%;
+  }
+  .seal svg{width:30px;height:30px;fill:var(--gold-soft);}
+  .masthead-text h1{
+    font-family:var(--font-display);
+    font-weight:700;
+    font-size:1.9rem;
+    margin:0 0 4px;
+    letter-spacing:0.3px;
+  }
+  .masthead-text p{
+    margin:0;
+    font-size:0.92rem;
+    color:#C9BFA1;
+    font-weight:400;
+  }
+  .masthead-meta{
+    margin-inline-start:auto;
+    text-align:left;
+    font-size:0.78rem;
+    color:#9AA6B2;
+    line-height:1.6;
+    white-space:nowrap;
+    display:flex; align-items:center; gap:18px;
+  }
+  html.lang-en .masthead-meta{ text-align:right; }
+
+  .lang-toggle{
+    display:flex; align-items:center; background:rgba(255,255,255,0.06);
+    border:1px solid rgba(201,168,95,0.4);
+    border-radius:20px; padding:3px; flex:none;
+  }
+  .lang-toggle button{
+    font-family:var(--font-body);
+    font-size:0.8rem; font-weight:600;
+    padding:6px 14px; border-radius:16px; border:none;
+    background:transparent; color:#C9BFA1; cursor:pointer;
+    transition: background .15s ease, color .15s ease;
+  }
+  .lang-toggle button.active{
+    background:var(--gold-soft); color:var(--navy);
+  }
+
+  /* ---------- Sidebar ---------- */
+  .sidebar{
+    background: var(--parchment-deep);
+    border-left:1px solid var(--line);
+    padding:22px 18px 60px;
+    position:sticky; top:0;
+    align-self:start;
+    height:100vh;
+    overflow-y:auto;
+  }
+  html.lang-en .sidebar{ border-left:none; border-right:1px solid var(--line); }
+  .search-wrap{
+    position:relative;
+    margin-bottom:18px;
+  }
+  .search-wrap input{
+    width:100%;
+    padding:11px 40px 11px 14px;
+    border:1px solid var(--line);
+    border-radius:8px;
+    background:#fff;
+    font-family:var(--font-body);
+    font-size:0.95rem;
+    color:var(--ink);
+  }
+  html.lang-en .search-wrap input{ padding:11px 14px 11px 40px; }
+  .search-wrap input:focus{
+    outline:2px solid var(--gold-soft);
+    outline-offset:1px;
+  }
+  .search-wrap svg{
+    position:absolute; inset-inline-end:12px; top:50%; transform:translateY(-50%);
+    width:16px;height:16px; stroke:var(--ink-soft); fill:none;
+  }
+  .progress-band{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:12px 14px;
+    margin-bottom:20px;
+    font-size:0.82rem;
+    color:var(--ink-soft);
+  }
+  .progress-band strong{
+    display:block;
+    font-family:var(--font-display);
+    font-size:1.35rem;
+    color:var(--navy);
+    font-weight:700;
+    margin-bottom:2px;
+  }
+  .progress-bar-track{
+    height:6px; border-radius:4px; background:var(--line); margin-top:8px; overflow:hidden;
+  }
+  .progress-bar-fill{
+    height:100%; background:linear-gradient(90deg, var(--gold), var(--maroon)); border-radius:4px;
+    transition:width .35s ease;
+  }
+  nav.toc{
+    display:flex; flex-direction:column; gap:2px;
+  }
+  nav.toc a{
+    display:flex; align-items:center; justify-content:space-between; gap:8px;
+    text-decoration:none;
+    color:var(--ink);
+    font-size:0.9rem;
+    padding:9px 12px;
+    border-radius:7px;
+    transition: background .15s ease, color .15s ease;
+  }
+  nav.toc a:hover{ background:rgba(168,129,60,0.14); }
+  nav.toc a.active{ background:var(--navy); color:#EDE7D6; }
+  nav.toc a .count{
+    font-size:0.72rem;
+    color:var(--ink-soft);
+    background:rgba(38,36,30,0.06);
+    padding:1px 7px;
+    border-radius:20px;
+    flex:none;
+  }
+  nav.toc a.active .count{ color:#C9BFA1; background:rgba(255,255,255,0.1); }
+
+  /* ---------- Main content ---------- */
+  main{
+    padding:34px 42px 100px;
+    max-width:900px;
+  }
+  .intro-line{
+    color:var(--ink-soft);
+    font-size:0.95rem;
+    margin:0 0 30px;
+    padding-bottom:22px;
+    border-bottom:1px solid var(--line);
+    line-height:1.8;
+  }
+  .intro-line b{ color:var(--maroon); font-weight:600; }
+
+  section.card{
+    margin-bottom:34px;
+    scroll-margin-top:20px;
+  }
+  section.card .card-head{
+    display:flex; align-items:baseline; gap:12px; margin-bottom:14px;
+    border-bottom:2px solid var(--navy);
+    padding-bottom:10px;
+  }
+  section.card .card-head h2{
+    font-family:var(--font-display);
+    font-size:1.4rem;
+    font-weight:700;
+    color:var(--navy);
+    margin:0;
+  }
+  section.card .card-head .subcount{
+    font-size:0.8rem;
+    color:var(--ink-soft);
+    margin-inline-start:auto;
+  }
+  .note{
+    background:#fff;
+    border:1px solid var(--line);
+    border-inline-start:4px solid var(--gold-soft);
+    border-radius:6px;
+    padding:14px 16px;
+    font-size:0.92rem;
+    line-height:1.8;
+    color:var(--ink);
+    margin-bottom:12px;
+  }
+  ul.item-list{
+    list-style:none; margin:0; padding:0;
+    display:flex; flex-direction:column; gap:2px;
+  }
+  li.item{
+    display:flex; align-items:flex-start; gap:12px;
+    padding:11px 14px;
+    border-radius:8px;
+    background:#fff;
+    border:1px solid var(--line);
+    box-shadow:var(--paper-shadow);
+  }
+  li.item + li.item{ margin-top:6px; }
+  li.item.checked{
+    background:#FBF8EE;
+    border-color:var(--gold-soft);
+  }
+  li.item.checked .item-text{ color:var(--ink-soft); text-decoration:line-through; text-decoration-color:var(--gold-soft); }
+  li.item input[type=checkbox]{
+    appearance:none; -webkit-appearance:none;
+    width:20px; height:20px; flex:none; margin-top:2px;
+    border:2px solid var(--navy-tint);
+    border-radius:5px;
+    cursor:pointer;
+    position:relative;
+    background:#fff;
+  }
+  li.item input[type=checkbox]:checked{
+    background:var(--navy);
+    border-color:var(--navy);
+  }
+  li.item input[type=checkbox]:checked::after{
+    content:"";
+    position:absolute; inset:0;
+    background: no-repeat center / 12px 12px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23EDE7D6' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  }
+  .item-body{ flex:1; }
+  .item-text{ font-size:0.97rem; line-height:1.75; color:var(--ink); }
+  .badge{
+    display:inline-flex; align-items:center; gap:4px;
+    font-size:0.68rem; font-weight:700;
+    padding:2px 8px 2px 7px;
+    border-radius:20px;
+    background:var(--maroon);
+    color:#F3E7DA;
+    margin-inline-end:8px;
+    vertical-align:middle;
+    letter-spacing:0.2px;
+    white-space:nowrap;
+  }
+  .sub-note{
+    margin-top:7px;
+    font-size:0.86rem;
+    color:var(--maroon-soft);
+    background:rgba(122,46,42,0.06);
+    border-radius:6px;
+    padding:8px 10px;
+    line-height:1.7;
+    border-inline-start:3px solid var(--maroon);
+  }
+  .mahadrin-section .card-head{ border-bottom-color:var(--maroon); }
+  .mahadrin-section .card-head h2{ color:var(--maroon); }
+
+  .hidden{ display:none !important; }
+  .no-results{
+    text-align:center; color:var(--ink-soft); padding:60px 0; font-size:0.95rem;
+  }
+
+  footer.doc-foot{
+    max-width:900px;
+    margin:0 auto 60px;
+    padding:0 42px;
+    color:var(--ink-soft);
+    font-size:0.78rem;
+    text-align:center;
+    line-height:1.8;
+  }
+
+  ::selection{ background: rgba(201,168,95,0.4); }
+
+  @media (max-width: 880px){
+    .app, html.lang-en .app{ grid-template-columns: 1fr; }
+    .sidebar{ position:static; height:auto; border-left:none; border-right:none; border-bottom:1px solid var(--line); }
+    main{ padding:26px 20px 80px; }
+    .masthead{ padding:22px 20px; flex-wrap:wrap; }
+    .masthead-meta{ margin-inline-start:0; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <div class="masthead">
+    <div class="seal">
+      <svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.3 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z"/></svg>
+    </div>
+    <div class="masthead-text">
+      <h1 id="mainTitle">נהלי מסעדות</h1>
+      <p id="mainSubtitle">מתוך קובץ נהלי אגף הכשרות הארצי · הרבנות הראשית לישראל</p>
+    </div>
+    <div class="masthead-meta">
+      <span id="sideNote">לקריאה בצמוד: נוהל קונדיטוריות<br>היערכות לפסח במסעדות ובתי עסק</span>
+      <div class="lang-toggle">
+        <button id="btnHe" class="active">עברית</button>
+        <button id="btnEn">English</button>
+      </div>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="search-wrap">
+      <input id="searchInput" type="text" placeholder="חיפוש בנוהל…">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </div>
+
+    <div class="progress-band">
+      <strong id="progressCount">0 / 0</strong>
+      <span id="progressLabel">נבדקו מתוך סעיפי הנוהל</span>
+      <div class="progress-bar-track"><div class="progress-bar-fill" id="progressFill" style="width:0%"></div></div>
+    </div>
+
+    <nav class="toc" id="toc"></nav>
+  </aside>
+
+  <main id="main">
+    <p class="intro-line" id="introLine"></p>
+    <div id="sections"></div>
+    <div class="no-results hidden" id="noResults">לא נמצאו סעיפים התואמים את החיפוש.</div>
+  </main>
+
+  <footer class="doc-foot" id="docFoot">
+    נוהל מסעדות — מתוך קובץ נהלי אגף הכשרות הארצי של הרה"ר לישראל · 8 עמודים במקור
+  </footer>
+
+</div>
+
+<script>
+const STR = {
+  he: {
+    docTitle: "נהלי מסעדות — אגף הכשרות הארצי",
+    title: "נהלי מסעדות",
+    subtitle: 'מתוך קובץ נהלי אגף הכשרות הארצי · הרבנות הראשית לישראל',
+    sideNote: 'לקריאה בצמוד: נוהל קונדיטוריות<br>היערכות לפסח במסעדות ובתי עסק',
+    searchPlaceholder: 'חיפוש בנוהל…',
+    progressLabel: 'נבדקו מתוך סעיפי הנוהל',
+    introLine: 'כלי עזר אינטראקטיבי למשגיח ולבעל העסק לצד נוהל המסעדות של אגף הכשרות הארצי. סעיפים המסומנים בתג <b>מהדרין</b> חלים רק ברמת כשרות מהדרין, בנוסף לדרישות הרגילות. ניתן לסמן סעיפים שנבדקו — הסימון נשמר לצפייה בשיחה זו בלבד.',
+    noResults: 'לא נמצאו סעיפים התואמים את החיפוש.',
+    docFoot: 'נוהל מסעדות — מתוך קובץ נהלי אגף הכשרות הארצי של הרה"ר לישראל · 8 עמודים במקור',
+    mahadrinBadge: 'מהדרין',
+  },
+  en: {
+    docTitle: "Restaurant Kashrut Procedures — National Kashrut Division",
+    title: "Restaurant Kashrut Procedures",
+    subtitle: "From the National Kashrut Division procedures manual · Chief Rabbinate of Israel",
+    sideNote: 'Read alongside: Bakery/Confectionery procedures<br>Passover preparation for restaurants and businesses',
+    searchPlaceholder: 'Search the procedures…',
+    progressLabel: 'clauses reviewed',
+    introLine: 'An interactive companion to the National Kashrut Division\'s restaurant procedures, for use by the mashgiach (kashrut supervisor) and business owner. Clauses tagged <b>Mehadrin</b> apply only at the stricter Mehadrin kashrut level, in addition to the standard requirements. You can check off items as reviewed — checkmarks are kept for this session only.',
+    noResults: 'No clauses match your search.',
+    docFoot: 'Restaurant Procedures — from the National Kashrut Division procedures manual, Chief Rabbinate of Israel · 8 pages in the original',
+    mahadrinBadge: 'Mehadrin',
+  }
+};
+
+const DATA = [
+  {
+    id: "products-general",
+    he: {title:"מוצרים – כללי"},
+    en: {title:"Products — General"},
+    items: [
+      {he:"הזמנת המוצרים הנחוצים למסעדה תיעשה בתיאום מראש עם משגיח הכשרות.",
+       en:"Ordering the products the restaurant needs must be coordinated in advance with the kashrut supervisor."},
+      {he:"מוצרים יתקבלו אך ורק כשהם מסומנים בסימון כשרות של רבנות מוסמכת ומלווים בתעודת משלוח חתומה בחותמת כשרות וחתימת כתב ידו של המשגיח.",
+       en:"Products may be received only when marked with the kashrut seal of a recognized rabbinate and accompanied by a delivery note stamped and hand-signed by the supervisor.",
+       mahadrin:true,
+       note_he:"ברמת כשרות \"מהדרין\" ייקנו כל המוצרים רק מתוך רשימה מיוחדת שיספק הרב נותן ההכשר.",
+       note_en:"At the Mehadrin level, all products must be purchased only from a special list supplied by the certifying rabbi."},
+      {he:"המשגיח ינהל יומן ובו רישום קליטת המוצרים הנכנסים למסעדה.",
+       en:"The supervisor must keep a log recording the intake of products entering the restaurant."},
+      {he:"למשגיח תהיה גישה חופשית לניירת המתייחסת לקליטה ולהוצאת מזון ומשקאות — כולל נתונים ומסמכים במחשבים או בהנהלת חשבונות, בתיאום עם בעל העסק.",
+       en:"The supervisor must have free access to paperwork relating to the intake and outflow of food and drink, including data or documents on computers or in the bookkeeping system, in coordination with the owner."},
+      {he:"אין להכניס למסעדה מוצרים מבושלים או אפויים ומיני מתיקה שהוכנו בבתים פרטיים.",
+       en:"Cooked or baked products and sweets prepared in private homes may not be brought into the restaurant."},
+      {he:"אין להוציא מתחומי המסעדה כלים המיועדים לשימוש חוזר, אלא באישור כתוב מהמשגיח, ורק למקומות כשרים המפוקחים ע\"י הרבנות המקומית המוסמכת.",
+       en:"Reusable vessels may not be taken off the restaurant premises except with the supervisor's written approval, and only to kosher venues supervised by the recognized local rabbinate."},
+      {he:"אין לשנות את זמני פתיחת המסעדה ללא תיאום עם מחלקת הכשרות.",
+       en:"The restaurant's opening hours may not be changed without coordinating with the kashrut department."},
+      {he:"חייבת להיות התאמה בין סוג הכשרות בתעודה לבין האופן שבו מוצגת המסעדה בפרסומים — בתיאום ובאישור הרבנות המקומית. הפרה מהווה עילה להסרת הכשרות.",
+       en:"The kashrut level stated on the certificate must match how the restaurant is presented in advertising, subject to coordination and approval by the local rabbinate. Violating this is grounds for revoking certification."},
+      {he:"במוצרי יבוא על המשגיח לקבל מהספק צילום אישור כשרות מהרבנות הראשית, ולבדוק התאמת הקוד שעל המוצר לקוד שבאישור — לא להסתפק בכיתוב שעל התווית.",
+       en:"For imported products, the supervisor must obtain a copy of the Chief Rabbinate's kashrut approval from the supplier, and must check that the code on the product matches the code on the approval — the wording on the label alone is not sufficient."},
+    ]
+  },
+  {
+    id: "leafy-veg",
+    he:{title:"ירקות עלים"}, en:{title:"Leafy Vegetables"},
+    items: [
+      {he:"אין להשתמש בכרובית, ברוקולי, כרוב ניצנים, ארטישוק ואספרגוס אלא אם גודלו תחת פיקוח רבני וללא חשש חרקים.",
+       en:"Cauliflower, broccoli, Brussels sprouts, artichoke, and asparagus may not be used unless grown under rabbinical supervision and free of insect concern."},
+      {he:"יש להשתמש בירקות עלים (לרבות כרוב, כרובית וברוקולי) הגדלים בגידול מיוחד ומפוקחים מפני חרקים באישור רבנות מוסמכת בלבד.",
+       en:"Leafy vegetables (including cabbage, cauliflower, and broccoli) must be from special cultivation supervised against insects, approved by a recognized rabbinate only."},
+      {he:"בסמכות הרב לאשר שימוש בכרוב שגדל בשטח פתוח, ובתנאי: נבדק ע\"י משגיח ואושר לשטיפה; נוקה בשלבים — הסרת 5 עלים לפחות, הוצאת הליבה, קציצה, השריה בחומר ניקוי ושטיפה בזרם חזק, בתאורה טובה; אין לבצע השריה כשהכרוב חתוך לרבעים — לבישול, מילוי והחמצה יש להשתמש רק בכרוב שגודל תחת פיקוח.",
+       en:"The rabbi may approve open-field cabbage on condition it is: checked by the supervisor and approved for washing; cleaned in stages — removing at least 5 outer leaves, removing the core, chopping, soaking in cleaning solution and rinsing under a strong stream, under good lighting; soaking may not be done while the cabbage is quartered — for cooking, stuffing, or pickling, only supervised-grown cabbage may be used."},
+      {he:"ברמת כשרות מהדרין — יתקבל רק כרוב שגודל תחת פיקוח רבני וללא חשש תולעים.",
+       en:"At the Mehadrin level, only cabbage grown under rabbinical supervision and free of worm concern will be accepted.", mahadrin:true},
+      {he:"שומר — אחר הסרת הפריחה והחלק העליון יש לפרק את השכבות ולשפשף כל שכבה במים וסבון, ולבדוק אחר השטיפה שאין חרקים.",
+       en:"Fennel: after removing the fronds and top, separate the layers and scrub each one with water and soap, then check after washing that no insects remain."},
+    ]
+  },
+  {
+    id: "rice-legumes-flour",
+    he:{title:"אורז, קטניות וקמח"}, en:{title:"Rice, Legumes and Flour"},
+    items: [
+      {he:"אורז, קטניות, בורגול, שומשום וקמח יש לאחסן במקום קריר, מחוטא מתולעים ומזיקים.",
+       en:"Rice, legumes, bulgur, sesame, and flour must be stored in a cool place, disinfected against worms and pests."},
+      {he:"אין להשתמש בפול יבש שלם, אלא בחצוי ולבן.",
+       en:"Whole dried fava beans may not be used — only halved, peeled ones."},
+      {he:"בדיקת קטניות: ביבש על משטח בהיר בתאורה מתאימה ובעזרת מכשיר ייעודי; קטניות המצריכות השריה (חומוס, עדשים, שעועית וכד') ייבדקו פעם נוספת לאחר התפיחה, אחרי הוצאת הקטניות הצפות.",
+       en:"Checking legumes: dry, on a light-colored surface under suitable lighting and with a dedicated checking device; legumes requiring soaking (chickpeas, lentils, beans, etc.) must be checked again after soaking, once floating legumes have been removed."},
+      {he:"בדיקת אורז וקטניות תיעשה סמוך למועד הבישול; במאוחסן בקירור ניתן לבדוק מראש. בשימוש של 10 ק\"ג אורז ביום יש לרכוש מכונה לברירת אורז.",
+       en:"Rice and legumes should be checked close to cooking time; if stored refrigerated after checking, they may be checked in advance. If using 10 kg of rice per day, a rice-sorting machine must be purchased."},
+      {he:"ניפוי קמח סמוך לשימוש ובפיקוח המשגיח, בנפה בצפיפות 50 מש' לפחות, ואחסון במקרר לאחר הניפוי. בשימוש מעל 5 ק\"ג קמח ביום — נפה חשמלית תיקנית שתאושר ע\"י הרבנות המקומית.",
+       en:"Flour must be sifted close to use, under the supervisor's watch, through a sieve of at least 50 mesh, and stored refrigerated afterward. If using more than 5 kg of flour per day, an approved electric sifter must be used, certified by the local rabbinate."},
+      {he:"ברמת כשרות מהדרין ישתמשו בנפה 60 מ\"ש.",
+       en:"At the Mehadrin level, a 60-mesh sieve must be used.", mahadrin:true},
+    ]
+  },
+  {
+    id: "fruit-veg",
+    he:{title:"פירות וירקות"}, en:{title:"Fruits and Vegetables"},
+    items: [
+      {he:"פירות וירקות ניתן לקבל אך ורק מחנויות/ספקים המחזיקים תעודת כשרות מרבנות מקומית הכוללת הפרשת תרו\"מ וללא חשש ערלה, בצירוף תעודת משלוח חתומה בכתב יד המשגיח.",
+       en:"Fruits and vegetables may only be received from shops/suppliers holding a local rabbinate kashrut certificate that includes tithing (terumot u-ma'asrot) and no orlah concern, with a delivery note hand-signed by the supervisor."},
+      {he:"בגלל נגיעות חרקים אין להשתמש בתירס קלחים, תאנים, תות ופירות יער כגון פטל.",
+       en:"Due to insect infestation, corn on the cob, figs, strawberries, and forest berries such as raspberries may not be used."},
+      {he:"שימוש בפטריות טריות ייעשה רק בפטריות מפוקחות, ויש לבודקן מזבובונים ועכבישונים.",
+       en:"Fresh mushrooms may only be used if supervised, and must be checked for small flies and spiders."},
+    ]
+  },
+  {
+    id: "dried-fruit",
+    he:{title:"פירות יבשים"}, en:{title:"Dried Fruit"},
+    items: [
+      {he:"אין להשתמש בתאנים מיובשות.", en:"Dried figs may not be used."},
+      {he:"יש לערוך בדיקה מדגמית למשמש מיובש.", en:"A sample check must be performed on dried apricots."},
+      {he:"יש לפתוח את התמרים לחצי ולבודקם מתולעים.", en:"Dates must be opened in half and checked for worms."},
+    ]
+  },
+  {
+    id: "baked-goods",
+    he:{title:"מיני מאפה"}, en:{title:"Baked Goods"},
+    intro_he:"מוצרי מאפה ניתן לרכוש אך ורק ממאפיות המחזיקות בתעודות כשרות ובצירוף תעודת משלוח. ברכישת תוצרת מספק משנה, על המשגיח לוודא כי התוצרת מגיעה ממקורות כשרים וכי המפעל המייצר מוכר תוצרת לספק זה — בכל מקרה של ספק אין לקלוט תוצרת מספק משנה.",
+    intro_en:"Baked goods may only be purchased from bakeries holding kashrut certificates, accompanied by a delivery note. When purchasing from a sub-supplier, the supervisor must verify that the goods come from kosher sources and that the manufacturing plant recognizes that sub-supplier — in any case of doubt, goods from a sub-supplier may not be accepted.",
+    items:[]
+  },
+  {
+    id: "eggs",
+    he:{title:"ביצים"}, en:{title:"Eggs"},
+    items: [
+      {he:"ביצים יקלטו אך ורק כשהן מוחתמות ומאושרות.", en:"Eggs may only be accepted when stamped and approved."},
+      {he:"פתיחת הביצים ובדיקתן מדם — באחריות המשגיח.", en:"Cracking eggs and checking them for blood is the supervisor's responsibility."},
+      {he:"אבקת ביצים ונוזל ביצים יתקבלו ממפעלים העומדים תחת פיקוח רבנות מוסמכת.", en:"Egg powder and liquid egg may only be accepted from plants under the supervision of a recognized rabbinate."},
+      {he:"אין להשתמש בביצים קלופות מיום אחד למחרתו, אלא אם ניתנו עליהן תבלינים או שמן בצורה ניכרת.", en:"Peeled eggs may not be used the day after peeling unless noticeably seasoned with spices or oil."},
+    ]
+  },
+  {
+    id: "onion-garlic",
+    he:{title:"בצל ושום"}, en:{title:"Onion and Garlic"},
+    intro_he:"אין להשתמש בבצל ובשום קלופים מיום אחד למחרתו, אלא אם הוספו להם תבלינים או שמן בצורה ניכרת, או שהשאירו עליהם חלק מראשם (שורשיהם) או מקליפתם.",
+    intro_en:"Peeled onion and garlic may not be used the day after peeling, unless noticeably seasoned with spices or oil, or unless part of the root end or peel was left on.",
+    items:[]
+  },
+  {
+    id: "wine-spirits",
+    he:{title:"יינות / משקאות חריפים"}, en:{title:"Wine / Spirits"},
+    items: [
+      {he:"יינות ומשקאות חריפים מתוצרת הארץ — רק המפוקחים ע\"י רבנות מוסמכת. מתוצרת חוץ — רק המאושרים ע\"י הרה\"ר.",
+       en:"Domestically produced wine and spirits — only those supervised by a recognized rabbinate. Foreign-made — only those approved by the Chief Rabbinate."},
+      {he:"במהלך הבישולים יש להשתמש אך ורק ביין מפוסטר או מבושל. אין להשתמש במטבח בבקבוק יין פתוח שחזר מאירוע.",
+       en:"During cooking, only pasteurized or cooked (mevushal) wine may be used. An open wine bottle returned from an event may not be used in the kitchen."},
+      {he:"ברמת כשרות מהדרין — בישולים ייעשו ביין מבושל בלבד; פתיחת הבקבוקים ומזיגתם תיעשה בידי יהודי שומר תורה ומצוות.",
+       en:"At the Mehadrin level, cooking must use mevushal wine only, and bottles must be opened and poured only by an observant Jew.", mahadrin:true},
+      {he:"אין למזוג יין לא מפוסטר.", en:"Non-pasteurized wine may not be poured by non-Jewish staff."},
+      {he:"עדיף שלא להגיש לשולחנות יין לא מפוסטר; כאשר מגישים — רק בקבוקים קטנים וסגורים.",
+       en:"Preferably, non-pasteurized wine should not be served at tables; when it is served, only small, sealed bottles should be brought."},
+    ]
+  },
+  {
+    id: "meat",
+    he:{title:"בשר"}, en:{title:"Meat"},
+    items: [
+      {he:"קליטת בשר ומוצריו תיעשה אך ורק באישור כשרות מפורט מהספק (סוג, משקל, כמות) ותעודת משלוח תואמת; באין אישור נלווה — תעודת משלוח חתומה בחותמת ובחתימת יד.",
+       en:"Meat and meat products may only be received with a detailed kashrut approval from the supplier (type, weight, quantity) and a matching delivery note; if no accompanying approval exists, a delivery note stamped and hand-signed is required."},
+      {he:"קבלת הבשר תיעשה בנוכחות המשגיח בלבד.", en:"Meat may only be received in the presence of the supervisor."},
+      {he:"אין לקבל בשר ומוצריו שאינם מוכשרים, למעט כבד ולב, גם במסעדות המשתמשות רק בבשר על האש.",
+       en:"Non-kashered meat and meat products may not be accepted, except for liver and heart, even in restaurants that use only grilled/open-fire meat."},
+      {he:"אין להכין מאכל המערב בשרים מוכשרים ולא מוכשרים (כבד, לב) יחד, כ'מעורב ירושלמי' או בכל צורה שהיא.",
+       en:"A dish may not be prepared mixing kashered and non-kashered meats (liver, heart) together, such as 'meorav yerushalmi' or in any other form."},
+      {he:"יש להקפיד על הפרדה מוחלטת בין בשר מוכשר לכבד ולב — בשיפודים, בצליה ועל הרשת בגריל.",
+       en:"Complete separation must be maintained between kashered meat and liver/heart — on skewers, in roasting, and on the grill grate."},
+      {he:"אין לקבל כבדים ולבבות עוף טריים אם התאריך ושעת האריזה מורים על ייצור לפני למעלה מ-24 שעות, למניעת חשש 'כבוש כמבושל'.",
+       en:"Fresh chicken livers and hearts may not be accepted if the date/time on the packaging shows production more than 24 hours earlier, to prevent the concern of 'salted-as-cooked' (kavush ke-mevushal)."},
+    ]
+  },
+  {
+    id: "hidden-meat",
+    he:{title:"איסור \"בשר שנתעלם מן העין\""}, en:{title:"Prohibition of Meat \"Out of Sight\""},
+    items: [
+      {he:"אין להשאיר בשר ומוצריו ללא נוכחות יהודי, אלא אם התוצרת ארוזה חותם בתוך חותם בכפוף לנוהל.",
+       en:"Meat and its products may not be left without a Jew present, unless the product is sealed within a seal per the procedure."},
+      {he:"תוצרת שהופשטה מאריזתה במהלך הייצור ונשארה ממנה שארית — לעטוף בניילון, לסמן עם שם המשגיח, חתימתו, תיאור המוצר ותאריך הסגירה; בעל החנות ידאג לאמצעי הסימון בתיאום עם המשגיח.",
+       en:"Product removed from its packaging during production, with a leftover remainder, must be wrapped in plastic and labeled with the supervisor's name, signature, product description, and closing date; the shop owner must provide the marking materials in coordination with the supervisor."},
+      {he:"בחשש לבשר שנתעלם מן העין ניתן להיעזר בעובד יהודי נאמן כשרות שומר תורה ומצוות, לפי שיקול דעת נותן ההכשר — אך זה אינו מחליף את חובת נוכחות המשגיח.",
+       en:"Where there is concern about meat out of sight, a trusted, observant Jewish kashrut employee may assist, at the certifying rabbi's discretion — but this does not replace the requirement for the supervisor to be present."},
+    ]
+  },
+  {
+    id: "brain",
+    he:{title:"מוח"}, en:{title:"Brain"},
+    intro_he:"יש לקלוט רק מוח מוכשר.", intro_en:"Only kashered brain may be accepted.",
+    items:[]
+  },
+  {
+    id: "heart",
+    he:{title:"לב"}, en:{title:"Heart"},
+    items: [
+      {he:"יש לפתוח לשניים, לנקות את ארבעת חדרי הלב מקרישי הדם ולמולחו קצת קודם הצלייה.",
+       en:"The heart must be split in two, its four chambers cleaned of blood clots, and lightly salted before roasting."},
+      {he:"ברמת כשרות מהדרין — יש לחתוך את ערלת הלב ואת הגידין שבפנים.",
+       en:"At the Mehadrin level, the membrane covering the heart and the sinews inside it must be cut.", mahadrin:true},
+      {he:"לבבות לא מוכשרים מותרים לצליה בלבד.", en:"Non-kashered hearts are permitted for roasting only."},
+      {he:"את הלבבות יש לאחסן על גבי רשת המונחת בתוך גסטרונום, למניעת חשש 'כבוש כמבושל'.",
+       en:"Hearts must be stored on a rack placed inside a gastronorm pan, to prevent the concern of 'salted-as-cooked.'"},
+    ]
+  },
+  {
+    id: "liver",
+    he:{title:"כבד"}, en:{title:"Liver"},
+    items: [
+      {he:"כבד יש לצלות על גבי האש.", en:"Liver must be roasted over open fire."},
+      {he:"קודם לצלייה יש להסיר את המרה.", en:"The gall must be removed before roasting."},
+      {he:"ברמת כשרות מהדרין — יש לבצע חתך לאורך או לרוחב כבד העוף לפני צלייתו, או לנקוב לפחות פעמיים בכלי ייעודי; אם מבשלים אחרי הצלייה — חתך הן לאורך והן לרוחב.",
+       en:"At the Mehadrin level, a lengthwise or crosswise cut must be made in chicken liver before roasting, or it must be pierced at least twice with a dedicated tool; if cooked after roasting, cuts must be made both lengthwise and crosswise.", mahadrin:true},
+      {he:"קודם לצלייה יש להדיח את הכבד במי ברז, ולהקפיד שלא יישארו מים עליו בשעת הצלייה (מומלץ להניח על רשת).",
+       en:"Before roasting, the liver must be rinsed under tap water, taking care that no water remains on it during roasting (recommended to place it on a rack)."},
+      {he:"יש לחתוך את כבד הבקר לפרוסות דקות ולצלותן על גבי אש.", en:"Beef liver must be cut into thin slices and roasted over open fire."},
+      {he:"ניתן להשתמש בכבד קפוא לאחר שהופשר לחלוטין ונבדק בדקירת סכין מעבר לעבר מספר פעמים, ולצלותו.",
+       en:"Frozen liver may be used after it has fully thawed and been checked by piercing it through with a knife several times, then roasted."},
+      {he:"כבד קפוא יופשר מאליו — אין להפשירו במים רותחים, מיקרוגל וכדומה.",
+       en:"Frozen liver must thaw on its own — it may not be thawed using boiling water, a microwave, or similar means."},
+      {he:"לפני הצלייה יש למלחו מעט.", en:"Before roasting, it must be lightly salted."},
+      {he:"את הכבדים יש לאחסן על גבי רשת המונחת בתוך גסטרונום, למניעת חשש 'כבוש כמבושל'.",
+       en:"Livers must be stored on a rack placed inside a gastronorm pan, to prevent the concern of 'salted-as-cooked.'"},
+      {he:"צליה: יש לצלות לפחות עד למחצית צלייתו, לא להורידו מהאש קודם לכן ולא להפכו במהירות.",
+       en:"Roasting: it must be roasted at least until halfway done, not removed from the fire before that point, and not flipped rapidly."},
+      {he:"לכתחילה יש לצלות עד שלא נוטף ממנו דם או ציר.", en:"Ideally, it should be roasted until no blood or juice drips from it."},
+      {he:"לבישול אחרי הצלייה — יצלהו עד שלא יישאר דם/ציר, וידיחו ג' פעמים לפני הבישול. אין לבשל כבד טרי שעברו עליו 72 שעות משחיטתו לפני צלייתו.",
+       en:"To cook after roasting: roast until no blood/juice remains, and rinse it three times before cooking. Fresh liver more than 72 hours from slaughter may not be cooked before being roasted."},
+      {he:"ברמת כשרות מהדרין — אין לבשל כבד שהוקפא, גם אחר צלייתו.",
+       en:"At the Mehadrin level, liver that was frozen may not be cooked, even after roasting.", mahadrin:true},
+      {he:"תנור: להסיק קודם להכנסת הכבד (לא לתנור קר); להניחו על רשת ותחתיה תבנית ללא מים; לא לצלות עם בשרים אחרים או ירקות; לא להוסיף בשרים/חתיכות כבד באמצע הצלייה; לא לעטוף בנייר כסף (אפילו מנוקב); לא ליתן בבצק או לצפות בביצה; דלת התנור פתוחה מעט; בקומבי — מצב צליה יבש ללא אדים, דלת פתוחה, טורבו כבוי; אם צולים על שתי רשתות — תבנית נפרדת לכל רשת; לשטוף את הכבד לאחר הצלייה; ניתן לצלות בגריל חשמלי על רשת עם תבנית לדם, גם כשהחום מגיע מלמעלה; אין לצלות כבד במיקרוגל.",
+       en:"Oven: preheat before inserting the liver (never into a cold oven); place it on a rack with a dry pan underneath (no water); do not roast together with other meats or vegetables; do not add meats or liver pieces mid-roast; do not wrap in foil (even perforated); do not place in dough or coat with egg before roasting; the oven door should be left slightly open; in a combi-oven, use dry-roast mode with no steam, door open, and the fan (turbo) off; if roasting on two racks, use a separate pan under each; rinse the liver after roasting; roasting in an electric grill on a rack with a dedicated blood pan is permitted, even with heat from above; liver may not be roasted in a microwave."},
+      {he:"ברמת כשרות מהדרין — יש לצלות כבד על אש גלויה בלבד (ולא בתנור).",
+       en:"At the Mehadrin level, liver must be roasted over open flame only (not in an oven).", mahadrin:true},
+      {he:"כלי צליה: לייחד רשת, תבנית, שיפוד, סכין, מזלג ומלקחיים מסומנים במיוחד לצליית כבד; התבנית שזב לתוכה הדם אסורה לשימוש אחר; לנקות ולהכשיר את התנור לאחר הצלייה.",
+       en:"Roasting utensils: designate a rack, pan, skewer, knife, fork, and tongs, specially marked, for roasting liver only; the pan that catches the liver's blood may not be used for anything else; the oven must be cleaned and kashered after roasting."},
+    ]
+  },
+  {
+    id: "tongue",
+    he:{title:"לשון"}, en:{title:"Tongue"},
+    intro_he:"יש להשתמש בלשון מוכשרת ומנוקרת בלבד.", intro_en:"Only kashered and de-veined (menukeret) tongue may be used.",
+    items:[]
+  },
+  {
+    id: "fish",
+    he:{title:"דגים"}, en:{title:"Fish"},
+    items: [
+      {he:"רכישת דגים תתבצע מספקים מאושרים בלבד ובצירוף תעודת כשרות.", en:"Fish must be purchased only from approved suppliers, accompanied by a kashrut certificate."},
+      {he:"אין לקלוט ביצי דגים אלא בליווי תעודת כשרות מרבנות מוסמכת.", en:"Fish roe may only be accepted with a kashrut certificate from a recognized rabbinate."},
+    ]
+  },
+  {
+    id: "cooking",
+    he:{title:"בישול"}, en:{title:"Cooking"},
+    items: [
+      {he:"לעולם הבישול יהיה בישול ישראל.",
+       en:"Cooking must always be bishul Yisrael (cooking performed/initiated by a Jew).",
+       mahadrin:true,
+       note_he:"בכשרות מהדרין חובה שהבישול יהיה לפי שיטת מרן הבית יוסף.",
+       note_en:"At the Mehadrin level, cooking must follow the method of Maran the Beit Yosef."},
+      {he:"הדלקת האש תיעשה אך ורק על ידי המשגיח.", en:"Lighting the fire/flame must be done only by the supervisor."},
+      {he:"בתנור שנשאר דולק כל הזמן והטמפרטורה משתנה בסגירת דלתות — ניתן לסגור את דלת התנור ע\"י נכרי, למרות שבכך גורם להגברת החום.",
+       en:"For an oven that stays lit continuously and whose temperature is changed by closing doors, a non-Jew may close the oven door even though this raises the heat."},
+      {he:"בתנור קומביסטימר שסגירתו מפעילה אותו — יש להכניס גוף חימום שישמש כאש תמיד לכל שעות הפעילות, עם מפסק נפרד להדלקה וכיבוי ע\"י המשגיח.",
+       en:"For a combi-steamer oven whose closing activates it, a heating element must be installed to serve as a constant flame throughout all working hours, with a separate switch for the supervisor to turn on and off."},
+      {he:"תנור שכבה במהלך שעות העבודה לא יובער מחדש אלא על ידי המשגיח.", en:"An oven that goes out during working hours may only be relit by the supervisor."},
+      {he:"ברמת כשרות מהדרין — בכל המקרים דלעיל, הנחת והכנסת התבניות או הסירים תיעשה על ידי יהודי.",
+       en:"At the Mehadrin level, in all the above cases, placing and inserting trays or pots must be done by a Jew.", mahadrin:true},
+    ]
+  },
+  {
+    id: "dairy-meat",
+    he:{title:"חלבי – בשרי"}, en:{title:"Dairy – Meat"},
+    items: [
+      {he:"יש להימנע מלהעניק תעודת כשרות למסעדה שהיא בשרית וחלבית כאחד.", en:"A kashrut certificate should not be granted to a restaurant that is both meat and dairy at once."},
+      {he:"על תעודת כשרות למסעדה בשרית לציין \"כל המוצרים בשריים\"; לחלבית — \"כל המוצרים חלביים\"; ולהציב שלט מאיר עיניים בהתאם.",
+       en:"A meat restaurant's certificate must state \"all products are meat\"; a dairy restaurant's, \"all products are dairy\" — with a clear, visible sign to match."},
+      {he:"במסעדה בשרית לא ימצאו חומרי גלם או מוצר חלבי כלשהו, גם לא לתצרוכת פרטית; ובחלבית — לא ימצא מוצר בשרי, גם לא לתצרוכת פרטית.",
+       en:"No dairy raw materials or products may be found in a meat restaurant, even for personal consumption; and no meat products in a dairy restaurant, even for personal consumption."},
+      {he:"אין להשתמש בחלב ניגר או בגבינות של נוכרים. בשימוש באבקת חלב עכו\"ם יש להודיע ללקוחות — בשילוט ובתעודה.",
+       en:"Non-Jewish (non-chalav Yisrael) milk or cheeses may not be used. If non-Jewish milk powder is used, customers must be informed, both by signage and on the certificate."},
+    ]
+  },
+  {
+    id: "meat-fish-veg-cooking",
+    he:{title:"בשר ודגים וירקות (בישול/טיגון)"}, en:{title:"Meat, Fish, and Vegetables (Cooking/Frying)"},
+    items: [
+      {he:"אין לבשל או לאפות בשר ודגים יחד.", en:"Meat and fish may not be cooked or baked together."},
+      {he:"אין לטגן באותה מטגנת בשר ודגים.", en:"Meat and fish may not be fried in the same fryer."},
+      {he:"יש לייחד מטגנת ורשת נפרדת לטיגון ירקות וכדורי פלאפל וכד' כדי שיישארו פרווה.",
+       en:"A separate fryer and rack must be designated for frying vegetables, falafel balls, etc., so they remain pareve."},
+      {he:"במטגנת כפולה יש לדאוג למחיצה בין השניים.", en:"In a double fryer, a divider must separate the two sides."},
+      {he:"יש להגיש בשר ודגים בהגשה נפרדת ובכלים נפרדים.", en:"Meat and fish must be served separately and in separate dishes."},
+      {he:"כאשר מוגש מזון בצורת \"בר\" יש להקצות אזורים נפרדים לבשר ולדגים ולהגישם בכלים שונים.",
+       en:"When food is served buffet-style, separate areas must be designated for meat and fish, served in different containers."},
+      {he:"אין לאחסן או לחמם תבניות בשר, דגים ותוספות (כגון תפו\"א, אורז) אחת על השנייה — לאחסן בעגלות נפרדות; באין מספיק עגלות, אפשר לאחסן בשר/דגים בתחתית ומעליהם התוספות.",
+       en:"Trays of meat, fish, and side dishes (such as potatoes or rice) may not be stored or heated stacked on one another — they must be stored on separate carts; if there aren't enough carts, meat/fish may be stored on the bottom with side dishes above them."},
+      {he:"יש לחמם בנפרד בשר, דגים ותוספות; באין אפשרות — לחמם יחד כשהבשר/הדגים בתחתית, בתנאי שכל התבניות מכוסות.",
+       en:"Meat, fish, and side dishes should be heated separately; if that isn't possible, they may be heated together with the meat/fish on the bottom, provided all trays are covered."},
+    ]
+  },
+  {
+    id: "kashering-vessels",
+    he:{title:"הכשרת כלים"}, en:{title:"Kashering Vessels"},
+    items: [
+      {he:"כלים שנוקנו מבית חרושת או חנות בבעלות גוי/נכרי חייבים בטבילה.",
+       en:"Vessels purchased from a factory or store owned by a non-Jew must be immersed (tevilat kelim)."},
+      {he:"כלי זכוכית ומתכת מבית חרושת/חנות בבעלות גוי חייבים בטבילה בברכה. פורצלן מטבילים ללא ברכה.",
+       en:"Glass and metal vessels from a factory/store owned by a non-Jew must be immersed with a blessing. Porcelain is immersed without a blessing."},
+      {he:"כלי עץ, חרס, פלסטיק, ניילון וכלים חד-פעמיים אינם מחויבים בטבילה.",
+       en:"Wood, earthenware, plastic, nylon, and disposable vessels are not required to be immersed.",
+       mahadrin:true,
+       note_he:"ברמת כשרות מהדרין — יש הנוהגים להטביל כלי פלסטיק וחרסינה ללא ברכה. טבילת הכלים באחריות המשגיח ובנוכחותו.",
+       note_en:"At the Mehadrin level, some have the custom of immersing plastic and china (porcelain) vessels without a blessing. Immersion of vessels is the supervisor's responsibility and must be done in his presence."},
+      {he:"בכלי מתכת חדשים, בייחוד נירוסטה — יש לבדוק האם יש צורך בהגעלה, משום חשש שומן מהחי.",
+       en:"For new metal vessels, especially stainless steel, it must be checked whether kashering (hagalah) is needed, due to concern about animal fat residue."},
+      {he:"כלים שיש ספק אם נטבלו — יש להטבילם בלא ברכה.", en:"Vessels of uncertain immersion status must be immersed without a blessing."},
+      {he:"כלים שיש ספק בכשרותם ייעולו במחסן, והמפתח יהיה בידי המשגיח עד להכשרתם.",
+       en:"Vessels of uncertain kosher status must be locked away in storage, with the key held by the supervisor until they are kashered."},
+      {he:"בכלים בני יומם אין לבצע הגעלה לא לפני פסח ולא בשאר ימות השנה; לחילופין ניתן להגעיל בכלים בני יומם במים פגומים.",
+       en:"Vessels used within the last 24 hours may not be kashered (hagalah) either before Passover or during the rest of the year; alternatively, such vessels may be kashered using spoiled water."},
+    ]
+  },
+  {
+    id: "confectionery",
+    he:{title:"קונדיטוריה"}, en:{title:"Confectionery"},
+    intro_he:"במסעדות הכוללות קונדיטוריה יש לנהוג לפי נהלי כשרות עבור קונדיטוריות.",
+    intro_en:"Restaurants that include a confectionery section must follow the kashrut procedures for confectioneries.",
+    items:[]
+  },
+  {
+    id: "shabbat-holidays",
+    he:{title:"שבתות ומועדים"}, en:{title:"Shabbat and Holidays"},
+    items: [
+      {he:"יש לסיים אירועים המתקיימים בערב שבת וחג שלוש שעות קודם לכניסת השבת או החג.",
+       en:"Events held on the eve of Shabbat or a holiday must end three hours before the onset of Shabbat or the holiday."},
+      {he:"החל משעה לפני כניסת השבת/החג ועד חצי שעה לאחר יציאתם (לפי לוח הזמנים שמפרסמת הרבנות המקומית) — תיסגר המסעדה ולא יימצא אף אדם במקום.",
+       en:"From one hour before the onset of Shabbat/the holiday until half an hour after it ends (per the times published by the local rabbinate), the restaurant must be closed with no one present."},
+    ]
+  },
+  {
+    id: "chametz-sale",
+    he:{title:"מכירת חמץ לנוכרי בערב פסח"}, en:{title:"Sale of Chametz to a Non-Jew Before Passover"},
+    intro_he:"אישורי מכירת חמץ לבעלי מסעדות יינתנו אך ורק לבעלי תעודת הכשר בתוקף, תוך ציון מפורש שהאישור אינו מהווה תחליף לתעודת הכשר. בעלי עסקים ללא הכשר יכולים למכור חמץ באמצעות נציגי הרבנות המקומית, אך לכתחילה לא יינתן להם אישור כתוב להצגה — ואם ניתן, ייכתב על שמם הפרטי בלבד וללא לוגו הרבנות, כדי למנוע הטעיית ציבור. מקומות מושגחים לא ירכשו תוצרת לאחר הפסח אלא ממי שמכר חמץ לנוכרי דרך נציגי הרבנות המקומית.",
+    intro_en:"Chametz-sale approvals for restaurant owners will be issued only to holders of a valid kashrut certificate, with explicit, prominent wording that the approval does not replace the kashrut certificate. Business owners without kashrut certification may sell their chametz through local rabbinate representatives, but ideally will not be given a written approval to display — and if one is given, it will be issued in their personal name only, without the rabbinate's logo, to avoid misleading the public. Supervised establishments may only purchase post-Passover stock from those who sold their chametz to a non-Jew through local rabbinate representatives.",
+    items:[]
+  },
+  {
+    id: "mashgiach",
+    he:{title:"המשגיח"}, en:{title:"The Supervisor (Mashgiach)"},
+    items: [
+      {he:"יכין דו\"ח יומי על פעילותו (כניסה, יציאה, ברור קטניות, אורז, ניפוי קמח, הפרשת חלה וכו').",
+       en:"Must prepare a daily report of his activity (arrival, departure, checking legumes, rice, sifting flour, separating challah, etc.)."},
+      {he:"יערוך תיק כשרות הכולל רשימת מוצרים בשימוש, תעודות כשרות בתוקף, הנחיות והוראות כשרות, פרסומים והודעות על הסרת כשרות.",
+       en:"Must maintain a kashrut file including a list of products in use, valid kashrut certificates, kashrut guidelines and instructions, and any publications or notices about certification being revoked."},
+      {he:"יעמוד בקשר הדוק עם הרב המפקח מטעם הרבנות המקומית.", en:"Must stay in close contact with the supervising rabbi on behalf of the local rabbinate."},
+      {he:"בהיעדרו מהמסעדה מכל סיבה — יודיע מראש לרבנות המקומית, כדי שיהיה משגיח מחליף בזמן היעדרותו.",
+       en:"If absent from the restaurant for any reason, must notify the local rabbinate in advance so a substitute supervisor is arranged for the absence."},
+      {he:"דו\"ח המשגיח כולל: שם, ת\"ז וכתובת המסעדה; שעות כניסה ויציאה בכל יום; יומן כניסת/הוצאת סחורה כולל כשרויות ותעודות; אישור על בדיקת תולעים בירקות עלים ובקטניות ועל פתיחת ובדיקת ביצים; פירוט מוצרי בשר (כבד, לב) וצלייתם; אישור שהמשגיח הדליק את האש; אישור על הטבלת כלים חדשים והכשרת כלים שנטרפו; הערות כלליות.",
+       en:"The supervisor's report includes: name, ID number, and restaurant address; daily arrival and departure times; a log of goods received and dispatched, including certifications and delivery notes; confirmation of insect checks on leafy vegetables and legumes, and of egg cracking/checking; details of meat products (liver, heart) and their roasting; confirmation that the supervisor lit the fire; confirmation of immersing new vessels and kashering any vessel that became non-kosher; general remarks."},
+    ]
+  },
+  {
+    id: "mehadrin-meat",
+    he:{title:"מסעדה בשרית עם הכשר מהדרין"}, en:{title:"Meat Restaurant with Mehadrin Certification"},
+    mahadrinSection:true,
+    items: [
+      {he:"יש להשתמש אך ורק בירקות עלים (כולל כרוב) מגידולים מפוקחים.", en:"Only leafy vegetables (including cabbage) from supervised cultivation may be used.", mahadrin:true},
+      {he:"כל המוצרים הנכנסים למסעדה חייבים להיות ברמת כשרות מהדרין.", en:"All products entering the restaurant must be of Mehadrin kashrut level.", mahadrin:true},
+      {he:"על המשגיח להיות נוכח במקום בכל זמן פעילות המסעדה.", en:"The supervisor must be present at all times the restaurant is operating.", mahadrin:true},
+    ]
+  },
+  {
+    id: "mehadrin-dairy",
+    he:{title:"מסעדה חלבית עם הכשר מהדרין"}, en:{title:"Dairy Restaurant with Mehadrin Certification"},
+    mahadrinSection:true,
+    intro_he:"בנוסף לאמור לעיל, יש להוסיף:", intro_en:"In addition to the above, the following must be added:",
+    items: [
+      {he:"אין לעשות שימוש במוצרים המכילים חלב ודגים יחדיו.", en:"Products containing both dairy and fish together may not be used.", mahadrin:true},
+      {he:"אין להשתמש במוצרי חלב המכילים אבקת חלב עכו\"ם.", en:"Dairy products containing non-Jewish (non-chalav Yisrael) milk powder may not be used.", mahadrin:true},
+    ]
+  },
+];
+
+let currentLang = 'he';
+let checkedState = {};
+
+function t(key){ return STR[currentLang][key]; }
+
+function renderStatic(){
+  document.title = t('docTitle');
+  document.getElementById('mainTitle').textContent = t('title');
+  document.getElementById('mainSubtitle').textContent = t('subtitle');
+  document.getElementById('sideNote').innerHTML = t('sideNote');
+  document.getElementById('searchInput').placeholder = t('searchPlaceholder');
+  document.getElementById('progressLabel').textContent = t('progressLabel');
+  document.getElementById('introLine').innerHTML = t('introLine');
+  document.getElementById('noResults').textContent = t('noResults');
+  document.getElementById('docFoot').textContent = t('docFoot');
+}
+
+function buildAll(){
+  const sectionsEl = document.getElementById('sections');
+  const tocEl = document.getElementById('toc');
+  sectionsEl.innerHTML = '';
+  tocEl.innerHTML = '';
+
+  DATA.forEach(sec => {
+    const title = currentLang === 'he' ? sec.he.title : sec.en.title;
+    const intro = currentLang === 'he' ? sec.intro_he : sec.intro_en;
+
+    // section card
+    const wrapper = document.createElement('section');
+    wrapper.className = 'card' + (sec.mahadrinSection ? ' mahadrin-section' : '');
+    wrapper.id = sec.id;
+
+    const head = document.createElement('div');
+    head.className = 'card-head';
+    head.innerHTML = `<h2>${title}</h2>` + (sec.items.length ? `<span class="subcount" data-subcount>0/${sec.items.length}</span>` : '');
+    wrapper.appendChild(head);
+
+    if(intro){
+      const note = document.createElement('div');
+      note.className = 'note';
+      note.textContent = intro;
+      wrapper.appendChild(note);
+    }
+
+    if(sec.items.length){
+      const ul = document.createElement('ul');
+      ul.className = 'item-list';
+      sec.items.forEach((it, i) => {
+        const text = currentLang === 'he' ? it.he : it.en;
+        const noteText = currentLang === 'he' ? it.note_he : it.note_en;
+        const key = sec.id + '-' + i;
+        const li = document.createElement('li');
+        li.className = 'item' + (checkedState[key] ? ' checked' : '');
+        li.dataset.key = key;
+        li.dataset.search = text.toLowerCase();
+
+        li.innerHTML = `
+          <input type="checkbox" id="${key}" ${checkedState[key] ? 'checked' : ''}>
+          <div class="item-body">
+            <span class="item-text">${it.mahadrin ? `<span class="badge">${t('mahadrinBadge')}</span>` : ''}${text}</span>
+            ${noteText ? `<div class="sub-note">${noteText}</div>` : ''}
+          </div>
+        `;
+        const cb = li.querySelector('input');
+        cb.addEventListener('change', () => {
+          checkedState[key] = cb.checked;
+          li.classList.toggle('checked', cb.checked);
+          updateCounts(sec.id);
+        });
+        ul.appendChild(li);
+      });
+      wrapper.appendChild(ul);
+    }
+    sectionsEl.appendChild(wrapper);
+
+    // toc link
+    const a = document.createElement('a');
+    a.href = '#' + sec.id;
+    a.dataset.target = sec.id;
+    a.innerHTML = `<span>${title}</span>` + (sec.items.length ? `<span class="count">${sec.items.length}</span>` : '');
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.getElementById(sec.id).scrollIntoView({behavior:'smooth', block:'start'});
+    });
+    tocEl.appendChild(a);
+  });
+
+  updateCounts();
+  setupObserver();
+
+  // re-apply search filter if any
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  if(q) applyFilter(q);
+}
+
+let observer;
+function setupObserver(){
+  if(observer) observer.disconnect();
+  const cards = [...document.querySelectorAll('section.card')];
+  const links = [...document.querySelectorAll('nav.toc a')];
+  observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const link = links.find(l => l.dataset.target === entry.target.id);
+      if(!link) return;
+      if(entry.isIntersecting){
+        links.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, {rootMargin:'-10% 0px -75% 0px'});
+  cards.forEach(c => observer.observe(c));
+}
+
+function updateCounts(sectionId){
+  if(sectionId){
+    const sec = document.getElementById(sectionId);
+    if(sec){
+      const boxes = sec.querySelectorAll('input[type=checkbox]');
+      const checked = [...boxes].filter(b => b.checked).length;
+      const badge = sec.querySelector('[data-subcount]');
+      if(badge) badge.textContent = `${checked}/${boxes.length}`;
+    }
+  }
+  const allBoxes = document.querySelectorAll('input[type=checkbox]');
+  const allChecked = [...allBoxes].filter(b => b.checked).length;
+  document.getElementById('progressCount').textContent = `${allChecked} / ${allBoxes.length}`;
+  const pct = allBoxes.length ? (allChecked/allBoxes.length*100) : 0;
+  document.getElementById('progressFill').style.width = pct + '%';
+  // refresh per-section subcounts too (covers initial render)
+  document.querySelectorAll('section.card').forEach(sec => {
+    const boxes = sec.querySelectorAll('input[type=checkbox]');
+    if(!boxes.length) return;
+    const checked = [...boxes].filter(b => b.checked).length;
+    const badge = sec.querySelector('[data-subcount]');
+    if(badge) badge.textContent = `${checked}/${boxes.length}`;
+  });
+}
+
+function applyFilter(q){
+  let anyVisible = false;
+  DATA.forEach(sec => {
+    const secEl = document.getElementById(sec.id);
+    const title = (currentLang === 'he' ? sec.he.title : sec.en.title).toLowerCase();
+    const intro = (currentLang === 'he' ? sec.intro_he : sec.intro_en) || '';
+    if(!q){
+      secEl.classList.remove('hidden');
+      secEl.querySelectorAll('li.item').forEach(li => li.classList.remove('hidden'));
+      anyVisible = true;
+      return;
+    }
+    let sectionHasMatch = title.includes(q) || intro.toLowerCase().includes(q);
+    const items = secEl.querySelectorAll('li.item');
+    items.forEach(li => {
+      const match = li.dataset.search.includes(q);
+      li.classList.toggle('hidden', !match);
+      if(match) sectionHasMatch = true;
+    });
+    secEl.classList.toggle('hidden', !sectionHasMatch);
+    if(sectionHasMatch) anyVisible = true;
+  });
+  document.getElementById('noResults').classList.toggle('hidden', anyVisible);
+}
+
+function setLang(lang){
+  currentLang = lang;
+  const html = document.getElementById('htmlRoot');
+  html.lang = lang;
+  html.dir = lang === 'he' ? 'rtl' : 'ltr';
+  html.className = lang === 'en' ? 'lang-en' : '';
+  document.getElementById('btnHe').classList.toggle('active', lang === 'he');
+  document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+  renderStatic();
+  buildAll();
+}
+
+document.getElementById('btnHe').addEventListener('click', () => setLang('he'));
+document.getElementById('btnEn').addEventListener('click', () => setLang('en'));
+document.getElementById('searchInput').addEventListener('input', (e) => applyFilter(e.target.value.trim().toLowerCase()));
+
+setLang('he');
+</script>
+</body>
+</html>
