@@ -45,7 +45,7 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
 
   <section class="page-hero">
     <h1>Reel Concepts</h1>
-    <p>Looks, closing cards and {curatedCount} one-minute clip picks mined from 1,581 of Rabbi Dweck's shiurim. Read each quote, listen to it in the original recording, and give it a <strong>👍</strong> if it should become a reel. Approvals save instantly; approved quotes go into production with the look and closing card picked on the card. For review only; this page isn't in the site navigation.</p>
+    <p>Looks, closing cards and {curatedCount} short clip picks (30–50 seconds) from 1,581 of Rabbi Dweck's shiurim, chosen to be succinct, direct and clear. Read each quote, listen to it in the original recording, and give it a <strong>👍</strong> if it should become a reel. Approvals save instantly; approved quotes go into production with the look and closing card picked on the card. For review only; this page isn't in the site navigation.</p>
     <div class="gold-rule"></div>
     <nav class="jump">
       <a href="#looks">1 · Looks</a><a href="#ends">2 · Closing cards</a><a href="#clips">3 · Clip picks</a>
@@ -132,7 +132,7 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
     <div class="container wide">
       <h2 class="section-title">3 · Clip picks</h2>
       <div class="gold-divider"></div>
-      <p class="lede">Every shiur in the archive was cut into one-minute windows, and <strong>Jev</strong> (TypeSafe) scored each window on four things: opening hook, payoff, broad appeal, and whether it stands on its own. Each pick shows the quote, a player cued to that passage in the original recording, a suggested on-screen hook and b-roll shot list, and a suggested look and closing card (change either one). Quotes are automatic transcripts, so Hebrew terms may be garbled; the audio is the reference.</p>
+      <p class="lede"><strong>Round 2.</strong> The first round (now on the <a href="/thoughts">Thought for the Day ideas</a> page) had good topics but passages that took too long to get to the point or depended on the rest of the class. This round, every shiur was cut into 30–50 second windows (12,340 in all) and <strong>Jev</strong> scored each on four things in Rabbi Dweck's words: <em>is the point clear in the first sentence, is it succinct (nothing to cut), is it clear on one listen, and does it stand alone with no context?</em> Before running it, the scoring was checked against his real Thought for the Day recordings and the round-1 passages he turned down; it told them apart 96% of the time. Only passages scoring at the level of his real recordings were kept, then checked by hand. Each card has the quote, the original audio, a suggested hook, a b-roll shot list (tap to edit, ✓ to approve, ✕ to reject), and a suggested look and closing card.</p>
 
       <div class="toolbar">
         <select class="seg-sel" id="seriesSel">
@@ -142,7 +142,7 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
         <div class="seg" data-filter="status">
           <button class="on" data-val="all">Any status</button><button data-val="none">Unreviewed</button><button data-val="yes">Yes</button><button data-val="maybe">Maybe</button><button data-val="no">No</button>
         </div>
-        <label class="chk"><input type="checkbox" id="showAll" /> Show all {clips.length} (incl. the next-best Jev picks)</label>
+        <input type="checkbox" id="showAll" hidden />
         <input type="search" id="q" placeholder="Search transcripts…" />
       </div>
       <div class="tally">
@@ -174,9 +174,9 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
               <h3>{c.title}</h3>
               <p class="shiur">From: {c.shiur}</p>
               <div class="jev" title="Jev scores, 0–3">
-                <span>Hook <i style={`--w:${bar(c.jev.hook)}`}></i></span>
-                <span>Payoff <i style={`--w:${bar(c.jev.payoff)}`}></i></span>
-                <span>Appeal <i style={`--w:${bar(c.jev.appeal)}`}></i></span>
+                <span>Point first <i style={`--w:${bar(c.jev.point)}`}></i></span>
+                <span>Succinct <i style={`--w:${bar(c.jev.succinct)}`}></i></span>
+                <span>Clear <i style={`--w:${bar(c.jev.clear)}`}></i></span>
                 <span>Standalone <i style={`--w:${Math.round(c.jev.standalone * 100)}%`}></i></span>
               </div>
               <blockquote class="quote">{c.text}</blockquote>
