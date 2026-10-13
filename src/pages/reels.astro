@@ -132,7 +132,7 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
     <div class="container wide">
       <h2 class="section-title">3 · Clip picks</h2>
       <div class="gold-divider"></div>
-      <p class="lede"><strong>Round 2.</strong> The first round (now on the <a href="/thoughts">Thought for the Day ideas</a> page) had good topics but passages that took too long to get to the point or depended on the rest of the class. This round, every shiur was cut into 30–50 second windows (12,340 in all) and <strong>Jev</strong> scored each on four things in Rabbi Dweck's words: <em>is the point clear in the first sentence, is it succinct (nothing to cut), is it clear on one listen, and does it stand alone with no context?</em> Before running it, the scoring was checked against his real Thought for the Day recordings and the round-1 passages he turned down; it told them apart 96% of the time. Only passages scoring at the level of his real recordings were kept, then checked by hand. Each card has the quote, the original audio, a suggested hook, a b-roll shot list (tap to edit, ✓ to approve, ✕ to reject), and a suggested look and closing card.</p>
+      <p class="lede"><strong>Round 2.</strong> The first round (now on the <a href="/thoughts">Thought for the Day ideas</a> page) had good topics but passages that took too long to get to the point or depended on the rest of the class. This round, every shiur was cut into 30–50 second windows (12,340 in all) and <strong>Jev</strong> scored each on four things in Rabbi Dweck's words: <em>is the point clear in the first sentence, is it succinct (nothing to cut), is it clear on one listen, and does it stand alone with no context?</em> Before running it, the scoring was checked against his real Thought for the Day recordings and the round-1 passages he turned down; it told them apart 96% of the time. Only passages scoring at the level of his real recordings were kept, then checked by hand. Each card has the quote, the original audio, a suggested hook, a b-roll shot list (tap to edit, ✓ to approve, ✕ to reject), and a suggested look and closing card. If the recording works even though the transcript reads badly (or the other way round), tag it <strong>🎧 Audio</strong> or <strong>📝 Text</strong> under “Good to go”.</p>
 
       <div class="toolbar">
         <select class="seg-sel" id="seriesSel">
@@ -140,7 +140,7 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
           {seriesList.map(([k, l]) => <option value={k}>{l}</option>)}
         </select>
         <div class="seg" data-filter="status">
-          <button class="on" data-val="all">Any status</button><button data-val="none">Unreviewed</button><button data-val="yes">Yes</button><button data-val="maybe">Maybe</button><button data-val="no">No</button>
+          <button class="on" data-val="all">Any status</button><button data-val="none">Unreviewed</button><button data-val="yes">Yes</button><button data-val="maybe">Maybe</button><button data-val="no">No</button><button data-val="audio_ok">🎧 Audio good</button><button data-val="text_ok">📝 Text good</button>
         </div>
         <input type="checkbox" id="showAll" hidden />
         <input type="search" id="q" placeholder="Search transcripts…" />
@@ -192,6 +192,11 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
                 <button class="add-shot" type="button">+ Add a shot</button>
               </div>
 
+              <div class="ready" role="group" aria-label="Good to go">
+                <span class="ready-label">Good to go</span>
+                <button type="button" data-ok="audio_ok" aria-pressed="false" title="The recording itself works, even if the transcript is rough">🎧 Audio</button>
+                <button type="button" data-ok="text_ok" aria-pressed="false" title="The words work as written">📝 Text</button>
+              </div>
               <div class="picks">
                 <div class="vote big">
                   <button data-v="yes">👍 Approve</button><button data-v="maybe">Maybe</button><button data-v="no">👎 Pass</button>
@@ -308,6 +313,8 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
       const row = state[el.dataset.id] || {};
       el.dataset.status = row.status || 'none';
       el.querySelectorAll('.vote button').forEach((b) => b.classList.toggle('on', b.dataset.v === row.status));
+      el.querySelectorAll('.ready button').forEach((b) => { const on = !!row[b.dataset.ok]; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); });
+      el.dataset.audioOk = row.audio_ok ? '1' : ''; el.dataset.textOk = row.text_ok ? '1' : '';
       el.querySelectorAll('[data-k]').forEach((f) => { if (row[f.dataset.k] != null && document.activeElement !== f) f.value = row[f.dataset.k]; });
       if (row.style) { const m = el.querySelector('[data-mini]'); m.className = m.className.replace(/s-\w+/, 's-' + row.style); }
       const brEl = el.querySelector('.broll');
@@ -334,7 +341,7 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
   function tally() {
     const rows = Object.values(state).filter((r) => !r.clip_id.includes(':'));
     const n = (s) => rows.filter((r) => r.status === s).length;
-    document.getElementById('tally').innerHTML = `<b>${n('yes')}</b> 👍 approved · <b>${n('maybe')}</b> maybe · <b>${n('no')}</b> no`;
+    document.getElementById('tally').innerHTML = `<b>${n('yes')}</b> 👍 approved · <b>${rows.filter((r) => r.audio_ok).length}</b> 🎧 audio good · <b>${rows.filter((r) => r.text_ok).length}</b> 📝 text good · <b>${n('maybe')}</b> maybe · <b>${n('no')}</b> no`;
   }
 
   document.querySelectorAll('.clip').forEach((el) => {
@@ -348,6 +355,9 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
       save(id, patch);
     }));
     el.querySelectorAll('select[data-k]').forEach((s) => s.addEventListener('change', () => save(id, { ...base() })));
+    el.querySelectorAll('.ready button').forEach((b) => b.addEventListener('click', () => {
+      const k = b.dataset.ok; save(id, { ...base(), [k]: !(state[id] || {})[k] });
+    }));
     // b-roll: per-shot approve / reject / edit, saved as [{text, ok}] in dweck_reel_picks.broll
     const br = el.querySelector('.broll'), ol = br.querySelector('ol');
     const shots = () => (state[id] && Array.isArray(state[id].broll)) ? state[id].broll : JSON.parse(br.dataset.default).map((t) => ({ text: t, ok: null }));
@@ -402,7 +412,7 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
     const term = q.value.trim().toLowerCase();
     document.querySelectorAll('.clip').forEach((el) => {
       const ok = (F.source === 'all' || el.dataset.source === F.source)
-        && (F.status === 'all' || (el.dataset.status || 'none') === F.status)
+        && (F.status === 'all' || (F.status === 'audio_ok' ? el.dataset.audioOk === '1' : F.status === 'text_ok' ? el.dataset.textOk === '1' : (el.dataset.status || 'none') === F.status))
         && (all.checked || !el.classList.contains('uncurated') || term)
         && (!term || el.dataset.search.includes(term));
       el.hidden = !ok;
@@ -411,7 +421,7 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
 
   document.getElementById('csv').addEventListener('click', () => {
     const rows = Object.values(state).filter((r) => r.status && !r.clip_id.includes(':'));
-    const cols = ['clip_id', 'status', 'title', 'shiur', 'source', 'start_sec', 'end_sec', 'audio_url', 'style', 'end_card', 'reel_url', 'notes'];
+    const cols = ['clip_id', 'status', 'audio_ok', 'text_ok', 'title', 'shiur', 'source', 'start_sec', 'end_sec', 'audio_url', 'style', 'end_card', 'reel_url', 'notes'];
     const esc = (v) => '"' + String(v ?? '').replace(/"/g, '""') + '"';
     const csv = [cols.join(',')].concat(rows.map((r) => cols.map((c) => esc(r[c])).join(','))).join('\n');
     const a = document.createElement('a');
@@ -646,6 +656,12 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
   details { margin: 0.5rem 0; }
   summary { cursor: pointer; font-size: 0.82rem; font-weight: 700; color: var(--gold); letter-spacing: 0.04em; }
   .tx { font-size: 0.88rem; color: var(--text-light); margin-top: 0.5rem; max-height: 260px; overflow: auto; padding-right: 0.5rem; }
+  .ready { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin-top: 0.8rem; }
+  .ready-label { font: 700 0.7rem var(--font-sans); letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-light); margin-right: 0.2rem; }
+  .ready button { font: 700 0.78rem var(--font-sans); padding: 0.45rem 0.85rem; border: 1px solid var(--cream-dark); background: #fff; color: var(--text); border-radius: 99px; cursor: pointer; white-space: nowrap; }
+  .ready button:hover { border-color: #2f6b46; }
+  .ready button.on { background: #e7f1ea; border-color: #2f6b46; color: #2f6b46; }
+  .ready button.on::before { content: '✓ '; }
   .picks { display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; align-items: center; margin-top: 0.6rem; }
   .picks .vote { margin-top: 0; }
   .picks label { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-light); display: flex; gap: 0.4rem; align-items: center; }
