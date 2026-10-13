@@ -409,7 +409,7 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
   .look figcaption h3 { font-size: 1.15rem; margin: 0.9rem 0 0.25rem; }
   .look figcaption p { font-size: 0.88rem; color: var(--text-light); line-height: 1.55; }
 
-  .vote { display: flex; gap: 0.35rem; margin-top: 0.7rem; }
+  .vote { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.7rem; }
   .vote button { font: 700 0.72rem var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; padding: 0.45rem 0.7rem; border: 1px solid var(--cream-dark); background: #fff; color: var(--text); cursor: pointer; border-radius: 2px; }
   .vote button:hover { border-color: var(--gold); }
   .vote button[data-v=yes].on { background: #2f6b46; border-color: #2f6b46; color: #fff; }
@@ -557,12 +557,13 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
 
   /* ───────── CLIP CARDS ───────── */
   .clip-list { display: grid; gap: 1.25rem; }
-  .clip { display: grid; grid-template-columns: 150px 1fr; gap: 1.5rem; padding: 1.25rem; border: 1px solid var(--cream-dark); border-left: 3px solid var(--cream-dark); background: #fff; }
+  .clip { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 1.5rem; padding: 1.25rem; border: 1px solid var(--cream-dark); border-left: 3px solid var(--cream-dark); background: #fff; }
   .clip[data-status=yes] { border-left-color: #2f6b46; }
   .clip[data-status=maybe] { border-left-color: var(--gold); }
   .clip[data-status=no] { opacity: 0.55; border-left-color: #8a3a32; }
   .clip.uncurated .phone { opacity: 0.8; }
   .phone.mini { align-self: start; border-radius: 10px; }
+  .clip-body { min-width: 0; overflow-wrap: anywhere; }
   .clip-meta { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-light); }
   .clip-meta .src { color: var(--gold); font-weight: 700; }
   .clip-meta a { color: var(--gold); text-decoration: none; font-weight: 700; }
@@ -608,7 +609,13 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
   textarea { width: 100%; margin-top: 0.7rem; padding: 0.5rem 0.7rem; border: 1px solid var(--cream-dark); font: inherit; font-size: 0.88rem; resize: vertical; overflow: hidden; }
 
   @media (max-width: 640px) {
-    .clip { grid-template-columns: 96px 1fr; gap: 1rem; padding: 1rem; }
+    .clip { grid-template-columns: minmax(0, 1fr); gap: 0.8rem; padding: 1rem 0.9rem; }
+    .phone.mini { width: 104px; }
+    #clips.section { padding-left: 0.5rem; padding-right: 0.5rem; }
+    .quote { padding-left: 0.75rem; }
+    .vote button { padding: 0.45rem 0.55rem; white-space: nowrap; }
+    .vote.big button { padding: 0.55rem 0.7rem; }
+    .container.wide { padding: 0 1rem; }
     .look-grid, .end-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem 1rem; }
     .who { margin-left: 0; }
     .tally { position: static; }
