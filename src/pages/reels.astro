@@ -185,13 +185,12 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
                 : c.curated && <p class="fine pending">Audio clip is being lined up with the recording…</p>}
               {c.why && <p class="why">{c.why}</p>}
               {c.trim && <p class="trim">✂ {c.trim}</p>}
-              {c.broll.length > 0 && (
-                <div class="broll">
-                  {c.still && <img class="still" src={`/reels/broll_${c.still}.jpg`} alt="" loading="lazy" />}
-                  <h4>B-roll shot list</h4>
-                  <ol>{c.broll.map((b: string) => <li>{b}</li>)}</ol>
-                </div>
-              )}
+              <div class="broll" data-default={JSON.stringify(c.broll)}>
+                {c.still && <img class="still" src={`/reels/broll_${c.still}.jpg`} alt="" loading="lazy" />}
+                <h4>B-roll shot list <span>tap text to edit · ✓ approve · ✕ reject</span></h4>
+                <ol></ol>
+                <button class="add-shot" type="button">+ Add a shot</button>
+              </div>
 
               <div class="picks">
                 <div class="vote big">
@@ -311,6 +310,8 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
       el.querySelectorAll('.vote button').forEach((b) => b.classList.toggle('on', b.dataset.v === row.status));
       el.querySelectorAll('[data-k]').forEach((f) => { if (row[f.dataset.k] != null && document.activeElement !== f) f.value = row[f.dataset.k]; });
       if (row.style) { const m = el.querySelector('[data-mini]'); m.className = m.className.replace(/s-\w+/, 's-' + row.style); }
+      const brEl = el.querySelector('.broll');
+      if (brEl && brEl.render && !brEl.contains(document.activeElement)) brEl.render();
       const reel = el.querySelector('.reel');
       if (reel) {
         const st = row.status === 'yes' ? row.reel_status : (row.reel_status === 'ready' ? 'ready' : null);
@@ -347,6 +348,37 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
       save(id, patch);
     }));
     el.querySelectorAll('select[data-k]').forEach((s) => s.addEventListener('change', () => save(id, { ...base() })));
+    // b-roll: per-shot approve / reject / edit, saved as [{text, ok}] in dweck_reel_picks.broll
+    const br = el.querySelector('.broll'), ol = br.querySelector('ol');
+    const shots = () => (state[id] && Array.isArray(state[id].broll)) ? state[id].broll : JSON.parse(br.dataset.default).map((t) => ({ text: t, ok: null }));
+    const saveShots = (list) => save(id, { ...base(), broll: list });
+    br.render = () => {
+      ol.innerHTML = '';
+      shots().forEach((sh, k) => {
+        const li = document.createElement('li'); li.dataset.ok = sh.ok === true ? 'yes' : sh.ok === false ? 'no' : '';
+        li.innerHTML = '<span class="shot" contenteditable="plaintext-only" spellcheck="true"></span><span class="shot-btns"><button type="button" data-a="yes" title="Approve shot">✓</button><button type="button" data-a="no" title="Reject shot">✕</button></span>';
+        li.firstChild.textContent = sh.text;
+        li.firstChild.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); e.target.blur(); } });
+        li.firstChild.addEventListener('blur', (e) => {
+          const t = e.target.textContent.trim(), list = shots().map((x) => ({ ...x }));
+          if (t === list[k].text) return;
+          if (!t) list.splice(k, 1); else { list[k].text = t; list[k].ok = list[k].ok ?? true; }
+          saveShots(list);
+        });
+        li.querySelectorAll('.shot-btns button').forEach((b) => b.addEventListener('click', () => {
+          const list = shots().map((x) => ({ ...x })), want = b.dataset.a === 'yes';
+          list[k].ok = list[k].ok === want ? null : want;
+          saveShots(list);
+        }));
+        ol.appendChild(li);
+      });
+    };
+    br.querySelector('.add-shot').addEventListener('click', () => {
+      const list = shots().map((x) => ({ ...x })); list.push({ text: 'New shot: describe it', ok: true });
+      state[id] = { ...(state[id] || {}), broll: list }; br.render();
+      const last = ol.lastElementChild.firstChild; last.focus(); document.getSelection().selectAllChildren(last);
+    });
+    br.render();
     const ta = el.querySelector('textarea');
     ta.addEventListener('input', () => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; });
     ta.addEventListener('change', () => save(id, { ...base(), notes: ta.value }));
@@ -582,8 +614,8 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
   .reel { margin-top: 0.8rem; padding: 0.7rem 0.9rem; background: var(--cream); border-left: 3px solid var(--gold); font-size: 0.88rem; }
   .reel[data-state=ready] { background: none; border: 0; padding: 0; display: flex; flex-direction: column; gap: 0.4rem; align-items: flex-start; }
   .reel[data-state=error] { border-color: #8a3a32; color: #8a3a32; }
-  .reel video { width: 220px; aspect-ratio: 9/16; background: #000; border-radius: 10px; }
-  .reel a { font-size: 0.8rem; font-weight: 700; color: var(--gold); text-decoration: none; }
+  :global(.reel video) { width: 220px; aspect-ratio: 9/16; background: #000; border-radius: 10px; }
+  :global(.reel a) { font-size: 0.8rem; font-weight: 700; color: var(--gold); text-decoration: none; }
   .clip audio { width: 100%; max-width: 420px; height: 34px; margin: 0.2rem 0 0.4rem; }
   .seg-sel { font: 700 0.78rem var(--font-sans); padding: 0.5rem 0.6rem; border: 1px solid var(--cream-dark); background: #fff; color: var(--text); border-radius: 3px; }
   .clip h3 { font-size: 1.35rem; margin: 0.25rem 0 0.3rem; }
@@ -599,6 +631,18 @@ const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
   .mood figcaption b { display: block; font-family: var(--font-serif); font-weight: 400; color: var(--dark); font-size: 1rem; }
   .broll h4 { font: 700 0.7rem var(--font-sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.25rem; }
   .broll ol { padding-left: 1.2rem; font-size: 0.88rem; line-height: 1.55; }
+  .broll h4 span { font-weight: 400; letter-spacing: 0.02em; text-transform: none; margin-left: 0.4rem; }
+  :global(.broll li) { margin: 0.15rem 0; }
+  :global(.broll li > *) { vertical-align: middle; }
+  :global(.broll .shot) { outline: none; border-bottom: 1px dashed transparent; cursor: text; }
+  :global(.broll .shot:hover), :global(.broll .shot:focus) { border-bottom-color: var(--gold); }
+  :global(.broll li[data-ok=yes] .shot) { color: #2f6b46; }
+  :global(.broll li[data-ok=no] .shot) { color: #999; text-decoration: line-through; }
+  :global(.shot-btns) { display: inline-flex; gap: 0.2rem; margin-left: 0.5rem; }
+  :global(.shot-btns button) { font-size: 0.72rem; line-height: 1; width: 1.6rem; height: 1.6rem; border: 1px solid var(--cream-dark); background: #fff; border-radius: 50%; cursor: pointer; color: var(--text-light); }
+  :global(.broll li[data-ok=yes] .shot-btns button[data-a=yes]) { background: #2f6b46; border-color: #2f6b46; color: #fff; }
+  :global(.broll li[data-ok=no] .shot-btns button[data-a=no]) { background: #8a3a32; border-color: #8a3a32; color: #fff; }
+  .add-shot { font: 700 0.75rem var(--font-sans); color: var(--gold); background: none; border: 0; cursor: pointer; padding: 0.3rem 0; margin-left: 1.2rem; }
   details { margin: 0.5rem 0; }
   summary { cursor: pointer; font-size: 0.82rem; font-weight: 700; color: var(--gold); letter-spacing: 0.04em; }
   .tx { font-size: 0.88rem; color: var(--text-light); margin-top: 0.5rem; max-height: 260px; overflow: auto; padding-right: 0.5rem; }

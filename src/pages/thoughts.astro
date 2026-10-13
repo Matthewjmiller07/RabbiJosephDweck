@@ -1,0 +1,142 @@
+---
+import Layout from '../layouts/Layout.astro';
+import clips from '../data/reels.json';
+import Idea from '../components/Idea.astro';
+
+const picks = clips.filter((c: any) => c.curated);
+const more = clips.filter((c: any) => !c.curated);
+const seriesList = [...new Map(clips.map((c: any) => [c.source, c.seriesLabel])).entries()];
+---
+
+<Layout title="Thought for the Day Ideas" description="Ideas for Thought for the Day recordings, drawn from Rabbi Dweck's shiurim.">
+  <section class="page-hero">
+    <h1>Thought for the Day Ideas</h1>
+    <p>{clips.length} one-minute ideas drawn from your shiurim, each with the passage as you said it, where it came from, and a link to listen. Mark the ones you'd like to record; your marks are saved.</p>
+    <div class="gold-rule"></div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <div class="bar">
+        <select id="series"><option value="all">All series</option>{seriesList.map(([k, l]) => <option value={k}>{l}</option>)}</select>
+        <div class="seg" id="status">
+          <button class="on" data-val="all">All</button><button data-val="record">To record</button><button data-val="recorded">Recorded</button><button data-val="none">Not marked</button>
+        </div>
+        <input type="search" id="q" placeholder="Search…" />
+        <span id="count" class="count"></span>
+      </div>
+
+      <h2 class="group">Top picks</h2>
+      {picks.map((c: any) => <Idea c={c} />)}
+      <h2 class="group">More from the archive</h2>
+      <p class="sub">Further passages ranked highly by the search, not yet titled by hand.</p>
+      {more.map((c: any) => <Idea c={c} />)}
+      <p class="fine">Passages are automatic transcripts of the recordings, so Hebrew words may be misspelled; the audio is the reference.</p>
+    </div>
+  </section>
+</Layout>
+
+<script is:inline>
+  const SB_URL = 'https://qukziojymwlvmrzapgyo.supabase.co/rest/v1/dweck_tftd_ideas';
+  const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF1a3ppb2p5bXdsdm1yemFwZ3lvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQwNjMxNzAsImV4cCI6MjA2OTYzOTE3MH0.I7oR9fcypn-BKb9AS4d2UlXrgvMbpTQtWySqxgAWGzo';
+  const H = { apikey: SB_KEY, Authorization: 'Bearer ' + SB_KEY, 'Content-Type': 'application/json' };
+  const state = {};
+  const ideas = [...document.querySelectorAll('.idea')];
+
+  function paint() {
+    ideas.forEach((el) => {
+      const r = state[el.dataset.id] || {};
+      el.dataset.status = r.status || 'none';
+      el.querySelectorAll('.mark button').forEach((b) => b.classList.toggle('on', b.dataset.v === r.status));
+      const ta = el.querySelector('textarea');
+      if (r.notes != null && document.activeElement !== ta) ta.value = r.notes;
+    });
+    filter();
+  }
+  async function save(el, patch) {
+    const id = el.dataset.id;
+    state[id] = { ...(state[id] || {}), ...patch };
+    paint();
+    const flag = el.querySelector('.saved');
+    flag.textContent = 'Saving…';
+    try {
+      const r = await fetch(SB_URL + '?on_conflict=idea_id', { method: 'POST', headers: { ...H, Prefer: 'resolution=merge-duplicates,return=minimal' },
+        body: JSON.stringify({ idea_id: id, title: el.dataset.title, ...patch, updated_at: new Date().toISOString() }) });
+      if (!r.ok) throw new Error(await r.text());
+      flag.textContent = 'Saved';
+    } catch (e) { console.error(e); flag.textContent = 'Not saved, please try again'; }
+    setTimeout(() => { if (flag.textContent === 'Saved') flag.textContent = ''; }, 2000);
+  }
+  ideas.forEach((el) => {
+    el.querySelectorAll('.mark button').forEach((b) => b.addEventListener('click', () => {
+      const cur = (state[el.dataset.id] || {}).status;
+      save(el, { status: cur === b.dataset.v ? null : b.dataset.v });
+    }));
+    const ta = el.querySelector('textarea');
+    ta.addEventListener('change', () => save(el, { notes: ta.value }));
+  });
+
+  const F = { series: 'all', status: 'all' };
+  const q = document.getElementById('q');
+  document.getElementById('series').addEventListener('change', (e) => { F.series = e.target.value; filter(); });
+  document.querySelectorAll('#status button').forEach((b) => b.addEventListener('click', () => {
+    document.querySelectorAll('#status button').forEach((x) => x.classList.remove('on')); b.classList.add('on');
+    F.status = b.dataset.val; filter();
+  }));
+  q.addEventListener('input', filter);
+  function filter() {
+    const t = q.value.trim().toLowerCase();
+    let n = 0;
+    ideas.forEach((el) => {
+      const ok = (F.series === 'all' || el.dataset.series === F.series) && (F.status === 'all' || el.dataset.status === F.status)
+        && (!t || el.textContent.toLowerCase().includes(t));
+      el.hidden = !ok; if (ok) n++;
+    });
+    const rec = Object.values(state).filter((r) => r.status === 'record').length;
+    const done = Object.values(state).filter((r) => r.status === 'recorded').length;
+    document.getElementById('count').textContent = `${n} shown · ${rec} to record · ${done} recorded`;
+  }
+  fetch(SB_URL + '?select=*', { headers: H }).then((r) => r.json())
+    .then((rows) => { (Array.isArray(rows) ? rows : []).forEach((r) => { state[r.idea_id] = r; }); paint(); })
+    .catch(() => paint());
+</script>
+
+<style>
+  .container.narrow { max-width: 820px; }
+  .bar { display: flex; flex-wrap: wrap; gap: 0.6rem 0.9rem; align-items: center; padding: 0.8rem 1rem; background: var(--cream); border-left: 3px solid var(--gold); position: sticky; top: 0; z-index: 10; margin-bottom: 1.5rem; }
+  .bar select, .bar input { font: inherit; font-size: 0.9rem; padding: 0.45rem 0.6rem; border: 1px solid var(--cream-dark); background: #fff; border-radius: 3px; }
+  .bar input { flex: 1; min-width: 140px; }
+  .seg { display: inline-flex; border: 1px solid var(--cream-dark); border-radius: 3px; overflow: hidden; }
+  .seg button { font: 700 0.75rem var(--font-sans); padding: 0.5rem 0.7rem; border: 0; border-right: 1px solid var(--cream-dark); background: #fff; cursor: pointer; color: var(--text); }
+  .seg button:last-child { border-right: 0; }
+  .seg button.on { background: var(--dark); color: #fff; }
+  .count { font-size: 0.8rem; color: var(--text-light); }
+  .group { font-size: 1.6rem; margin: 2.5rem 0 0.4rem; }
+  .sub { color: var(--text-light); margin-bottom: 1rem; }
+  .fine { color: var(--text-light); font-size: 0.85rem; margin-top: 2rem; }
+
+  :global(.idea) { overflow-wrap: anywhere; padding: 1.6rem 0 1.4rem; border-bottom: 1px solid var(--cream-dark); }
+  :global(.idea[data-status=record]) { border-left: 3px solid var(--gold); padding-left: 1rem; }
+  :global(.idea[data-status=recorded]) { border-left: 3px solid #2f6b46; padding-left: 1rem; opacity: 0.75; }
+  :global(.idea[data-status=skip]) { opacity: 0.45; }
+  :global(.idea .src) { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+  :global(.idea h3) { font-size: 1.45rem; margin: 0.25rem 0 0.2rem; }
+  :global(.idea .from) { font-size: 0.85rem; color: var(--text-light); }
+  :global(.idea blockquote) { font-family: var(--font-serif); font-size: 1.05rem; line-height: 1.7; color: var(--dark); margin: 0.9rem 0; padding-left: 1rem; border-left: 2px solid var(--cream-dark); }
+  :global(.idea .listen) { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; font-size: 0.85rem; }
+  :global(.idea .listen audio) { height: 34px; width: 100%; max-width: 380px; }
+  :global(.idea .listen a) { color: var(--gold); font-weight: 700; text-decoration: none; }
+  :global(.idea .row) { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1rem; margin-top: 0.8rem; }
+  :global(.idea .mark) { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  :global(.idea .mark button) { font: 700 0.78rem var(--font-sans); padding: 0.5rem 0.8rem; border: 1px solid var(--cream-dark); background: #fff; cursor: pointer; border-radius: 2px; color: var(--text); white-space: nowrap; }
+  :global(.idea .mark button[data-v=record].on) { background: var(--gold); border-color: var(--gold); color: #fff; }
+  :global(.idea .mark button[data-v=recorded].on) { background: #2f6b46; border-color: #2f6b46; color: #fff; }
+  :global(.idea .mark button[data-v=skip].on) { background: #777; border-color: #777; color: #fff; }
+  :global(.idea .saved) { font-size: 0.78rem; color: #2f6b46; }
+  :global(.idea textarea) { width: 100%; margin-top: 0.6rem; padding: 0.5rem 0.7rem; border: 1px solid var(--cream-dark); font: inherit; font-size: 0.9rem; resize: vertical; }
+  @media (max-width: 640px) { .section { padding-left: 1rem; padding-right: 1rem; } :global(.idea blockquote) { font-size: 1rem; } }
+  @media print {
+    .bar, :global(.idea .row), :global(.idea textarea), :global(.idea audio), :global(.site-header), :global(.site-footer) { display: none !important; }
+    :global(.idea) { break-inside: avoid; }
+  }
+</style>

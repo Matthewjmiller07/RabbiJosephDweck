@@ -34,8 +34,8 @@
   ],
   "trim": "",
   "rank": 0,
-  "t0": null,
-  "t1": null
+  "t0": 1957.39,
+  "t1": 2010.46
  },
  {
   "id": "z-93a421d8-6019",
@@ -72,14 +72,14 @@
   ],
   "trim": "",
   "rank": 1,
-  "t0": null,
-  "t1": null
+  "t0": 2245.85,
+  "t1": 2336.28
  },
  {
   "id": "z-c963c255-12306",
   "source": "moadim",
   "seriesLabel": "Festivals",
-  "shiur": "A New Purim.Casual Discussion.2017",
+  "shiur": "A New Purim Casual Discussion 2017",
   "start": 4056,
   "end_sec": 4119,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/9cfb81a14162dd980cf1/a-new-purim-casual-discussion-2017-c963c255.mp3",
@@ -110,14 +110,14 @@
   ],
   "trim": "Opens mid-joke; start at “You go to get married…”.",
   "rank": 2,
-  "t0": null,
-  "t1": null
+  "t0": 4058.73,
+  "t1": 4120.79
  },
  {
   "id": "z-be6344ae-4028",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "Yesod_11",
+  "shiur": "Yesod 11",
   "start": 1602,
   "end_sec": 1670,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/ae2182409d44810bbc32/yesod-11-be6344ae.mp3",
@@ -148,14 +148,14 @@
   ],
   "trim": "",
   "rank": 3,
-  "t0": null,
-  "t1": null
+  "t0": 1675.96,
+  "t1": 1747.27
  },
  {
   "id": "z-36b4bc89-6179",
   "source": "moadim",
   "seriesLabel": "Festivals",
-  "shiur": "The Art of Noticing.Passover2019",
+  "shiur": "The Art of Noticing Passover2019",
   "start": 2544,
   "end_sec": 2604,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/d95f6244b6dd080eb569/the-art-of-noticing-passover2019-36b4bc89.mp3",
@@ -186,8 +186,8 @@
   ],
   "trim": "",
   "rank": 5,
-  "t0": null,
-  "t1": null
+  "t0": 2539.32,
+  "t1": 2601.71
  },
  {
   "id": "z-2e6c809f-3901",
@@ -224,14 +224,14 @@
   ],
   "trim": "",
   "rank": 6,
-  "t0": null,
-  "t1": null
+  "t0": 1560.55,
+  "t1": 1631.75
  },
  {
   "id": "z-90f1fadb-5871",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.IV.2",
+  "shiur": "PA IV 2",
   "start": 2334,
   "end_sec": 2398,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/a4235024f9463567ba37/pa-iv-2-90f1fadb.mp3",
@@ -262,14 +262,14 @@
   ],
   "trim": "",
   "rank": 7,
-  "t0": null,
-  "t1": null
+  "t0": 2422.99,
+  "t1": 2470.13
  },
  {
   "id": "z-457c3a26-896",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "DT.72.39",
+  "shiur": "DT 72.39",
   "start": 379,
   "end_sec": 439,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/5254b3fef0296f72eca5/dt-72-39-457c3a26.mp3",
@@ -300,8 +300,8 @@
   ],
   "trim": "",
   "rank": 8,
-  "t0": null,
-  "t1": null
+  "t0": 321.14,
+  "t1": 369.25
  },
  {
   "id": "z-5811e5aa-2484",
@@ -338,14 +338,14 @@
   ],
   "trim": "",
   "rank": 9,
-  "t0": null,
-  "t1": null
+  "t0": 1010.32,
+  "t1": 1080.92
  },
  {
   "id": "z-3c6a7ded-213",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "March Of The Living Address.2022.krakow",
+  "shiur": "March Of The Living Address 2022.krakow",
   "start": 138,
   "end_sec": 217,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/4b1b51a33e119e9df78a/march-of-the-living-address-2022-krakow-3c6a7ded.mp3",
@@ -376,8 +376,8 @@
   ],
   "trim": "Sensitive context: review before posting.",
   "rank": 10,
-  "t0": null,
-  "t1": null
+  "t0": 186.19,
+  "t1": 284.08
  },
  {
   "id": "z-ed879d44-3035",
@@ -414,8 +414,8 @@
   ],
   "trim": "",
   "rank": 12,
-  "t0": null,
-  "t1": null
+  "t0": 1324.95,
+  "t1": 1373.04
  },
  {
   "id": "z-7faf29f8-8219",
@@ -452,14 +452,14 @@
   ],
   "trim": "",
   "rank": 14,
-  "t0": null,
-  "t1": null
+  "t0": 3547.71,
+  "t1": 3624.81
  },
  {
   "id": "z-f84a06e3-1283",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "Speech To Ypo Summit London.2018",
+  "shiur": "Speech To Ypo Summit London 2018",
   "start": 662,
   "end_sec": 726,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/4b1b51a33e119e9df78a/speech-to-ypo-summit-london-2018-f84a06e3.mp3",
@@ -490,8 +490,8 @@
   ],
   "trim": "",
   "rank": 15,
-  "t0": null,
-  "t1": null
+  "t0": 693.8,
+  "t1": 761.22
  },
  {
   "id": "z-0d22f7f1-4089",
@@ -528,14 +528,14 @@
   ],
   "trim": "",
   "rank": 16,
-  "t0": null,
-  "t1": null
+  "t0": 1488.7,
+  "t1": 1561.92
  },
  {
   "id": "z-fb781bb9-7439",
   "source": "tehillim",
   "seriesLabel": "Tehillim",
-  "shiur": "Tehillim.17",
+  "shiur": "Tehillim 17",
   "start": 2888,
   "end_sec": 2951,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52a2165fdb4e5d2b4ec5/tehillim-17-fb781bb9.mp3",
@@ -566,8 +566,8 @@
   ],
   "trim": "",
   "rank": 17,
-  "t0": null,
-  "t1": null
+  "t0": 2985.97,
+  "t1": 3038.27
  },
  {
   "id": "z-bc5e2d1a-4695",
@@ -604,14 +604,14 @@
   ],
   "trim": "",
   "rank": 18,
-  "t0": null,
-  "t1": null
+  "t0": 1902.67,
+  "t1": 2002.54
  },
  {
   "id": "z-224035a2-2761",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "Siyoum on Masekhet Aboda Zara.2018.Cheating on God",
+  "shiur": "Siyoum on Masekhet Aboda Zara 2018.Cheating on God",
   "start": 932,
   "end_sec": 995,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/d17f2a580f6b502e39c3/siyoum-on-masekhet-aboda-zara-2018-cheating-on-god-224035a2.mp3",
@@ -642,8 +642,8 @@
   ],
   "trim": "",
   "rank": 19,
-  "t0": null,
-  "t1": null
+  "t0": 868.88,
+  "t1": 944.0
  },
  {
   "id": "z-336b14bf-4694",
@@ -680,14 +680,14 @@
   ],
   "trim": "",
   "rank": 20,
-  "t0": null,
-  "t1": null
+  "t0": 2089.16,
+  "t1": 2174.55
  },
  {
   "id": "z-13df9548-4980",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "InclusivityandtheFutureof JewishLife.LSE.2017",
+  "shiur": "Inclusivity and the Future of Jewish Life (LSE, 2017)",
   "start": 1837,
   "end_sec": 1898,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/0debc0393fcf87c5339e/inclusivityandthefutureof-jewishlife-lse-2017-13df9548.mp3",
@@ -718,14 +718,14 @@
   ],
   "trim": "",
   "rank": 21,
-  "t0": null,
-  "t1": null
+  "t0": 1859.55,
+  "t1": 1919.98
  },
  {
   "id": "z-99da3aea-4533",
   "source": "moadim",
   "seriesLabel": "Festivals",
-  "shiur": "Lag_LaOmer",
+  "shiur": "Lag La Omer",
   "start": 1703,
   "end_sec": 1767,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/e59a3ba477fef87008f8/lag-laomer-99da3aea.mp3",
@@ -756,8 +756,8 @@
   ],
   "trim": "",
   "rank": 22,
-  "t0": null,
-  "t1": null
+  "t0": 1690.59,
+  "t1": 1752.99
  },
  {
   "id": "z-5d5335fb-4371",
@@ -794,14 +794,14 @@
   ],
   "trim": "",
   "rank": 24,
-  "t0": null,
-  "t1": null
+  "t0": 1535.45,
+  "t1": 1604.34
  },
  {
   "id": "z-6a364944-2451",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "TSBP.0.Intro",
+  "shiur": "TSBP 0.Intro",
   "start": 838,
   "end_sec": 898,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/36458538cd41c13efa81/tsbp-0-intro-6a364944.mp3",
@@ -832,14 +832,14 @@
   ],
   "trim": "",
   "rank": 26,
-  "t0": null,
-  "t1": null
+  "t0": 914.54,
+  "t1": 983.92
  },
  {
   "id": "z-538aa96c-7748",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.IV.1d Honor",
+  "shiur": "PA IV 1d Honor",
   "start": 2876,
   "end_sec": 2948,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/a4235024f9463567ba37/pa-iv-1d-honor-538aa96c.mp3",
@@ -870,8 +870,8 @@
   ],
   "trim": "",
   "rank": 27,
-  "t0": null,
-  "t1": null
+  "t0": 2873.42,
+  "t1": 2942.03
  },
  {
   "id": "z-bfe49630-9343",
@@ -908,8 +908,8 @@
   ],
   "trim": "",
   "rank": 28,
-  "t0": null,
-  "t1": null
+  "t0": 3318.71,
+  "t1": 3376.13
  },
  {
   "id": "z-cf0c1dc8-4234",
@@ -946,14 +946,14 @@
   ],
   "trim": "",
   "rank": 29,
-  "t0": null,
-  "t1": null
+  "t0": 1674.64,
+  "t1": 1736.91
  },
  {
   "id": "z-93950a1b-8481",
   "source": "moadim",
   "seriesLabel": "Festivals",
-  "shiur": "TheOriginsofRoshHaShana.5779.LSJS",
+  "shiur": "The Originsof Rosh Ha Shana 5779.LSJS",
   "start": 3446,
   "end_sec": 3507,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/131f73828ba434f44801/theoriginsofroshhashana-5779-lsjs-93950a1b.mp3",
@@ -984,8 +984,8 @@
   ],
   "trim": "",
   "rank": 30,
-  "t0": null,
-  "t1": null
+  "t0": 3407.24,
+  "t1": 3468.3
  },
  {
   "id": "z-637dcce9-3449",
@@ -1022,8 +1022,8 @@
   ],
   "trim": "",
   "rank": 31,
-  "t0": null,
-  "t1": null
+  "t0": 1208.88,
+  "t1": 1272.02
  },
  {
   "id": "z-6d103a02-4451",
@@ -1060,8 +1060,8 @@
   ],
   "trim": "",
   "rank": 32,
-  "t0": null,
-  "t1": null
+  "t0": 2190.7,
+  "t1": 2261.48
  },
  {
   "id": "z-31b7f6be-2858",
@@ -1098,14 +1098,14 @@
   ],
   "trim": "Starts mid-sentence; begin at “to be what you want”.",
   "rank": 33,
-  "t0": null,
-  "t1": null
+  "t0": 1033.73,
+  "t1": 1108.78
  },
  {
   "id": "z-f107bc65-568",
   "source": "prayer",
   "seriesLabel": "Prayer",
-  "shiur": "AMIDA_1a_Magen Abraham",
+  "shiur": "AMIDA 1a Magen Abraham",
   "start": 227,
   "end_sec": 298,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/b216be70629e59d90af5/amida-1a-magen-abraham-f107bc65.mp3",
@@ -1136,14 +1136,14 @@
   ],
   "trim": "",
   "rank": 36,
-  "t0": null,
-  "t1": null
+  "t0": 252.88,
+  "t1": 314.01
  },
  {
   "id": "z-c69c97da-3359",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "Finding Jewish Identity in the Modern World.Brighton JSoc.2018",
+  "shiur": "Finding Jewish Identity in the Modern World Brighton JSoc 2018",
   "start": 1147,
   "end_sec": 1225,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/8c0f9e830d7dc29fef60/finding-jewish-identity-in-the-modern-world-brighton-jsoc-2018-c69c97da.mp3",
@@ -1174,14 +1174,14 @@
   ],
   "trim": "",
   "rank": 39,
-  "t0": null,
-  "t1": null
+  "t0": 1122.54,
+  "t1": 1214.01
  },
  {
   "id": "z-f21eb741-4748",
   "source": "parasha",
   "seriesLabel": "The Parasha",
-  "shiur": "Ekeb.2018.What is Love",
+  "shiur": "Ekeb 2018.What is Love",
   "start": 2191,
   "end_sec": 2252,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/547894e9b9cc7eddddc1/ekeb-2018-what-is-love-f21eb741.mp3",
@@ -1212,8 +1212,8 @@
   ],
   "trim": "",
   "rank": 41,
-  "t0": null,
-  "t1": null
+  "t0": 2179.59,
+  "t1": 2267.07
  },
  {
   "id": "z-406974a6-4497",
@@ -1250,8 +1250,8 @@
   ],
   "trim": "",
   "rank": 43,
-  "t0": null,
-  "t1": null
+  "t0": 2062.21,
+  "t1": 2120.49
  },
  {
   "id": "z-1591ac15-10865",
@@ -1288,8 +1288,8 @@
   ],
   "trim": "",
   "rank": 45,
-  "t0": null,
-  "t1": null
+  "t0": 4198.92,
+  "t1": 4274.83
  },
  {
   "id": "z-9b378a4a-6143",
@@ -1326,8 +1326,8 @@
   ],
   "trim": "",
   "rank": 49,
-  "t0": null,
-  "t1": null
+  "t0": 2444.38,
+  "t1": 2520.08
  },
  {
   "id": "z-47831b16-5037",
@@ -1364,14 +1364,14 @@
   ],
   "trim": "",
   "rank": 59,
-  "t0": null,
-  "t1": null
+  "t0": 2245.9,
+  "t1": 2312.42
  },
  {
   "id": "z-23353d98-6650",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.IV.1c Happiness and Wealth",
+  "shiur": "PA IV 1c Happiness and Wealth",
   "start": 2598,
   "end_sec": 2670,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/a4235024f9463567ba37/pa-iv-1c-happiness-and-wealth-23353d98.mp3",
@@ -1402,8 +1402,8 @@
   ],
   "trim": "",
   "rank": 62,
-  "t0": null,
-  "t1": null
+  "t0": 2684.18,
+  "t1": 2763.75
  },
  {
   "id": "z-eaceeea5-3834",
@@ -1447,7 +1447,7 @@
   "id": "z-94b0a126-5032",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "MELAKHIM.II.14",
+  "shiur": "MELAKHIM II 14",
   "start": 1870,
   "end_sec": 1937,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/145731cceceb8fd9560c/melakhim-ii-14-94b0a126.mp3",
@@ -1523,7 +1523,7 @@
   "id": "z-20708ef4-4595",
   "source": "parasha",
   "seriesLabel": "The Parasha",
-  "shiur": "Vayesheb_ Passing the Baton to Yosef",
+  "shiur": "Vayesheb Passing the Baton to Yosef",
   "start": 1576,
   "end_sec": 1641,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/ecfb71c079bbac65e353/vayesheb-passing-the-baton-to-yosef-20708ef4.mp3",
@@ -1561,7 +1561,7 @@
   "id": "z-f98641a0-7537",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.I.14",
+  "shiur": "PA I 14",
   "start": 2822,
   "end_sec": 2896,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52b190577968dc3b08ab/pa-i-14-f98641a0.mp3",
@@ -1751,7 +1751,7 @@
   "id": "z-dda2541c-7350",
   "source": "tehillim",
   "seriesLabel": "Tehillim",
-  "shiur": "Tehillim.3",
+  "shiur": "Tehillim 3",
   "start": 2827,
   "end_sec": 2889,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52a2165fdb4e5d2b4ec5/tehillim-3-dda2541c.mp3",
@@ -1789,7 +1789,7 @@
   "id": "z-b68143b4-8336",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "121125_001",
+  "shiur": "121125 001",
   "start": 3374,
   "end_sec": 3435,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/38c6056c5d78cbfdc5a2/121125-001-b68143b4.mp3",
@@ -1827,7 +1827,7 @@
   "id": "z-f3860040-1797",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.I.9",
+  "shiur": "PA I 9",
   "start": 687,
   "end_sec": 748,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52b190577968dc3b08ab/pa-i-9-f3860040.mp3",
@@ -1865,7 +1865,7 @@
   "id": "z-8b540ff2-1870",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "KT.48 Elements 8-10",
+  "shiur": "KT 48 Elements 8-10",
   "start": 646,
   "end_sec": 712,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/a1ed91ac64f15b9aa230/kt-48-elements-8-10-8b540ff2.mp3",
@@ -1903,7 +1903,7 @@
   "id": "z-1a1f8591-3066",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "KT.48 Elements.24-30",
+  "shiur": "KT 48 Elements 24-30",
   "start": 1191,
   "end_sec": 1252,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/a1ed91ac64f15b9aa230/kt-48-elements-24-30-1a1f8591.mp3",
@@ -1941,7 +1941,7 @@
   "id": "z-8e235ad6-868",
   "source": "moadim",
   "seriesLabel": "Festivals",
-  "shiur": "FundamentalTeshuba.2",
+  "shiur": "Fundamental Teshuba 2",
   "start": 310,
   "end_sec": 372,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/5e67e6990524523f8324/fundamentalteshuba-2-8e235ad6.mp3",
@@ -1956,7 +1956,7 @@
    "standalone": 0.67
   },
   "curated": false,
-  "title": "FundamentalTeshuba.2",
+  "title": "Fundamental Teshuba 2",
   "hook": [
    "I mean, we don't have any way of knowing what pe…"
   ],
@@ -2007,7 +2007,7 @@
   "id": "z-4d4d7d1c-7736",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "DT.71.18",
+  "shiur": "DT 71.18",
   "start": 3043,
   "end_sec": 3103,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/5254b3fef0296f72eca5/dt-71-18-4d4d7d1c.mp3",
@@ -2022,7 +2022,7 @@
    "standalone": 0.78
   },
   "curated": false,
-  "title": "DT.71.18",
+  "title": "DT 71.18",
   "hook": [
    "Why are we attracted to a beautiful face?"
   ],
@@ -2040,7 +2040,7 @@
   "id": "z-f39c1f7c-536",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "Annual Liverpool Jewish Civic Service.keynote.camel Kindness.2017",
+  "shiur": "Annual Liverpool Jewish Civic Service keynote camel Kindness 2017",
   "start": 329,
   "end_sec": 407,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/4b1b51a33e119e9df78a/annual-liverpool-jewish-civic-service-keynote-camel-kindness-2017-f39c1f7c.mp3",
@@ -2055,7 +2055,7 @@
    "standalone": 0.37
   },
   "curated": false,
-  "title": "Annual Liverpool Jewish Civic Service.keynote.camel Kindness.2017",
+  "title": "Annual Liverpool Jewish Civic Service keynote camel Kindness 2017",
   "hook": [
    "How much more intimate does it get than God's br…"
   ],
@@ -2073,7 +2073,7 @@
   "id": "z-803b3362-9032",
   "source": "parasha",
   "seriesLabel": "The Parasha",
-  "shiur": "ReadingIntoRandomness.BM2016",
+  "shiur": "Reading Into Randomness BM2016",
   "start": 3528,
   "end_sec": 3588,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/975b03efd50ce4c39338/readingintorandomness-bm2016-803b3362.mp3",
@@ -2088,7 +2088,7 @@
    "standalone": 0.47
   },
   "curated": false,
-  "title": "ReadingIntoRandomness.BM2016",
+  "title": "Reading Into Randomness BM2016",
   "hook": [
    "The only question is, are we in it or not?"
   ],
@@ -2139,7 +2139,7 @@
   "id": "z-ea228954-8582",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "MELAKHIM1_1",
+  "shiur": "MELAKHIM1 1",
   "start": 3348,
   "end_sec": 3408,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/26ab2539109b17951bf7/melakhim1-1-ea228954.mp3",
@@ -2154,7 +2154,7 @@
    "standalone": 0.62
   },
   "curated": false,
-  "title": "MELAKHIM1_1",
+  "title": "MELAKHIM1 1",
   "hook": [
    "As a result of perspective, you fail to act impe…"
   ],
@@ -2205,7 +2205,7 @@
   "id": "z-8373e7eb-3848",
   "source": "moadim",
   "seriesLabel": "Festivals",
-  "shiur": "OnHanuka.FJLDinner.2017",
+  "shiur": "On Hanuka FJLDinner 2017",
   "start": 1306,
   "end_sec": 1380,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/420c500ca9f9e3bbad31/onhanuka-fjldinner-2017-8373e7eb.mp3",
@@ -2220,7 +2220,7 @@
    "standalone": 0.7
   },
   "curated": false,
-  "title": "OnHanuka.FJLDinner.2017",
+  "title": "On Hanuka FJLDinner 2017",
   "hook": [
    "The immediate interface is a question of how am …"
   ],
@@ -2238,7 +2238,7 @@
   "id": "z-fa23bf5c-5554",
   "source": "parasha",
   "seriesLabel": "The Parasha",
-  "shiur": "AbrahamandIsaacStruggles.LunchandLearn.2017",
+  "shiur": "Abrahamand Isaac Struggles Lunchand Learn 2017",
   "start": 1964,
   "end_sec": 2024,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/8570015114d81510becc/abrahamandisaacstruggles-lunchandlearn-2017-fa23bf5c.mp3",
@@ -2253,7 +2253,7 @@
    "standalone": 0.26
   },
   "curated": false,
-  "title": "AbrahamandIsaacStruggles.LunchandLearn.2017",
+  "title": "Abrahamand Isaac Struggles Lunchand Learn 2017",
   "hook": [
    "You're going to tell me my biological offspring …"
   ],
@@ -2304,7 +2304,7 @@
   "id": "z-86bd3ec2-4069",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "MY1.NKT.8 1",
+  "shiur": "MY1.NKT 8 1",
   "start": 1431,
   "end_sec": 1497,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/62f75636db4c9d2f9fe1/my1-nkt-8-1-86bd3ec2.mp3",
@@ -2319,7 +2319,7 @@
    "standalone": 0.59
   },
   "curated": false,
-  "title": "MY1.NKT.8 1",
+  "title": "MY1.NKT 8 1",
   "hook": [
    "What advice would you take as that individual?"
   ],
@@ -2337,7 +2337,7 @@
   "id": "z-cc96388d-4893",
   "source": "parasha",
   "seriesLabel": "The Parasha",
-  "shiur": "Vayigash_ Studies in Jealousy",
+  "shiur": "Vayigash Studies in Jealousy",
   "start": 1713,
   "end_sec": 1785,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/51f9beab4ddb8ce3d68e/vayigash-studies-in-jealousy-cc96388d.mp3",
@@ -2352,7 +2352,7 @@
    "standalone": 0.31
   },
   "curated": false,
-  "title": "Vayigash_ Studies in Jealousy",
+  "title": "Vayigash Studies in Jealousy",
   "hook": [
    "What the hell type of question is that?"
   ],
@@ -2403,7 +2403,7 @@
   "id": "z-15d2e1ce-3217",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.IV.4B",
+  "shiur": "PA IV 4B",
   "start": 1365,
   "end_sec": 1436,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/a4235024f9463567ba37/pa-iv-4b-15d2e1ce.mp3",
@@ -2418,7 +2418,7 @@
    "standalone": 0.8
   },
   "curated": false,
-  "title": "PA.IV.4B",
+  "title": "PA IV 4B",
   "hook": [
    "I've gone through suffering in my life."
   ],
@@ -2436,7 +2436,7 @@
   "id": "z-4679e6d5-9998",
   "source": "moadim",
   "seriesLabel": "Festivals",
-  "shiur": "Hanuka_ A Family Affair",
+  "shiur": "Hanuka A Family Affair",
   "start": 3472,
   "end_sec": 3533,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/420c500ca9f9e3bbad31/hanuka-a-family-affair-4679e6d5.mp3",
@@ -2451,7 +2451,7 @@
    "standalone": 0.27
   },
   "curated": false,
-  "title": "Hanuka_ A Family Affair",
+  "title": "Hanuka A Family Affair",
   "hook": [
    "Now imagine, but what if you were touching anoth…"
   ],
@@ -2535,7 +2535,7 @@
   "id": "z-2dd187b7-3387",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "MentalHealthinTorah.HasmoneanSchoolFaculty.2017",
+  "shiur": "Mental Healthin Torah Hasmonean School Faculty 2017",
   "start": 1272,
   "end_sec": 1335,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/85c4cad059021f67090a/mentalhealthintorah-hasmoneanschoolfaculty-2017-2dd187b7.mp3",
@@ -2550,7 +2550,7 @@
    "standalone": 0.44
   },
   "curated": false,
-  "title": "MentalHealthinTorah.HasmoneanSchoolFaculty.2017",
+  "title": "Mental Healthin Torah Hasmonean School Faculty 2017",
   "hook": [
    "Rabbi, how can you be in that state in certain a…"
   ],
@@ -2568,7 +2568,7 @@
   "id": "z-ab932c57-4075",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "Raising Jewish Children.ICZ Community Zurich.2022",
+  "shiur": "Raising Jewish Children ICZ Community Zurich 2022",
   "start": 1523,
   "end_sec": 1588,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/236b160ddfe938fe0b5a/raising-jewish-children-icz-community-zurich-2022-ab932c57.mp3",
@@ -2583,7 +2583,7 @@
    "standalone": 0.41
   },
   "curated": false,
-  "title": "Raising Jewish Children.ICZ Community Zurich.2022",
+  "title": "Raising Jewish Children ICZ Community Zurich 2022",
   "hook": [
    "what is the voice in your mind?"
   ],
@@ -2601,7 +2601,7 @@
   "id": "z-3c33b3a7-2275",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "Way_3 Tiferet",
+  "shiur": "Way 3 Tiferet",
   "start": 882,
   "end_sec": 942,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/008e0ce24f45803cf7d9/way-3-tiferet-3c33b3a7.mp3",
@@ -2616,7 +2616,7 @@
    "standalone": 0.78
   },
   "curated": false,
-  "title": "Way_3 Tiferet",
+  "title": "Way 3 Tiferet",
   "hook": [
    "See the thing about appreciation is we'll talk a…"
   ],
@@ -2634,7 +2634,7 @@
   "id": "z-716c406d-4138",
   "source": "moadim",
   "seriesLabel": "Festivals",
-  "shiur": "Teshuba and Rosh HaShana - talk with college students 2016-09-15",
+  "shiur": "Teshuba and Rosh Ha Shana - talk with college students 2016-09-15",
   "start": 1725,
   "end_sec": 1788,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/131f73828ba434f44801/teshuba-and-rosh-hashana-talk-with-college-students-2016-09-15-716c406d.mp3",
@@ -2649,7 +2649,7 @@
    "standalone": 0.32
   },
   "curated": false,
-  "title": "Teshuba and Rosh HaShana - talk with college students 2016-09-15",
+  "title": "Teshuba and Rosh Ha Shana - talk with college students 2016-09-15",
   "hook": [
    "Could you imagine if Rav Ovanjah Yosef didn't go…"
   ],
@@ -2766,7 +2766,7 @@
   "id": "z-bb3a16ac-10857",
   "source": "moadim",
   "seriesLabel": "Festivals",
-  "shiur": "4Sons.5774",
+  "shiur": "4Sons 5774",
   "start": 3931,
   "end_sec": 3993,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/d95f6244b6dd080eb569/4sons-5774-bb3a16ac.mp3",
@@ -2781,7 +2781,7 @@
    "standalone": 0.27
   },
   "curated": false,
-  "title": "4Sons.5774",
+  "title": "4Sons 5774",
   "hook": [
    "You just cut away at your own life Forget about …"
   ],
@@ -2799,7 +2799,7 @@
   "id": "z-6a77530c-5471",
   "source": "moadim",
   "seriesLabel": "Festivals",
-  "shiur": "Matsa_Dichotomy",
+  "shiur": "Matsa Dichotomy",
   "start": 1966,
   "end_sec": 2034,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/d95f6244b6dd080eb569/matsa-dichotomy-6a77530c.mp3",
@@ -2814,7 +2814,7 @@
    "standalone": 0.49
   },
   "curated": false,
-  "title": "Matsa_Dichotomy",
+  "title": "Matsa Dichotomy",
   "hook": [
    "I'm a free man because I have choice."
   ],
@@ -2865,7 +2865,7 @@
   "id": "z-885da0c6-7650",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.I.5",
+  "shiur": "PA I 5",
   "start": 2720,
   "end_sec": 2780,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52b190577968dc3b08ab/pa-i-5-885da0c6.mp3",
@@ -2880,7 +2880,7 @@
    "standalone": 0.59
   },
   "curated": false,
-  "title": "PA.I.5",
+  "title": "PA I 5",
   "hook": [
    "All the more so, there needs to be dignity, ther…"
   ],
@@ -2898,7 +2898,7 @@
   "id": "z-42868c70-6282",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "Finding God in the Chaos.Oxford",
+  "shiur": "Finding God in the Chaos Oxford",
   "start": 2728,
   "end_sec": 2794,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/cfe8c874203a9ce0c581/finding-god-in-the-chaos-oxford-42868c70.mp3",
@@ -2913,7 +2913,7 @@
    "standalone": 0.47
   },
   "curated": false,
-  "title": "Finding God in the Chaos.Oxford",
+  "title": "Finding God in the Chaos Oxford",
   "hook": [
    "Do we not risk losing the ones that we love ever…"
   ],
@@ -2931,7 +2931,7 @@
   "id": "z-1f1421cd-6406",
   "source": "parasha",
   "seriesLabel": "The Parasha",
-  "shiur": "WhyStoryofJosephLongest.BM.2017",
+  "shiur": "Why Storyof Joseph Longest BM 2017",
   "start": 2560,
   "end_sec": 2624,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/ecfb71c079bbac65e353/whystoryofjosephlongest-bm-2017-1f1421cd.mp3",
@@ -2946,7 +2946,7 @@
    "standalone": 0.6
   },
   "curated": false,
-  "title": "WhyStoryofJosephLongest.BM.2017",
+  "title": "Why Storyof Joseph Longest BM 2017",
   "hook": [
    "What profession are you going to have?"
   ],
@@ -2964,7 +2964,7 @@
   "id": "z-d9f840cb-7175",
   "source": "moadim",
   "seriesLabel": "Festivals",
-  "shiur": "Core Components of Kippur.2022",
+  "shiur": "Core Components of Kippur 2022",
   "start": 2600,
   "end_sec": 2670,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/ae33b04a425bed7bdfd9/core-components-of-kippur-2022-d9f840cb.mp3",
@@ -2979,7 +2979,7 @@
    "standalone": 0.43
   },
   "curated": false,
-  "title": "Core Components of Kippur.2022",
+  "title": "Core Components of Kippur 2022",
   "hook": [
    "Do you and I, if God is talking, right, share th…"
   ],
@@ -2997,7 +2997,7 @@
   "id": "z-a9c80008-8199",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "Raising Jewish Children in Our Generation.2022",
+  "shiur": "Raising Jewish Children in Our Generation 2022",
   "start": 3247,
   "end_sec": 3308,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/8c0f9e830d7dc29fef60/raising-jewish-children-in-our-generation-2022-a9c80008.mp3",
@@ -3012,7 +3012,7 @@
    "standalone": 0.45
   },
   "curated": false,
-  "title": "Raising Jewish Children in Our Generation.2022",
+  "title": "Raising Jewish Children in Our Generation 2022",
   "hook": [
    "Are you going to give them enough of a skill set…"
   ],
@@ -3030,7 +3030,7 @@
   "id": "z-ab6f0f13-462",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "Address To Returning Montefiore Fellows From Israel Gap Year.london 2024",
+  "shiur": "Address To Returning Montefiore Fellows From Israel Gap Year london 2024",
   "start": 163,
   "end_sec": 238,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/4b1b51a33e119e9df78a/address-to-returning-montefiore-fellows-from-israel-gap-year-london-2024-ab6f0f13.mp3",
@@ -3045,7 +3045,7 @@
    "standalone": 0.43
   },
   "curated": false,
-  "title": "Address To Returning Montefiore Fellows From Israel Gap Year.london 2024",
+  "title": "Address To Returning Montefiore Fellows From Israel Gap Year london 2024",
   "hook": [
    "You are only you, and there will not be another."
   ],
@@ -3063,7 +3063,7 @@
   "id": "z-10ebce3e-7262",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "Uni Tour 2022.Genesis and Identity.Oxford",
+  "shiur": "Uni Tour 2022.Genesis and Identity Oxford",
   "start": 2609,
   "end_sec": 2675,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/25a9743a9b604cba787b/uni-tour-2022-genesis-and-identity-oxford-10ebce3e.mp3",
@@ -3078,7 +3078,7 @@
    "standalone": 0.47
   },
   "curated": false,
-  "title": "Uni Tour 2022.Genesis and Identity.Oxford",
+  "title": "Uni Tour 2022.Genesis and Identity Oxford",
   "hook": [
    "If I'm not going to be thinking about who am I, …"
   ],
@@ -3096,7 +3096,7 @@
   "id": "z-5a1c32c1-6040",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "On Dreams.Stanmore Synagogue",
+  "shiur": "On Dreams Stanmore Synagogue",
   "start": 2485,
   "end_sec": 2545,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/316af57ba561069f494f/on-dreams-stanmore-synagogue-5a1c32c1.mp3",
@@ -3111,7 +3111,7 @@
    "standalone": 0.4
   },
   "curated": false,
-  "title": "On Dreams.Stanmore Synagogue",
+  "title": "On Dreams Stanmore Synagogue",
   "hook": [
    "The question is, can you handle that conversatio…"
   ],
@@ -3129,7 +3129,7 @@
   "id": "z-f6b4448f-4190",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "Feeling Animosity Towards God.Deal2019",
+  "shiur": "Feeling Animosity Towards God Deal2019",
   "start": 1938,
   "end_sec": 2000,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/85c4cad059021f67090a/feeling-animosity-towards-god-deal2019-f6b4448f.mp3",
@@ -3144,7 +3144,7 @@
    "standalone": 0.39
   },
   "curated": false,
-  "title": "Feeling Animosity Towards God.Deal2019",
+  "title": "Feeling Animosity Towards God Deal2019",
   "hook": [
    "Who knows how many hardships this person went th…"
   ],
@@ -3195,7 +3195,7 @@
   "id": "z-8d3d5e1d-3071",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "7th Yahrzeit Shiur_ Torah and Play",
+  "shiur": "7th Yahrzeit Shiur Torah and Play",
   "start": 1134,
   "end_sec": 1203,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/24afae758e34cc4f7574/7th-yahrzeit-shiur-torah-and-play-8d3d5e1d.mp3",
@@ -3210,7 +3210,7 @@
    "standalone": 0.65
   },
   "curated": false,
-  "title": "7th Yahrzeit Shiur_ Torah and Play",
+  "title": "7th Yahrzeit Shiur Torah and Play",
   "hook": [
    "If you do play along, it's a remarkable thing, r…"
   ],
@@ -3228,7 +3228,7 @@
   "id": "z-41af6eb5-7424",
   "source": "parasha",
   "seriesLabel": "The Parasha",
-  "shiur": "Matot.Deal.71",
+  "shiur": "Matot Deal 71",
   "start": 2669,
   "end_sec": 2730,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/ef44b61f2f513c0db420/matot-deal-71-41af6eb5.mp3",
@@ -3243,7 +3243,7 @@
    "standalone": 0.8
   },
   "curated": false,
-  "title": "Matot.Deal.71",
+  "title": "Matot Deal 71",
   "hook": [
    "Ask yourself, when am I my best self in my life?"
   ],
@@ -3294,7 +3294,7 @@
   "id": "z-15191ecd-2540",
   "source": "parasha",
   "seriesLabel": "The Parasha",
-  "shiur": "Ki Tisa_5764",
+  "shiur": "Ki Tisa 5764",
   "start": 1005,
   "end_sec": 1071,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/db1a409adadc30ee4b8f/ki-tisa-5764-15191ecd.mp3",
@@ -3309,7 +3309,7 @@
    "standalone": 0.27
   },
   "curated": false,
-  "title": "Ki Tisa_5764",
+  "title": "Ki Tisa 5764",
   "hook": [
    "There were no options in Gan Eden, right?"
   ],
@@ -3360,7 +3360,7 @@
   "id": "z-45267ed6-4357",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "MY1.NKT.19",
+  "shiur": "MY1.NKT 19",
   "start": 1697,
   "end_sec": 1757,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/62f75636db4c9d2f9fe1/my1-nkt-19-45267ed6.mp3",
@@ -3375,7 +3375,7 @@
    "standalone": 0.3
   },
   "curated": false,
-  "title": "MY1.NKT.19",
+  "title": "MY1.NKT 19",
   "hook": [
    "The only question is, is when you have a tool to…"
   ],
@@ -3393,7 +3393,7 @@
   "id": "z-eeb8c6cb-6538",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "Is Religion a Threat to Freedom.NYC.2017",
+  "shiur": "Is Religion a Threat to Freedom NYC 2017",
   "start": 2365,
   "end_sec": 2441,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/0debc0393fcf87c5339e/is-religion-a-threat-to-freedom-nyc-2017-eeb8c6cb.mp3",
@@ -3408,7 +3408,7 @@
    "standalone": 0.31
   },
   "curated": false,
-  "title": "Is Religion a Threat to Freedom.NYC.2017",
+  "title": "Is Religion a Threat to Freedom NYC 2017",
   "hook": [
    "You can't even discover yourself You can't even …"
   ],
@@ -3426,7 +3426,7 @@
   "id": "z-dd6e193e-3072",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.I.13",
+  "shiur": "PA I 13",
   "start": 1090,
   "end_sec": 1150,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52b190577968dc3b08ab/pa-i-13-dd6e193e.mp3",
@@ -3441,7 +3441,7 @@
    "standalone": 0.26
   },
   "curated": false,
-  "title": "PA.I.13",
+  "title": "PA I 13",
   "hook": [
    "You use it for the shell, right?"
   ],
@@ -3525,7 +3525,7 @@
   "id": "z-ccc31606-6402",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "SHEMUEL2_11",
+  "shiur": "SHEMUEL2 11",
   "start": 2448,
   "end_sec": 2508,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/f865032cae657caa8e6b/shemuel2-11-ccc31606.mp3",
@@ -3540,7 +3540,7 @@
    "standalone": 0.3
   },
   "curated": false,
-  "title": "SHEMUEL2_11",
+  "title": "SHEMUEL2 11",
   "hook": [
    "Why do you wish you wouldn't have said that?"
   ],
@@ -3558,7 +3558,7 @@
   "id": "z-b0c5937f-2565",
   "source": "nutshell",
   "seriesLabel": "Nutshell Hours",
-  "shiur": "Lashon HaRa Lekh-Lekha 5769",
+  "shiur": "Lashon Ha Ra Lekh-Lekha 5769",
   "start": 1089,
   "end_sec": 1152,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/1d895f0145f62121588d/lashon-hara-lekh-lekha-5769-b0c5937f.mp3",
@@ -3573,7 +3573,7 @@
    "standalone": 0.71
   },
   "curated": false,
-  "title": "Lashon HaRa Lekh-Lekha 5769",
+  "title": "Lashon Ha Ra Lekh-Lekha 5769",
   "hook": [
    "Like how close should I stand to a person when I…"
   ],
@@ -3591,7 +3591,7 @@
   "id": "z-30e5d52f-4781",
   "source": "parasha",
   "seriesLabel": "The Parasha",
-  "shiur": "Mikes_ Dreams, Discoveries, and Identity",
+  "shiur": "Mikes Dreams, Discoveries, and Identity",
   "start": 1711,
   "end_sec": 1772,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/ccbf46f1555443830f8d/mikes-dreams-discoveries-and-identity-30e5d52f.mp3",
@@ -3606,7 +3606,7 @@
    "standalone": 0.6
   },
   "curated": false,
-  "title": "Mikes_ Dreams, Discoveries, and Identity",
+  "title": "Mikes Dreams, Discoveries, and Identity",
   "hook": [
    "When you see something beautiful, why you feel m…"
   ],
@@ -3690,7 +3690,7 @@
   "id": "z-f532d0c2-2218",
   "source": "parasha",
   "seriesLabel": "The Parasha",
-  "shiur": "Vayera_ Torah_of_Laughter",
+  "shiur": "Vayera Torah of Laughter",
   "start": 890,
   "end_sec": 970,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/8570015114d81510becc/vayera-torah-of-laughter-f532d0c2.mp3",
@@ -3705,7 +3705,7 @@
    "standalone": 0.27
   },
   "curated": false,
-  "title": "Vayera_ Torah_of_Laughter",
+  "title": "Vayera Torah of Laughter",
   "hook": [
    "What span are you going to put on life?"
   ],
@@ -3756,7 +3756,7 @@
   "id": "z-0f170d5e-1187",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "MN.III.38-39a",
+  "shiur": "MN III 38-39a",
   "start": 434,
   "end_sec": 494,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/b16609f0513ba1724d19/mn-iii-38-39a-0f170d5e.mp3",
@@ -3771,7 +3771,7 @@
    "standalone": 0.33
   },
   "curated": false,
-  "title": "MN.III.38-39a",
+  "title": "MN III 38-39a",
   "hook": [
    "Who will ultimately be there to build my life?"
   ],
@@ -3789,7 +3789,7 @@
   "id": "z-9d11c2fa-2217",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "DH.IV.3.1b-2",
+  "shiur": "DH IV 3.1b-2",
   "start": 867,
   "end_sec": 933,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/8e92693265ed1628388c/dh-iv-3-1b-2-9d11c2fa.mp3",
@@ -3804,7 +3804,7 @@
    "standalone": 0.31
   },
   "curated": false,
-  "title": "DH.IV.3.1b-2",
+  "title": "DH IV 3.1b-2",
   "hook": [
    "How are they going to survive if the mothers don…"
   ],
@@ -3888,7 +3888,7 @@
   "id": "z-a2a6a9f6-4703",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "DT.71.16",
+  "shiur": "DT 71.16",
   "start": 1774,
   "end_sec": 1837,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/5254b3fef0296f72eca5/dt-71-16-a2a6a9f6.mp3",
@@ -3903,7 +3903,7 @@
    "standalone": 0.3
   },
   "curated": false,
-  "title": "DT.71.16",
+  "title": "DT 71.16",
   "hook": [
    "You're not monogamous, and you're certainly not …"
   ],
@@ -3954,7 +3954,7 @@
   "id": "z-82a2cfcb-6245",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "Answering Young Adults' Questions on Judaism.Deal2019",
+  "shiur": "Answering Young Adults' Questions on Judaism Deal2019",
   "start": 2424,
   "end_sec": 2487,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/b0c1c65c434b6d4909f8/answering-young-adults-questions-on-judaism-deal2019-82a2cfcb.mp3",
@@ -3969,7 +3969,7 @@
    "standalone": 0.31
   },
   "curated": false,
-  "title": "Answering Young Adults' Questions on Judaism.Deal2019",
+  "title": "Answering Young Adults' Questions on Judaism Deal2019",
   "hook": [
    "Does it mean that you shouldn't do them?"
   ],
@@ -3987,7 +3987,7 @@
   "id": "z-4075bc7d-7625",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "On Language and Leshon HaKodesh",
+  "shiur": "On Language and Leshon Ha Kodesh",
   "start": 2961,
   "end_sec": 3036,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/24afae758e34cc4f7574/on-language-and-leshon-hakodesh-4075bc7d.mp3",
@@ -4002,7 +4002,7 @@
    "standalone": 0.65
   },
   "curated": false,
-  "title": "On Language and Leshon HaKodesh",
+  "title": "On Language and Leshon Ha Kodesh",
   "hook": [
    "How did life start on this planet?"
   ],
@@ -4086,7 +4086,7 @@
   "id": "z-1d1bb8ba-3200",
   "source": "philosophy",
   "seriesLabel": "Philosophy & Thought",
-  "shiur": "Torah on Interpersonal Relationships.Oxford Students",
+  "shiur": "Torah on Interpersonal Relationships Oxford Students",
   "start": 1263,
   "end_sec": 1329,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/0debc0393fcf87c5339e/torah-on-interpersonal-relationships-oxford-students-1d1bb8ba.mp3",
@@ -4101,7 +4101,7 @@
    "standalone": 0.5
   },
   "curated": false,
-  "title": "Torah on Interpersonal Relationships.Oxford Students",
+  "title": "Torah on Interpersonal Relationships Oxford Students",
   "hook": [
    "Do what you would for another that would seek th…"
   ],
@@ -4152,7 +4152,7 @@
   "id": "z-f2ece63b-3712",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "KT.2b.Ed",
+  "shiur": "KT 2b Ed",
   "start": 1396,
   "end_sec": 1458,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/d2fd65b8ecc7386637eb/kt-2b-ed-f2ece63b.mp3",
@@ -4167,7 +4167,7 @@
    "standalone": 0.52
   },
   "curated": false,
-  "title": "KT.2b.Ed",
+  "title": "KT 2b Ed",
   "hook": [
    "How are you supposed to deal with it?"
   ],
@@ -4185,7 +4185,7 @@
   "id": "z-ccc4269e-316",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "Speech On Religion In Modern Times.westminster Abbey.ccj.2018 ",
+  "shiur": "Speech On Religion In Modern Times westminster Abbey ccj 2018",
   "start": 152,
   "end_sec": 214,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/4b1b51a33e119e9df78a/speech-on-religion-in-modern-times-westminster-abbey-ccj-2018-ccc4269e.mp3",
@@ -4200,7 +4200,7 @@
    "standalone": 0.4
   },
   "curated": false,
-  "title": "Speech On Religion In Modern Times.westminster Abbey.ccj.2018 ",
+  "title": "Speech On Religion In Modern Times westminster Abbey ccj 2018",
   "hook": [
    "What has been our mode of interface with those w…"
   ],
@@ -4218,7 +4218,7 @@
   "id": "z-5c0fe6ad-1094",
   "source": "tehillim",
   "seriesLabel": "Tehillim",
-  "shiur": "Tehillim.22b",
+  "shiur": "Tehillim 22b",
   "start": 404,
   "end_sec": 464,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52a2165fdb4e5d2b4ec5/tehillim-22b-5c0fe6ad.mp3",
@@ -4233,7 +4233,7 @@
    "standalone": 0.39
   },
   "curated": false,
-  "title": "Tehillim.22b",
+  "title": "Tehillim 22b",
   "hook": [
    "If it's not God, it's not God."
   ],
@@ -4251,7 +4251,7 @@
   "id": "z-a270c698-325",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.II.11",
+  "shiur": "PA II 11",
   "start": 120,
   "end_sec": 185,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/d2e816cb554a00959d41/pa-ii-11-a270c698.mp3",
@@ -4266,7 +4266,7 @@
    "standalone": 0.53
   },
   "curated": false,
-  "title": "PA.II.11",
+  "title": "PA II 11",
   "hook": [
    "What eyes do they see the world from or through?"
   ],
@@ -4284,7 +4284,7 @@
   "id": "z-392ec8de-7984",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.I.17",
+  "shiur": "PA I 17",
   "start": 2959,
   "end_sec": 3020,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52b190577968dc3b08ab/pa-i-17-392ec8de.mp3",
@@ -4299,7 +4299,7 @@
    "standalone": 0.45
   },
   "curated": false,
-  "title": "PA.I.17",
+  "title": "PA I 17",
   "hook": [
    "What do you mean, how do I know?"
   ],
@@ -4317,7 +4317,7 @@
   "id": "z-774e42e2-6313",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.I.6",
+  "shiur": "PA I 6",
   "start": 2479,
   "end_sec": 2540,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52b190577968dc3b08ab/pa-i-6-774e42e2.mp3",
@@ -4332,7 +4332,7 @@
    "standalone": 0.3
   },
   "curated": false,
-  "title": "PA.I.6",
+  "title": "PA I 6",
   "hook": [
    "could be your wife, could be your husband, could…"
   ],
@@ -4350,7 +4350,7 @@
   "id": "z-0a606b00-8126",
   "source": "tehillim",
   "seriesLabel": "Tehillim",
-  "shiur": "Tehillim.7",
+  "shiur": "Tehillim 7",
   "start": 3087,
   "end_sec": 3147,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52a2165fdb4e5d2b4ec5/tehillim-7-0a606b00.mp3",
@@ -4365,7 +4365,7 @@
    "standalone": 0.39
   },
   "curated": false,
-  "title": "Tehillim.7",
+  "title": "Tehillim 7",
   "hook": [
    "Why should you go against your human nature?"
   ],
@@ -4383,7 +4383,7 @@
   "id": "z-96e2f1a8-6534",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.II.6",
+  "shiur": "PA II 6",
   "start": 2384,
   "end_sec": 2447,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/d2e816cb554a00959d41/pa-ii-6-96e2f1a8.mp3",
@@ -4398,7 +4398,7 @@
    "standalone": 0.49
   },
   "curated": false,
-  "title": "PA.II.6",
+  "title": "PA II 6",
   "hook": [
    "Who's doing acts of hesed, you know, doing acts …"
   ],
@@ -4416,7 +4416,7 @@
   "id": "z-e92d34f8-10390",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "Shiur with Jonathan Esfandi and Friends.On first mishna of Pirke Abot",
+  "shiur": "Shiur with Jonathan Esfandi and Friends On first mishna of Pirke Abot",
   "start": 3220,
   "end_sec": 3280,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/fae2583e4d6536a72bcf/shiur-with-jonathan-esfandi-and-friends-on-first-mishna-of-pirke-abot-e92d34f8.mp3",
@@ -4431,7 +4431,7 @@
    "standalone": 0.51
   },
   "curated": false,
-  "title": "Shiur with Jonathan Esfandi and Friends.On first mishna of Pirke Abot",
+  "title": "Shiur with Jonathan Esfandi and Friends On first mishna of Pirke Abot",
   "hook": [
    "How is it that I'm supposed to look at this here…"
   ],
@@ -4449,7 +4449,7 @@
   "id": "z-0e718171-4862",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.I.10",
+  "shiur": "PA I 10",
   "start": 1666,
   "end_sec": 1726,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52b190577968dc3b08ab/pa-i-10-0e718171.mp3",
@@ -4464,7 +4464,7 @@
    "standalone": 0.29
   },
   "curated": false,
-  "title": "PA.I.10",
+  "title": "PA I 10",
   "hook": [
    "What does it mean you need to be creative and en…"
   ],
@@ -4515,7 +4515,7 @@
   "id": "z-183f0251-10019",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "MELAKHIM1_3",
+  "shiur": "MELAKHIM1 3",
   "start": 3868,
   "end_sec": 3931,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/26ab2539109b17951bf7/melakhim1-3-183f0251.mp3",
@@ -4530,7 +4530,7 @@
    "standalone": 0.46
   },
   "curated": false,
-  "title": "MELAKHIM1_3",
+  "title": "MELAKHIM1 3",
   "hook": [
    "There's another hasid, a rabbi over there, anoth…"
   ],
@@ -4548,7 +4548,7 @@
   "id": "z-a1b3e7d6-6557",
   "source": "tanakh-topics",
   "seriesLabel": "People in Tanakh",
-  "shiur": "PIT.Miriam",
+  "shiur": "PIT Miriam",
   "start": 2395,
   "end_sec": 2460,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/80a408496cb3990de40e/pit-miriam-a1b3e7d6.mp3",
@@ -4563,7 +4563,7 @@
    "standalone": 0.4
   },
   "curated": false,
-  "title": "PIT.Miriam",
+  "title": "PIT Miriam",
   "hook": [
    "You don't give up on life because you don't nece…"
   ],
@@ -4614,7 +4614,7 @@
   "id": "z-36cddb0f-7264",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.IV.4A, Of Grounded Spirit",
+  "shiur": "PA IV 4A, Of Grounded Spirit",
   "start": 2926,
   "end_sec": 2992,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/a4235024f9463567ba37/pa-iv-4a-of-grounded-spirit-36cddb0f.mp3",
@@ -4629,7 +4629,7 @@
    "standalone": 0.6
   },
   "curated": false,
-  "title": "PA.IV.4A, Of Grounded Spirit",
+  "title": "PA IV 4A, Of Grounded Spirit",
   "hook": [
    "Born to abusive parents, poverty, outbacks of wh…"
   ],
@@ -4647,7 +4647,7 @@
   "id": "z-2deaf634-3214",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.I.7",
+  "shiur": "PA I 7",
   "start": 1479,
   "end_sec": 1545,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52b190577968dc3b08ab/pa-i-7-2deaf634.mp3",
@@ -4662,7 +4662,7 @@
    "standalone": 0.33
   },
   "curated": false,
-  "title": "PA.I.7",
+  "title": "PA I 7",
   "hook": [
    "A Rasha, who's a wonderful person, right?"
   ],
@@ -4680,7 +4680,7 @@
   "id": "z-f0f66c28-3055",
   "source": "prayer",
   "seriesLabel": "Prayer",
-  "shiur": "On Tefila.1",
+  "shiur": "On Tefila 1",
   "start": 1093,
   "end_sec": 1153,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/1716b2aa2bae56875561/on-tefila-1-f0f66c28.mp3",
@@ -4695,7 +4695,7 @@
    "standalone": 0.47
   },
   "curated": false,
-  "title": "On Tefila.1",
+  "title": "On Tefila 1",
   "hook": [
    "You could breathe, you could go around and do yo…"
   ],
@@ -4713,7 +4713,7 @@
   "id": "z-8428130f-1102",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "Address To Commemorate The Baghdad Hangings.bevis Marks2019",
+  "shiur": "Address To Commemorate The Baghdad Hangings bevis Marks2019",
   "start": 730,
   "end_sec": 797,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/4b1b51a33e119e9df78a/address-to-commemorate-the-baghdad-hangings-bevis-marks2019-8428130f.mp3",
@@ -4728,7 +4728,7 @@
    "standalone": 0.57
   },
   "curated": false,
-  "title": "Address To Commemorate The Baghdad Hangings.bevis Marks2019",
+  "title": "Address To Commemorate The Baghdad Hangings bevis Marks2019",
   "hook": [
    "Recognize this space and this moment, this place…"
   ],
@@ -4746,7 +4746,7 @@
   "id": "z-14563567-7013",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.IV.3a Of Grounded Spirit 2016-08-10",
+  "shiur": "PA IV 3a Of Grounded Spirit 2016-08-10",
   "start": 2822,
   "end_sec": 2891,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/a4235024f9463567ba37/pa-iv-3a-of-grounded-spirit-2016-08-10-14563567.mp3",
@@ -4761,7 +4761,7 @@
    "standalone": 0.4
   },
   "curated": false,
-  "title": "PA.IV.3a Of Grounded Spirit 2016-08-10",
+  "title": "PA IV 3a Of Grounded Spirit 2016-08-10",
   "hook": [
    "Like it or not, there is no other life, you unde…"
   ],
@@ -4779,7 +4779,7 @@
   "id": "z-a3e16402-2171",
   "source": "tehillim",
   "seriesLabel": "Tehillim",
-  "shiur": "Tehillim.4",
+  "shiur": "Tehillim 4",
   "start": 800,
   "end_sec": 862,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52a2165fdb4e5d2b4ec5/tehillim-4-a3e16402.mp3",
@@ -4794,7 +4794,7 @@
    "standalone": 0.31
   },
   "curated": false,
-  "title": "Tehillim.4",
+  "title": "Tehillim 4",
   "hook": [
    "I have no foreign elements any longer in myself,…"
   ],
@@ -4812,7 +4812,7 @@
   "id": "z-85f3371c-638",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "KT.48 Elements 16",
+  "shiur": "KT 48 Elements 16",
   "start": 216,
   "end_sec": 285,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/a1ed91ac64f15b9aa230/kt-48-elements-16-85f3371c.mp3",
@@ -4827,7 +4827,7 @@
    "standalone": 0.61
   },
   "curated": false,
-  "title": "KT.48 Elements 16",
+  "title": "KT 48 Elements 16",
   "hook": [
    "What do we have at the end of the day?"
   ],
@@ -4845,7 +4845,7 @@
   "id": "z-d1e9355b-9332",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "SHEMUEL I_12",
+  "shiur": "SHEMUEL I 12",
   "start": 3850,
   "end_sec": 3911,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/6e136eb23394db4eb107/shemuel-i-12-d1e9355b.mp3",
@@ -4860,7 +4860,7 @@
    "standalone": 0.48
   },
   "curated": false,
-  "title": "SHEMUEL I_12",
+  "title": "SHEMUEL I 12",
   "hook": [
    "In other words when you have a sense of you righ…"
   ],
@@ -4878,7 +4878,7 @@
   "id": "z-24707504-6582",
   "source": "avot",
   "seriesLabel": "Pirke Avot",
-  "shiur": "PA.II.4",
+  "shiur": "PA II 4",
   "start": 2610,
   "end_sec": 2674,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/d2e816cb554a00959d41/pa-ii-4-24707504.mp3",
@@ -4893,7 +4893,7 @@
    "standalone": 0.37
   },
   "curated": false,
-  "title": "PA.II.4",
+  "title": "PA II 4",
   "hook": [
    "Well, what is the life that I'm living?"
   ],
@@ -4944,7 +4944,7 @@
   "id": "z-1cd0431a-499",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "Address For Memorial Of Hlm Qeii.lauderdale Road.2022",
+  "shiur": "Address For Memorial Of Hlm Qeii lauderdale Road 2022",
   "start": 242,
   "end_sec": 321,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/4b1b51a33e119e9df78a/address-for-memorial-of-hlm-qeii-lauderdale-road-2022-1cd0431a.mp3",
@@ -4959,7 +4959,7 @@
    "standalone": 0.34
   },
   "curated": false,
-  "title": "Address For Memorial Of Hlm Qeii.lauderdale Road.2022",
+  "title": "Address For Memorial Of Hlm Qeii lauderdale Road 2022",
   "hook": [
    "The entirety of their life is dedicated to that …"
   ],
@@ -5043,7 +5043,7 @@
   "id": "z-d7a65a71-1939",
   "source": "tehillim",
   "seriesLabel": "Tehillim",
-  "shiur": "Tehillim.18.Intro",
+  "shiur": "Tehillim 18.Intro",
   "start": 714,
   "end_sec": 776,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52a2165fdb4e5d2b4ec5/tehillim-18-intro-d7a65a71.mp3",
@@ -5058,7 +5058,7 @@
    "standalone": 0.41
   },
   "curated": false,
-  "title": "Tehillim.18.Intro",
+  "title": "Tehillim 18.Intro",
   "hook": [
    "if God was the thing powering my existence then …"
   ],
@@ -5076,7 +5076,7 @@
   "id": "z-e746e841-2819",
   "source": "prayer",
   "seriesLabel": "Prayer",
-  "shiur": "Amida_3_HA'EL HAKADOSH",
+  "shiur": "Amida 3 HA'EL HAKADOSH",
   "start": 1183,
   "end_sec": 1245,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/b216be70629e59d90af5/amida-3-ha-el-hakadosh-e746e841.mp3",
@@ -5091,7 +5091,7 @@
    "standalone": 0.28
   },
   "curated": false,
-  "title": "Amida_3_HA'EL HAKADOSH",
+  "title": "Amida 3 HA'EL HAKADOSH",
   "hook": [
    "Does that mean that we should be Kadosh like Him…"
   ],
@@ -5109,7 +5109,7 @@
   "id": "z-abfb6011-2838",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "Lavadoresdinner.speechonhesed.2017",
+  "shiur": "Lavadoresdinner speechonhesed 2017",
   "start": 1012,
   "end_sec": 1076,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/4b1b51a33e119e9df78a/lavadoresdinner-speechonhesed-2017-abfb6011.mp3",
@@ -5124,7 +5124,7 @@
    "standalone": 0.55
   },
   "curated": false,
-  "title": "Lavadoresdinner.speechonhesed.2017",
+  "title": "Lavadoresdinner speechonhesed 2017",
   "hook": [
    "We just don't have earthiness anymore in humanit…"
   ],
@@ -5142,7 +5142,7 @@
   "id": "z-5114cac4-502",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "Speech At Campaign Against Antisemitism Rally.london 2018",
+  "shiur": "Speech At Campaign Against Antisemitism Rally london 2018",
   "start": 259,
   "end_sec": 319,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/4b1b51a33e119e9df78a/speech-at-campaign-against-antisemitism-rally-london-2018-5114cac4.mp3",
@@ -5157,7 +5157,7 @@
    "standalone": 0.5
   },
   "curated": false,
-  "title": "Speech At Campaign Against Antisemitism Rally.london 2018",
+  "title": "Speech At Campaign Against Antisemitism Rally london 2018",
   "hook": [
    "We are British Jews We hold a mantle high that r…"
   ],
@@ -5241,7 +5241,7 @@
   "id": "z-ee5517f7-4561",
   "source": "prayer",
   "seriesLabel": "Prayer",
-  "shiur": "Amida_15_16_ET_SEMAH_SHEMA_KOLENU",
+  "shiur": "Amida 15 16 ET SEMAH SHEMA KOLENU",
   "start": 1630,
   "end_sec": 1692,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/b216be70629e59d90af5/amida-15-16-et-semah-shema-kolenu-ee5517f7.mp3",
@@ -5256,7 +5256,7 @@
    "standalone": 0.29
   },
   "curated": false,
-  "title": "Amida_15_16_ET_SEMAH_SHEMA_KOLENU",
+  "title": "Amida 15 16 ET SEMAH SHEMA KOLENU",
   "hook": [
    "I'm doing all these beautiful things for you, so…"
   ],
@@ -5274,7 +5274,7 @@
   "id": "z-963379a0-3353",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "Yishaya.3b.Ed",
+  "shiur": "Yishaya 3b Ed",
   "start": 1319,
   "end_sec": 1381,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/98c9a559b60903b83eb8/yishaya-3b-ed-963379a0.mp3",
@@ -5289,7 +5289,7 @@
    "standalone": 0.3
   },
   "curated": false,
-  "title": "Yishaya.3b.Ed",
+  "title": "Yishaya 3b Ed",
   "hook": [
    "How difficult is it to stop something that your …"
   ],
@@ -5307,7 +5307,7 @@
   "id": "z-b5b24ba2-551",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "Address On Shavuot At House Of Lords.2018",
+  "shiur": "Address On Shavuot At House Of Lords 2018",
   "start": 238,
   "end_sec": 305,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/4b1b51a33e119e9df78a/address-on-shavuot-at-house-of-lords-2018-b5b24ba2.mp3",
@@ -5322,7 +5322,7 @@
    "standalone": 0.32
   },
   "curated": false,
-  "title": "Address On Shavuot At House Of Lords.2018",
+  "title": "Address On Shavuot At House Of Lords 2018",
   "hook": [
    "Ben-Gurion said to him at the time that he was l…"
   ],
@@ -5340,7 +5340,7 @@
   "id": "z-95fc4509-3037",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "TSBP.3",
+  "shiur": "TSBP 3",
   "start": 984,
   "end_sec": 1060,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/36458538cd41c13efa81/tsbp-3-95fc4509.mp3",
@@ -5355,7 +5355,7 @@
    "standalone": 0.27
   },
   "curated": false,
-  "title": "TSBP.3",
+  "title": "TSBP 3",
   "hook": [
    "I don't mean you Sharon, specifically, I mean yo…"
   ],
@@ -5373,7 +5373,7 @@
   "id": "z-d0ac03f4-8773",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "MELAKHIM1_1b",
+  "shiur": "MELAKHIM1 1b",
   "start": 3210,
   "end_sec": 3288,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/26ab2539109b17951bf7/melakhim1-1b-d0ac03f4.mp3",
@@ -5388,7 +5388,7 @@
    "standalone": 0.35
   },
   "curated": false,
-  "title": "MELAKHIM1_1b",
+  "title": "MELAKHIM1 1b",
   "hook": [
    "What kind of craziness is that, right?"
   ],
@@ -5406,7 +5406,7 @@
   "id": "z-4666e6f5-4027",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "SHEMUEL I_6",
+  "shiur": "SHEMUEL I 6",
   "start": 1497,
   "end_sec": 1560,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/6e136eb23394db4eb107/shemuel-i-6-4666e6f5.mp3",
@@ -5421,7 +5421,7 @@
    "standalone": 0.28
   },
   "curated": false,
-  "title": "SHEMUEL I_6",
+  "title": "SHEMUEL I 6",
   "hook": [
    "I told him, I'm not searching, I'm not looking f…"
   ],
@@ -5439,7 +5439,7 @@
   "id": "z-af7698c3-5908",
   "source": "tehillim",
   "seriesLabel": "Tehillim",
-  "shiur": "Tehillim.22",
+  "shiur": "Tehillim 22",
   "start": 2103,
   "end_sec": 2169,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52a2165fdb4e5d2b4ec5/tehillim-22-af7698c3.mp3",
@@ -5454,7 +5454,7 @@
    "standalone": 0.29
   },
   "curated": false,
-  "title": "Tehillim.22",
+  "title": "Tehillim 22",
   "hook": [
    "I am no different a part of this world, no less …"
   ],
@@ -5505,7 +5505,7 @@
   "id": "z-d968174f-2466",
   "source": "tanakh-topics",
   "seriesLabel": "People in Tanakh",
-  "shiur": "PIT.Mordechai",
+  "shiur": "PIT Mordechai",
   "start": 879,
   "end_sec": 941,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/d27f11f9addf38f9b4bb/pit-mordechai-d968174f.mp3",
@@ -5520,7 +5520,7 @@
    "standalone": 0.31
   },
   "curated": false,
-  "title": "PIT.Mordechai",
+  "title": "PIT Mordechai",
   "hook": [
    "I mean, you've never had such things happen to y…"
   ],
@@ -5604,7 +5604,7 @@
   "id": "z-023fdc28-4412",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "SHEMUEL I_7",
+  "shiur": "SHEMUEL I 7",
   "start": 1647,
   "end_sec": 1727,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/6e136eb23394db4eb107/shemuel-i-7-023fdc28.mp3",
@@ -5619,7 +5619,7 @@
    "standalone": 0.43
   },
   "curated": false,
-  "title": "SHEMUEL I_7",
+  "title": "SHEMUEL I 7",
   "hook": [
    "In other words, how your brain is functioning cl…"
   ],
@@ -5637,7 +5637,7 @@
   "id": "z-f82e28bb-410",
   "source": "tehillim",
   "seriesLabel": "Tehillim",
-  "shiur": "Tehillim.18a",
+  "shiur": "Tehillim 18a",
   "start": 156,
   "end_sec": 224,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/52a2165fdb4e5d2b4ec5/tehillim-18a-f82e28bb.mp3",
@@ -5652,7 +5652,7 @@
    "standalone": 0.41
   },
   "curated": false,
-  "title": "Tehillim.18a",
+  "title": "Tehillim 18a",
   "hook": [
    "I mean, it's a craziness to think in all that th…"
   ],
@@ -5670,7 +5670,7 @@
   "id": "z-9c93b859-7498",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "SHOFETIM_2a.Ed",
+  "shiur": "SHOFETIM 2a Ed",
   "start": 2886,
   "end_sec": 2948,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/239abbd21cd0395061ec/shofetim-2a-ed-9c93b859.mp3",
@@ -5685,7 +5685,7 @@
    "standalone": 0.44
   },
   "curated": false,
-  "title": "SHOFETIM_2a.Ed",
+  "title": "SHOFETIM 2a Ed",
   "hook": [
    "When you hear how your grandparents met, right?"
   ],
@@ -5703,7 +5703,7 @@
   "id": "z-8bb0e116-3311",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "Yishaya.13",
+  "shiur": "Yishaya 13",
   "start": 1241,
   "end_sec": 1310,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/98c9a559b60903b83eb8/yishaya-13-8bb0e116.mp3",
@@ -5718,7 +5718,7 @@
    "standalone": 0.42
   },
   "curated": false,
-  "title": "Yishaya.13",
+  "title": "Yishaya 13",
   "hook": [
    "You look at something that really seems to have …"
   ],
@@ -5835,7 +5835,7 @@
   "id": "z-ea89985c-7870",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "MELAKHIM.II.8",
+  "shiur": "MELAKHIM II 8",
   "start": 2939,
   "end_sec": 3000,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/145731cceceb8fd9560c/melakhim-ii-8-ea89985c.mp3",
@@ -5850,7 +5850,7 @@
    "standalone": 0.29
   },
   "curated": false,
-  "title": "MELAKHIM.II.8",
+  "title": "MELAKHIM II 8",
   "hook": [
    "In other words, in Megillah Tester and Sefer Dan…"
   ],
@@ -5868,7 +5868,7 @@
   "id": "z-5236ffe3-11859",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "SHEMUEL2_21c_Special_Talmud",
+  "shiur": "SHEMUEL2 21c Special Talmud",
   "start": 4460,
   "end_sec": 4532,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/f865032cae657caa8e6b/shemuel2-21c-special-talmud-5236ffe3.mp3",
@@ -5883,7 +5883,7 @@
    "standalone": 0.31
   },
   "curated": false,
-  "title": "SHEMUEL2_21c_Special_Talmud",
+  "title": "SHEMUEL2 21c Special Talmud",
   "hook": [
    "We pull ourselves away from it We don't allow ou…"
   ],
@@ -5934,7 +5934,7 @@
   "id": "z-e05f5a1d-342",
   "source": "prayer",
   "seriesLabel": "Prayer",
-  "shiur": "Understanding Prayer 1 - What is Prayer in Judaism.Lauderdale Road 2024",
+  "shiur": "Understanding Prayer 1 - What is Prayer in Judaism Lauderdale Road 2024",
   "start": 115,
   "end_sec": 177,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/1716b2aa2bae56875561/understanding-prayer-1-what-is-prayer-in-judaism-lauderdale-road-2024-e05f5a1d.mp3",
@@ -5949,7 +5949,7 @@
    "standalone": 0.44
   },
   "curated": false,
-  "title": "Understanding Prayer 1 - What is Prayer in Judaism.Lauderdale Road 2024",
+  "title": "Understanding Prayer 1 - What is Prayer in Judaism Lauderdale Road 2024",
   "hook": [
    "Now we have to ask, what is that?"
   ],
@@ -6000,7 +6000,7 @@
   "id": "z-85a37333-6703",
   "source": "tanakh-topics",
   "seriesLabel": "People in Tanakh",
-  "shiur": "PIT.Moshe",
+  "shiur": "PIT Moshe",
   "start": 2724,
   "end_sec": 2786,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/d27f11f9addf38f9b4bb/pit-moshe-85a37333.mp3",
@@ -6015,7 +6015,7 @@
    "standalone": 0.27
   },
   "curated": false,
-  "title": "PIT.Moshe",
+  "title": "PIT Moshe",
   "hook": [
    "Moshe Rambinu does not compromise those things."
   ],
@@ -6099,7 +6099,7 @@
   "id": "z-4ece317c-5827",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "SHEMUEL_13.Ed",
+  "shiur": "SHEMUEL 13.Ed",
   "start": 2407,
   "end_sec": 2469,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/6e136eb23394db4eb107/shemuel-13-ed-4ece317c.mp3",
@@ -6114,7 +6114,7 @@
    "standalone": 0.35
   },
   "curated": false,
-  "title": "SHEMUEL_13.Ed",
+  "title": "SHEMUEL 13.Ed",
   "hook": [
    "You're asking, look, you know, if we only had a …"
   ],
@@ -6132,7 +6132,7 @@
   "id": "z-c7bb31f1-767",
   "source": "prayer",
   "seriesLabel": "Prayer",
-  "shiur": "Amida_18_MODIM",
+  "shiur": "Amida 18 MODIM",
   "start": 297,
   "end_sec": 360,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/b216be70629e59d90af5/amida-18-modim-c7bb31f1.mp3",
@@ -6147,7 +6147,7 @@
    "standalone": 0.39
   },
   "curated": false,
-  "title": "Amida_18_MODIM",
+  "title": "Amida 18 MODIM",
   "hook": [
    "What does it mean that we're modeh?"
   ],
@@ -6165,7 +6165,7 @@
   "id": "z-83f5cd9b-8146",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "MELAKHIM.II.11",
+  "shiur": "MELAKHIM II 11",
   "start": 3024,
   "end_sec": 3090,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/145731cceceb8fd9560c/melakhim-ii-11-83f5cd9b.mp3",
@@ -6180,7 +6180,7 @@
    "standalone": 0.3
   },
   "curated": false,
-  "title": "MELAKHIM.II.11",
+  "title": "MELAKHIM II 11",
   "hook": [
    "A woman, well, we'll talk about a man first, rig…"
   ],
@@ -6231,7 +6231,7 @@
   "id": "z-5582a816-930",
   "source": "topical",
   "seriesLabel": "Addresses & Topics",
-  "shiur": "On Legacy In Presence Of Lord And Lady Wolf.2016",
+  "shiur": "On Legacy In Presence Of Lord And Lady Wolf 2016",
   "start": 313,
   "end_sec": 375,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/4b1b51a33e119e9df78a/on-legacy-in-presence-of-lord-and-lady-wolf-2016-5582a816.mp3",
@@ -6246,7 +6246,7 @@
    "standalone": 0.41
   },
   "curated": false,
-  "title": "On Legacy In Presence Of Lord And Lady Wolf.2016",
+  "title": "On Legacy In Presence Of Lord And Lady Wolf 2016",
   "hook": [
    "No, it's an American story, isn't it?"
   ],
@@ -6264,7 +6264,7 @@
   "id": "z-ba281b62-14973",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "YEHOSHUA_6b",
+  "shiur": "YEHOSHUA 6b",
   "start": 5293,
   "end_sec": 5355,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/d44b9e66ac467c2a6a79/yehoshua-6b-ba281b62.mp3",
@@ -6279,7 +6279,7 @@
    "standalone": 0.27
   },
   "curated": false,
-  "title": "YEHOSHUA_6b",
+  "title": "YEHOSHUA 6b",
   "hook": [
    "There's this nagging that we know that anytime t…"
   ],
@@ -6363,7 +6363,7 @@
   "id": "z-0fa4c3e9-1529",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "SHEMUEL_19",
+  "shiur": "SHEMUEL 19",
   "start": 620,
   "end_sec": 685,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/6e136eb23394db4eb107/shemuel-19-0fa4c3e9.mp3",
@@ -6378,7 +6378,7 @@
    "standalone": 0.26
   },
   "curated": false,
-  "title": "SHEMUEL_19",
+  "title": "SHEMUEL 19",
   "hook": [
    "Okay, but the way that I would rather express it…"
   ],
@@ -6429,7 +6429,7 @@
   "id": "z-c9965960-146",
   "source": "tanakh-topics",
   "seriesLabel": "People in Tanakh",
-  "shiur": "PIT 01 Adam HaRishon",
+  "shiur": "PIT 01 Adam Ha Rishon",
   "start": 57,
   "end_sec": 136,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/d27f11f9addf38f9b4bb/pit-01-adam-harishon-c9965960.mp3",
@@ -6444,7 +6444,7 @@
    "standalone": 0.38
   },
   "curated": false,
-  "title": "PIT 01 Adam HaRishon",
+  "title": "PIT 01 Adam Ha Rishon",
   "hook": [
    "How do we go through and ultimately paint a pict…"
   ],
@@ -6528,7 +6528,7 @@
   "id": "z-5437040d-7087",
   "source": "navi",
   "seriesLabel": "Navi",
-  "shiur": "MELAKHIM I.10B 1",
+  "shiur": "MELAKHIM I 10B 1",
   "start": 3001,
   "end_sec": 3063,
   "audio": "https://pub-673096f5836d4a39a02d4448c8b91d0a.r2.dev/rjd-shiurim/shiurim/26ab2539109b17951bf7/melakhim-i-10b-1-5437040d.mp3",
@@ -6543,7 +6543,7 @@
    "standalone": 0.44
   },
   "curated": false,
-  "title": "MELAKHIM I.10B 1",
+  "title": "MELAKHIM I 10B 1",
   "hook": [
    "I can't tell you how many times it's happened to…"
   ],

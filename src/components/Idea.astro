@@ -1,0 +1,24 @@
+---
+const { c } = Astro.props;
+const fmt = (s: number) => {
+  const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), sec = String(Math.round(s % 60)).padStart(2, '0');
+  return h ? `${h}:${String(m).padStart(2, '0')}:${sec}` : `${m}:${sec}`;
+};
+---
+<article class="idea" data-id={c.id} data-series={c.source} data-title={c.title}>
+  <div class="src">{c.seriesLabel}</div>
+  <h3>{c.title}</h3>
+  <div class="from">From: {c.shiur}{c.t0 != null ? ` · at ${fmt(c.t0)}` : ` · around ${fmt(c.start)}`}</div>
+  <blockquote>{c.text}</blockquote>
+  <div class="listen">
+    {c.t0 != null && <audio controls preload="none" src={`${c.audio}#t=${c.t0},${c.t1}`}></audio>}
+    <a href={c.audio} target="_blank" rel="noopener">Full shiur audio ↗</a>
+  </div>
+  <div class="row">
+    <div class="mark">
+      <button data-v="record">🎙 Want to record</button><button data-v="recorded">✓ Recorded</button><button data-v="skip">Skip</button>
+    </div>
+    <span class="saved"></span>
+  </div>
+  <textarea rows="1" placeholder="Notes to yourself…"></textarea>
+</article>
