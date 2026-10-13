@@ -1,0 +1,616 @@
+---
+import Layout from '../layouts/Layout.astro';
+import clips from '../data/reels.json';
+
+const broll = {
+  navy: ['jerusalem', 'Storm over Jerusalem'],
+  parchment: ['candles', 'Shabbat candles, macro'],
+  cinema: ['archer', 'Archer at golden hour'],
+  stone: ['camels', 'Negev caravan, drone'],
+  editorial: ['library', 'Old library aisles'],
+};
+const moods = [
+  { img: 'jerusalem', title: 'Landscape & sky', note: 'Jerusalem and Judean hills, storms, first light. Slow time-lapse, 24–35mm.' },
+  { img: 'library', title: 'Texture of learning', note: 'Old books, parchment, quills, dust in light. Slow dolly, shallow focus.' },
+  { img: 'candles', title: 'Ritual, up close', note: 'Candles, mezuza, tallit, the Kotel. Macro, warm tungsten, no faces.' },
+  { img: 'archer', title: 'Literal metaphor', note: 'Show the idea itself: the archer for chet, the camel for gemilut chasadim.' },
+  { img: 'camels', title: 'Scale & journey', note: 'Desert, roads, caravans from the air. Gives a 60-second thought room to breathe.' },
+];
+const styles = [
+  { key: 'navy', name: 'Haftara Navy', note: 'The live Haftara reel look: deep navy, ice-blue keywords, word-by-word caption boxes. Proven, bold, and high-retention.' },
+  { key: 'parchment', name: 'Parchment & Gold', note: 'Matches The Parasha channel brand: cream ground, gold rules, ink captions set in Marcellus. Warm and dignified.' },
+  { key: 'cinema', name: 'Cinematic Black', note: 'Letterboxed, full-bleed b-roll, white Marcellus captions with a gold active word. Reads like a film trailer.' },
+  { key: 'stone', name: 'Jerusalem Stone', note: 'Warm limestone grade, Hebrew watermark, small-caps captions. Calm and meditative, made for reflective thoughts.' },
+  { key: 'editorial', name: 'Editorial Split', note: 'B-roll in the top half, Rabbi Dweck below, a pull-quote band between. Magazine-style, and b-roll stays on screen throughout.' },
+];
+
+const ends = [
+  { key: 'socials', name: 'Follow', note: 'Name, every handle, and a follow line. Use when the goal is growing the channel.' },
+  { key: 'app', name: 'Shiurim Library App', note: 'Phone mockup of the app with a download call to action. Use for reels that lead into deeper learning.' },
+  { key: 'combo', name: 'Follow + App', note: 'Both together: the handles row and an app badge. A safe default.' },
+  { key: 'minimal', name: 'Minimal Signature', note: 'Just the name in Marcellus, a gold rule and one handle. Best after emotional or quiet clips.' },
+];
+
+const styleName = Object.fromEntries(styles.map((s) => [s.key, s.name]));
+const endName = Object.fromEntries(ends.map((e) => [e.key, e.name]));
+const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, '0')}`;
+const curatedCount = clips.filter((c: any) => c.curated).length;
+const seriesList = [...new Map(clips.map((c: any) => [c.source, c.seriesLabel])).entries()];
+const bar = (v: number) => `${Math.round((v / 3) * 100)}%`;
+---
+
+<Layout title="Reel Concepts" description="Short-form reel concepts for Rabbi Joseph Dweck: styles, closing cards and clip candidates.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&family=Lato:wght@900&display=swap" rel="stylesheet" />
+
+  <section class="page-hero">
+    <h1>Reel Concepts</h1>
+    <p>Looks, closing cards and {curatedCount} one-minute clip picks mined from 1,581 of Rabbi Dweck's shiurim. Read each quote, listen to it in the original recording, and give it a <strong>👍</strong> if it should become a reel. Approvals save instantly; approved quotes go into production with the look and closing card picked on the card. For review only; this page isn't in the site navigation.</p>
+    <div class="gold-rule"></div>
+    <nav class="jump">
+      <a href="#looks">1 · Looks</a><a href="#ends">2 · Closing cards</a><a href="#clips">3 · Clip picks</a>
+    </nav>
+  </section>
+
+  <!-- ───────────── LOOKS ───────────── -->
+  <section class="section" id="looks">
+    <div class="container">
+      <h2 class="section-title">1 · Looks</h2>
+      <div class="gold-divider"></div>
+      <p class="lede">Five treatments, all set in <strong>Marcellus</strong> (the site's display face). Each preview loops through the hook card, Rabbi Dweck on camera with captions, a b-roll cutaway and the closing card. B-roll frames are AI concept stills (see the direction notes below).</p>
+      <div class="look-grid">
+        {styles.map((s, i) => (
+          <figure class="look">
+            <div class={`phone s-${s.key} demo`} data-demo={i}>
+              <div class="ph-scene ph-rabbi" style="background-image:url(/reels/rabbi_a.jpg)"></div>
+              <div class="ph-scene ph-broll" style={`background-image:url(/reels/broll_${broll[s.key][0]}.jpg)`}><span class="broll-chip">B-roll · {broll[s.key][1]}</span></div>
+              {s.key === 'editorial' && <div class="ph-split-top" style={`background-image:url(/reels/broll_${broll[s.key][0]}.jpg)`}></div>}
+              <div class="ph-bars"></div>
+              <div class="ph-badge"><i></i><span>RABBI JOSEPH DWECK</span><i></i></div>
+              <div class="ph-caps"><span>THE</span> <span>WORLD</span> <span class="k">DOESN'T</span> <span>NEED</span> <span>TO</span> <span class="k">MAKE</span> <span>SENSE</span></div>
+              <div class="ph-hook">
+                <div class="ph-water he">מַחְשָׁבָה</div>
+                <div class="ph-kicker">Rabbi Dweck</div>
+                <div class="ph-line"></div>
+                <div class="ph-hookt"><span>The World Doesn't</span><span>Owe You Logic</span></div>
+                <div class="ph-by">Rabbi Joseph Dweck</div>
+              </div>
+              <div class="ph-end end-combo"></div>
+            </div>
+            <figcaption>
+              <h3>{s.name}</h3>
+              <p>{s.note}</p>
+              <div class="vote" data-concept={`style:${s.key}`}>
+                <button data-v="yes">Love it</button><button data-v="maybe">Maybe</button><button data-v="no">No</button>
+              </div>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+
+      <h3 class="sub-h">Elevated b-roll direction</h3>
+      <p class="lede">The bar for cutaways: cinematic, slow, graded warm, never generic stock-office footage. Cut to b-roll on the key line of each thought, for 2–4 seconds, while Rabbi Dweck's voice carries on. The frames below are AI-generated concept stills to show the bar; the real edit would use licensed stock or a shoot.</p>
+      <div class="mood-grid">
+        {moods.map((m) => (
+          <figure class="mood">
+            <img src={`/reels/broll_${m.img}.jpg`} alt={m.title} loading="lazy" />
+            <figcaption><b>{m.title}</b>{m.note}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── CLOSING CARDS ───────────── -->
+  <section class="section" id="ends" style="background:var(--cream);">
+    <div class="container">
+      <h2 class="section-title">2 · Closing cards</h2>
+      <div class="gold-divider"></div>
+      <p class="lede">The last 4–6 seconds of every reel. Each card works in any of the five looks; the navy and parchment versions are shown here.</p>
+      <div class="end-grid">
+        {ends.map((e, i) => (
+          <figure class="look">
+            <div class={`phone ${i % 2 ? 's-parchment' : 's-navy'} endonly`}>
+              <div class={`ph-end show end-${e.key}`}></div>
+            </div>
+            <figcaption>
+              <h3>{e.name}</h3>
+              <p>{e.note}</p>
+              <div class="vote" data-concept={`end:${e.key}`}>
+                <button data-v="yes">Love it</button><button data-v="maybe">Maybe</button><button data-v="no">No</button>
+              </div>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+      <p class="fine">Handles from the site header: Instagram &amp; X <strong>@rabbidweck</strong>, YouTube channel, WhatsApp community, rabbijosephdweck.com. The app is shown as the Shiurim Library; confirm the store listing name before rendering.</p>
+    </div>
+  </section>
+
+  <!-- ───────────── CLIPS ───────────── -->
+  <section class="section" id="clips">
+    <div class="container wide">
+      <h2 class="section-title">3 · Clip picks</h2>
+      <div class="gold-divider"></div>
+      <p class="lede">Every shiur in the archive was cut into one-minute windows, and <strong>Jev</strong> (TypeSafe) scored each window on four things: opening hook, payoff, broad appeal, and whether it stands on its own. Each pick shows the quote, a player cued to that passage in the original recording, a suggested on-screen hook and b-roll shot list, and a suggested look and closing card (change either one). Quotes are automatic transcripts, so Hebrew terms may be garbled; the audio is the reference.</p>
+
+      <div class="toolbar">
+        <select class="seg-sel" id="seriesSel">
+          <option value="all">All series</option>
+          {seriesList.map(([k, l]) => <option value={k}>{l}</option>)}
+        </select>
+        <div class="seg" data-filter="status">
+          <button class="on" data-val="all">Any status</button><button data-val="none">Unreviewed</button><button data-val="yes">Yes</button><button data-val="maybe">Maybe</button><button data-val="no">No</button>
+        </div>
+        <label class="chk"><input type="checkbox" id="showAll" /> Show all {clips.length} (incl. the next-best Jev picks)</label>
+        <input type="search" id="q" placeholder="Search transcripts…" />
+      </div>
+      <div class="tally">
+        <span id="tally"></span>
+        <span id="sync" class="sync">Connecting…</span>
+        <label class="who">Reviewer <input id="who" placeholder="your name" /></label>
+        <button id="csv" class="ghost">Export picks (CSV)</button>
+      </div>
+
+      <div class="clip-list">
+        {clips.map((c: any) => (
+          <article class={`clip${c.curated ? '' : ' uncurated'}`} data-id={c.id} data-source={c.source}
+            data-title={c.title} data-start={c.t0 ?? c.start} data-end={c.t1 ?? c.end_sec} data-shiur={c.shiur} data-audio={c.audio} data-hook={c.hook.join(' / ')}
+            data-search={`${c.title} ${c.hook.join(' ')} ${c.text}`.toLowerCase()}>
+            <div class={`phone mini s-${c.style}`} data-mini>
+              <div class="ph-hook show">
+                {c.he && <div class="ph-he he">{c.he}</div>}
+                <div class="ph-kicker">{c.seriesLabel}</div>
+                <div class="ph-line"></div>
+                <div class="ph-hookt">{c.hook.map((l: string) => <span>{l}</span>)}</div>
+                <div class="ph-by">Rabbi Joseph Dweck</div>
+              </div>
+            </div>
+            <div class="clip-body">
+              <div class="clip-meta">
+                <span class="src">{c.seriesLabel}</span>
+                <span>{c.t0 != null ? `${fmt(c.t0)}–${fmt(c.t1)}` : `≈ ${fmt(c.start)}`} in the shiur</span>
+              </div>
+              <h3>{c.title}</h3>
+              <p class="shiur">From: {c.shiur}</p>
+              <div class="jev" title="Jev scores, 0–3">
+                <span>Hook <i style={`--w:${bar(c.jev.hook)}`}></i></span>
+                <span>Payoff <i style={`--w:${bar(c.jev.payoff)}`}></i></span>
+                <span>Appeal <i style={`--w:${bar(c.jev.appeal)}`}></i></span>
+                <span>Standalone <i style={`--w:${Math.round(c.jev.standalone * 100)}%`}></i></span>
+              </div>
+              <blockquote class="quote">{c.text}</blockquote>
+              {c.t0 != null
+                ? <div class="listen"><span>Listen</span><audio controls preload="none" src={`${c.audio}#t=${c.t0},${c.t1}`}></audio></div>
+                : c.curated && <p class="fine pending">Audio clip is being lined up with the recording…</p>}
+              {c.why && <p class="why">{c.why}</p>}
+              {c.trim && <p class="trim">✂ {c.trim}</p>}
+              {c.broll.length > 0 && (
+                <div class="broll">
+                  {c.still && <img class="still" src={`/reels/broll_${c.still}.jpg`} alt="" loading="lazy" />}
+                  <h4>B-roll shot list</h4>
+                  <ol>{c.broll.map((b: string) => <li>{b}</li>)}</ol>
+                </div>
+              )}
+
+              <div class="picks">
+                <div class="vote big">
+                  <button data-v="yes">👍 Approve</button><button data-v="maybe">Maybe</button><button data-v="no">👎 Pass</button>
+                </div>
+                <label>Look
+                  <select data-k="style">{styles.map((s) => <option value={s.key} selected={s.key === c.style}>{s.name}</option>)}</select>
+                </label>
+                <label>Closing
+                  <select data-k="end_card">{ends.map((e) => <option value={e.key} selected={e.key === c.end}>{e.name}</option>)}</select>
+                </label>
+              </div>
+              <div class="reel"></div>
+              <textarea data-k="notes" rows="1" placeholder="Notes: trim points, alternative hook, b-roll ideas…"></textarea>
+            </div>
+          </article>
+        ))}
+      </div>
+      <p class="fine">Choices save to Supabase (<code>dweck_reel_picks</code>) the moment you click. Anyone with this link sees the same picks.</p>
+    </div>
+  </section>
+
+  <template id="tpl-end-socials">
+    <div class="e-water he">רב יוסף דוויק</div>
+    <div class="e-kicker">Follow for more</div>
+    <div class="e-name">Rabbi Joseph Dweck</div>
+    <div class="e-rule"></div>
+    <ul class="e-handles">
+      <li><b>IG</b>@rabbidweck</li><li><b>YT</b>Rabbi Joseph Dweck</li><li><b>X</b>@rabbidweck</li><li><b>WA</b>Community</li>
+    </ul>
+    <div class="e-site">rabbijosephdweck.com</div>
+  </template>
+  <template id="tpl-end-app">
+    <div class="e-kicker">Keep learning</div>
+    <div class="e-app">
+      <img src="/reels/app_library.webp" alt="" class="e-shot s1" />
+      <img src="/reels/app_player.webp" alt="" class="e-shot s2" />
+    </div>
+    <div class="e-title">Every shiur, in your pocket</div>
+    <div class="e-badge"><span class="e-a">A</span>Shiurim Library app</div>
+    <div class="e-site">rabbijosephdweck.com</div>
+  </template>
+  <template id="tpl-end-combo">
+    <div class="e-water he">רב יוסף דוויק</div>
+    <div class="e-name">Rabbi Joseph Dweck</div>
+    <div class="e-rule"></div>
+    <div class="e-follow">@rabbidweck</div>
+    <div class="e-icons"><span>IG</span><span>YT</span><span>X</span><span>WA</span></div>
+    <div class="e-badge"><span class="e-a">A</span>Full shiurim on the app</div>
+    <div class="e-site">rabbijosephdweck.com</div>
+  </template>
+  <template id="tpl-end-minimal">
+    <div class="e-name big">Rabbi Joseph Dweck</div>
+    <div class="e-rule"></div>
+    <div class="e-follow">@rabbidweck</div>
+  </template>
+</Layout>
+
+<script is:inline define:vars={{ styleName, endName }}>
+  const SB_URL = 'https://qukziojymwlvmrzapgyo.supabase.co/rest/v1/dweck_reel_picks';
+  const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF1a3ppb2p5bXdsdm1yemFwZ3lvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQwNjMxNzAsImV4cCI6MjA2OTYzOTE3MH0.I7oR9fcypn-BKb9AS4d2UlXrgvMbpTQtWySqxgAWGzo';
+  const H = { apikey: SB_KEY, Authorization: 'Bearer ' + SB_KEY, 'Content-Type': 'application/json' };
+
+  // fill closing-card templates
+  document.querySelectorAll('.ph-end').forEach((el) => {
+    const k = [...el.classList].find((c) => c.startsWith('end-'))?.slice(4);
+    const t = document.getElementById('tpl-end-' + k);
+    if (t) el.appendChild(t.content.cloneNode(true));
+  });
+
+  // looping demo phones: hook → talk → b-roll → talk → end
+  const demos = document.querySelectorAll('.phone.demo');
+  const phases = [['p-hook', 2200], ['p-talk', 2600], ['p-broll', 2400], ['p-talk2', 1800], ['p-end', 2600]];
+  demos.forEach((ph, i) => {
+    const caps = ph.querySelectorAll('.ph-caps span');
+    let p = 0;
+    const step = () => {
+      ph.classList.remove(...phases.map((x) => x[0]));
+      ph.classList.add(phases[p][0]);
+      if (phases[p][0].startsWith('p-talk') || phases[p][0] === 'p-broll') {
+        caps.forEach((c, j) => { c.classList.remove('on'); setTimeout(() => { caps.forEach((x) => x.classList.remove('on')); c.classList.add('on'); }, j * 300); });
+      }
+      const d = phases[p][1];
+      p = (p + 1) % phases.length;
+      setTimeout(step, d);
+    };
+    setTimeout(step, i * 350);
+  });
+
+  // ───── picks state ─────
+  const state = {}; // id -> row
+  const who = document.getElementById('who');
+  try { who.value = localStorage.getItem('reelWho') || ''; } catch (e) {}
+  who.addEventListener('change', () => { try { localStorage.setItem('reelWho', who.value); } catch (e) {} });
+  const sync = document.getElementById('sync');
+  const setSync = (t, bad) => { sync.textContent = t; sync.classList.toggle('bad', !!bad); };
+
+  async function save(id, patch) {
+    const now = new Date().toISOString();
+    state[id] = { ...(state[id] || { clip_id: id }), ...patch, clip_id: id, updated_at: now };
+    setSync('Saving…');
+    try {
+      // send only what changed so we never clobber the render worker's reel_* fields
+      const body = { ...patch, clip_id: id, updated_at: now };
+      if (who.value) body.reviewer = who.value;
+      const r = await fetch(SB_URL + '?on_conflict=clip_id', { method: 'POST', headers: { ...H, Prefer: 'resolution=merge-duplicates,return=minimal' }, body: JSON.stringify(body) });
+      if (!r.ok) throw new Error(await r.text());
+      setSync('Saved ✓');
+    } catch (e) { console.error(e); setSync('Couldn’t save. Check your connection.', true); }
+    paint(); tally();
+  }
+
+  function paint() {
+    document.querySelectorAll('[data-id]').forEach((el) => {
+      const row = state[el.dataset.id] || {};
+      el.dataset.status = row.status || 'none';
+      el.querySelectorAll('.vote button').forEach((b) => b.classList.toggle('on', b.dataset.v === row.status));
+      el.querySelectorAll('[data-k]').forEach((f) => { if (row[f.dataset.k] != null && document.activeElement !== f) f.value = row[f.dataset.k]; });
+      if (row.style) { const m = el.querySelector('[data-mini]'); m.className = m.className.replace(/s-\w+/, 's-' + row.style); }
+      const reel = el.querySelector('.reel');
+      if (reel) {
+        const st = row.status === 'yes' ? row.reel_status : (row.reel_status === 'ready' ? 'ready' : null);
+        reel.dataset.state = st || '';
+        if (st === 'ready' && row.reel_url) {
+          if (reel.dataset.url !== row.reel_url) { reel.dataset.url = row.reel_url; reel.innerHTML = `<video controls playsinline preload="metadata" src="${row.reel_url}"></video><a href="${row.reel_url}" download target="_blank" rel="noopener">Download MP4 ↓</a>`; }
+        } else {
+          reel.dataset.url = '';
+          reel.innerHTML = st === 'queued' ? '🎬 Queued: the reel will be generated shortly' : st === 'rendering' ? '🎬 Generating the reel: b-roll, captions, render…' : st === 'error' ? `⚠ Render failed: ${row.reel_error || 'unknown error'}` : '';
+        }
+      }
+    });
+    document.querySelectorAll('[data-concept]').forEach((v) => {
+      const row = state[v.dataset.concept] || {};
+      v.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b.dataset.v === row.status));
+    });
+    filter();
+  }
+
+  function tally() {
+    const rows = Object.values(state).filter((r) => !r.clip_id.includes(':'));
+    const n = (s) => rows.filter((r) => r.status === s).length;
+    document.getElementById('tally').innerHTML = `<b>${n('yes')}</b> 👍 approved · <b>${n('maybe')}</b> maybe · <b>${n('no')}</b> no`;
+  }
+
+  document.querySelectorAll('.clip').forEach((el) => {
+    const id = el.dataset.id;
+    const base = () => ({ title: el.dataset.title, source: el.dataset.source, start_sec: +el.dataset.start, end_sec: +el.dataset.end,
+      shiur: el.dataset.shiur, audio_url: el.dataset.audio, hook: el.dataset.hook,
+      style: el.querySelector('[data-k=style]').value, end_card: el.querySelector('[data-k=end_card]').value });
+    el.querySelectorAll('.vote button').forEach((b) => b.addEventListener('click', () => {
+      const row = state[id] || {}, next = row.status === b.dataset.v ? null : b.dataset.v;
+      const patch = { ...base(), status: next };
+      save(id, patch);
+    }));
+    el.querySelectorAll('select[data-k]').forEach((s) => s.addEventListener('change', () => save(id, { ...base() })));
+    const ta = el.querySelector('textarea');
+    ta.addEventListener('input', () => { ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; });
+    ta.addEventListener('change', () => save(id, { ...base(), notes: ta.value }));
+  });
+  document.querySelectorAll('[data-concept]').forEach((v) => v.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+    const id = v.dataset.concept, cur = (state[id] || {}).status;
+    const [kind, key] = id.split(':');
+    save(id, { title: (kind === 'style' ? styleName : endName)[key], source: 'concept-' + kind, status: cur === b.dataset.v ? null : b.dataset.v });
+  })));
+
+  // filters
+  const F = { source: 'all', status: 'all' };
+  document.getElementById('seriesSel').addEventListener('change', (e) => { F.source = e.target.value; filter(); });
+  document.querySelectorAll('.seg').forEach((seg) => seg.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+    seg.querySelectorAll('button').forEach((x) => x.classList.remove('on')); b.classList.add('on');
+    F[seg.dataset.filter] = b.dataset.val; filter();
+  })));
+  const q = document.getElementById('q'), all = document.getElementById('showAll');
+  q.addEventListener('input', filter); all.addEventListener('change', filter);
+  function filter() {
+    const term = q.value.trim().toLowerCase();
+    document.querySelectorAll('.clip').forEach((el) => {
+      const ok = (F.source === 'all' || el.dataset.source === F.source)
+        && (F.status === 'all' || (el.dataset.status || 'none') === F.status)
+        && (all.checked || !el.classList.contains('uncurated') || term)
+        && (!term || el.dataset.search.includes(term));
+      el.hidden = !ok;
+    });
+  }
+
+  document.getElementById('csv').addEventListener('click', () => {
+    const rows = Object.values(state).filter((r) => r.status && !r.clip_id.includes(':'));
+    const cols = ['clip_id', 'status', 'title', 'shiur', 'source', 'start_sec', 'end_sec', 'audio_url', 'style', 'end_card', 'reel_url', 'notes'];
+    const esc = (v) => '"' + String(v ?? '').replace(/"/g, '""') + '"';
+    const csv = [cols.join(',')].concat(rows.map((r) => cols.map((c) => esc(r[c])).join(','))).join('\n');
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' })); a.download = 'reel-picks.csv'; a.click();
+  });
+
+  const load = (first) => fetch(SB_URL + '?select=*', { headers: H }).then((r) => r.json()).then((rows) => {
+    (Array.isArray(rows) ? rows : []).forEach((r) => { state[r.clip_id] = { ...(state[r.clip_id] || {}), ...r }; });
+    if (first) setSync('Synced ✓');
+    paint(); tally();
+  }).catch(() => { if (first) { setSync('Offline: picks won’t save', true); paint(); tally(); } });
+  load(true);
+  setInterval(() => { if (!document.hidden) load(false); }, 20000); // pick up reels as the worker finishes them
+</script>
+
+<style>
+  .jump { display: flex; gap: 1.5rem; justify-content: center; margin-top: 1.5rem; flex-wrap: wrap; }
+  .jump a { font-family: var(--font-serif); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.8rem; color: var(--gold); text-decoration: none; }
+  .lede { color: var(--text-light); max-width: 760px; margin-bottom: 2rem; }
+  .fine { color: var(--text-light); font-size: 0.85rem; margin-top: 2rem; }
+  .container.wide { max-width: 1200px; }
+  .he { font-family: 'Frank Ruhl Libre', serif; direction: rtl; }
+
+  .look-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 2rem 1.5rem; }
+  .end-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2rem 1.5rem; }
+  .look { margin: 0; }
+  .look figcaption h3 { font-size: 1.15rem; margin: 0.9rem 0 0.25rem; }
+  .look figcaption p { font-size: 0.88rem; color: var(--text-light); line-height: 1.55; }
+
+  .vote { display: flex; gap: 0.35rem; margin-top: 0.7rem; }
+  .vote button { font: 700 0.72rem var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; padding: 0.45rem 0.7rem; border: 1px solid var(--cream-dark); background: #fff; color: var(--text); cursor: pointer; border-radius: 2px; }
+  .vote button:hover { border-color: var(--gold); }
+  .vote button[data-v=yes].on { background: #2f6b46; border-color: #2f6b46; color: #fff; }
+  .vote button[data-v=maybe].on { background: var(--gold); border-color: var(--gold); color: #fff; }
+  .vote button[data-v=no].on { background: #8a3a32; border-color: #8a3a32; color: #fff; }
+  .vote.big button { font-size: 0.8rem; padding: 0.55rem 0.95rem; }
+
+  /* ───────── PHONE ───────── */
+  .phone { --w: 100%; position: relative; width: var(--w); aspect-ratio: 9 / 16; overflow: hidden; border-radius: 14px; background: #000; color: #fff;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.08); container-type: inline-size; isolation: isolate; }
+  .ph-scene { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; transition: opacity 0.5s; }
+  .ph-rabbi { transform: scale(1.04); }
+  .ph-broll { animation: kb 6s ease-in-out infinite alternate; }
+  @keyframes kb { from { transform: scale(1.02); } to { transform: scale(1.12) translateY(-2%); } }
+  .broll-chip { position: absolute; top: 14%; right: 4%; white-space: nowrap; font: 700 2.4cqw var(--font-sans); letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 0.3em 0.6em; background: rgba(0,0,0,0.45); color: rgba(255,255,255,0.85); z-index: 2; border-radius: 2px; }
+  .ph-badge, .ph-caps, .ph-hook, .ph-end, .ph-bars, .ph-split-top { position: absolute; transition: opacity 0.5s; }
+  .ph-badge { top: 6%; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 3cqw; opacity: 0; z-index: 5; }
+  .ph-badge i { width: 6cqw; height: 1px; background: currentColor; opacity: 0.6; }
+  .ph-badge span { font: 3cqw var(--font-serif); letter-spacing: 0.25em; }
+  .ph-caps { left: 6%; right: 6%; bottom: 17%; text-align: center; z-index: 6; opacity: 0; line-height: 1.25; }
+  .ph-caps span { display: inline-block; transition: all 0.15s; }
+
+  .ph-hook { inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 8%; z-index: 8; opacity: 0; }
+  .ph-water { position: absolute; top: 34%; left: 0; right: 0; font-size: 30cqw; opacity: 0.06; line-height: 1; }
+  .ph-kicker { font: 700 3.1cqw var(--font-sans); letter-spacing: 0.38em; text-transform: uppercase; position: relative; }
+  .ph-line { width: 42%; height: 1px; margin: 4.5cqw 0; background: linear-gradient(90deg, transparent, currentColor, transparent); position: relative; }
+  .ph-he { font-size: 10cqw; line-height: 1.15; margin-bottom: 3cqw; position: relative; }
+  .ph-hookt { font-family: var(--font-serif); font-size: 8.4cqw; line-height: 1.12; letter-spacing: 0.02em; position: relative; }
+  .ph-hookt span { display: block; }
+  .ph-by { font: 4cqw var(--font-serif); margin-top: 5cqw; opacity: 0.8; position: relative; }
+
+  .ph-end { inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 8%; z-index: 9; opacity: 0; }
+  .ph-end.show, .ph-hook.show { opacity: 1; }
+  .e-water { position: absolute; top: 14%; left: 0; right: 0; font-size: 17cqw; opacity: 0.06; white-space: nowrap; }
+  .e-kicker { font: 700 3cqw var(--font-sans); letter-spacing: 0.36em; text-transform: uppercase; margin-bottom: 3cqw; position: relative; }
+  .e-name { font: 7.6cqw var(--font-serif); letter-spacing: 0.03em; line-height: 1.1; position: relative; }
+  .e-name.big { font-size: 9.5cqw; }
+  .e-rule { width: 16cqw; height: 1px; margin: 5cqw 0; position: relative; }
+  .e-handles { list-style: none; display: grid; gap: 2.4cqw; font: 700 4.1cqw var(--font-sans); letter-spacing: 0.03em; position: relative; }
+  .e-handles li { display: flex; gap: 3cqw; align-items: center; }
+  .e-handles b, .e-icons span { display: inline-grid; place-items: center; width: 7.5cqw; height: 7.5cqw; border-radius: 50%; font-size: 2.6cqw; letter-spacing: 0; border: 1px solid currentColor; }
+  .e-site { font: 700 3.6cqw var(--font-sans); letter-spacing: 0.08em; margin-top: 6cqw; position: relative; }
+  .e-follow { font: 700 5cqw var(--font-sans); letter-spacing: 0.06em; position: relative; }
+  .e-icons { display: flex; gap: 2.5cqw; margin: 4cqw 0 5cqw; position: relative; }
+  .e-icons span { width: 9cqw; height: 9cqw; font-size: 3cqw; }
+  .e-app { position: relative; width: 70%; height: 46%; margin: 1cqw 0 5cqw; }
+  .e-shot { position: absolute; height: 100%; border-radius: 4cqw; box-shadow: 0 4cqw 10cqw rgba(0,0,0,0.45); border: 1.2cqw solid #111; }
+  .e-shot.s1 { left: 0; transform: rotate(-7deg); }
+  .e-shot.s2 { right: 0; top: 6%; transform: rotate(6deg); }
+  .e-title { font: 6.4cqw var(--font-serif); line-height: 1.15; position: relative; }
+  .e-badge { display: inline-flex; align-items: center; gap: 2.4cqw; margin-top: 4cqw; padding: 2cqw 4cqw 2cqw 2cqw; border-radius: 99px; font: 700 3.5cqw var(--font-sans); position: relative; }
+  .e-a { display: inline-grid; place-items: center; width: 6.4cqw; height: 6.4cqw; border-radius: 50%; background: #8b1d2c; color: #fff; font: 4cqw var(--font-serif); }
+
+  /* demo phases */
+  .demo.p-hook .ph-hook, .demo.p-end .ph-end { opacity: 1; }
+  .demo.p-talk .ph-rabbi, .demo.p-talk2 .ph-rabbi { opacity: 1; }
+  .demo.p-broll .ph-broll { opacity: 1; }
+  .demo.p-talk .ph-caps, .demo.p-talk2 .ph-caps, .demo.p-broll .ph-caps,
+  .demo.p-talk .ph-badge, .demo.p-talk2 .ph-badge, .demo.p-broll .ph-badge { opacity: 1; }
+
+  /* ───────── STYLE: NAVY ───────── */
+  .s-navy .ph-hook, .s-navy .ph-end { background: radial-gradient(ellipse at 50% 45%, #2b5672 0%, #102638 60%, #050c13 100%); }
+  .s-navy .ph-kicker, .s-navy .e-kicker, .s-navy .e-site { color: #a9cbe3; }
+  .s-navy .e-rule { background: rgba(169,203,227,0.6); }
+  .s-navy .e-badge { background: rgba(255,255,255,0.1); border: 1px solid rgba(169,203,227,0.4); }
+  .s-navy .ph-scene::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,20,32,0.8), transparent 45%); z-index: 1; }
+  .s-navy .ph-caps span { font: 900 6.6cqw 'Lato', sans-serif; text-transform: uppercase; padding: 0.06em 0.18em; text-shadow: 0 2px 8px rgba(0,0,0,0.8); border-radius: 4px; }
+  .s-navy .ph-caps span.k { color: #a9cbe3; }
+  .s-navy .ph-caps span.on { background: linear-gradient(135deg, #3a6f92, #2b5672); box-shadow: 0 0 0 1px rgba(169,203,227,0.5); transform: scale(1.08); }
+
+  /* ───────── STYLE: PARCHMENT ───────── */
+  .s-parchment .ph-hook, .s-parchment .ph-end { background: radial-gradient(ellipse at 50% 40%, #fbf7ef 0%, #f1e8d6 60%, #e3d4b6 100%); color: #2a2218; }
+  .s-parchment .ph-kicker, .s-parchment .e-kicker { color: #9a7a35; }
+  .s-parchment .ph-line { color: #b8974a; }
+  .s-parchment .e-rule { background: #b8974a; }
+  .s-parchment .e-site { color: #9a7a35; }
+  .s-parchment .e-badge { background: #fff; border: 1px solid #d9c79e; }
+  .s-parchment .e-water, .s-parchment .ph-water { opacity: 0.08; }
+  .s-parchment .ph-badge { color: #fff; }
+  .s-parchment .ph-caps { bottom: 9%; left: 0; right: 0; padding: 4cqw 6cqw 5cqw; background: rgba(248,244,238,0.94); border-top: 1px solid #b8974a; }
+  .s-parchment .ph-caps span { font: 6cqw var(--font-serif); color: #2a2218; margin: 0 0.06em; border-bottom: 2px solid transparent; }
+  .s-parchment .ph-caps span.on { border-color: #b8974a; color: #000; }
+  .s-parchment .ph-caps span.k { color: #8a6a25; }
+  .s-parchment .ph-broll { filter: sepia(0.35) saturate(0.9); }
+
+  /* ───────── STYLE: CINEMA ───────── */
+  .s-cinema .ph-hook, .s-cinema .ph-end { background: #050505; }
+  .s-cinema .ph-kicker, .s-cinema .e-kicker, .s-cinema .e-site { color: #d4b06a; }
+  .s-cinema .ph-line { color: #d4b06a; }
+  .s-cinema .e-rule { background: #d4b06a; }
+  .s-cinema .e-badge { border: 1px solid rgba(212,176,106,0.5); }
+  .s-cinema .ph-hookt { font-size: 9cqw; letter-spacing: 0.06em; text-transform: uppercase; }
+  .s-cinema .ph-bars { inset: 0; z-index: 4; pointer-events: none; box-shadow: inset 0 11cqw 0 #000, inset 0 -11cqw 0 #000; }
+  .s-cinema .ph-scene { filter: contrast(1.1) saturate(0.8); }
+  .s-cinema .ph-caps span { font: 6.2cqw var(--font-serif); color: #fff; text-shadow: 0 2px 12px rgba(0,0,0,0.9); margin: 0 0.05em; }
+  .s-cinema .ph-caps span.on { color: #d4b06a; }
+  .s-cinema .ph-badge { top: 12%; color: #d4b06a; }
+  .s-cinema .broll-chip { top: 18%; }
+
+  /* ───────── STYLE: STONE ───────── */
+  .s-stone .ph-hook, .s-stone .ph-end { background: radial-gradient(ellipse at 50% 35%, #e9dcc4 0%, #cdb894 55%, #9c8562 100%); color: #2b2117; }
+  .s-stone .ph-kicker, .s-stone .e-kicker, .s-stone .e-site { color: #7a4f2a; }
+  .s-stone .ph-line { color: #7a4f2a; }
+  .s-stone .e-rule { background: #7a4f2a; }
+  .s-stone .e-badge { background: rgba(255,255,255,0.45); }
+  .s-stone .ph-water, .s-stone .e-water { opacity: 0.12; color: #7a4f2a; }
+  .s-stone .ph-scene { filter: sepia(0.25) saturate(0.85) brightness(1.03); }
+  .s-stone .ph-scene::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(60,40,20,0.65), transparent 45%); z-index: 1; }
+  .s-stone .ph-caps span { font: 700 5.4cqw var(--font-sans); font-variant: small-caps; letter-spacing: 0.06em; text-transform: lowercase; color: #fbf3e4; text-shadow: 0 2px 8px rgba(40,25,10,0.8); margin: 0 0.06em; }
+  .s-stone .ph-caps span.on { color: #f0c27a; }
+  .s-stone .ph-badge { color: #fbf3e4; }
+
+  /* ───────── STYLE: EDITORIAL ───────── */
+  .s-editorial .ph-hook, .s-editorial .ph-end { background: #f8f4ee; color: #1a1a1a; }
+  .s-editorial .ph-hook::before, .s-editorial .ph-end::before { content: ''; position: absolute; inset: 4cqw; border: 1px solid #b8974a; pointer-events: none; }
+  .s-editorial .ph-kicker, .s-editorial .e-kicker, .s-editorial .e-site { color: #b8974a; }
+  .s-editorial .ph-line { color: #b8974a; }
+  .s-editorial .e-rule { background: #b8974a; }
+  .s-editorial .e-badge { border: 1px solid #b8974a; }
+  .s-editorial .ph-hookt { font-size: 9cqw; }
+  .s-editorial .ph-rabbi { top: 50%; background-position: center 20%; }
+  .s-editorial .ph-split-top { top: 0; left: 0; right: 0; height: 50%; z-index: 3; opacity: 0; background-size: cover; background-position: center 30%; }
+  .demo.s-editorial.p-talk .ph-split-top, .demo.s-editorial.p-talk2 .ph-split-top, .demo.s-editorial.p-broll .ph-split-top { opacity: 1; }
+  .s-editorial .ph-caps { bottom: auto; top: 46%; left: 0; right: 0; padding: 2.5cqw 5cqw; background: #f8f4ee; border-top: 2px solid #b8974a; border-bottom: 2px solid #b8974a; z-index: 6; }
+  .s-editorial .ph-caps span { font: 5.6cqw var(--font-serif); color: #1a1a1a; margin: 0 0.05em; }
+  .s-editorial .ph-caps span.on { color: #b8974a; }
+  .s-editorial .ph-badge { color: #fff; top: 4%; }
+
+  /* ───────── TOOLBAR ───────── */
+  .toolbar { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; align-items: center; margin-bottom: 0.75rem; }
+  .seg { display: inline-flex; border: 1px solid var(--cream-dark); border-radius: 3px; overflow: hidden; }
+  .seg button { font: 700 0.75rem var(--font-sans); letter-spacing: 0.04em; padding: 0.5rem 0.8rem; background: #fff; border: 0; border-right: 1px solid var(--cream-dark); cursor: pointer; color: var(--text); }
+  .seg button:last-child { border-right: 0; }
+  .seg button.on { background: var(--dark); color: #fff; }
+  .chk { font-size: 0.85rem; color: var(--text-light); display: flex; gap: 0.4rem; align-items: center; }
+  #q { flex: 1; min-width: 180px; padding: 0.5rem 0.75rem; border: 1px solid var(--cream-dark); font: inherit; font-size: 0.9rem; border-radius: 3px; }
+  .tally { display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; align-items: center; padding: 0.75rem 1rem; background: var(--cream); border-left: 3px solid var(--gold); margin-bottom: 1.75rem; font-size: 0.9rem; position: sticky; top: 0; z-index: 20; }
+  .tally b { font-family: var(--font-serif); font-size: 1.1rem; }
+  .sync { color: #2f6b46; font-size: 0.8rem; }
+  .sync.bad { color: #8a3a32; }
+  .who { margin-left: auto; font-size: 0.8rem; color: var(--text-light); display: flex; gap: 0.4rem; align-items: center; }
+  .who input { padding: 0.3rem 0.5rem; border: 1px solid var(--cream-dark); font: inherit; width: 120px; }
+  .ghost { font: 700 0.75rem var(--font-sans); letter-spacing: 0.06em; text-transform: uppercase; padding: 0.45rem 0.8rem; border: 1px solid var(--gold); color: var(--gold); background: transparent; cursor: pointer; }
+
+  /* ───────── CLIP CARDS ───────── */
+  .clip-list { display: grid; gap: 1.25rem; }
+  .clip { display: grid; grid-template-columns: 150px 1fr; gap: 1.5rem; padding: 1.25rem; border: 1px solid var(--cream-dark); border-left: 3px solid var(--cream-dark); background: #fff; }
+  .clip[data-status=yes] { border-left-color: #2f6b46; }
+  .clip[data-status=maybe] { border-left-color: var(--gold); }
+  .clip[data-status=no] { opacity: 0.55; border-left-color: #8a3a32; }
+  .clip.uncurated .phone { opacity: 0.8; }
+  .phone.mini { align-self: start; border-radius: 10px; }
+  .clip-meta { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-light); }
+  .clip-meta .src { color: var(--gold); font-weight: 700; }
+  .clip-meta a { color: var(--gold); text-decoration: none; font-weight: 700; }
+  .shiur { font-size: 0.82rem; color: var(--text-light); margin-bottom: 0.5rem; }
+  .jev { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin: 0.2rem 0 0.6rem; }
+  .jev span { display: inline-flex; align-items: center; gap: 0.4rem; }
+  .jev i { display: inline-block; width: 46px; height: 4px; background: var(--cream-dark); position: relative; border-radius: 2px; overflow: hidden; }
+  .jev i::after { content: ''; position: absolute; inset: 0 auto 0 0; width: var(--w); background: var(--gold); }
+  .quote { font-family: var(--font-serif); font-size: 1.02rem; line-height: 1.65; color: var(--dark); border-left: 2px solid var(--gold); padding: 0.2rem 0 0.2rem 1rem; margin: 0.7rem 0; }
+  .quote::before { content: '“'; } .quote::after { content: '”'; }
+  .listen { display: flex; align-items: center; gap: 0.75rem; margin: 0.4rem 0; }
+  .listen span { font: 700 0.7rem var(--font-sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+  .listen audio { margin: 0; }
+  .pending { margin: 0.3rem 0 0.5rem; font-style: italic; }
+  .reel:empty { display: none; }
+  .reel { margin-top: 0.8rem; padding: 0.7rem 0.9rem; background: var(--cream); border-left: 3px solid var(--gold); font-size: 0.88rem; }
+  .reel[data-state=ready] { background: none; border: 0; padding: 0; display: flex; flex-direction: column; gap: 0.4rem; align-items: flex-start; }
+  .reel[data-state=error] { border-color: #8a3a32; color: #8a3a32; }
+  .reel video { width: 220px; aspect-ratio: 9/16; background: #000; border-radius: 10px; }
+  .reel a { font-size: 0.8rem; font-weight: 700; color: var(--gold); text-decoration: none; }
+  .clip audio { width: 100%; max-width: 420px; height: 34px; margin: 0.2rem 0 0.4rem; }
+  .seg-sel { font: 700 0.78rem var(--font-sans); padding: 0.5rem 0.6rem; border: 1px solid var(--cream-dark); background: #fff; color: var(--text); border-radius: 3px; }
+  .clip h3 { font-size: 1.35rem; margin: 0.25rem 0 0.3rem; }
+  .why { font-size: 0.92rem; color: var(--text); margin-bottom: 0.3rem; }
+  .trim { font-size: 0.85rem; color: #8a5a1f; margin-bottom: 0.3rem; }
+  .broll { margin: 0.6rem 0; overflow: hidden; }
+  .broll .still { float: right; width: 72px; aspect-ratio: 9/16; object-fit: cover; margin: 0 0 0.5rem 1rem; border-radius: 4px; }
+  .sub-h { font-size: 1.35rem; margin: 3.5rem 0 0.5rem; }
+  .mood-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1.25rem; }
+  .mood { margin: 0; }
+  .mood img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; border-radius: 6px; }
+  .mood figcaption { font-size: 0.84rem; color: var(--text-light); line-height: 1.5; margin-top: 0.6rem; }
+  .mood figcaption b { display: block; font-family: var(--font-serif); font-weight: 400; color: var(--dark); font-size: 1rem; }
+  .broll h4 { font: 700 0.7rem var(--font-sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.25rem; }
+  .broll ol { padding-left: 1.2rem; font-size: 0.88rem; line-height: 1.55; }
+  details { margin: 0.5rem 0; }
+  summary { cursor: pointer; font-size: 0.82rem; font-weight: 700; color: var(--gold); letter-spacing: 0.04em; }
+  .tx { font-size: 0.88rem; color: var(--text-light); margin-top: 0.5rem; max-height: 260px; overflow: auto; padding-right: 0.5rem; }
+  .picks { display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; align-items: center; margin-top: 0.6rem; }
+  .picks .vote { margin-top: 0; }
+  .picks label { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-light); display: flex; gap: 0.4rem; align-items: center; }
+  .picks select { font: inherit; text-transform: none; letter-spacing: 0; font-size: 0.85rem; padding: 0.35rem 0.4rem; border: 1px solid var(--cream-dark); background: #fff; color: var(--text); }
+  textarea { width: 100%; margin-top: 0.7rem; padding: 0.5rem 0.7rem; border: 1px solid var(--cream-dark); font: inherit; font-size: 0.88rem; resize: vertical; overflow: hidden; }
+
+  @media (max-width: 640px) {
+    .clip { grid-template-columns: 96px 1fr; gap: 1rem; padding: 1rem; }
+    .look-grid, .end-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem 1rem; }
+    .who { margin-left: 0; }
+    .tally { position: static; }
+  }
+</style>
