@@ -46,6 +46,27 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
               </div>
             ))}
 
+            {ep.items.filter((i) => i.kind === 'description').map((it) => (
+              <>
+                <h4 class="sub">YouTube description</h4>
+                <div class="item full desc" data-id={it.id} data-title={it.title} data-shiur={`${ep.parasha}: ${ep.title}`}>
+                  <div>
+                    <p class="kicker">Title</p>
+                    <p class="yt-title">{it.title}</p>
+                    <pre class="yt-desc">{it.text}</pre>
+                  </div>
+                  <div class="meta">
+                    <h4>Description + chapters</h4>
+                    <p class="fine">The chapter times match the finished video (they include the opening cards). Put any change in the note, e.g. “rename 12:40 to …”.</p>
+                    <p><button type="button" class="copy" data-copy={it.text}>Copy description</button></p>
+                    <div class="vote"><button data-v="yes">Approve</button><button data-v="maybe">Needs changes</button><button data-v="no">Reject</button></div>
+                    <textarea placeholder="Notes"></textarea>
+                    <p class="by"></p>
+                  </div>
+                </div>
+              </>
+            ))}
+
             {ep.items.filter((i) => i.kind === 'reader').map((it) => (
               <>
                 <h4 class="sub">Parasha Reader (English)</h4>
@@ -163,6 +184,11 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
     ta.addEventListener('change', () => save(el, { notes: ta.value }));
   });
 
+  document.querySelectorAll('button.copy').forEach((b) => b.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = 'Copied ✓'; } catch (e) { b.textContent = 'Select and copy the text'; }
+    setTimeout(() => { b.textContent = 'Copy description'; }, 2000);
+  }));
+
   // long episodes are streamed as HLS (Supabase caps single uploads at 50MB): hls.js where supported, native on iOS
   const hlsVideos = document.querySelectorAll('video[data-hls]');
   if (hlsVideos.length) {
@@ -201,6 +227,9 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
   .item video { width: 100%; background: #000; border-radius: 8px; display: block; }
   .full { display: grid; grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr); gap: 1.4rem; align-items: start; }
   .full video { aspect-ratio: 16 / 9; }
+  .yt-title { font-weight: 700; margin: 0.2rem 0 0.8rem; }
+  .yt-desc { white-space: pre-wrap; font: 0.9rem/1.55 var(--font-sans); background: var(--cream); border: 1px solid var(--cream-dark); border-radius: 8px; padding: 1rem; margin: 0; max-height: 28rem; overflow: auto; }
+  .copy { font: 700 0.8rem var(--font-sans); padding: 0.5rem 0.9rem; border: 1px solid var(--cream-dark); background: #fff; border-radius: 99px; cursor: pointer; }
   .reader object { width: 100%; aspect-ratio: 210 / 297; border: 1px solid var(--cream-dark); border-radius: 8px; background: #fff; }
   .thumb img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; display: block; }
   .reel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.2rem; }
