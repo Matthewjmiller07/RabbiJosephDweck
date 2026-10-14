@@ -46,6 +46,23 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
               </div>
             ))}
 
+            {ep.items.filter((i) => i.kind === 'thumb').map((it) => (
+              <>
+                <h4 class="sub">YouTube thumbnail</h4>
+                <div class="item full thumb" data-id={it.id} data-title={it.title} data-url={it.url} data-shiur={`${ep.parasha}: ${ep.title}`}>
+                  <a href={it.url} target="_blank" rel="noopener"><img src={it.url} alt={`Thumbnail: ${it.title}`} loading="lazy" /></a>
+                  <div class="meta">
+                    <h4>{it.title}</h4>
+                    {it.note && <p class="fine">{it.note}</p>}
+                    <p class="fine"><a href={it.url} download target="_blank" rel="noopener">Full size ({it.size}) ↓</a></p>
+                    <div class="vote"><button data-v="yes">Approve</button><button data-v="maybe">Needs changes</button><button data-v="no">Reject</button></div>
+                    <textarea placeholder="Notes (e.g. “bigger headline”, “different photo”)"></textarea>
+                    <p class="by"></p>
+                  </div>
+                </div>
+              </>
+            ))}
+
             {reels.length > 0 && <h4 class="sub">Reels</h4>}
             <div class="reel-grid">
               {reels.map((it) => (
@@ -159,6 +176,7 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
   .item video { width: 100%; background: #000; border-radius: 8px; display: block; }
   .full { display: grid; grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr); gap: 1.4rem; align-items: start; }
   .full video { aspect-ratio: 16 / 9; }
+  .thumb img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; display: block; }
   .reel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.2rem; }
   .reel video { aspect-ratio: 9 / 16; }
   .meta h4 { margin: 0.8rem 0 0.3rem; font-size: 1.1rem; line-height: 1.3; }

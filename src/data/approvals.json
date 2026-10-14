@@ -15,6 +15,14 @@
     "master": "haftarat-noah-2026-beautiful-people-full-1080p.mp4"
    },
    {
+    "id": "haftara:haftarat-noah-2026-beautiful-people:thumbnail",
+    "kind": "thumb",
+    "title": "Haftarat Noah: Beautiful People",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/thumbnail.jpg",
+    "size": "2688×1520",
+    "note": "Series template: navy with parchment texture and Hebrew-letter watermark, crimson HAFTARA SERIES tag, gold parasha line, white headline, Rabbi Dweck cut out on the right with a gold edge. Made with GPT Image 2.5 (Flare, high) on Higgsfield."
+   },
+   {
     "id": "haftara:haftarat-noah-2026-beautiful-people:pain-and-suffering",
     "kind": "reel",
     "title": "Pain is objective. Suffering is subjective.",
