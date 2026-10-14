@@ -4,6 +4,9 @@ import episodes from '../data/approvals.json';
 
 // Each episode is written here by the Haftara studio pipeline (RJD Work/Haftara/studio/produce.py): the finished full
 // episode plus its reels. Decisions and notes save to Supabase dweck_reel_picks under clip ids "haftara:<slug>:<item>".
+// Tabs: one per episode, ?ep=<parasha> (e.g. /approve?ep=lekh-lekha). The newest episode opens by default.
+const epKey = (parasha: string) => parasha.replace(/^Haftarat\s+/i, '').replace(/\s*\d{4}\s*$/, '').toLowerCase()
+  .normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, '0')}`;
 ---
 
@@ -19,12 +22,22 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
       </div>
 
       {episodes.length === 0 && <p class="fine">Nothing waiting for approval yet.</p>}
+      {episodes.length > 0 && (
+        <nav class="ep-tabs" aria-label="Episodes">
+          {episodes.map((ep) => (
+            <a href={`?ep=${epKey(ep.parasha)}`} data-ep={epKey(ep.parasha)} data-slug={ep.slug}>
+              <span class="t-par">{ep.parasha.replace(/^Haftarat\s+/i, '').replace(/\s*\d{4}\s*$/, '')}</span>
+              <span class="t-title">{ep.title}</span>
+            </a>
+          ))}
+        </nav>
+      )}
 
       {episodes.map((ep) => {
         const full = ep.items.filter((i) => i.kind === 'full');
         const reels = ep.items.filter((i) => i.kind === 'reel');
         return (
-          <article class="episode" id={ep.slug}>
+          <article class="episode" id={ep.slug} data-ep={epKey(ep.parasha)}>
             <header>
               <p class="kicker">{ep.parasha}</p>
               <h3>{ep.title}</h3>
@@ -109,6 +122,7 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
                   <video controls playsinline preload="none" poster={it.poster} src={it.url}></video>
                   <div class="meta">
                     <h4>{it.hook.join(' ')}</h4>
+                    {it.credit && <p class="credit">— {it.credit}</p>}
                     <p class="when">{mmss(it.start)}–{mmss(it.end)} in the class · {it.duration}s</p>
                     {it.why && <p class="why">{it.why}</p>}
                     <details><summary>Transcript</summary><p>{it.text}</p></details>
@@ -155,6 +169,7 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
       if (p.expired) bits.push('no slot left before Shabbat');
       if (bits.length) by.innerHTML = by.textContent.replace(/</g, '&lt;') + '<br>' + bits.join(' · ');
     });
+    if (typeof tally === 'function') tally();
   }
 
   async function save(el, patch) {
@@ -202,6 +217,34 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
     document.head.appendChild(s);
   }
 
+  // episode tabs (?ep=noah); old #slug links still land on the right tab
+  const tabs = [...document.querySelectorAll('.ep-tabs a')];
+  function showEp(key, push) {
+    const t = tabs.find((a) => a.dataset.ep === key || a.dataset.slug === key) || tabs[0];
+    if (!t) return;
+    tabs.forEach((a) => a.classList.toggle('on', a === t));
+    document.querySelectorAll('article.episode').forEach((a) => { a.hidden = a.dataset.ep !== t.dataset.ep; });
+    document.querySelectorAll('article.episode[hidden] video').forEach((v) => v.pause());
+    if (push) history.pushState(null, '', '?ep=' + t.dataset.ep);
+    document.title = t.querySelector('.t-par').textContent + ' · For Approval';
+  }
+  tabs.forEach((a) => a.addEventListener('click', (e) => { e.preventDefault(); showEp(a.dataset.ep, true); }));
+  const readKey = () => new URLSearchParams(location.search).get('ep') || location.hash.slice(1);
+  window.addEventListener('popstate', () => showEp(readKey()));
+  showEp(readKey());
+
+  // per-tab tally: how many items are still waiting for a decision
+  function tally() {
+    tabs.forEach((a) => {
+      const items = [...document.querySelectorAll(`article.episode[data-ep="${a.dataset.ep}"] .item[data-id]`)];
+      const open = items.filter((el) => !(state[el.dataset.id] || {}).status).length;
+      let b = a.querySelector('.t-n'); if (!b) { b = document.createElement('span'); b.className = 't-n'; a.appendChild(b); }
+      b.textContent = open ? `${open} to review` : 'all reviewed';
+      a.classList.toggle('done', !open);
+    });
+  }
+  tally();
+
   fetch(SB_URL + '?clip_id=like.haftara:*&select=clip_id,status,notes,reviewer,updated_at,posted', { headers: H })
     .then((r) => r.json())
     .then((rows) => { rows.forEach((r) => { state[r.clip_id] = r; }); paint(); setSync('Up to date'); })
@@ -214,6 +257,14 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
   .who-row input { margin-left: 0.5rem; padding: 0.45rem 0.7rem; border: 1px solid var(--cream-dark); border-radius: 6px; font: inherit; }
   .sync { font-size: 0.85rem; color: var(--text-light); }
   .sync.bad { color: #8a3a32; }
+  .ep-tabs { display: flex; gap: 0.5rem; overflow-x: auto; border-bottom: 1px solid var(--cream-dark); margin: 0 0 1rem; padding-bottom: 0; scrollbar-width: thin; }
+  .ep-tabs a { flex: 0 0 auto; display: flex; flex-direction: column; gap: 0.1rem; padding: 0.6rem 1rem 0.7rem; text-decoration: none; color: var(--text); border: 1px solid transparent; border-bottom: none; border-radius: 8px 8px 0 0; margin-bottom: -1px; }
+  .ep-tabs a.on { background: #fff; border-color: var(--cream-dark); border-bottom: 1px solid #fff; }
+  .ep-tabs .t-par { font: 700 0.72rem var(--font-sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+  .ep-tabs .t-title { font-size: 0.98rem; }
+  .ep-tabs .t-n { font-size: 0.75rem; color: var(--text-light); }
+  .ep-tabs a.done .t-n { color: #2f6b46; }
+  .credit { font: 700 0.75rem var(--font-sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin: 0 0 0.4rem; }
   .episode { margin: 2.5rem 0 4rem; scroll-margin-top: 6rem; }
   .episode header { margin-bottom: 1.2rem; }
   .kicker { font: 700 0.75rem var(--font-sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin: 0; }
