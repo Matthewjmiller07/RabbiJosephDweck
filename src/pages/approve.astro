@@ -46,6 +46,24 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
               </div>
             ))}
 
+            {ep.items.filter((i) => i.kind === 'reader').map((it) => (
+              <>
+                <h4 class="sub">Parasha Reader (English)</h4>
+                <div class="item full reader" data-id={it.id} data-title={it.title} data-url={it.url} data-shiur={`${ep.parasha}: ${ep.title}`}>
+                  <object data={it.url} type="application/pdf"><a href={it.url} target="_blank" rel="noopener">Open the PDF</a></object>
+                  <div class="meta">
+                    <h4>{it.title}</h4>
+                    <p class="fine"><a href={it.url} target="_blank" rel="noopener">Open PDF ↗</a>{it.google_doc && <> · <a href={it.google_doc} target="_blank" rel="noopener">Edit in the Google Doc ↗</a></>}</p>
+                    <p class="fine">Approve the English and the translations (Spanish, French, Hebrew) are made next.</p>
+                    {it.note && <p class="fine">{it.note}</p>}
+                    <div class="vote"><button data-v="yes">Approve</button><button data-v="maybe">Needs changes</button><button data-v="no">Reject</button></div>
+                    <textarea placeholder="Notes (or make edits straight in the Google Doc)"></textarea>
+                    <p class="by"></p>
+                  </div>
+                </div>
+              </>
+            ))}
+
             {ep.items.filter((i) => i.kind === 'thumb').map((it) => (
               <>
                 <h4 class="sub">YouTube thumbnail</h4>
@@ -108,6 +126,13 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
       if (document.activeElement !== ta) ta.value = row.notes || '';
       const by = el.querySelector('.by');
       by.textContent = row.status ? `${LABEL[row.status]}${row.reviewer ? ' by ' + row.reviewer : ''} · ${new Date(row.updated_at).toLocaleString()}` : '';
+      const p = row.posted || {}, NAMES = { youtube: 'YouTube', spotify: 'Spotify', tiktok: 'TikTok', meta: 'Facebook + Instagram' };
+      const bits = Object.keys(NAMES).filter((k) => p[k]).map((k) => {
+        const s = p[k].status === 'scheduled' && p.slot ? `scheduled ${new Date(p.slot).toLocaleString([], { weekday: 'short', hour: '2-digit', minute: '2-digit' })}` : p[k].status;
+        return p[k].url ? `<a href="${p[k].url}" target="_blank" rel="noopener">${NAMES[k]}</a>: ${s}` : `${NAMES[k]}: ${s}`;
+      });
+      if (p.expired) bits.push('no slot left before Shabbat');
+      if (bits.length) by.innerHTML = by.textContent.replace(/</g, '&lt;') + '<br>' + bits.join(' · ');
     });
   }
 
@@ -151,7 +176,7 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
     document.head.appendChild(s);
   }
 
-  fetch(SB_URL + '?clip_id=like.haftara:*&select=clip_id,status,notes,reviewer,updated_at', { headers: H })
+  fetch(SB_URL + '?clip_id=like.haftara:*&select=clip_id,status,notes,reviewer,updated_at,posted', { headers: H })
     .then((r) => r.json())
     .then((rows) => { rows.forEach((r) => { state[r.clip_id] = r; }); paint(); setSync('Up to date'); })
     .catch(() => setSync('Couldn’t load saved choices.', true));
@@ -176,6 +201,7 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
   .item video { width: 100%; background: #000; border-radius: 8px; display: block; }
   .full { display: grid; grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr); gap: 1.4rem; align-items: start; }
   .full video { aspect-ratio: 16 / 9; }
+  .reader object { width: 100%; aspect-ratio: 210 / 297; border: 1px solid var(--cream-dark); border-radius: 8px; background: #fff; }
   .thumb img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; display: block; }
   .reel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.2rem; }
   .reel video { aspect-ratio: 9 / 16; }
