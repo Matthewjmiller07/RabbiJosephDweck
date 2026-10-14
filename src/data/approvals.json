@@ -1,1 +1,115 @@
-[]
+[
+ {
+  "slug": "haftarat-noah-2026-beautiful-people",
+  "parasha": "Haftarat Noah 2026",
+  "title": "Beautiful People",
+  "items": [
+   {
+    "id": "haftara:haftarat-noah-2026-beautiful-people:full",
+    "kind": "full",
+    "title": "Haftarat Noah 2026: Beautiful People",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/full-review-720p/index.m3u8",
+    "hls": true,
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/full-poster.jpg",
+    "duration": 2143,
+    "master": "haftarat-noah-2026-beautiful-people-full-1080p.mp4"
+   },
+   {
+    "id": "haftara:haftarat-noah-2026-beautiful-people:pain-and-suffering",
+    "kind": "reel",
+    "title": "Pain is objective. Suffering is subjective.",
+    "hook": [
+     "Pain is objective.",
+     "Suffering is subjective."
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/reel-pain-and-suffering.mp4",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/reel-pain-and-suffering.jpg",
+    "duration": 52,
+    "start": 1032.69,
+    "end": 1078.23,
+    "text": "Because very importantly, as spoken about in psychology, pain is objective, but suffering is subjective. And what that means is that the phenomenon of pain, the lived experience of pain, whether it be physical or psychological or emotional, is real. I mean, you know, your brain is firing and saying that you are in pain. The meaning of the pain, however, is where suffering lies. We suffer because we put meaning onto the pain. And it is very possible to have pain and not feel suffering.",
+    "why": "States the idea in the first line; a clean definition plus the workout example."
+   },
+   {
+    "id": "haftara:haftarat-noah-2026-beautiful-people:a-why-to-live-for",
+    "kind": "reel",
+    "title": "He who has a why can bear almost any how",
+    "hook": [
+     "He who has a why",
+     "can bear almost any how"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/reel-a-why-to-live-for.mp4",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/reel-a-why-to-live-for.jpg",
+    "duration": 45,
+    "start": 1130.68,
+    "end": 1170.07,
+    "text": "And so based on that, Nietzsche has a very famous line that is quoted by Viktor Frankl in Man's Search for Meaning. He who has a why to live for can bear almost any how. Right, so that's essentially saying that if you have a purpose for life, if you recognize why it is that you are living your life, why you get up in the morning, what is the purpose that you aim for in living your life, even when the going gets tough, when the how of your life becomes very difficult, you can weather it. And ultimately, you can get through it.",
+    "why": "Nietzsche via Frankl, explained in one breath."
+   },
+   {
+    "id": "haftara:haftarat-noah-2026-beautiful-people:beautiful-people",
+    "kind": "reel",
+    "title": "Beautiful people don't just happen",
+    "hook": [
+     "Beautiful people",
+     "don't just happen"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/reel-beautiful-people.mp4",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/reel-beautiful-people.jpg",
+    "duration": 46,
+    "start": 2081.98,
+    "end": 2121.83,
+    "text": "And she says, The most beautiful people we have known are those who have known defeat, known suffering, known struggle, known loss, and have found their way out of the depths. These persons have an appreciation, a sensitivity, and an understanding of life that fills them with compassion, gentleness, and a deep loving concern. Beautiful people don't just happen. Shabbat shalom.",
+    "why": "The Kubler-Ross quote that closes the class and gives it its title."
+   },
+   {
+    "id": "haftara:haftarat-noah-2026-beautiful-people:suffering-refines",
+    "kind": "reel",
+    "title": "Suffering, survived, refines you",
+    "hook": [
+     "Suffering, survived,",
+     "refines you"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/reel-suffering-refines.mp4",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/reel-suffering-refines.jpg",
+    "duration": 52,
+    "start": 1988.68,
+    "end": 2034.39,
+    "text": "And it is a poignant and awkward truth, but it is true nonetheless that suffering, if we are able to keep going and to come through and to be changed by it, changes us, refines us like a refiner's fire. Brings out elements in us that we, sadly and awkwardly, would never have been able to achieve or to know without it. It makes us more compassionate. It allows us to see the suffering of others in ways that we wouldn't have registered before. It gives us a sense of the fragility, meaning, and value of life.",
+    "why": "What coming through hardship gives a person: compassion, perspective."
+   },
+   {
+    "id": "haftara:haftarat-noah-2026-beautiful-people:here-i-am",
+    "kind": "reel",
+    "title": "Some prophets ran. Isaiah said: Here I am.",
+    "hook": [
+     "Some prophets ran.",
+     "Isaiah said: Here I am."
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/reel-here-i-am.mp4",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/reel-here-i-am.jpg",
+    "duration": 54,
+    "start": 117.15,
+    "end": 164.79,
+    "text": "Some prophets like Jonah just ran away. But Isaiah hears God say, Mi yelech lanu? Who can we send? Who will go for us? And Isaiah says, Hineni, shlachani. Here I am, Lord. Send me. And the Hakhamim say, because he was so willing to do the bidding of God without any protest, he was given the great number of consolation prophecies that would calm the people, give hope to the people, and promise the people that as dark and difficult as things may seem now, they will have an end. And there will be goodness and joy and perseverance and ultimately thriving in later days.",
+    "why": "Why Isaiah got the prophecies of consolation."
+   },
+   {
+    "id": "haftara:haftarat-noah-2026-beautiful-people:keep-going",
+    "kind": "reel",
+    "title": "If you're going through hell, keep going",
+    "hook": [
+     "If you're going through hell,",
+     "keep going"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/reel-keep-going.mp4",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-noah-2026-beautiful-people/reel-keep-going.jpg",
+    "duration": 42,
+    "start": 1834.52,
+    "end": 1870.23,
+    "text": "If you're going through hell, keep going. So it's not just about finding meaning for your suffering. It's about getting out on the other side of it. If you can, use every last ounce of strength, all of your efforts to be able to come out on the other side of it. Because there is new life on the other side of it. One of the worst tragedies of tragedy is that a person comes out and is unchanged, or that a person remains essentially, hamstrung as a result of it.",
+    "why": "Get out the other side; the tragedy is coming out unchanged."
+   }
+  ]
+ }
+]
