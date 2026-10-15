@@ -55,6 +55,7 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
                   <div class="vote"><button data-v="yes">Approve</button><button data-v="maybe">Needs changes</button><button data-v="no">Reject</button></div>
                   <textarea placeholder="Notes (what to change, where — e.g. “trim the end at 34:10”)"></textarea>
                   <p class="by"></p>
+                  <details class="mark"><summary>Posted it yourself? Tick where</summary><div class="pfs"><label><input type="checkbox" data-pf="youtube" /> YouTube</label><label><input type="checkbox" data-pf="spotify" /> Spotify</label></div></details>
                 </div>
               </div>
             ))}
@@ -129,6 +130,7 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
                     <div class="vote"><button data-v="yes">Approve</button><button data-v="maybe">Needs changes</button><button data-v="no">Reject</button></div>
                     <textarea placeholder="Notes"></textarea>
                     <p class="by"></p>
+                    <details class="mark"><summary>Posted it yourself? Tick where</summary><div class="pfs"><label><input type="checkbox" data-pf="youtube" /> YouTube Shorts</label><label><input type="checkbox" data-pf="tiktok" /> TikTok</label><label><input type="checkbox" data-pf="meta" /> Facebook + Instagram</label></div></details>
                   </div>
                 </div>
               ))}
@@ -162,7 +164,9 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
       const by = el.querySelector('.by');
       by.textContent = row.status ? `${LABEL[row.status]}${row.reviewer ? ' by ' + row.reviewer : ''} · ${new Date(row.updated_at).toLocaleString()}` : '';
       const p = row.posted || {}, NAMES = { youtube: 'YouTube', spotify: 'Spotify', tiktok: 'TikTok', meta: 'Facebook + Instagram' };
+      el.querySelectorAll('.mark input[data-pf]').forEach((c) => { c.checked = ['posted', 'scheduled'].includes((p[c.dataset.pf] || {}).status); });
       const bits = Object.keys(NAMES).filter((k) => p[k]).map((k) => {
+        if (p[k].manual) return `${NAMES[k]}: posted by hand${p[k].by ? ' (' + p[k].by + ')' : ''}`;
         const s = p[k].status === 'scheduled' && p.slot ? `scheduled ${new Date(p.slot).toLocaleString([], { weekday: 'short', hour: '2-digit', minute: '2-digit' })}` : p[k].status;
         return p[k].url ? `<a href="${p[k].url}" target="_blank" rel="noopener">${NAMES[k]}</a>: ${s}` : `${NAMES[k]}: ${s}`;
       });
@@ -197,6 +201,13 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
     }));
     const ta = el.querySelector('textarea');
     ta.addEventListener('change', () => save(el, { notes: ta.value }));
+    // ticking a platform tells the poster it's already there (it never posts to a platform marked posted)
+    el.querySelectorAll('.mark input[data-pf]').forEach((c) => c.addEventListener('change', () => {
+      const posted = { ...((state[el.dataset.id] || {}).posted || {}) };
+      if (c.checked) posted[c.dataset.pf] = { status: 'posted', manual: true, at: new Date().toISOString(), ...(who.value ? { by: who.value } : {}) };
+      else delete posted[c.dataset.pf];
+      save(el, { posted });
+    }));
   });
 
   document.querySelectorAll('button.copy').forEach((b) => b.addEventListener('click', async () => {
@@ -298,6 +309,9 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
   .vote button[data-v=maybe].on { background: #fbf3e2; border-color: var(--gold); color: #7a5a1c; }
   .vote button[data-v=no].on { background: #f6e7e5; border-color: #8a3a32; color: #8a3a32; }
   textarea { width: 100%; min-height: 4.2rem; box-sizing: border-box; padding: 0.5rem 0.6rem; border: 1px solid var(--cream-dark); border-radius: 6px; font: inherit; font-size: 0.9rem; resize: vertical; }
+  .mark { font-size: 0.8rem; margin: 0.5rem 0 0; color: var(--text-light); }
+  .mark summary { cursor: pointer; }
+  .mark .pfs { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; margin-top: 0.4rem; color: var(--text); }
   .by { font-size: 0.78rem; color: var(--text-light); margin: 0.4rem 0 0; min-height: 1em; }
   @media (max-width: 760px) { .full { grid-template-columns: 1fr; } }
 </style>
