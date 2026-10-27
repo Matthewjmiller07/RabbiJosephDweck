@@ -119,10 +119,11 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
             {reels.length > 0 && <h4 class="sub">Reels</h4>}
             <div class="reel-grid">
               {reels.map((it) => (
-                <div class="item reel" data-id={it.id} data-title={it.title} data-url={it.url} data-shiur={`${ep.parasha}: ${ep.title}`} data-start={it.start} data-end={it.end} data-hook={it.hook.join(' / ')}>
+                <div class="item reel" data-id={it.id} data-title={it.title} data-url={it.url} data-shiur={`${ep.parasha}: ${ep.title}`} data-start={it.start} data-end={it.end} data-hook={it.hook.join(' / ')} data-pre={it.pre_url} data-nm={it.nomusic_url} data-nmpre={it.nomusic_pre_url}>
                   <video controls playsinline preload="none" poster={it.poster} src={it.url}></video>
-                  {it.pre_url && <div class="ends" role="group" aria-label="End card"><button type="button" class="on" data-src={it.url}>Watch the full class</button><button type="button" data-src={it.pre_url}>Coming Wednesday</button></div>}
-                  <p class="fine dl">Download: <a href={`${it.url}&download=${it.id.split(':').pop()}.mp4`}>{it.pre_url ? 'full-class ending' : 'reel'} ↓</a>{it.pre_url && <> · <a href={`${it.pre_url}&download=${it.id.split(':').pop()}-pre.mp4`}>coming-Wednesday ending ↓</a></>}</p>
+                  {it.pre_url && <div class="ends" role="group" aria-label="End card"><button type="button" class="on" data-end="full">Watch the full class</button><button type="button" data-end="pre">Coming Wednesday</button></div>}
+                  {it.nomusic_url && <div class="ends music" role="group" aria-label="Music"><button type="button" class="on" data-music="1">With music</button><button type="button" data-music="0">No music</button></div>}
+                  <p class="fine dl">Download: <a href={`${it.url}&download=${it.id.split(':').pop()}.mp4`}>{it.pre_url ? 'full-class ending' : 'reel'} ↓</a>{it.pre_url && <> · <a href={`${it.pre_url}&download=${it.id.split(':').pop()}-pre.mp4`}>coming-Wednesday ending ↓</a></>}{it.nomusic_url && <> · no music: <a href={`${it.nomusic_url}&download=${it.id.split(':').pop()}-nomusic.mp4`}>{it.nomusic_pre_url ? 'full-class ending' : 'reel'} ↓</a>{it.nomusic_pre_url && <> · <a href={`${it.nomusic_pre_url}&download=${it.id.split(':').pop()}-nomusic-pre.mp4`}>coming-Wednesday ending ↓</a></>}</>}</p>
                   <div class="meta">
                     <h4>{it.hook.join(' ')}</h4>
                     {it.credit && <p class="credit">— {it.credit}</p>}
@@ -263,11 +264,14 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
     .then((rows) => { rows.forEach((r) => { state[r.clip_id] = r; }); paint(); setSync('Up to date'); })
     .catch(() => setSync('Couldn’t load saved choices.', true));
   // Reels: switch between the end card that points to the full class and the one for posting before Wednesday
-  document.querySelectorAll('.ends').forEach((g) => g.addEventListener('click', (e) => {
-    const b = e.target.closest('button'); if (!b || b.classList.contains('on')) return;
-    const v = g.parentElement.querySelector('video'), playing = !v.paused;
-    g.querySelectorAll('button').forEach((x) => x.classList.toggle('on', x === b));
-    v.src = b.dataset.src; if (playing) v.play();
+  // and between the version with music and the speech-only one (both endings exist for each)
+  document.querySelectorAll('.reel').forEach((card) => card.addEventListener('click', (e) => {
+    const b = e.target.closest('.ends button'); if (!b || b.classList.contains('on')) return;
+    const v = card.querySelector('video'), playing = !v.paused;
+    b.parentElement.querySelectorAll('button').forEach((x) => x.classList.toggle('on', x === b));
+    const pre = card.querySelector('[data-end].on')?.dataset.end === 'pre', plain = card.querySelector('[data-music].on')?.dataset.music === '0';
+    const d = card.dataset;
+    v.src = plain ? (pre ? d.nmpre : d.nm) : (pre ? d.pre : card.dataset.url); if (playing) v.play();
   }));
 </script>
 
