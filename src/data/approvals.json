@@ -1,5 +1,201 @@
 [
  {
+  "slug": "haftarat-haye-sarah-2026-the-abyss-of-age",
+  "parasha": "Haftarat Haye Sarah 2026",
+  "title": "The Abyss of Age",
+  "items": [
+   {
+    "id": "haftara:haftarat-haye-sarah-2026-the-abyss-of-age:full",
+    "kind": "full",
+    "title": "Haftarat Haye Sarah 2026: The Abyss of Age",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/full-review-720p/index.m3u8?v=1793621993",
+    "hls": true,
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/full-poster.jpg?v=1793621991",
+    "duration": 2525,
+    "master": "haftarat-haye-sarah-2026-the-abyss-of-age-full-1080p.mp4"
+   },
+   {
+    "id": "haftara:haftarat-haye-sarah-2026-the-abyss-of-age:description",
+    "kind": "description",
+    "title": "The Abyss of Age | Haftarat Haye Sarah 2026",
+    "text": "When we grow old, do we keep building the future, or do we drift into the abyss between the generations? Abraham was old and G-d blessed him in everything, while King David was old and could not get warm, unaware that his son Adonijah was seizing the throne. The Haftara of Haye Sarah calls on us, old and young, to bridge that gap: to enter our children's world and give them the Hebrew Bible, the Hebrew language and the history that are rightfully theirs, and to ask our elders while they are still here.\n\nChapters\n0:00 Abraham and David at Life's End\n1:04 Old and Come of Days\n5:17 A King Withdrawn from His Kingdom\n7:59 Abraham's Attention to Isaac\n11:42 Youth, Age and Perspective\n15:12 The Widening Generation Gap\n19:54 The Elders' Responsibility\n23:24 From Card Catalogues to Influencers\n30:53 Rehoboam Ignores the Elders\n35:19 We Are Thieves of Our Heritage\n\nThe Parasha with Rabbi Dweck · Haftara Series · Haftarat Haye Sarah\nListen on Spotify: “The Parasha with Rabbi Dweck”\nThe app: RabbiJosephDweck.com/app\nMore from Rabbi Dweck: RabbiJosephDweck.com\n\n#Torah #Haftara #Parasha #HayeSarah #Judaism #RabbiDweck",
+    "chapters": [
+     {
+      "t": 0,
+      "title": "Abraham and David at Life's End"
+     },
+     {
+      "t": 64.1,
+      "title": "Old and Come of Days"
+     },
+     {
+      "t": 317.1,
+      "title": "A King Withdrawn from His Kingdom"
+     },
+     {
+      "t": 479.1,
+      "title": "Abraham's Attention to Isaac"
+     },
+     {
+      "t": 702.1,
+      "title": "Youth, Age and Perspective"
+     },
+     {
+      "t": 912.1,
+      "title": "The Widening Generation Gap"
+     },
+     {
+      "t": 1194.1,
+      "title": "The Elders' Responsibility"
+     },
+     {
+      "t": 1404.1,
+      "title": "From Card Catalogues to Influencers"
+     },
+     {
+      "t": 1853.1,
+      "title": "Rehoboam Ignores the Elders"
+     },
+     {
+      "t": 2119.1,
+      "title": "We Are Thieves of Our Heritage"
+     }
+    ]
+   },
+   {
+    "id": "haftara:haftarat-haye-sarah-2026-the-abyss-of-age:reader",
+    "kind": "reader",
+    "title": "Hayye Sara: The Abyss of Age",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/parasha-reader-en.pdf?v=1793618909",
+    "google_doc": "https://docs.google.com/document/d/1X_Xev9jMM2QjD6PdSOScMzt5xPy9AEjVChXofDOi_9I/edit",
+    "pages": 2,
+    "note": "1) The Google Doc is still PRIVATE. Its only permission is the owner, thyme4sleep@gmail.com. Sharing it failed because the gws sign-in has expired (401 invalid_grant). To fix: run `! gws auth login` and retry, or in the doc go to Share › General access › Anyone with the link › Editor. 2) Parasha spelling: I used the house form 'Hayye Sara', which follows the skill's rules but Rabbi Dweck has never confirmed it. The folder name uses 'Haye Sarah', so please check with him. I also used 'Hayye_Sara' in the file names. 3) Haftara is 1 Kings 1:1–31, the same range for both communities, so it is written once as 'Sefardim & Ashkenazim 1:1–31'. 4) Transliterations to check: 'asher ahabta' (I wrote b for the bet, by the rule, while earlier verse quotes he approved used v), 'et yehidkha', 've'ata lo yadata', 'veshinantam lebanekha', 'yeladim'. 5) Quote is Ben Sira 8:9 (NRSV); I checked the wording on BibleGateway. Reading is Marc Freedman, 'How to Live Forever' (PublicAffairs, 2018); the QR points to Open Library works/OL19763845W, which returns 200. 6) To fit two pages I cut the body a lot. Left out: the 'Magen Abraham / Magen David' line, Abishag, the weaning feast, the 'friends in every decade' detail about centenarians, and most of the Tanakh/Hebrew/history passage. The Hebrew verses come from Sefaria (Masorah edition) with cantillation stripped, and Gen. 24:1 uses ה'. 7) Checks: two XeLaTeX passes, 2 pages, zero Missing character warnings. translit_check's only hits are English words (chambers, technology, grandchildren). The Overleaf zip is in the same folder. Stage 2 has not been started."
+   },
+   {
+    "id": "haftara:haftarat-haye-sarah-2026-the-abyss-of-age:thumbnail",
+    "kind": "thumb",
+    "title": "Haftarat Haye Sarah: The Abyss of Age",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/thumbnail.jpg?v=1793619014",
+    "size": "2688×1520",
+    "note": "Series template, made with GPT Image 2.5 (Flare, high) on Higgsfield."
+   },
+   {
+    "id": "haftara:haftarat-haye-sarah-2026-the-abyss-of-age:ask-your-elders",
+    "kind": "reel",
+    "title": "The older ones will not be there forever",
+    "hook": [
+     "The older ones will not",
+     "be there forever"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-ask-your-elders.mp4?v=1793619178",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-ask-your-elders.jpg?v=1793622035",
+    "duration": 48,
+    "start": 2461.23,
+    "end": 2503.05,
+    "text": "And to the younger ones that might be listening to this, the older ones will not be there forever. I know it's hard to imagine. Take advantage of the time that you have, and ask your parents, and your grandparents, and the elders of your community to tell you about the world when they were young, to teach you the wisdom that they have gained, to share with you what they have learned. Take the time. It is one of the greatest treasures that you will ever receive.",
+    "why": "He speaks straight to young people and asks them to learn from their elders while they can. It stands alone and ends on a strong line: 'one of the greatest treasures you will ever receive.'",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-ask-your-elders-pre.mp4?v=1793622060",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-ask-your-elders-nomusic.mp4?v=1793619233",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-ask-your-elders-nomusic-pre.mp4?v=1793622086"
+   },
+   {
+    "id": "haftara:haftarat-haye-sarah-2026-the-abyss-of-age:friends-every-decade",
+    "kind": "reel",
+    "title": "Have friends from every decade of life",
+    "hook": [
+     "Have friends from",
+     "every decade of life"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-friends-every-decade.mp4?v=1793619343",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-friends-every-decade.jpg?v=1793622090",
+    "duration": 56,
+    "start": 1642.97,
+    "end": 1693.1,
+    "text": "Have 80- and 90-year-old friends, have 50- and 40- and 30-year-old friends, have 10-year-old, 20-year-old, and teenage friends. To the degree that you can. Why? Well, because it connects you. It connects you to the range of life and experience that is happening on the world at any given moment. And even that, I mean, what are we talking about, a 100-year span? A 100-year span! What, when you think about, you know, the centenarians, and what it is that they've seen in their life. A person that was born in 1926, and is now 100 years old in 2026, well, what have they seen? Change in the world. It's staggering. And that's only 100 years.",
+    "why": "It opens with a clear, practical instruction. He explains why it matters, then gives the image of someone born in 1926 who has seen a whole century of change.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-friends-every-decade-pre.mp4?v=1793622114",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-friends-every-decade-nomusic.mp4?v=1793619396",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-friends-every-decade-nomusic-pre.mp4?v=1793622143"
+   },
+   {
+    "id": "haftara:haftarat-haye-sarah-2026-the-abyss-of-age:every-jewish-child",
+    "kind": "reel",
+    "title": "Every Jewish child should be taught Tanakh",
+    "hook": [
+     "Every Jewish child",
+     "should be taught Tanakh"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-every-jewish-child.mp4?v=1793619468",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-every-jewish-child.jpg?v=1793622148",
+    "duration": 52,
+    "start": 2254.67,
+    "end": 2300.16,
+    "text": "Every Jewish child, regardless of observance and observant levels, should be taught the Tanach. It is the traditional, historic heritage of the story of their people. Every Jewish child should be taught Hebrew. It is their native tongue. They should be able to learn the Torah in Hebrew. Every Jewish child should be taught a good survey of Jewish history. And yet, we give them practically none of this.",
+    "why": "It is a short manifesto: Tanakh, Hebrew and Jewish history are every child's heritage, and we give them almost none of it. The point is in the first sentence and needs no earlier context.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-every-jewish-child-pre.mp4?v=1793622170",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-every-jewish-child-nomusic.mp4?v=1793619514",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-every-jewish-child-nomusic-pre.mp4?v=1793622196"
+   },
+   {
+    "id": "haftara:haftarat-haye-sarah-2026-the-abyss-of-age:let-them-teach-you",
+    "kind": "reel",
+    "title": "Let them teach you so you can teach them",
+    "hook": [
+     "Let them teach you",
+     "so you can teach them"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-let-them-teach-you.mp4?v=1793619587",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-let-them-teach-you.jpg?v=1793622200",
+    "duration": 41,
+    "start": 2425.11,
+    "end": 2460.4,
+    "text": "As your next generation, it is really important that as the adults in the room, we make tremendous efforts in coming to understand from within, to the degree that we can, the world, milieu, paradigm in which our children live. Ask them about their world. Be curious. Learn from them. Let them teach you so that you can teach them.",
+    "why": "He tells adults to understand their children's world from the inside. It builds to short commands (ask, be curious, learn from them) and ends on a memorable line.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-let-them-teach-you-pre.mp4?v=1793622219",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-let-them-teach-you-nomusic.mp4?v=1793619648",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-let-them-teach-you-nomusic-pre.mp4?v=1793622242"
+   },
+   {
+    "id": "haftara:haftarat-haye-sarah-2026-the-abyss-of-age:stop-listening-to-elders",
+    "kind": "reel",
+    "title": "We only hurt ourselves when we stop listening",
+    "hook": [
+     "We only hurt ourselves",
+     "when we stop listening"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-stop-listening-to-elders.mp4?v=1793619737",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-stop-listening-to-elders.jpg?v=1793622246",
+    "duration": 51,
+    "start": 2007.41,
+    "end": 2052.0,
+    "text": "And so we only hurt ourselves when we stop listening to the elders. We only hurt ourselves when we disengage from the younger generations. It is particularly important when it comes to education. There you know, education, on the one hand, is information, you know. What do I need the younger generation to know that I have learned? But a major, major element of education is the setting and frame in which it happens, the mode that is used to to present it. That is almost more important than the information.",
+    "why": "It opens with a two-sided claim about losing touch with elders and with the young. It then makes a sharp point about teaching: how you teach matters almost more than what you teach.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-stop-listening-to-elders-pre.mp4?v=1793622268",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-stop-listening-to-elders-nomusic.mp4?v=1793619785",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-stop-listening-to-elders-nomusic-pre.mp4?v=1793622294"
+   },
+   {
+    "id": "haftara:haftarat-haye-sarah-2026-the-abyss-of-age:adult-in-the-room",
+    "kind": "reel",
+    "title": "The elders are the adult in the room",
+    "hook": [
+     "The elders are the",
+     "adult in the room"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-adult-in-the-room.mp4?v=1793619884",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-adult-in-the-room.jpg?v=1793622298",
+    "duration": 52,
+    "start": 1275.09,
+    "end": 1321.07,
+    "text": "And so, you know, it's kind of like we say who's the adult in the room? Well, the elders are the adult in the room, and it is not an equal responsibility. There is of course a responsibility in the younger generation to look to the elders and to ask them, right? As the pasuk says, She'al avicha veyagedcha, it's a pasuk in in Ha'azinu, right? She'al avicha veyagedcha, ask your father, let him tell you. Zekenecha veyomru lach, the elders, let them speak to you of what it is that you need to know. But there's also a responsibility of the older to the younger: Veshinantam lebanecha vedibarta bam, you teach your children, tell them this accordingly.",
+    "why": "He says plainly that the duty to bridge the gap between generations is not equal. He supports both sides with two verses, each explained in English, so it is clear on one listen.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-adult-in-the-room-pre.mp4?v=1793622321",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-adult-in-the-room-nomusic.mp4?v=1793619924",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-adult-in-the-room-nomusic-pre.mp4?v=1793622350"
+   }
+  ]
+ },
+ {
   "slug": "haftarat-vayera-2026-closing-doors-in-your-life",
   "parasha": "Haftarat Vayera 2026",
   "title": "Closing Doors in Your Life",
