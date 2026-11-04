@@ -77,7 +77,7 @@
     "id": "haftara:haftarat-haye-sarah-2026-the-abyss-of-age:reader",
     "kind": "reader",
     "title": "Hayye Sara: The Abyss of Age",
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/parasha-reader-en.pdf?v=1793618909",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/parasha-reader-en.pdf?v=1793801398",
     "google_doc": "https://docs.google.com/document/d/1X_Xev9jMM2QjD6PdSOScMzt5xPy9AEjVChXofDOi_9I/edit",
     "pages": 2,
     "note": "1) The Google Doc is still PRIVATE. Its only permission is the owner, thyme4sleep@gmail.com. Sharing it failed because the gws sign-in has expired (401 invalid_grant). To fix: run `! gws auth login` and retry, or in the doc go to Share › General access › Anyone with the link › Editor. 2) Parasha spelling: I used the house form 'Hayye Sara', which follows the skill's rules but Rabbi Dweck has never confirmed it. The folder name uses 'Haye Sarah', so please check with him. I also used 'Hayye_Sara' in the file names. 3) Haftara is 1 Kings 1:1–31, the same range for both communities, so it is written once as 'Sefardim & Ashkenazim 1:1–31'. 4) Transliterations to check: 'asher ahabta' (I wrote b for the bet, by the rule, while earlier verse quotes he approved used v), 'et yehidkha', 've'ata lo yadata', 'veshinantam lebanekha', 'yeladim'. 5) Quote is Ben Sira 8:9 (NRSV); I checked the wording on BibleGateway. Reading is Marc Freedman, 'How to Live Forever' (PublicAffairs, 2018); the QR points to Open Library works/OL19763845W, which returns 200. 6) To fit two pages I cut the body a lot. Left out: the 'Magen Abraham / Magen David' line, Abishag, the weaning feast, the 'friends in every decade' detail about centenarians, and most of the Tanakh/Hebrew/history passage. The Hebrew verses come from Sefaria (Masorah edition) with cantillation stripped, and Gen. 24:1 uses ה'. 7) Checks: two XeLaTeX passes, 2 pages, zero Missing character warnings. translit_check's only hits are English words (chambers, technology, grandchildren). The Overleaf zip is in the same folder. Stage 2 has not been started."
@@ -235,7 +235,7 @@
     "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:description",
     "kind": "description",
     "title": "Closing Doors in Your Life | Haftarat Vayera 2026",
-    "text": "When one door closes, we often stare at it so long that we miss the ones that have opened, and when many doors are open, we hesitate to walk through any of them. Vayera and its Haftara show us, through Abraham, Sarah, Lot, the widow and the woman of Shunem, that a real life means closing some doors so that we can walk through the one G-d is holding open for us.\n\nChapters\n0:00 Elisha and the Haftara\n2:37 The Link to the Parasha\n5:16 Doors in Parasha and Haftara\n6:47 Helen Keller's Open Door\n11:30 Keeping Every Option Open\n16:17 Abraham, Sarah, and Ishmael\n21:21 Lot Shuts the Door on Sodom\n30:52 The Widow and the Oil\n34:44 The Woman of Shunem's Son\n40:05 Which Door Will You Close?\n\nThe Parasha with Rabbi Dweck · Haftara Series · Haftarat Vayera\nListen on Spotify: “The Parasha with Rabbi Dweck”\nThe app: RabbiJosephDweck.com/app\nMore from Rabbi Dweck: RabbiJosephDweck.com\n\n#Torah #Haftara #Parasha #Vayera #Judaism #RabbiDweck",
+    "text": "When one door closes, we often stare at it so long that we miss the ones that have opened, and when many doors are open, we hesitate to walk through any of them for fear of needing to close some. Vayera and its Haftara show us, through Abraham, Sarah, Lot, the widow and the woman of Shunem, that a real life means closing some doors so that we can walk through the one G-d is holding open for us.\n\nChapters\n0:00 Elisha and the Haftara\n2:37 The Link to the Parasha\n5:16 Doors in Parasha and Haftara\n6:47 Helen Keller's Open Door\n11:30 Keeping Every Option Open\n16:17 Abraham, Sarah, and Ishmael\n21:21 Lot Shuts the Door on Sodom\n30:52 The Widow and the Oil\n34:44 The Woman of Shunem's Son\n40:05 Which Door Will You Close?\n\nThe Parasha with Rabbi Dweck · Haftara Series · Haftarat Vayera\nListen on Spotify: “The Parasha with Rabbi Dweck”\nThe app: RabbiJosephDweck.com/app\nMore from Rabbi Dweck: RabbiJosephDweck.com\n\n#Torah #Haftara #Parasha #Vayera #Judaism #RabbiDweck",
     "chapters": [
      {
       "t": 0,
@@ -461,7 +461,7 @@
     "id": "haftara:haftarat-lekh-lekha-2026-beyond-your-limits:reader",
     "kind": "reader",
     "title": "The Parasha with Rabbi Dweck - Haftara Series - Lekh Lekha: Beyond Your Limits",
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-lekh-lekha-2026-beyond-your-limits/parasha-reader-en.pdf?v=1792039522",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-lekh-lekha-2026-beyond-your-limits/parasha-reader-en.pdf?v=1792440096",
     "google_doc": "https://docs.google.com/document/d/1FYF5pUFTRNxAix5tAII9jNOZL0mCVgqakZKOWOynpcQ/edit?usp=drivesdk&ouid=100458736908357145507",
     "pages": 2,
     "note": ""
