@@ -43,17 +43,20 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
               <h3>{ep.title}</h3>
               <p class="count">{full.length ? 'Full episode' : ''}{full.length && reels.length ? ' + ' : ''}{reels.length ? `${reels.length} reels` : ''}</p>
             </header>
+            <div class="schedule" hidden></div>
 
             {full.map((it) => (
-              <div class="item full" data-id={it.id} data-title={it.title} data-url={it.url} data-shiur={`${ep.parasha}: ${ep.title}`}>
+              <div class="item full" data-kind="full" data-id={it.id} data-title={it.title} data-url={it.url} data-shiur={`${ep.parasha}: ${ep.title}`}>
                 {it.hls
                   ? <video controls playsinline preload="none" poster={it.poster} data-hls={it.url}></video>
                   : <video controls playsinline preload="metadata" poster={it.poster} src={it.url}></video>}
                 <div class="meta">
                   <h4>Full episode <span class="dur">{mmss(it.duration)}</span></h4>
                   <p class="fine">Opening title → logo → the class → closing card (YouTube · Spotify · the app), with “A Touching Story” under the opening and closing. This is a smaller review copy; the 1080p master is saved as <code>{it.master}</code>.</p>
+                  {it.note && <p class="fine">{it.note}</p>}
                   <div class="vote"><button data-v="yes">Approve</button><button data-v="maybe">Needs changes</button><button data-v="no">Reject</button></div>
                   <textarea placeholder="Notes (what to change, where — e.g. “trim the end at 34:10”)"></textarea>
+                  <div class="plan"><label>Post on <input type="date" class="post-date" /></label><p class="plan-hint"></p></div>
                   <p class="by"></p>
                   <details class="mark"><summary>Posted it yourself? Tick where</summary><div class="pfs"><label><input type="checkbox" data-pf="youtube" /> YouTube</label><label><input type="checkbox" data-pf="spotify" /> Spotify</label></div></details>
                 </div>
@@ -119,7 +122,7 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
             {reels.length > 0 && <h4 class="sub">Reels</h4>}
             <div class="reel-grid">
               {reels.map((it) => (
-                <div class="item reel" data-id={it.id} data-title={it.title} data-url={it.url} data-shiur={`${ep.parasha}: ${ep.title}`} data-start={it.start} data-end={it.end} data-hook={it.hook.join(' / ')} data-pre={it.pre_url} data-nm={it.nomusic_url} data-nmpre={it.nomusic_pre_url}>
+                <div class="item reel" data-kind="reel" data-id={it.id} data-title={it.title} data-url={it.url} data-shiur={`${ep.parasha}: ${ep.title}`} data-start={it.start} data-end={it.end} data-hook={it.hook.join(' / ')} data-pre={it.pre_url} data-nm={it.nomusic_url} data-nmpre={it.nomusic_pre_url}>
                   <video controls playsinline preload="none" poster={it.poster} src={it.url}></video>
                   {it.pre_url && <div class="ends" role="group" aria-label="End card"><button type="button" class="on" data-end="full">Watch the full class</button><button type="button" data-end="pre">Coming Wednesday</button></div>}
                   {it.nomusic_url && <div class="ends music" role="group" aria-label="Music"><button type="button" class="on" data-music="1">With music</button><button type="button" data-music="0">No music</button></div>}
@@ -132,6 +135,7 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
                     <details><summary>Transcript</summary><p>{it.text}</p></details>
                     <div class="vote"><button data-v="yes">Approve</button><button data-v="maybe">Needs changes</button><button data-v="no">Reject</button></div>
                     <textarea placeholder="Notes"></textarea>
+                    <div class="plan"><label>Post on <input type="date" class="post-date" /></label><p class="plan-hint"></p></div>
                     <p class="by"></p>
                     <details class="mark"><summary>Posted it yourself? Tick where</summary><div class="pfs"><label><input type="checkbox" data-pf="youtube" /> YouTube Shorts</label><label><input type="checkbox" data-pf="tiktok" /> TikTok</label><label><input type="checkbox" data-pf="meta" /> Facebook + Instagram</label></div></details>
                   </div>
@@ -176,7 +180,108 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
       if (p.expired) bits.push('no slot left before Shabbat');
       if (bits.length) by.innerHTML = by.textContent.replace(/</g, '&lt;') + '<br>' + bits.join(' · ');
     });
+    arrange();
     if (typeof tally === 'function') tally();
+  }
+
+  // ── Posting dates: pick a day on each video; reels re-sort into that order and take their clip numbers from it ──
+  const OUT = ['posted', 'scheduled', 'draft'];
+  const todayIL = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Jerusalem' }).format(new Date());
+  const dow = (d) => new Date(d + 'T12:00:00').getDay();
+  const fmtDay = (d) => new Date(d + 'T12:00:00').toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }).replace(',', '');
+  const wentOut = (row) => ['youtube', 'spotify', 'tiktok', 'meta'].some((k) => OUT.includes(((row.posted || {})[k] || {}).status));
+  // the day it's going out: what went out wins (it can't be moved from here), then the chosen date, then an automatic slot
+  function dayOf(row) {
+    const p = row.posted || {};
+    if (wentOut(row)) {
+      if (p.slot) return p.slot.slice(0, 10);
+      const at = ['youtube', 'spotify', 'tiktok', 'meta'].map((k) => (p[k] || {}).at).filter(Boolean).sort()[0];
+      if (at) return at.slice(0, 10);
+    }
+    return row.post_date || p.slot?.slice(0, 10) || null;
+  }
+  // same times as poster.py / config.json: Friday morning, a reel on the episode's own day goes out in the morning before it
+  function timeFor(el, date) {
+    if (dow(date) === 5) return '10:00 am';
+    if (el.dataset.kind === 'full') return '7:00 pm';
+    const fulls = [...el.closest('article').querySelectorAll('.item[data-kind=full]')].map((f) => (state[f.dataset.id] || {}).post_date).filter(Boolean);
+    const fullDay = fulls.length ? fulls.includes(date) : dow(date) === 3; // no date picked: the episode goes out on its usual Wednesday
+    return fullDay ? '10:00 am' : '7:00 pm';
+  }
+  // the same words whether the slot is still ahead today or has gone (a slot already gone today goes out straight away)
+  function whenText(el, date) {
+    const t = timeFor(el, date);
+    if (date !== todayIL()) return `${fmtDay(date)}, ${t} Israel time`;
+    const hNow = +new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Jerusalem', hour: '2-digit', hour12: false }).format(new Date());
+    return hNow >= (t === '10:00 am' ? 10 : 19) ? 'today, right away' : `today, ${t} Israel time`;
+  }
+  const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+  function arrange() {
+    const today = todayIL();
+    document.querySelectorAll('article.episode').forEach((art) => {
+      const rowOf = (el) => state[el.dataset.id] || {};
+      const live = (el) => rowOf(el).status !== 'no';
+      const reels = [...art.querySelectorAll('.item[data-kind=reel]')];
+      // clip numbers follow the dates; poster.py numbers them the same way
+      const dated = reels.filter((el) => live(el) && dayOf(rowOf(el))).sort((a, b) => dayOf(rowOf(a)).localeCompare(dayOf(rowOf(b))) || a.dataset.id.localeCompare(b.dataset.id));
+      const clipNo = new Map(dated.map((el, i) => [el, i + 1]));
+      const grid = art.querySelector('.reel-grid');
+      if (grid) {
+        const undated = reels.filter((el) => live(el) && !clipNo.has(el));
+        const want = [...dated, ...undated, ...reels.filter((el) => !live(el))];
+        if (want.some((el, i) => grid.children[i] !== el)) {
+          const focus = document.activeElement;
+          want.forEach((el) => grid.appendChild(el));
+          if (focus && grid.contains(focus)) focus.focus();
+        }
+      }
+      art.querySelectorAll('.item[data-kind]').forEach((el) => {
+        const row = rowOf(el), box = el.querySelector('.plan'), input = box.querySelector('input'), hint = box.querySelector('.plan-hint');
+        box.hidden = row.status === 'no';
+        if (document.activeElement !== input) input.value = row.post_date || '';
+        input.disabled = wentOut(row);
+        const day = dayOf(row), clip = clipNo.has(el) ? `Clip #${clipNo.get(el)}. ` : '';
+        let msg = '', bad = false;
+        if (wentOut(row)) msg = `${clip}Already out or scheduled for ${day ? fmtDay(day) : 'its slot'}. To move it, change it on the platform.`;
+        else if (row.post_date && row.post_date < today) { msg = `${clip}${fmtDay(row.post_date)} has passed and this didn't go out. Pick a new date.`; bad = true; }
+        else if (row.post_date) msg = `${clip}${row.status === 'yes' ? 'Goes out' : 'Would go out'} ${whenText(el, row.post_date)}${row.status === 'yes' ? '.' : ', once it’s approved.'}`;
+        else if (row.status === 'yes') msg = el.dataset.kind === 'full' ? 'No date picked, so it goes out on the usual Wednesday.' : 'No date picked, so it takes the next open slot that week.';
+        if (!hint.dataset.err) { hint.textContent = msg; hint.classList.toggle('bad', bad); }
+      });
+      paintSchedule(art, clipNo, today);
+    });
+  }
+
+  function paintSchedule(art, clipNo, today) {
+    const box = art.querySelector('.schedule');
+    const rowOf = (el) => state[el.dataset.id] || {};
+    const items = [...art.querySelectorAll('.item[data-kind]')].filter((el) => rowOf(el).status !== 'no');
+    const dated = items.filter((el) => dayOf(rowOf(el))).sort((a, b) => dayOf(rowOf(a)).localeCompare(dayOf(rowOf(b)))
+      || (clipNo.get(a) || 0) - (clipNo.get(b) || 0));
+    const waiting = items.filter((el) => !dayOf(rowOf(el)) && rowOf(el).status === 'yes');
+    box.hidden = !dated.length && !waiting.length;
+    if (box.hidden) return;
+    const chip = (el) => {
+      const row = rowOf(el);
+      if (wentOut(row)) return ['Out or scheduled', 'ok'];
+      if (row.post_date && row.post_date < today) return ['Date passed', 'bad'];
+      if (row.status === 'yes') return ['Approved', 'ok'];
+      if (row.status === 'maybe') return ['Needs your approval', 'wait'];
+      return ['Not approved yet', 'wait'];
+    };
+    const li = dated.map((el) => {
+      const [t, c] = chip(el), name = el.dataset.kind === 'full' ? el.dataset.title : `Clip #${clipNo.get(el)} · ${el.dataset.title}`;
+      return `<li><span class="s-day">${fmtDay(dayOf(rowOf(el)))}</span><button type="button" class="s-go" data-go="${esc(el.dataset.id)}">${esc(name)}</button><span class="s-chip ${c}">${t}</span></li>`;
+    }).join('');
+    const reelDays = dated.filter((el) => el.dataset.kind === 'reel').map((el) => dayOf(rowOf(el)));
+    const twice = [...new Set(reelDays.filter((d, i) => d >= today && reelDays.indexOf(d) !== i))];
+    const finished = dated.length && dayOf(rowOf(dated[dated.length - 1])) < today; // an old episode: nothing here to act on
+    const warn = [
+      ...twice.map((d) => `${reelDays.filter((x) => x === d).length} reels are on ${fmtDay(d)}. The usual pace is one a day.`),
+      ...(waiting.length && !finished ? [`No date picked: ${waiting.map((el) => esc(el.dataset.title)).join('; ')}.`] : []),
+    ];
+    box.innerHTML = `<h4>Posting order</h4><ol>${li}</ol>${warn.map((w) => `<p class="s-warn">${w}</p>`).join('')}`;
   }
 
   async function save(el, patch) {
@@ -204,6 +309,23 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
     }));
     const ta = el.querySelector('textarea');
     ta.addEventListener('change', () => save(el, { notes: ta.value }));
+    const dateInput = el.querySelector('.post-date');
+    if (dateInput) {
+      dateInput.min = todayIL();
+      const refuse = (msg) => {
+        const hint = el.querySelector('.plan-hint');
+        hint.dataset.err = '1'; hint.textContent = msg; hint.classList.add('bad');
+        dateInput.value = (state[el.dataset.id] || {}).post_date || '';
+        setTimeout(() => { delete hint.dataset.err; paint(); }, 4000);
+      };
+      dateInput.addEventListener('change', () => {
+        const v = dateInput.value;
+        if (v && +v.slice(0, 4) < new Date().getFullYear()) return; // still typing the year
+        if (v && dow(v) === 6) return refuse('That’s Shabbat. Pick another day.');
+        if (v && v < todayIL()) return refuse('That date has passed. Pick today or later.');
+        save(el, { post_date: v || null });
+      });
+    }
     // ticking a platform tells the poster it's already there (it never posts to a platform marked posted)
     el.querySelectorAll('.mark input[data-pf]').forEach((c) => c.addEventListener('change', () => {
       const posted = { ...((state[el.dataset.id] || {}).posted || {}) };
@@ -211,6 +333,11 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
       else delete posted[c.dataset.pf];
       save(el, { posted });
     }));
+  });
+
+  document.addEventListener('click', (e) => {
+    const b = e.target.closest('.s-go'); if (!b) return;
+    document.querySelector(`.item[data-id="${CSS.escape(b.dataset.go)}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
 
   document.querySelectorAll('button.copy').forEach((b) => b.addEventListener('click', async () => {
@@ -259,7 +386,7 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
   }
   tally();
 
-  fetch(SB_URL + '?clip_id=like.haftara:*&select=clip_id,status,notes,reviewer,updated_at,posted', { headers: H })
+  fetch(SB_URL + '?clip_id=like.haftara:*&select=clip_id,status,notes,reviewer,updated_at,posted,post_date', { headers: H })
     .then((r) => r.json())
     .then((rows) => { rows.forEach((r) => { state[r.clip_id] = r; }); paint(); setSync('Up to date'); })
     .catch(() => setSync('Couldn’t load saved choices.', true));
@@ -331,6 +458,25 @@ const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).
   .mark { font-size: 0.8rem; margin: 0.5rem 0 0; color: var(--text-light); }
   .mark summary { cursor: pointer; }
   .mark .pfs { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; margin-top: 0.4rem; color: var(--text); }
+  .plan { margin: 0.6rem 0 0; }
+  .plan label { display: flex; align-items: center; gap: 0.5rem; font: 700 0.8rem var(--font-sans); }
+  .plan input { font: inherit; font-weight: 400; padding: 0.35rem 0.5rem; border: 1px solid var(--cream-dark); border-radius: 6px; background: #fff; color: var(--text); }
+  .plan input:disabled { color: var(--text-light); background: var(--cream); }
+  .plan-hint { font-size: 0.78rem; color: var(--text-light); margin: 0.3rem 0 0; }
+  .plan-hint.bad { color: #8a3a32; }
+  .schedule { background: #fff; border: 1px solid var(--cream-dark); border-radius: 10px; padding: 1rem 1.2rem; margin: 0 0 1.6rem; }
+  .schedule[hidden] { display: none; }
+  .schedule :global(h4) { margin: 0 0 0.6rem; font-size: 1.1rem; }
+  .schedule :global(ol) { list-style: none; margin: 0; padding: 0; }
+  .schedule :global(li) { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.8rem; padding: 0.4rem 0; border-top: 1px solid var(--cream); }
+  .schedule :global(li:first-child) { border-top: none; }
+  .schedule :global(.s-day) { font: 700 0.8rem var(--font-sans); min-width: 6.5rem; }
+  .schedule :global(.s-go) { flex: 1 1 14rem; text-align: left; background: none; border: none; padding: 0; font: inherit; font-size: 0.95rem; color: var(--text); cursor: pointer; text-decoration: underline; text-decoration-color: var(--cream-dark); text-underline-offset: 3px; }
+  .schedule :global(.s-chip) { font: 700 0.72rem var(--font-sans); padding: 0.2rem 0.6rem; border-radius: 99px; background: var(--cream); color: var(--text-light); }
+  .schedule :global(.s-chip.ok) { background: #e7f1ea; color: #2f6b46; }
+  .schedule :global(.s-chip.wait) { background: #fbf3e2; color: #7a5a1c; }
+  .schedule :global(.s-chip.bad) { background: #f6e7e5; color: #8a3a32; }
+  .schedule :global(.s-warn) { font-size: 0.82rem; color: #7a5a1c; margin: 0.6rem 0 0; }
   .by { font-size: 0.78rem; color: var(--text-light); margin: 0.4rem 0 0; min-height: 1em; }
   @media (max-width: 760px) { .full { grid-template-columns: 1fr; } }
 </style>
