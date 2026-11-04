@@ -1,5 +1,193 @@
 [
  {
+  "slug": "haftarat-vayera-2026-closing-doors-in-your-life",
+  "parasha": "Haftarat Vayera 2026",
+  "title": "Closing Doors in Your Life",
+  "items": [
+   {
+    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:full",
+    "kind": "full",
+    "title": "Haftarat Vayera 2026: Closing Doors in Your Life",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/full-review-720p/index.m3u8?v=1793053133",
+    "hls": true,
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/full-poster.jpg?v=1793053130",
+    "duration": 2594,
+    "master": "haftarat-vayera-2026-closing-doors-in-your-life-full-1080p.mp4"
+   },
+   {
+    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:full-doors",
+    "kind": "full",
+    "title": "Haftarat Vayera 2026: Closing Doors in Your Life · Doors cut (alt)",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/full-doors-review-720p/index.m3u8?v=1793109761",
+    "hls": true,
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/full-doors-poster.jpg?v=1793109759",
+    "duration": 2617,
+    "master": "haftarat-vayera-2026-closing-doors-in-your-life-full-doors-1080p.mp4"
+   },
+   {
+    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:description",
+    "kind": "description",
+    "title": "Closing Doors in Your Life | Haftarat Vayera 2026",
+    "text": "When one door closes, we often stare at it so long that we miss the ones that have opened, and when many doors are open, we hesitate to walk through any of them. Vayera and its Haftara show us, through Abraham, Sarah, Lot, the widow and the woman of Shunem, that a real life means closing some doors so that we can walk through the one G-d is holding open for us.\n\nChapters\n0:00 Elisha and the Haftara\n2:37 The Link to the Parasha\n5:16 Doors in Parasha and Haftara\n6:47 Helen Keller's Open Door\n11:30 Keeping Every Option Open\n16:17 Abraham, Sarah, and Ishmael\n21:21 Lot Shuts the Door on Sodom\n30:52 The Widow and the Oil\n34:44 The Woman of Shunem's Son\n40:05 Which Door Will You Close?\n\nThe Parasha with Rabbi Dweck · Haftara Series · Haftarat Vayera\nListen on Spotify: “The Parasha with Rabbi Dweck”\nThe app: RabbiJosephDweck.com/app\nMore from Rabbi Dweck: RabbiJosephDweck.com\n\n#Torah #Haftara #Parasha #Vayera #Judaism #RabbiDweck",
+    "chapters": [
+     {
+      "t": 0,
+      "title": "Elisha and the Haftara"
+     },
+     {
+      "t": 157.1,
+      "title": "The Link to the Parasha"
+     },
+     {
+      "t": 316.1,
+      "title": "Doors in Parasha and Haftara"
+     },
+     {
+      "t": 407.1,
+      "title": "Helen Keller's Open Door"
+     },
+     {
+      "t": 690.1,
+      "title": "Keeping Every Option Open"
+     },
+     {
+      "t": 977.1,
+      "title": "Abraham, Sarah, and Ishmael"
+     },
+     {
+      "t": 1281.1,
+      "title": "Lot Shuts the Door on Sodom"
+     },
+     {
+      "t": 1852.1,
+      "title": "The Widow and the Oil"
+     },
+     {
+      "t": 2084.1,
+      "title": "The Woman of Shunem's Son"
+     },
+     {
+      "t": 2405.1,
+      "title": "Which Door Will You Close?"
+     }
+    ]
+   },
+   {
+    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:reader",
+    "kind": "reader",
+    "title": "Vayera: Closing Doors in Your Life",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/parasha-reader-en.pdf?v=1793071949",
+    "google_doc": "https://docs.google.com/document/d/1uQf_Q-Rt6vbe-WeN30FScCHdhW_oRdPn720HnKQESko/edit",
+    "pages": 2,
+    "note": "1) The Google Doc is NOT yet shared Anyone-with-the-link → Editor. The gws sign-in has expired (invalid_grant), so run `! gws auth login`, then `gws drive permissions create --params '{\"fileId\":\"1uQf_Q-Rt6vbe-WeN30FScCHdhW_oRdPn720HnKQESko\"}' --json '{\"type\":\"anyone\",\"role\":\"writer\",\"allowFileDiscovery\":false}'`, or use Share › Anyone with the link › Editor. 2) 'Vayera' is a rule-derived parasha spelling, not yet confirmed by Rabbi Dweck. 3) Quote is Robert Frost, 'The Road Not Taken' (1916): 'Yet knowing how way leads on to way, I doubted if I should ever come back.' It is from memory and was not looked up. Reading is Helen Keller, We Bereaved (L. Fulenwider, 1929), which Rabbi Dweck recommends in the shiur; the QR points to https://openlibrary.org/works/OL15287852W, and the Open Library page returned a redirect, not a 200, so check it. The Keller quote in section 1 is also from memory. Check it against the book. 4) The Idea box is my own synthesis. 5) Hebrew verses come from Sefaria (nikud, cantillation stripped); the gloss verses are Genesis 18:10, 21:11, 19:17 and 2 Kings 4:2, 4:33, and the key verse is 2 Kings 4:4. 6) The bodies were cut to fit two pages, so the transcript's Helen Keller and 'only constant is you' material is condensed. The Idea box carries the 'only constant is you' point. 7) The translit lint flagged only 'choosing' (a false positive); the log has no Missing character warnings. Stage 2 has not been started. The Overleaf zip is in the same folder."
+   },
+   {
+    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:thumbnail",
+    "kind": "thumb",
+    "title": "Haftarat Vayera: Closing Doors in Your Life",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/thumbnail.jpg?v=1793050297",
+    "size": "2688×1520",
+    "note": "Series template, made with GPT Image 2.5 (Flare, high) on Higgsfield."
+   },
+   {
+    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:cant-keep-all-potentials",
+    "kind": "reel",
+    "title": "We cannot keep all potentials open",
+    "hook": [
+     "We cannot keep all",
+     "potentials open"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-cant-keep-all-potentials.mp4?v=1793050511",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-cant-keep-all-potentials.jpg?v=1793801363",
+    "duration": 45,
+    "start": 1586.82,
+    "end": 1625.63,
+    "text": "The need to choose an actual life while closing the potentials that lie before us in order to do so is an essential aspect of life. We cannot have all of our potentials always open to us. Because if we live that way, we never actually live. Every single one of us has the potential to live any number of lives. In other words, the particular scenario of our life now is simply the particular scenario of our life now.",
+    "why": "States the thesis in the first sentence and ends on a finished thought: if every option stays open, we never actually live.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-cant-keep-all-potentials-pre.mp4?v=1793053207",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-cant-keep-all-potentials-nomusic.mp4?v=1793108289",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-cant-keep-all-potentials-nomusic-pre.mp4?v=1793109035"
+   },
+   {
+    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:when-one-door-closes",
+    "kind": "reel",
+    "title": "When one door closes, another opens",
+    "hook": [
+     "When one door closes,",
+     "another opens"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-when-one-door-closes.mp4?v=1793801335",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-when-one-door-closes.jpg?v=1793801379",
+    "duration": 38,
+    "start": 470.48,
+    "end": 502.02,
+    "text": "When one door of happiness closes, another opens. But often we look so long at the closed door that we do not see which has been opened for us. And how beautiful the idea, because if we look at life as a series of openings, we might call them opportunities for us in life as to how we might proceed forward in our lives.",
+    "why": "Gives a complete quote on loss and hope, with its point that we stare at the closed door and miss the open one.",
+    "credit": "Helen Keller",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-when-one-door-closes-pre.mp4?v=1793801397",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-when-one-door-closes-nomusic.mp4?v=1793801362",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-when-one-door-closes-nomusic-pre.mp4?v=1793801419"
+   },
+   {
+    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:the-one-constant-is-you",
+    "kind": "reel",
+    "title": "The one constant in life is you",
+    "hook": [
+     "The one constant",
+     "in life is you"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-the-one-constant-is-you.mp4?v=1793050657",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-the-one-constant-is-you.jpg?v=1793801422",
+    "duration": 45,
+    "start": 1760.64,
+    "end": 1799.31,
+    "text": "The one thing that remains constant is us, me. I'm the one living the life. You're the one that's actually living the life. And regardless of what it is that you're doing, that is what requires the integrity. You need to be the most integrous, the fullest you that you can be in the particular life that you're living. And if you do not choose an actual life, you never really give yourself an opportunity to live that out, to build that out into a full self and identity.",
+    "why": "Opens on its point and needs no context: whichever path we take, we are the constant and owe it integrity.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-the-one-constant-is-you-pre.mp4?v=1793053262",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-the-one-constant-is-you-nomusic.mp4?v=1793108586",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-the-one-constant-is-you-nomusic-pre.mp4?v=1793109128"
+   },
+   {
+    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:all-the-experiences",
+    "kind": "reel",
+    "title": "All the experiences? Then what life is yours?",
+    "hook": [
+     "All the experiences?",
+     "Then what life is yours?"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-all-the-experiences.mp4?v=1793050743",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-all-the-experiences.jpg?v=1793801437",
+    "duration": 49,
+    "start": 1670.88,
+    "end": 1713.79,
+    "text": "It's like people say, I want to have all the experiences. Okay, great. You want to have all the experiences. And what is your life going to be in the end? What life will you have lived in the end? What can be said for yourself in the end? If you're going to sample all of the possible experiences. Well, nothing. I mean, it means that it is a life that remains entirely in potential. And so that is why many of us, right, in our lives choose, look, I'm going to grow up. I'm going to choose a career. I'm going to get married. I'm going to have a family. I'm going to, you know, do this because I recognize that doing this, I'm going to live in this particular place. Because I recognize that doing this creates an actual life that I can live that will be mine. That I can speak of.",
+    "why": "Opens with a familiar claim, then asks what life you will have lived if you sample everything.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-all-the-experiences-pre.mp4?v=1793053289",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-all-the-experiences-nomusic.mp4?v=1793108823",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-all-the-experiences-nomusic-pre.mp4?v=1793109183"
+   },
+   {
+    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:open-one-door-close-another",
+    "kind": "reel",
+    "title": "To open one door, close another",
+    "hook": [
+     "To open one door,",
+     "close another"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-open-one-door-close-another.mp4?v=1793050816",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-open-one-door-close-another.jpg?v=1793801454",
+    "duration": 46,
+    "start": 811.98,
+    "end": 852.05,
+    "text": "And so choosing a particular path, meaning choosing to open a door and walk through a particular door means needing to close other doors and deny other experiences and possibilities. And the value of that is, yes, we lose potentials, but we actualize a specific reality. We choose to actualize a specific reality by giving up potential realities. Yes. The only other possibility is that we end up living a life in a haze of potentials, but never actuals.",
+    "why": "Explains that choosing a path means giving up potentials to make one reality actual, and it needs no context.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-open-one-door-close-another-pre.mp4?v=1793053317",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-open-one-door-close-another-nomusic.mp4?v=1793108983",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-open-one-door-close-another-nomusic-pre.mp4?v=1793109232"
+   }
+  ]
+ },
+ {
   "slug": "haftarat-haye-sarah-2026-the-abyss-of-age",
   "parasha": "Haftarat Haye Sarah 2026",
   "title": "The Abyss of Age",
@@ -203,194 +391,6 @@
     "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-adult-in-the-room-pre.mp4?v=1793622321",
     "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-adult-in-the-room-nomusic.mp4?v=1793619924",
     "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-haye-sarah-2026-the-abyss-of-age/reel-adult-in-the-room-nomusic-pre.mp4?v=1793622350"
-   }
-  ]
- },
- {
-  "slug": "haftarat-vayera-2026-closing-doors-in-your-life",
-  "parasha": "Haftarat Vayera 2026",
-  "title": "Closing Doors in Your Life",
-  "items": [
-   {
-    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:full",
-    "kind": "full",
-    "title": "Haftarat Vayera 2026: Closing Doors in Your Life",
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/full-review-720p/index.m3u8?v=1793053133",
-    "hls": true,
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/full-poster.jpg?v=1793053130",
-    "duration": 2594,
-    "master": "haftarat-vayera-2026-closing-doors-in-your-life-full-1080p.mp4"
-   },
-   {
-    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:full-doors",
-    "kind": "full",
-    "title": "Haftarat Vayera 2026: Closing Doors in Your Life · Doors cut (alt)",
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/full-doors-review-720p/index.m3u8?v=1793109761",
-    "hls": true,
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/full-doors-poster.jpg?v=1793109759",
-    "duration": 2617,
-    "master": "haftarat-vayera-2026-closing-doors-in-your-life-full-doors-1080p.mp4"
-   },
-   {
-    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:description",
-    "kind": "description",
-    "title": "Closing Doors in Your Life | Haftarat Vayera 2026",
-    "text": "When one door closes, we often stare at it so long that we miss the ones that have opened, and when many doors are open, we hesitate to walk through any of them. Vayera and its Haftara show us, through Abraham, Sarah, Lot, the widow and the woman of Shunem, that a real life means closing some doors so that we can walk through the one G-d is holding open for us.\n\nChapters\n0:00 Elisha and the Haftara\n2:37 The Link to the Parasha\n5:16 Doors in Parasha and Haftara\n6:47 Helen Keller's Open Door\n11:30 Keeping Every Option Open\n16:17 Abraham, Sarah, and Ishmael\n21:21 Lot Shuts the Door on Sodom\n30:52 The Widow and the Oil\n34:44 The Woman of Shunem's Son\n40:05 Which Door Will You Close?\n\nThe Parasha with Rabbi Dweck · Haftara Series · Haftarat Vayera\nListen on Spotify: “The Parasha with Rabbi Dweck”\nThe app: RabbiJosephDweck.com/app\nMore from Rabbi Dweck: RabbiJosephDweck.com\n\n#Torah #Haftara #Parasha #Vayera #Judaism #RabbiDweck",
-    "chapters": [
-     {
-      "t": 0,
-      "title": "Elisha and the Haftara"
-     },
-     {
-      "t": 157.1,
-      "title": "The Link to the Parasha"
-     },
-     {
-      "t": 316.1,
-      "title": "Doors in Parasha and Haftara"
-     },
-     {
-      "t": 407.1,
-      "title": "Helen Keller's Open Door"
-     },
-     {
-      "t": 690.1,
-      "title": "Keeping Every Option Open"
-     },
-     {
-      "t": 977.1,
-      "title": "Abraham, Sarah, and Ishmael"
-     },
-     {
-      "t": 1281.1,
-      "title": "Lot Shuts the Door on Sodom"
-     },
-     {
-      "t": 1852.1,
-      "title": "The Widow and the Oil"
-     },
-     {
-      "t": 2084.1,
-      "title": "The Woman of Shunem's Son"
-     },
-     {
-      "t": 2405.1,
-      "title": "Which Door Will You Close?"
-     }
-    ]
-   },
-   {
-    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:reader",
-    "kind": "reader",
-    "title": "Vayera: Closing Doors in Your Life",
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/parasha-reader-en.pdf?v=1793071949",
-    "google_doc": "https://docs.google.com/document/d/1uQf_Q-Rt6vbe-WeN30FScCHdhW_oRdPn720HnKQESko/edit",
-    "pages": 2,
-    "note": "1) The Google Doc is NOT yet shared Anyone-with-the-link → Editor. The gws sign-in has expired (invalid_grant), so run `! gws auth login`, then `gws drive permissions create --params '{\"fileId\":\"1uQf_Q-Rt6vbe-WeN30FScCHdhW_oRdPn720HnKQESko\"}' --json '{\"type\":\"anyone\",\"role\":\"writer\",\"allowFileDiscovery\":false}'`, or use Share › Anyone with the link › Editor. 2) 'Vayera' is a rule-derived parasha spelling, not yet confirmed by Rabbi Dweck. 3) Quote is Robert Frost, 'The Road Not Taken' (1916): 'Yet knowing how way leads on to way, I doubted if I should ever come back.' It is from memory and was not looked up. Reading is Helen Keller, We Bereaved (L. Fulenwider, 1929), which Rabbi Dweck recommends in the shiur; the QR points to https://openlibrary.org/works/OL15287852W, and the Open Library page returned a redirect, not a 200, so check it. The Keller quote in section 1 is also from memory. Check it against the book. 4) The Idea box is my own synthesis. 5) Hebrew verses come from Sefaria (nikud, cantillation stripped); the gloss verses are Genesis 18:10, 21:11, 19:17 and 2 Kings 4:2, 4:33, and the key verse is 2 Kings 4:4. 6) The bodies were cut to fit two pages, so the transcript's Helen Keller and 'only constant is you' material is condensed. The Idea box carries the 'only constant is you' point. 7) The translit lint flagged only 'choosing' (a false positive); the log has no Missing character warnings. Stage 2 has not been started. The Overleaf zip is in the same folder."
-   },
-   {
-    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:thumbnail",
-    "kind": "thumb",
-    "title": "Haftarat Vayera: Closing Doors in Your Life",
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/thumbnail.jpg?v=1793050297",
-    "size": "2688×1520",
-    "note": "Series template, made with GPT Image 2.5 (Flare, high) on Higgsfield."
-   },
-   {
-    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:cant-keep-all-potentials",
-    "kind": "reel",
-    "title": "We cannot keep all potentials open",
-    "hook": [
-     "We cannot keep all",
-     "potentials open"
-    ],
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-cant-keep-all-potentials.mp4?v=1793050511",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-cant-keep-all-potentials.jpg?v=1793121647",
-    "duration": 45,
-    "start": 1586.82,
-    "end": 1625.63,
-    "text": "The need to choose an actual life while closing the potentials that lie before us in order to do so is an essential aspect of life. We cannot have all of our potentials always open to us. Because if we live that way, we never actually live. Every single one of us has the potential to live any number of lives. In other words, the particular scenario of our life now is simply the particular scenario of our life now.",
-    "why": "States the thesis in the first sentence and ends on a finished thought: if every option stays open, we never actually live.",
-    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-cant-keep-all-potentials-pre.mp4?v=1793053207",
-    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-cant-keep-all-potentials-nomusic.mp4?v=1793108289",
-    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-cant-keep-all-potentials-nomusic-pre.mp4?v=1793109035"
-   },
-   {
-    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:when-one-door-closes",
-    "kind": "reel",
-    "title": "When one door closes, another opens",
-    "hook": [
-     "When one door closes,",
-     "another opens"
-    ],
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-when-one-door-closes.mp4?v=1793121581",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-when-one-door-closes.jpg?v=1793121663",
-    "duration": 39,
-    "start": 468.91,
-    "end": 502.02,
-    "text": "I'm reading it right, when one door of happiness closes, another opens. But often we look so long at the closed door that we do not see which has been opened for us. And how beautiful the idea, because if we look at life as a series of openings, we might call them opportunities for us in life as to how we might proceed forward in our lives.",
-    "why": "Gives a complete quote on loss and hope, with its point that we stare at the closed door and miss the open one.",
-    "credit": "Helen Keller",
-    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-when-one-door-closes-pre.mp4?v=1793121684",
-    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-when-one-door-closes-nomusic.mp4?v=1793121646",
-    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-when-one-door-closes-nomusic-pre.mp4?v=1793121706"
-   },
-   {
-    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:the-one-constant-is-you",
-    "kind": "reel",
-    "title": "The one constant in life is you",
-    "hook": [
-     "The one constant",
-     "in life is you"
-    ],
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-the-one-constant-is-you.mp4?v=1793050657",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-the-one-constant-is-you.jpg?v=1793121711",
-    "duration": 45,
-    "start": 1760.64,
-    "end": 1799.31,
-    "text": "The one thing that remains constant is us, me. I'm the one living the life. You're the one that's actually living the life. And regardless of what it is that you're doing, that is what requires the integrity. You need to be the most integrous, the fullest you that you can be in the particular life that you're living. And if you do not choose an actual life, you never really give yourself an opportunity to live that out, to build that out into a full self and identity.",
-    "why": "Opens on its point and needs no context: whichever path we take, we are the constant and owe it integrity.",
-    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-the-one-constant-is-you-pre.mp4?v=1793053262",
-    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-the-one-constant-is-you-nomusic.mp4?v=1793108586",
-    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-the-one-constant-is-you-nomusic-pre.mp4?v=1793109128"
-   },
-   {
-    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:all-the-experiences",
-    "kind": "reel",
-    "title": "All the experiences? Then what life is yours?",
-    "hook": [
-     "All the experiences?",
-     "Then what life is yours?"
-    ],
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-all-the-experiences.mp4?v=1793050743",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-all-the-experiences.jpg?v=1793121726",
-    "duration": 49,
-    "start": 1670.88,
-    "end": 1713.79,
-    "text": "It's like people say, I want to have all the experiences. Okay, great. You want to have all the experiences. And what is your life going to be in the end? What life will you have lived in the end? What can be said for yourself in the end? If you're going to sample all of the possible experiences. Well, nothing. I mean, it means that it is a life that remains entirely in potential. And so that is why many of us, right, in our lives choose, look, I'm going to grow up. I'm going to choose a career. I'm going to get married. I'm going to have a family. I'm going to, you know, do this because I recognize that doing this, I'm going to live in this particular place. Because I recognize that doing this creates an actual life that I can live that will be mine. That I can speak of.",
-    "why": "Opens with a familiar claim, then asks what life you will have lived if you sample everything.",
-    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-all-the-experiences-pre.mp4?v=1793053289",
-    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-all-the-experiences-nomusic.mp4?v=1793108823",
-    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-all-the-experiences-nomusic-pre.mp4?v=1793109183"
-   },
-   {
-    "id": "haftara:haftarat-vayera-2026-closing-doors-in-your-life:open-one-door-close-another",
-    "kind": "reel",
-    "title": "To open one door, close another",
-    "hook": [
-     "To open one door,",
-     "close another"
-    ],
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-open-one-door-close-another.mp4?v=1793050816",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-open-one-door-close-another.jpg?v=1793121743",
-    "duration": 46,
-    "start": 811.98,
-    "end": 852.05,
-    "text": "And so choosing a particular path, meaning choosing to open a door and walk through a particular door means needing to close other doors and deny other experiences and possibilities. And the value of that is, yes, we lose potentials, but we actualize a specific reality. We choose to actualize a specific reality by giving up potential realities. Yes. The only other possibility is that we end up living a life in a haze of potentials, but never actuals.",
-    "why": "Explains that choosing a path means giving up potentials to make one reality actual, and it needs no context.",
-    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-open-one-door-close-another-pre.mp4?v=1793053317",
-    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-open-one-door-close-another-nomusic.mp4?v=1793108983",
-    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayera-2026-closing-doors-in-your-life/reel-open-one-door-close-another-nomusic-pre.mp4?v=1793109232"
    }
   ]
  },
