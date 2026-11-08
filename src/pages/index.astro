@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Rabbi Dweck's Office" description="Welcome to the official website of Rabbi Joseph Dweck, Senior Rabbi of the S&P Sephardi Community of the United Kingdom.">
+<Layout title="Rabbi Dweck's Office" description="Welcome to the official website of Rabbi Joseph Dweck.">
 
   <!-- LOGO + SOCIAL -->
   <section class="intro-section">
@@ -65,6 +65,14 @@ import Layout from '../layouts/Layout.astro';
       <a href="/content" class="tile">
         <img src="/images/parasha .png" alt="The 13 Principles" />
         <span>The 13 Principles</span>
+      </a>
+      <a href="/thoughts" class="tile">
+        <img src="/images/The Thought for the Day.png" alt="Thought for the Day" />
+        <span>Thought for the Day</span>
+      </a>
+      <a href="https://www.rabbijosephdweck.com/app" target="_blank" rel="noopener" class="tile">
+        <span class="tile-app"><img src="/images/rjd-app-preview.webp" alt="The Rabbi Dweck App" /></span>
+        <span>The App</span>
       </a>
     </div>
   </section>
@@ -244,10 +252,10 @@ import Layout from '../layouts/Layout.astro';
     background: var(--white);
   }
   .tiles-inner {
-    max-width: 860px;
+    max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     gap: 2rem;
   }
   .tile {
@@ -265,7 +273,18 @@ import Layout from '../layouts/Layout.astro';
     aspect-ratio: 1;
     object-fit: cover;
   }
-  .tile span {
+  .tile .tile-app {
+    width: 100%;
+    max-width: 220px;
+    aspect-ratio: 1;
+    background: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .tile .tile-app img { width: auto; height: 88%; aspect-ratio: auto; object-fit: contain; border-radius: 8px; }
+  .tile > span:last-child {
     font-family: var(--font-serif);
     font-size: 0.85rem;
     letter-spacing: 0.12em;
@@ -323,7 +342,7 @@ import Layout from '../layouts/Layout.astro';
   @media (max-width: 768px) {
     .photo-strip { grid-template-columns: 1fr; height: auto; }
     .strip-photo { height: 260px; }
-    .tiles-inner { grid-template-columns: 1fr; max-width: 280px; }
+    .tiles-inner { grid-template-columns: 1fr 1fr; max-width: 480px; }
     .social-row { gap: 1.25rem; }
   }
 </style>

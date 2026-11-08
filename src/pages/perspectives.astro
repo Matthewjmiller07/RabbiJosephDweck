@@ -17,7 +17,7 @@ import Layout from '../layouts/Layout.astro';
           <h2 class="section-title">About the Series</h2>
           <div class="gold-divider"></div>
           <p>
-            <strong>Perspectives</strong> is a digital series of 1–3 minute episodes featuring Senior Rabbi Dweck.
+            <strong>Perspectives</strong> is a digital series of 1–3 minute episodes featuring Rabbi Dweck.
             Each episode offers a 'bite size' meditation on Judaism's major ideas — accessible, profound, and
             thought-provoking for viewers of all backgrounds.
           </p>
@@ -25,9 +25,6 @@ import Layout from '../layouts/Layout.astro';
             Now in its second season, Perspectives covers timeless topics like Shabbat, Pesah, and Shabuot,
             building on Season 1's explorations of God, Prayer, and Suffering.
           </p>
-        </div>
-        <div class="persp-img">
-          <img src="/images/4959e2_b8bd16ceb7914834bc6425156df89bb0.png" alt="Perspectives Series" />
         </div>
       </div>
     </div>
@@ -73,17 +70,17 @@ import Layout from '../layouts/Layout.astro';
         <div class="episode-grid">
           <div class="episode-card">
             <div class="episode-num">S1 · E1</div>
-            <h3>Rabbi Dweck on God</h3>
+            <h3>On God</h3>
             <p>What does Judaism say about the nature of God? A concise and powerful exploration.</p>
           </div>
           <div class="episode-card">
             <div class="episode-num">S1 · E2</div>
-            <h3>Rabbi Dweck on Prayer</h3>
+            <h3>On Prayer</h3>
             <p>The meaning of Jewish prayer — who we are speaking to and why it matters.</p>
           </div>
           <div class="episode-card">
             <div class="episode-num">S1 · E3</div>
-            <h3>Rabbi Dweck on Suffering</h3>
+            <h3>On Suffering</h3>
             <p>How Judaism approaches suffering, pain, and the human condition.</p>
           </div>
         </div>
@@ -99,7 +96,8 @@ import Layout from '../layouts/Layout.astro';
 <style>
   .persp-intro {
     display: grid;
-    grid-template-columns: 1fr 380px;
+    grid-template-columns: 1fr;
+    max-width: 760px;
     gap: 3.5rem;
     align-items: center;
   }

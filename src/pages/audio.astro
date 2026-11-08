@@ -37,6 +37,22 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- APP CALLOUT -->
+  <section class="app-promo">
+    <div class="container app-promo-inner">
+      <img src="/images/rjd-app-preview.webp" alt="The Rabbi Dweck App" class="app-promo-shot" />
+      <div>
+        <h2 class="section-title" style="color:var(--cream);">The Rabbi Dweck App</h2>
+        <div class="gold-divider"></div>
+        <p>
+          Hundreds of Rabbi Dweck's classes in one place — Parasha, Navi, Megilot, Tehillim, holidays,
+          philosophy and more. Search, browse by topic, and listen anywhere.
+        </p>
+        <a href="https://www.rabbijosephdweck.com/app" target="_blank" rel="noopener" class="btn btn-solid">Get the App →</a>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
       <h2 class="section-title">Available On</h2>
@@ -119,6 +135,20 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
+  .app-promo { background: var(--dark); padding: 3.5rem 0; }
+  .app-promo-inner {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 860px;
+  }
+  .app-promo-shot { width: 100%; border-radius: 14px; box-shadow: 0 8px 30px rgba(0,0,0,0.4); }
+  .app-promo p { color: rgba(255,255,255,0.8); line-height: 1.8; margin-bottom: 1.5rem; max-width: 520px; }
+  @media (max-width: 640px) {
+    .app-promo-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+    .app-promo-shot { max-width: 140px; }
+  }
   .audio-intro {
     display: grid;
     grid-template-columns: 1fr 320px;
