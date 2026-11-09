@@ -19,6 +19,10 @@ const episode = [
   { src: '/images/thumbnails/parasha/one_nation_under_god_1_plain_parchment.jpg', label: 'Plain Parchment' },
   { src: '/images/thumbnails/parasha/one_nation_under_god_2_blurred_interior.jpg', label: 'Blurred Interior' },
 ];
+
+const vaethanan = [
+  { src: '/images/thumbnails/parasha/vaethanan_eternal_jewish_system_plain_parchment.jpg', label: 'Plain Parchment' },
+];
 ---
 
 <Layout title="Thumbnail Concepts" description="YouTube thumbnail concepts for The Parasha with Rabbi Dweck.">
@@ -31,7 +35,23 @@ const episode = [
 
   <section class="section" style="background:var(--cream);">
     <div class="container">
-      <h2 class="section-title">Matot-Mas&rsquo;ei: One Nation Under God (current episode)</h2>
+      <h2 class="section-title">Va&rsquo;ethanan: The Eternal Jewish System (current episode)</h2>
+      <div class="gold-divider"></div>
+      <p class="round-note">New headshot swapped in, plain parchment background, cropped to the lower chest.</p>
+      <div class="thumb-grid">
+        {vaethanan.map((t) => (
+          <figure class="thumb-card">
+            <img src={t.src} alt={t.label} loading="lazy" />
+            <figcaption>{t.label}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Matot-Mas&rsquo;ei: One Nation Under God</h2>
       <div class="gold-divider"></div>
       <p class="round-note">Current episode thumbnail options — window/dome removed per feedback.</p>
       <div class="thumb-grid">

@@ -6,6 +6,30 @@ punch with the site's existing dignified/gold-navy-cream brand.
 
 All images: 16:9, quality "high".
 
+## Round 4 — "Va'ethanan: The Eternal Jewish System" episode
+
+Generated with `nano_banana_pro` (via Higgsfield), using a new headshot reference
+supplied for this episode. Same cream/gold "plain parchment" template as Round 3,
+with the portrait cropped further down to the lower chest per feedback.
+
+### vaethanan_eternal_jewish_system_plain_parchment.jpg
+
+> YouTube thumbnail, 16:9. Elegant, dignified design on a warm cream/ivory parchment
+> background with a soft golden vignette glow in the corners, framed by a thin
+> double-line gold border. Bottom-left: a photorealistic portrait of the man shown in
+> the reference photo, cropped from the top of the head down to the lower chest (more
+> of the torso visible than a standard headshot), wearing a dark navy suit and
+> burgundy tie, warm confident smile, soft natural window light from the left,
+> photographed against a plain soft cream backdrop that blends into the background —
+> absolutely no round window, rose window, dome, or architecture visible anywhere in
+> the image, just soft plain warm parchment texture. On the right two-thirds: small
+> tracked-out navy small-caps text reads 'THE PARASHA WITH RABBI DWECK' with a tiny
+> ornate gold flourish divider beneath it; then large elegant bold navy serif headline
+> text, two lines, reading 'THE ETERNAL JEWISH SYSTEM'; beneath that another small
+> ornate gold flourish divider; then smaller navy serif text reading 'VA'ETHANAN
+> 2026'. Calm, refined, editorial, magazine-cover quality, no dark vignette, no
+> metallic bevel text, no clickbait elements.
+
 ## Round 2 note (thumb_5–8)
 
 After reviewing the actual live channel (youtube.com/rabbijosephdweck), the recent
