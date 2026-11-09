@@ -1,5 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import AppPromo from '../components/AppPromo.astro';
+import ReaderFeature from '../components/ReaderFeature.astro';
+import Newsletter from '../components/Newsletter.astro';
 
 type PDF = { lang: string; file: string };
 type Clip = { title: string; url: string };
@@ -277,13 +280,10 @@ function ytThumb(url: string) {
     <div class="gold-rule"></div>
   </section>
 
-  <!-- APP CALLOUT -->
-  <div class="app-banner">
-    <div class="container">
-      <span class="app-banner-text">Also available on the Rabbi Dweck App</span>
-      <a href="https://RabbiJosephDweck.com/app" target="_blank" rel="noopener" class="app-banner-btn">Get the App →</a>
-    </div>
-  </div>
+  <AppPromo compact />
+
+  <ReaderFeature />
+
 
   <!-- SPOTIFY -->
   <section class="section" style="background:var(--cream);">
@@ -421,6 +421,8 @@ function ytThumb(url: string) {
       ))}
     </div>
   </section>
+
+  <Newsletter />
 
 </Layout>
 

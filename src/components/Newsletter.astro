@@ -1,0 +1,133 @@
+---
+// Brevo (Sendinblue) newsletter sign-up, restyled for the site.
+// Brevo's script looks elements up by id, so use this at most once per page.
+interface Props {
+  heading?: string;
+  lede?: string;
+  variant?: 'light' | 'dark';
+}
+const {
+  heading = 'The weekly letter',
+  lede = 'The Parasha Reader, new shiurim and news from the Office of Rabbi Dweck, sent to your inbox before Shabbat.',
+  variant = 'dark',
+} = Astro.props;
+---
+
+<section class={`newsletter newsletter--${variant}`} id="newsletter">
+  <div class="nl-inner">
+    <div class="nl-copy">
+      <p class="eyebrow">Subscribe</p>
+      <h2>{heading}</h2>
+      <p class="nl-lede">{lede}</p>
+      <ul class="nl-points">
+        <li>The Parasha Reader, ready to print for the Shabbat table</li>
+        <li>New shiurim on the Parasha and Haftara</li>
+        <li>Events, courses and announcements</li>
+      </ul>
+    </div>
+
+    <div class="nl-form-wrap sib-form">
+      <div id="sib-form-container" class="sib-form-container">
+        <div id="error-message" class="sib-form-message-panel nl-msg nl-msg--err">
+          <div class="sib-form-message-panel__text">
+            <span class="sib-form-message-panel__inner-text">That didn't go through. Please check your email address and try again.</span>
+          </div>
+        </div>
+        <div id="success-message" class="sib-form-message-panel nl-msg nl-msg--ok">
+          <div class="sib-form-message-panel__text">
+            <span class="sib-form-message-panel__inner-text">Thank you. Please check your inbox to confirm your subscription.</span>
+          </div>
+        </div>
+        <div id="sib-container" class="nl-card">
+          <form id="sib-form" method="POST" action="https://0eb41038.sibforms.com/serve/MUIFANmF9RJH_c1u5gLlpNUFzCUskSVD2JOnv5CUfZYTzoj438iNTHZwmz03Er94cksSmyY0nFU2G4VNcXKKAkCBiAvy3cRosgmNDC_1V3iilOaV1Mrzps2ayWXDK8OYydyXBgpMxFObRnU7IZmMVNxnioLgczP-e47PurTZdXefQkMNg9NyXGgEXh0V6FhaPNockXbAd--0sjE2ng==" data-type="subscription">
+            <div class="sib-input sib-form-block">
+              <div class="form__entry entry_block">
+                <label class="entry__label nl-label" for="EMAIL" data-required="*">Email address</label>
+                <div class="nl-row entry__field">
+                  <input class="input nl-input" type="email" id="EMAIL" name="EMAIL" autocomplete="email" placeholder="you@example.com" data-required="true" required />
+                  <button class="sib-form-block__button sib-form-block__button-with-loader nl-btn" form="sib-form" type="submit">
+                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" width="16" height="16"><path fill="currentColor" d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/></svg>
+                    Subscribe
+                  </button>
+                </div>
+                <label class="entry__error entry__error--primary nl-err"></label>
+              </div>
+            </div>
+            <p class="nl-fine">One email a week, around Thursday. Unsubscribe any time.</p>
+            <input type="text" name="email_address_check" value="" class="input--hidden" />
+            <input type="hidden" name="locale" value="en" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+  window.LOCALE = 'en';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Please enter a valid email address.";
+  window.REQUIRED_ERROR_MESSAGE = "Please enter your email address.";
+  window.GENERIC_INVALID_MESSAGE = "Please enter a valid email address.";
+  window.translation = { common: { selectedList: '{quantity} list selected', selectedLists: '{quantity} lists selected', selectedOption: '{quantity} selected', selectedOptions: '{quantity} selected' } };
+  var AUTOHIDE = Boolean(0);
+</script>
+<script is:inline defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+<style>
+  .newsletter { padding: 5rem 1.5rem; }
+  .newsletter--dark { background: var(--ink) var(--star-pattern); color: var(--parchment); }
+  .newsletter--light { background: var(--parchment); }
+  .nl-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1.1fr 1fr; gap: 3.5rem; align-items: center;
+  }
+  .newsletter--dark h2 { color: var(--parchment); }
+  .newsletter h2 { font-size: clamp(2rem, 4vw, 2.9rem); margin-bottom: 1rem; }
+  .nl-lede { font-size: 1.1rem; opacity: 0.88; max-width: 34rem; }
+  .nl-points { list-style: none; margin-top: 1.5rem; display: grid; gap: 0.5rem; }
+  .nl-points li { padding-left: 1.5rem; position: relative; font-size: 0.98rem; opacity: 0.9; }
+  .nl-points li::before { content: '✦'; position: absolute; left: 0; color: var(--gold); font-size: 0.8rem; top: 0.2rem; }
+
+  .nl-card {
+    background: var(--paper); color: var(--text);
+    padding: 2rem; border-radius: var(--radius); border: 1px solid var(--rule);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+  }
+  .newsletter--light .nl-card { box-shadow: 0 12px 40px rgba(40,20,20,0.1); }
+  .nl-label { display: block; font-family: var(--font-sans); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.6rem; }
+  .nl-row { display: flex; gap: 0; }
+  .nl-input {
+    flex: 1; min-width: 0; font: inherit; font-size: 1rem;
+    padding: 0.9rem 1rem; border: 1px solid var(--rule); border-right: none;
+    background: #fff; color: var(--text); border-radius: 6px 0 0 6px;
+  }
+  .nl-input:focus { outline: 2px solid var(--gold); outline-offset: -2px; }
+  .nl-btn {
+    font-family: var(--font-sans); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase;
+    padding: 0 1.4rem; border: none; background: var(--gold-bright); color: var(--ink-deep); border-radius: 0 6px 6px 0; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 0.5rem; transition: background 0.2s;
+  }
+  .nl-btn:hover { background: #ecd27f; }
+  .nl-btn .sib-hide-loader-icon { display: none; }
+  .nl-fine { margin-top: 0.85rem; font-size: 0.82rem; color: var(--text-light); }
+  .nl-err:empty { display: none; }
+  .nl-err { display: block; margin-top: 0.6rem; font-size: 0.85rem; color: #8a1c1c; }
+  .input--hidden { display: none !important; }
+
+  .nl-msg { display: none; padding: 1rem 1.25rem; margin-bottom: 1rem; font-size: 0.95rem; }
+  .nl-msg--ok { background: #e9f5ec; color: #1d5a32; border-left: 3px solid #2f8a4f; }
+  .nl-msg--err { background: #fbecec; color: #7a1d1d; border-left: 3px solid #b23a3a; }
+
+  @media (max-width: 860px) {
+    .nl-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .newsletter { padding: 3.5rem 1rem; }
+    .nl-card { padding: 1.4rem; }
+  }
+  @media (max-width: 420px) {
+    .nl-row { flex-direction: column; gap: 0.6rem; }
+    .nl-input { border-right: 1px solid var(--rule); }
+    .nl-btn { padding: 0.9rem; justify-content: center; border-radius: 6px; }
+    .nl-input { border-radius: 6px; }
+  }
+</style>
