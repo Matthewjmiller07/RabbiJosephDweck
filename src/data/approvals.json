@@ -8,17 +8,17 @@
     "id": "haftara:haftarat-toledot-2026-would-you-wear-it:full",
     "kind": "full",
     "title": "Haftarat Toledot 2026: Would You Wear It?",
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/full-review-720p/index.m3u8?v=1794322548",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/full-review-720p/index.m3u8?v=1794346915",
     "hls": true,
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/full-poster.jpg?v=1794322546",
-    "duration": 1983,
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/full-poster.jpg?v=1794346913",
+    "duration": 1977,
     "master": "haftarat-toledot-2026-would-you-wear-it-full-1080p.mp4"
    },
    {
     "id": "haftara:haftarat-toledot-2026-would-you-wear-it:description",
     "kind": "description",
     "title": "Would You Wear It? | Haftarat Toledot 2026",
-    "text": "Some crowns are so heavy that most of the people meant to wear them choose not to. Esav scorned his birthright for a bowl of red soup. Fifteen hundred years later, Malakhi tells the children of Jacob that they are scorning G-d's name the same way, bringing sickly offerings to His altar and saying it's no big deal. We are a kingdom of priests, and each of us has to decide: will we carry the weight of 3,000 years of history, or will we give up the crown and dissolve into the backdrop of humanity?\n\nChapters\n0:00 Malakhi, the Final Prophetic Word\n1:46 The Weight of St. Edward's Crown\n4:21 Twins of the Same Lineage\n7:50 That Red Stuff\n10:50 Selling the Birthright\n17:36 A Queen Who Wore It\n20:16 Scorning G-d's Name\n23:41 When the Priests Falter\n26:33 A Kingdom of Priests\n30:21 Choosing to Wear the Crown\n\nThe Parasha with Rabbi Dweck · Haftara Series · Haftarat Toledot\nListen on Spotify: “The Parasha with Rabbi Dweck”\nThe app: RabbiJosephDweck.com/app\nMore from Rabbi Dweck: RabbiJosephDweck.com\n\n#Torah #Haftara #Parasha #Toledot #Judaism #RabbiDweck",
+    "text": "Some crowns are so heavy that most of the people meant to wear them choose not to. Esav scorned his birthright for a bowl of red soup. Fifteen hundred years later, Malakhi tells the children of Jacob that they are scorning G-d's name the same way, bringing sickly offerings to His altar and saying it's no big deal. We are a kingdom of priests, and each of us has to decide: will we carry the weight of 3,000 years of history, or will we give up the crown and dissolve into the backdrop of humanity?\n\nChapters\n0:00 Malakhi, the Final Prophetic Word\n1:46 The Weight of St. Edward's Crown\n4:21 Twins of the Same Lineage\n7:50 That Red Stuff\n10:50 Selling the Birthright\n17:36 A Queen Who Wore It\n20:10 Scorning G-d's Name\n23:35 When the Priests Falter\n26:27 A Kingdom of Priests\n30:15 Choosing to Wear the Crown\n\nThe Parasha with Rabbi Dweck · Haftara Series · Haftarat Toledot\nListen on Spotify: “The Parasha with Rabbi Dweck”\nThe app: RabbiJosephDweck.com/app\nMore from Rabbi Dweck: RabbiJosephDweck.com\n\n#Torah #Haftara #Parasha #Toledot #Judaism #RabbiDweck",
     "chapters": [
      {
       "t": 0,
@@ -45,19 +45,19 @@
       "title": "A Queen Who Wore It"
      },
      {
-      "t": 1216.5,
+      "t": 1210.2,
       "title": "Scorning G-d's Name"
      },
      {
-      "t": 1421.5,
+      "t": 1415.2,
       "title": "When the Priests Falter"
      },
      {
-      "t": 1593.5,
+      "t": 1587.2,
       "title": "A Kingdom of Priests"
      },
      {
-      "t": 1821.5,
+      "t": 1815.2,
       "title": "Choosing to Wear the Crown"
      }
     ]
@@ -66,7 +66,7 @@
     "id": "haftara:haftarat-toledot-2026-would-you-wear-it:reader",
     "kind": "reader",
     "title": "Toledot: Would You Wear It?",
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/parasha-reader-en.pdf?v=1794319159",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/parasha-reader-en.pdf?v=1794346522",
     "google_doc": "https://docs.google.com/document/d/1xhLajgCwQwOl0mz5dE9SJQmvgDjByloW2--9JuyTjP0/edit",
     "pages": 2,
     "note": "1) The Google Doc is still PRIVATE. The gws CLI isn't installed on this machine and no browser was available, so link sharing couldn't be set. get_file_permissions shows only the owner (thyme4sleep@gmail.com). To fix: Share › General access › Anyone with the link › Editor. 2) Checks: compiled with XeLaTeX (two passes) to exactly 2 pages, with zero 'Missing character' warnings. I looked at both pages; page 2 is full to the bottom margin. The Overleaf zip is saved next to the PDF. 3) translit_check flags only the book name 'Malachi' (its English name, kept on purpose) and the English words Charles, monarchs and choosing. 4) 'Toledot' is the spelling the rules give; Rabbi Dweck hasn't confirmed it yet. 5) Haftara range is Malachi 1:1–2:7 for both Sefardim and Ashkenazim, so it is written once. 6) Sources to confirm: 'Yisrael mumar' is attributed to Kiddushin 18a, but I couldn't confirm the wording on Sefaria. The Midrash that only Esau's head is buried in the Cave of Makhpela is cited without a source; its usual sources are Sotah 13a and Targum Yonatan. The shiur calls 'eat and drink, for tomorrow we die' Edom's motto; the handout cites it to Isaiah 22:13, where the words are spoken by revellers in Jerusalem, not Edom. Rabbi Dweck may prefer to drop the reference. 7) The St Edward's Crown details are from memory, not looked up: about 5 lb, made in 1661, and worn at the coronations of 7 monarchs. The transcript's 'used by less than half because they feared the weight' was softened. 8) Quote: Shakespeare, Henry IV Part 2, 'Uneasy lies the head that wears a crown' (my choice). Reading: Jonathan Sacks, A Letter in the Scroll (Free Press, 2000). Its QR goes to rabbisacks.org/books/a-letter-in-the-scroll/, which I checked returns HTTP 200. 9) Quoted verses use the house spellings 'Esav and vayibez (with b); the running text uses the English names Esau, Jacob and Isaac, as in last week's issue. 10) Stage 2 (translations) has not been started; it waits for English approval."
