@@ -8,9 +8,9 @@
     "id": "haftara:haftarat-toledot-2026-would-you-wear-it:full",
     "kind": "full",
     "title": "Haftarat Toledot 2026: Would You Wear It?",
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/full-review-720p/index.m3u8?v=1794301944",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/full-review-720p/index.m3u8?v=1794320167",
     "hls": true,
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/full-poster.jpg?v=1794301942",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/full-poster.jpg?v=1794320164",
     "duration": 1960,
     "master": "haftarat-toledot-2026-would-you-wear-it-full-1080p.mp4"
    },
@@ -18,11 +18,11 @@
     "id": "haftara:haftarat-toledot-2026-would-you-wear-it:description",
     "kind": "description",
     "title": "Would You Wear It? | Haftarat Toledot 2026",
-    "text": "Some crowns are so heavy that most of the people meant to wear them choose not to. Esav scorned his birthright for a bowl of red soup. Fifteen hundred years later, Malachi tells the children of Jacob that they are scorning G-d's name the same way, bringing sickly offerings to His altar and saying it's no big deal. We are a kingdom of priests, and each of us has to decide: will we carry the weight of 3,000 years of history, or will we give up the crown and dissolve into the backdrop of humanity?\n\nChapters\n0:00 Malachi, the Final Prophetic Word\n1:46 The Weight of St. Edward's Crown\n4:21 Twins of the Same Lineage\n7:50 That Red Stuff\n10:50 Selling the Birthright\n17:36 A Queen Who Wore It\n19:53 Scorning G-d's Name\n23:18 When the Priests Falter\n26:10 A Kingdom of Priests\n29:58 Choosing to Wear the Crown\n\nThe Parasha with Rabbi Dweck · Haftara Series · Haftarat Toledot\nListen on Spotify: “The Parasha with Rabbi Dweck”\nThe app: RabbiJosephDweck.com/app\nMore from Rabbi Dweck: RabbiJosephDweck.com\n\n#Torah #Haftara #Parasha #Toledot #Judaism #RabbiDweck",
+    "text": "Some crowns are so heavy that most of the people meant to wear them choose not to. Esav scorned his birthright for a bowl of red soup. Fifteen hundred years later, Malakhi tells the children of Jacob that they are scorning G-d's name the same way, bringing sickly offerings to His altar and saying it's no big deal. We are a kingdom of priests, and each of us has to decide: will we carry the weight of 3,000 years of history, or will we give up the crown and dissolve into the backdrop of humanity?\n\nChapters\n0:00 Malakhi, the Final Prophetic Word\n1:46 The Weight of St. Edward's Crown\n4:21 Twins of the Same Lineage\n7:50 That Red Stuff\n10:50 Selling the Birthright\n17:36 A Queen Who Wore It\n19:53 Scorning G-d's Name\n23:18 When the Priests Falter\n26:10 A Kingdom of Priests\n29:58 Choosing to Wear the Crown\n\nThe Parasha with Rabbi Dweck · Haftara Series · Haftarat Toledot\nListen on Spotify: “The Parasha with Rabbi Dweck”\nThe app: RabbiJosephDweck.com/app\nMore from Rabbi Dweck: RabbiJosephDweck.com\n\n#Torah #Haftara #Parasha #Toledot #Judaism #RabbiDweck",
     "chapters": [
      {
       "t": 0,
-      "title": "Malachi, the Final Prophetic Word"
+      "title": "Malakhi, the Final Prophetic Word"
      },
      {
       "t": 106.1,
@@ -66,7 +66,7 @@
     "id": "haftara:haftarat-toledot-2026-would-you-wear-it:reader",
     "kind": "reader",
     "title": "Toledot: Would You Wear It?",
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/parasha-reader-en.pdf?v=1794300402",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/parasha-reader-en.pdf?v=1794319159",
     "google_doc": "https://docs.google.com/document/d/1xhLajgCwQwOl0mz5dE9SJQmvgDjByloW2--9JuyTjP0/edit",
     "pages": 2,
     "note": "1) The Google Doc is still PRIVATE. The gws CLI isn't installed on this machine and no browser was available, so link sharing couldn't be set. get_file_permissions shows only the owner (thyme4sleep@gmail.com). To fix: Share › General access › Anyone with the link › Editor. 2) Checks: compiled with XeLaTeX (two passes) to exactly 2 pages, with zero 'Missing character' warnings. I looked at both pages; page 2 is full to the bottom margin. The Overleaf zip is saved next to the PDF. 3) translit_check flags only the book name 'Malachi' (its English name, kept on purpose) and the English words Charles, monarchs and choosing. 4) 'Toledot' is the spelling the rules give; Rabbi Dweck hasn't confirmed it yet. 5) Haftara range is Malachi 1:1–2:7 for both Sefardim and Ashkenazim, so it is written once. 6) Sources to confirm: 'Yisrael mumar' is attributed to Kiddushin 18a, but I couldn't confirm the wording on Sefaria. The Midrash that only Esau's head is buried in the Cave of Makhpela is cited without a source; its usual sources are Sotah 13a and Targum Yonatan. The shiur calls 'eat and drink, for tomorrow we die' Edom's motto; the handout cites it to Isaiah 22:13, where the words are spoken by revellers in Jerusalem, not Edom. Rabbi Dweck may prefer to drop the reference. 7) The St Edward's Crown details are from memory, not looked up: about 5 lb, made in 1661, and worn at the coronations of 7 monarchs. The transcript's 'used by less than half because they feared the weight' was softened. 8) Quote: Shakespeare, Henry IV Part 2, 'Uneasy lies the head that wears a crown' (my choice). Reading: Jonathan Sacks, A Letter in the Scroll (Free Press, 2000). Its QR goes to rabbisacks.org/books/a-letter-in-the-scroll/, which I checked returns HTTP 200. 9) Quoted verses use the house spellings 'Esav and vayibez (with b); the running text uses the English names Esau, Jacob and Isaac, as in last week's issue. 10) Stage 2 (translations) has not been started; it waits for English approval."
@@ -88,7 +88,7 @@
      "you opt out of the people"
     ],
     "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-opt-out-of-the-people.mp4?v=1794250795",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-opt-out-of-the-people.jpg?v=1794301979",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-opt-out-of-the-people.jpg?v=1794320202",
     "duration": 56,
     "start": 1699.21,
     "end": 1748.86,
@@ -107,7 +107,7 @@
      "choosing to wear the crown"
     ],
     "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-being-jewish-is-wearing-the-crown.mp4?v=1794250893",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-being-jewish-is-wearing-the-crown.jpg?v=1794301994",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-being-jewish-is-wearing-the-crown.jpg?v=1794320218",
     "duration": 40,
     "start": 1789.61,
     "end": 1823.47,
@@ -126,7 +126,7 @@
      "like everyone else"
     ],
     "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-never-like-everyone-else.mp4?v=1794250988",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-never-like-everyone-else.jpg?v=1794302008",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-never-like-everyone-else.jpg?v=1794320234",
     "duration": 42,
     "start": 1901.73,
     "end": 1937.2,
@@ -144,16 +144,16 @@
      "You, the Jewish people,",
      "are messengers of G-d"
     ],
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d.mp4?v=1794251099",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d.jpg?v=1794302022",
-    "duration": 49,
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d.mp4?v=1794319283",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d.jpg?v=1794320247",
+    "duration": 63,
     "start": 1562.05,
-    "end": 1605.0,
-    "text": "And there's something here about this Haftara that says to us, you, the Jewish people, you are the messengers of G-d. You are the ones who are to live by His covenant, who in your life are to set example for the entire world. You, the kohanim. Right, and in a certain sense, the people of Israel, the Jewish people, are kohanim. They, as it says in the Torah, that they are a mamlechet kohanim. This was one of the first things that G-d says to the people before He gives them the Torah. You are a kingdom of kohanim, a kingdom of priests. You hold a crown of priestliness, of the priesthood, on your head.",
-    "why": "The first line says the Jewish people are G-d's messengers, and it builds to the kingdom of priests wearing the crown of priesthood. It needs nothing from earlier in the class.",
-    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d-pre.mp4?v=1794253292",
-    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d-nomusic.mp4?v=1794251134",
-    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d-nomusic-pre.mp4?v=1794253319"
+    "end": 1618.62,
+    "text": "And there's something here about this Haftara that says to us, you, the Jewish people, you are the messengers of G-d. You are the ones who are to live by His covenant, who in your life are to set example for the entire world. You, the kohanim. Right, and in a certain sense, the people of Israel, the Jewish people, are kohanim. They, as it says in the Torah, that they are a mamlechet kohanim. This was one of the first things that G-d says to the people before He gives them the Torah. You are a kingdom of kohanim, a kingdom of priests. You hold a crown of priestliness, of the priesthood, on your head. You are the ones that are to show service, to show covenant to the rest of the world, to be the model for how it is that humanity should revere G-d, should love G-d, should engage with G-d.",
+    "why": "The first line says the Jewish people are G-d's messengers, and it builds to the kingdom of priests wearing the crown of priesthood. It needs nothing from earlier in the class. Extended to finish the thought (Rabbi Dweck, 2026-11-10).",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d-pre.mp4?v=1794320275",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d-nomusic.mp4?v=1794319349",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d-nomusic-pre.mp4?v=1794320306"
    },
    {
     "id": "haftara:haftarat-toledot-2026-would-you-wear-it:the-monarch-is-service",
@@ -164,7 +164,7 @@
      "is service"
     ],
     "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-the-monarch-is-service.mp4?v=1794251218",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-the-monarch-is-service.jpg?v=1794302037",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-the-monarch-is-service.jpg?v=1794320310",
     "duration": 55,
     "start": 1060.16,
     "end": 1108.97,
@@ -173,6 +173,101 @@
     "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-the-monarch-is-service-pre.mp4?v=1794253347",
     "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-the-monarch-is-service-nomusic.mp4?v=1794251258",
     "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-the-monarch-is-service-nomusic-pre.mp4?v=1794253374"
+   },
+   {
+    "id": "haftara:haftarat-toledot-2026-would-you-wear-it:last-words-of-prophecy",
+    "kind": "reel",
+    "title": "The last words G-d spoke through a prophet",
+    "hook": [
+     "The last words G-d",
+     "spoke through a prophet"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-last-words-of-prophecy.mp4?v=1794319467",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-last-words-of-prophecy.jpg?v=1794320328",
+    "duration": 51,
+    "start": 3.98,
+    "end": 49.43,
+    "text": "Malakhi, the Hakhamim say, was the last prophet of Israel, and his book is the final book of the prophets, it is the 12th of the Trei Asar, of the what's called the twelve minor prophets. And so that means that Malakhi's words are the final prophetic words that were ever given to the people of Israel, to the Jewish people, and his words reverberate through history as the final word of G-d. And so the prophecy of Malakhi is poignant, and it's important, and it it highlights what it is ultimately that G-d wants us to know. It very aptly ends with the words, \\ Zichru Torat Moshe avdi,\\ remember the Torah of Moses, my servant.",
+    "why": "Opens on the claim (Malakhi is the last prophet) and lands on the final words of prophecy: remember the Torah of Moses.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-last-words-of-prophecy-pre.mp4?v=1794320352",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-last-words-of-prophecy-nomusic.mp4?v=1794319521",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-last-words-of-prophecy-nomusic-pre.mp4?v=1794320381"
+   },
+   {
+    "id": "haftara:haftarat-toledot-2026-would-you-wear-it:empty-stomach",
+    "kind": "reel",
+    "title": "Esav sold his future on an empty stomach",
+    "hook": [
+     "Esav sold his future",
+     "on an empty stomach"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-empty-stomach.mp4?v=1794319657",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-empty-stomach.jpg?v=1794320385",
+    "duration": 55,
+    "start": 554.7,
+    "end": 603.77,
+    "text": "And one could very easily say that Esav is living from a place of primal drives at this particular scenario. He has been hunting, so there's a lot of aggression in him, right? It's extremely primal to be hunting. His predatory self is running high. He's tired, and so his, you know, prefrontal cortex is not primed and in control. His limbic system is much more in control, so it's very much the fight, flight, feed, procreate drives that are running in him. And so he is saying to Ya'akov, \\ Feed me this. Pour this down my throat. I want it,\\ right? \\ I want to be\\ satiated by it now. I want, I want that red stuff that I see, right?",
+    "why": "Starts with the point (Esav is acting from primal drives), explains it in plain terms (hunting, exhaustion, the limbic system), ends on 'I want that red stuff'.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-empty-stomach-pre.mp4?v=1794320415",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-empty-stomach-nomusic.mp4?v=1794319714",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-empty-stomach-nomusic-pre.mp4?v=1794320443"
+   },
+   {
+    "id": "haftara:haftarat-toledot-2026-would-you-wear-it:eat-drink-tomorrow-we-die",
+    "kind": "reel",
+    "title": "Esav's motto: eat and drink, for tomorrow we die",
+    "hook": [
+     "Esav's motto: eat and drink,",
+     "for tomorrow we die"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-eat-drink-tomorrow-we-die.mp4?v=1794319845",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-eat-drink-tomorrow-we-die.jpg?v=1794320447",
+    "duration": 58,
+    "start": 721.5,
+    "end": 773.71,
+    "text": "And his motto is achol veshato ki machar namut, \\ Eat and drink, 'cause we're going to die tomorrow.\\ So you might as well get all of the good that you can out of the world now and live the moment, because tomorrow we die, and it's not coming with us, right? Now, that sounds like, you know, something that we might use, sounds like an you know, a way of living that we might we might be interested in, except that Esav does not, as a result of this, maintain a sense of heritage, a sense of history, a sense of broad, consistent, and and memorable identity. He lives for the moment, and that is very clear throughout the parshiyot that we will read.",
+    "why": "The hook names whose motto it is, then he unpacks living for the moment versus having heritage, history and identity.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-eat-drink-tomorrow-we-die-pre.mp4?v=1794320476",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-eat-drink-tomorrow-we-die-nomusic.mp4?v=1794319900",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-eat-drink-tomorrow-we-die-nomusic-pre.mp4?v=1794320505"
+   },
+   {
+    "id": "haftara:haftarat-toledot-2026-would-you-wear-it:give-it-to-your-governor",
+    "kind": "reel",
+    "title": "Would you give your boss what you give G-d?",
+    "hook": [
+     "Would you give your boss",
+     "what you give G-d?"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-give-it-to-your-governor.mp4?v=1794320014",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-give-it-to-your-governor.jpg?v=1794320509",
+    "duration": 46,
+    "start": 1289.96,
+    "end": 1330.02,
+    "text": "And so HaKadosh Baruch Hu says to them, \\ You know, you're putting up these sickly animals on the mizbeach and saying ein ra,\\ it means no big deal. \\ You're putting up maimed animals and saying ein ra, it's no big deal. Hakrivehu na lefechatecha. Why don't you try taking those animals that you put on My altar as as offerings to Me, and give them to your governor? To him, why don't you try bringing them as an offering to your governor? Hayirtzecha, hayisa fanecha? Would he even look at you? Would he ever accept such a thing? He would likely put you in jail for mocking him by doing that.\\ And that is what's happening to Am Yisrael fifteen hundred years later.",
+    "why": "A concrete, relatable challenge from Malakhi 1:8: the sick offerings you'd never dare bring to the governor.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-give-it-to-your-governor-pre.mp4?v=1794320530",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-give-it-to-your-governor-nomusic.mp4?v=1794320052",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-give-it-to-your-governor-nomusic-pre.mp4?v=1794320557"
+   },
+   {
+    "id": "haftara:haftarat-toledot-2026-would-you-wear-it:wear-it-proudly",
+    "kind": "reel",
+    "title": "3,000 years of history is a crown we wear",
+    "hook": [
+     "3,000 years of history",
+     "is a crown we wear"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-wear-it-proudly.mp4?v=1794320126",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-wear-it-proudly.jpg?v=1794320562",
+    "duration": 47,
+    "start": 1823.43,
+    "end": 1864.35,
+    "text": "The weight of the Jewish people, the weight that we feel upon our shoulders, the weight of 3,000 years of history, the weight of survival and thriving through 3,000 years of history, that weight is a crown that we wear upon our heads. This Haftara, this parashah reminds us to wear it proudly, to lift our heads, to hold strong our necks as the weighted crown is placed upon it, as we are priests of the nations of the world.",
+    "why": "The closing message stated up front: the weight of Jewish history is a crown, so wear it proudly. It's a positive ending, not the 'opt out' framing he turned down.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-wear-it-proudly-pre.mp4?v=1794320587",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-wear-it-proudly-nomusic.mp4?v=1794320163",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-wear-it-proudly-nomusic-pre.mp4?v=1794320614"
    }
   ]
  },
