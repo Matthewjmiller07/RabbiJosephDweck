@@ -1,26 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Thumb from '../components/Thumb.astro';
 
 const items = [
   {
     href: '/video',
     title: 'Video',
     label: 'Watch',
-    img: '/images/The Parasha.png',
+    he: 'וידאו', tone: 'ink',
     desc: 'A growing library of recorded lectures, shiurim, and talks — from the weekly Parasha to deep philosophical discussions.',
   },
   {
     href: '/audio',
     title: 'Audio',
     label: 'Listen',
-    img: '/images/The Thought for the Day.png',
+    he: 'שמע', tone: 'gold',
     desc: "Listen to Rabbi Dweck's shiurim and lectures on Spotify, Apple Podcasts, and all major podcast platforms.",
   },
   {
     href: '/writings',
     title: 'Writings',
     label: 'Read',
-    img: '/images/Perspectives.png',
+    he: 'כתבים', tone: 'parchment',
     desc: 'Thought-provoking essays and the This Is Judaism Substack — exploring what Judaism is, what it means, and why it matters.',
   },
 ];
@@ -40,7 +41,7 @@ const items = [
         {items.map(item => (
           <a href={item.href} class="feature-card">
             <div class="feature-img-wrap">
-              <img src={item.img} alt={item.title} />
+              <Thumb title={item.title} he={item.he} tone={item.tone as any} />
               <div class="feature-overlay">
                 <span class="feature-cta">{item.label} →</span>
               </div>
@@ -88,7 +89,7 @@ const items = [
     display: block;
     transition: transform 0.4s ease;
   }
-  .feature-card:hover .feature-img-wrap img { transform: scale(1.04); }
+  .feature-card:hover .feature-img-wrap .thumb { transform: scale(1.02); }
 
   .feature-overlay {
     position: absolute;

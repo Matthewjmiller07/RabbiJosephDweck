@@ -3,12 +3,13 @@ import Layout from '../layouts/Layout.astro';
 import ReaderFeature from '../components/ReaderFeature.astro';
 import AppPromo from '../components/AppPromo.astro';
 import Newsletter from '../components/Newsletter.astro';
+import Thumb from '../components/Thumb.astro';
 
 const APP_URL = 'https://RabbiJosephDweck.com/app';
 const topics = ['The Parasha', 'The Haftara', 'Navi', 'Megillot', 'Tehillim', 'The Moadim', 'The Misvot', 'The 13 Principles', 'Perspectives', 'Mental Health'];
 ---
 
-<Layout title="Rabbi Dweck's Office" description="The official website of Rabbi Joseph Dweck, Senior Rabbi of the S&P Sephardi Community of the United Kingdom: weekly Parasha shiurim, the Parasha Reader, the Rabbi Dweck App and newsletter.">
+<Layout title="Rabbi Dweck's Office" description="The official website of Rabbi Joseph Dweck: weekly Parasha shiurim, the Parasha Reader, the Rabbi Dweck App and newsletter.">
 
   <!-- HERO -->
   <section class="hero on-ink">
@@ -18,8 +19,8 @@ const topics = ['The Parasha', 'The Haftara', 'Navi', 'Megillot', 'Tehillim', 'T
         <h1>Torah for the whole of life.</h1>
         <p class="hero-lede">
           Weekly shiurim on the Parasha and Haftara, the Parasha Reader for your Shabbat table,
-          and a library of more than a thousand classes from the Senior Rabbi of the
-          S&amp;P Sephardi Community of the United Kingdom.
+          and a library of more than a thousand classes on contemporary Orthodox Jewish
+          thought, drawn from the classical Sephardi tradition.
         </p>
         <div class="hero-ctas">
           <a href="/parasha" class="btn btn-gold">This week's Parasha</a>
@@ -33,7 +34,7 @@ const topics = ['The Parasha', 'The Haftara', 'Navi', 'Megillot', 'Tehillim', 'T
       </div>
       <figure class="hero-arch">
         <img src="/images/GK5StT7XMAA8fJB.jpg" alt="Rabbi Joseph Dweck teaching" width="455" height="683" />
-        <figcaption>Senior Rabbi, S&amp;P Sephardi Community</figcaption>
+        <figcaption>Rosh Bet Midrash, The Ḥabura</figcaption>
       </figure>
     </div>
   </section>
@@ -51,7 +52,7 @@ const topics = ['The Parasha', 'The Haftara', 'Navi', 'Megillot', 'Tehillim', 'T
       <h2 class="h-section">Four Ways to Learn With Rabbi Dweck</h2>
       <div class="ways-grid">
         <a class="way" href="/parasha">
-          <div class="way-media"><img src="/images/The Parasha.png" alt="" loading="lazy" /></div>
+          <div class="way-media"><Thumb title="The Parasha" he="פרשה" /></div>
           <div class="way-body">
             <h3>The Parasha</h3>
             <p>A new shiur on the weekly portion and its Haftara, on YouTube, Spotify and every podcast app.</p>
@@ -79,7 +80,7 @@ const topics = ['The Parasha', 'The Haftara', 'Navi', 'Megillot', 'Tehillim', 'T
           </div>
         </a>
         <a class="way" href="/writings">
-          <div class="way-media"><img src="/images/Perspectives.png" alt="" loading="lazy" /></div>
+          <div class="way-media"><Thumb title="Writings" he="כתבים" tone="parchment" /></div>
           <div class="way-body">
             <h3>Writings</h3>
             <p>Essays, Perspectives and articles on Jewish thought, law and the life of the community.</p>

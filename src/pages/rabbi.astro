@@ -1,12 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Thumb from '../components/Thumb.astro';
 ---
 
-<Layout title="The Rabbi" description="Learn about Rabbi Joseph Dweck, Senior Rabbi of the S&P Sephardi Community of the United Kingdom.">
+<Layout title="The Rabbi" description="Rabbi Joseph Dweck teaches and writes on contemporary Orthodox Jewish thought, drawing from the classical Sephardi tradition.">
 
   <section class="page-hero">
     <h1>The Rabbi</h1>
-    <p>Senior Rabbi · Scholar · Teacher · Leader</p>
     <div class="gold-rule"></div>
   </section>
 
@@ -19,77 +19,50 @@ import Layout from '../layouts/Layout.astro';
         <h2 class="section-title">Rabbi Joseph Dweck</h2>
         <div class="gold-divider"></div>
         <p>
-          Rabbi Joseph Dweck is the Senior Rabbi of the S&amp;P Sephardi Community of the United Kingdom —
-          one of the oldest and most storied Jewish communities in the English-speaking world. Born and raised
-          in Brooklyn, New York, Rabbi Dweck received a comprehensive religious education spanning traditional
-          yeshivot and academic institutions in the United States and Israel.
+          Rabbi Joseph Dweck teaches and writes on contemporary Orthodox Jewish thought, drawing from the
+          classical Sephardi tradition and presenting Torah&rsquo;s ancient wisdom in modern, pragmatic, and
+          meaningful ways.
         </p>
         <p>
-          He is widely regarded as one of the most dynamic and intellectually rigorous Orthodox rabbis of his
-          generation. His approach to Jewish law, philosophy, and community is characterized by depth,
-          openness, and an abiding commitment to truth.
+          From 2013 to 2025 he served as Senior Rabbi of the S&amp;P Sephardi Community of the UK, the
+          country&rsquo;s oldest Jewish community (founded in 1656), where he oversaw the Sephardi Beth Din and
+          the Sephardi Kashrut Authority. During this period he also held senior positions at the London School
+          of Jewish Studies, the Council of Christians and Jews, the Board of Deputies of British Jews, and the
+          Conference of European Rabbis. He is the Rosh Bet Midrash of The Ḥabura and holds the Rabbi Levy
+          Chair of Jewish Wisdom at LSJS.
         </p>
         <p>
-          Rabbi Dweck serves the Spanish &amp; Portuguese Jews' Congregation in London (Bevis Marks),
-          the oldest synagogue in continuous use in Britain. Under his leadership, the community has
-          experienced significant growth and renewal, attracting Jews from all backgrounds who are drawn
-          to his distinctive voice.
+          Educated at Yeshiva Hazon Ovadia in Jerusalem under former Sephardi Chief Rabbi Ovadia Yosef
+          z&rdquo;l, Rabbi Dweck received rabbinic ordination through the Sephardic Rabbinical College of
+          Brooklyn. He holds an MA in Jewish Education and trained as a psychotherapist at Regent&rsquo;s
+          University London. He previously served as rabbi of Congregation Sha&rsquo;are Shalom in Brooklyn
+          (1999&ndash;2013) and as Rosh Yeshiva and Head of School at Barkai Yeshiva (2007&ndash;2013).
         </p>
         <p>
-          He is a popular speaker at universities, think tanks, and institutions across the world, and
-          his lectures — covering topics from Talmudic law to Jewish philosophy to contemporary ethics —
-          are followed by tens of thousands of people globally.
+          In 2026, Rabbi Dweck moved to Israel with his family and continues to teach internationally while
+          maintaining an active presence on digital and social media platforms.
         </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section roles-section" style="background: var(--cream);">
-    <div class="container">
-      <h2 class="section-title" style="text-align:center;">Roles &amp; Responsibilities</h2>
-      <div class="gold-divider" style="margin: 0.5rem auto 2.5rem;"></div>
-      <div class="roles-grid">
-        <div class="role-card">
-          <div class="role-icon">✡</div>
-          <h3>Senior Rabbi</h3>
-          <p>Senior Rabbi of the S&amp;P Sephardi Community of the United Kingdom, serving the historic Spanish &amp; Portuguese Jews' Congregation.</p>
-        </div>
-        <div class="role-card">
-          <div class="role-icon">📖</div>
-          <h3>Scholar</h3>
-          <p>A prolific scholar in Talmud, Halakha, and Jewish philosophy, with a deep knowledge of both Sephardic and broader Jewish tradition.</p>
-        </div>
-        <div class="role-card">
-          <div class="role-icon">🎙</div>
-          <h3>Teacher</h3>
-          <p>Weekly parasha classes, Perspectives video series, and hundreds of recorded lectures available worldwide.</p>
-        </div>
-        <div class="role-card">
-          <div class="role-icon">🌍</div>
-          <h3>Ambassador</h3>
-          <p>Global speaking tours across North America, Israel, Europe, and Latin America, building bridges across communities.</p>
-        </div>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <h2 class="section-title">Educational Work</h2>
+      <h2 class="section-title">Learn with Rabbi Dweck</h2>
       <div class="gold-divider"></div>
       <div class="edu-grid">
         <a href="/parasha" class="edu-item">
-          <img src="/images/4959e2_25486457ec4445b6bb96ac5ac4ec6169.png" alt="The Parasha" />
+          <div class="edu-thumb"><Thumb title="The Parasha" he="פרשה" /></div>
           <h3>The Parasha</h3>
           <p>Weekly Torah commentary</p>
         </a>
         <a href="/perspectives" class="edu-item">
-          <img src="/images/4959e2_b8bd16ceb7914834bc6425156df89bb0.png" alt="Perspectives" />
+          <div class="edu-thumb"><Thumb title="Perspectives" he="השקפה" tone="gold" /></div>
           <h3>Perspectives</h3>
           <p>Bite-size video meditations</p>
         </a>
         <a href="/writings" class="edu-item">
-          <img src="/images/4959e2_2f333107d2e447378fbea2398fa78ce8.png" alt="Writings" />
+          <div class="edu-thumb"><Thumb title="Writings" he="כתבים" tone="parchment" /></div>
           <h3>Writings</h3>
           <p>Essays &amp; Substack</p>
         </a>
@@ -153,4 +126,5 @@ import Layout from '../layouts/Layout.astro';
   @media (max-width: 768px) {
     .bio-layout { grid-template-columns: 1fr; }
   }
+  .edu-thumb { aspect-ratio: 4 / 3; margin-bottom: 0.9rem; border-radius: var(--radius); overflow: hidden; }
 </style>

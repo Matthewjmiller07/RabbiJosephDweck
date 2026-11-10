@@ -1,0 +1,38 @@
+---
+// Branded thumbnail tile (navy, gold frame, Hebrew word + English title).
+// Replaces the old black-square "THE PARASHA / PERSPECTIVES" images.
+interface Props {
+  title: string;
+  he: string;
+  kicker?: string;
+  tone?: 'ink' | 'gold' | 'parchment';
+}
+const { title, he, kicker = 'Rabbi Joseph Dweck', tone = 'ink' } = Astro.props;
+---
+
+<div class={`thumb thumb--${tone}`} aria-hidden="true">
+  <div class="thumb-frame">
+    <span class="thumb-he" lang="he">{he}</span>
+    <span class="thumb-title">{title}</span>
+    <span class="thumb-kicker">{kicker}</span>
+  </div>
+</div>
+
+<style>
+  .thumb { width: 100%; height: 100%; padding: 10px; display: flex; }
+  .thumb--ink { background: var(--ink) var(--star-pattern); color: var(--on-ink); }
+  .thumb--gold { background: var(--gold-bright); color: var(--ink-deep); }
+  .thumb--parchment { background: var(--parchment-dark); color: var(--ink); }
+  .thumb-frame {
+    flex: 1; border: 1px solid currentColor; border-color: rgba(227,195,99,0.7);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.35rem;
+    text-align: center; padding: 0.75rem;
+  }
+  .thumb--gold .thumb-frame { border-color: rgba(19,24,48,0.45); }
+  .thumb--parchment .thumb-frame { border-color: var(--gold); }
+  .thumb-he { font-family: 'Times New Roman', serif; font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1; color: var(--gold-bright); }
+  .thumb--gold .thumb-he, .thumb--parchment .thumb-he { color: var(--gold-dark); }
+  .thumb--gold .thumb-he { color: var(--ink); }
+  .thumb-title { font-family: var(--font-serif); font-size: 1.3rem; letter-spacing: 0.04em; }
+  .thumb-kicker { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.75; }
+</style>

@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import AppPromo from '../components/AppPromo.astro';
 ---
 
 <Layout title="Audio" description="Audio lectures and recordings from Rabbi Joseph Dweck.">
@@ -9,6 +10,8 @@ import Layout from '../layouts/Layout.astro';
     <p>Listen to Rabbi Dweck's lectures, shiurim, and classes</p>
     <div class="gold-rule"></div>
   </section>
+
+  <AppPromo compact />
 
   <section class="section" style="background:var(--cream);">
     <div class="container">
@@ -115,6 +118,8 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
+
+  <AppPromo />
 
 </Layout>
 
