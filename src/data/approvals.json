@@ -1,5 +1,182 @@
 [
  {
+  "slug": "haftarat-toledot-2026-would-you-wear-it",
+  "parasha": "Haftarat Toledot 2026",
+  "title": "Would You Wear It?",
+  "items": [
+   {
+    "id": "haftara:haftarat-toledot-2026-would-you-wear-it:full",
+    "kind": "full",
+    "title": "Haftarat Toledot 2026: Would You Wear It?",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/full-review-720p/index.m3u8?v=1794301944",
+    "hls": true,
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/full-poster.jpg?v=1794301942",
+    "duration": 1960,
+    "master": "haftarat-toledot-2026-would-you-wear-it-full-1080p.mp4"
+   },
+   {
+    "id": "haftara:haftarat-toledot-2026-would-you-wear-it:description",
+    "kind": "description",
+    "title": "Would You Wear It? | Haftarat Toledot 2026",
+    "text": "Some crowns are so heavy that most of the people meant to wear them choose not to. Esav scorned his birthright for a bowl of red soup. Fifteen hundred years later, Malachi tells the children of Jacob that they are scorning G-d's name the same way, bringing sickly offerings to His altar and saying it's no big deal. We are a kingdom of priests, and each of us has to decide: will we carry the weight of 3,000 years of history, or will we give up the crown and dissolve into the backdrop of humanity?\n\nChapters\n0:00 Malachi, the Final Prophetic Word\n1:46 The Weight of St. Edward's Crown\n4:21 Twins of the Same Lineage\n7:50 That Red Stuff\n10:50 Selling the Birthright\n17:36 A Queen Who Wore It\n19:53 Scorning G-d's Name\n23:18 When the Priests Falter\n26:10 A Kingdom of Priests\n29:58 Choosing to Wear the Crown\n\nThe Parasha with Rabbi Dweck · Haftara Series · Haftarat Toledot\nListen on Spotify: “The Parasha with Rabbi Dweck”\nThe app: RabbiJosephDweck.com/app\nMore from Rabbi Dweck: RabbiJosephDweck.com\n\n#Torah #Haftara #Parasha #Toledot #Judaism #RabbiDweck",
+    "chapters": [
+     {
+      "t": 0,
+      "title": "Malachi, the Final Prophetic Word"
+     },
+     {
+      "t": 106.1,
+      "title": "The Weight of St. Edward's Crown"
+     },
+     {
+      "t": 261.1,
+      "title": "Twins of the Same Lineage"
+     },
+     {
+      "t": 470.1,
+      "title": "That Red Stuff"
+     },
+     {
+      "t": 650.1,
+      "title": "Selling the Birthright"
+     },
+     {
+      "t": 1056.1,
+      "title": "A Queen Who Wore It"
+     },
+     {
+      "t": 1193.1,
+      "title": "Scorning G-d's Name"
+     },
+     {
+      "t": 1398.1,
+      "title": "When the Priests Falter"
+     },
+     {
+      "t": 1570.1,
+      "title": "A Kingdom of Priests"
+     },
+     {
+      "t": 1798.1,
+      "title": "Choosing to Wear the Crown"
+     }
+    ]
+   },
+   {
+    "id": "haftara:haftarat-toledot-2026-would-you-wear-it:reader",
+    "kind": "reader",
+    "title": "Toledot: Would You Wear It?",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/parasha-reader-en.pdf?v=1794300402",
+    "google_doc": "https://docs.google.com/document/d/1xhLajgCwQwOl0mz5dE9SJQmvgDjByloW2--9JuyTjP0/edit",
+    "pages": 2,
+    "note": "1) The Google Doc is still PRIVATE. The gws CLI isn't installed on this machine and no browser was available, so link sharing couldn't be set. get_file_permissions shows only the owner (thyme4sleep@gmail.com). To fix: Share › General access › Anyone with the link › Editor. 2) Checks: compiled with XeLaTeX (two passes) to exactly 2 pages, with zero 'Missing character' warnings. I looked at both pages; page 2 is full to the bottom margin. The Overleaf zip is saved next to the PDF. 3) translit_check flags only the book name 'Malachi' (its English name, kept on purpose) and the English words Charles, monarchs and choosing. 4) 'Toledot' is the spelling the rules give; Rabbi Dweck hasn't confirmed it yet. 5) Haftara range is Malachi 1:1–2:7 for both Sefardim and Ashkenazim, so it is written once. 6) Sources to confirm: 'Yisrael mumar' is attributed to Kiddushin 18a, but I couldn't confirm the wording on Sefaria. The Midrash that only Esau's head is buried in the Cave of Makhpela is cited without a source; its usual sources are Sotah 13a and Targum Yonatan. The shiur calls 'eat and drink, for tomorrow we die' Edom's motto; the handout cites it to Isaiah 22:13, where the words are spoken by revellers in Jerusalem, not Edom. Rabbi Dweck may prefer to drop the reference. 7) The St Edward's Crown details are from memory, not looked up: about 5 lb, made in 1661, and worn at the coronations of 7 monarchs. The transcript's 'used by less than half because they feared the weight' was softened. 8) Quote: Shakespeare, Henry IV Part 2, 'Uneasy lies the head that wears a crown' (my choice). Reading: Jonathan Sacks, A Letter in the Scroll (Free Press, 2000). Its QR goes to rabbisacks.org/books/a-letter-in-the-scroll/, which I checked returns HTTP 200. 9) Quoted verses use the house spellings 'Esav and vayibez (with b); the running text uses the English names Esau, Jacob and Isaac, as in last week's issue. 10) Stage 2 (translations) has not been started; it waits for English approval."
+   },
+   {
+    "id": "haftara:haftarat-toledot-2026-would-you-wear-it:thumbnail",
+    "kind": "thumb",
+    "title": "Haftarat Toledot: Would You Wear It?",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/thumbnail.jpg?v=1794300495",
+    "size": "2688×1520",
+    "note": "Series template, made with GPT Image 2.5 (Flare, high) on Higgsfield."
+   },
+   {
+    "id": "haftara:haftarat-toledot-2026-would-you-wear-it:opt-out-of-the-people",
+    "kind": "reel",
+    "title": "Opt out of the crown, you opt out of the people",
+    "hook": [
+     "Opt out of the crown,",
+     "you opt out of the people"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-opt-out-of-the-people.mp4?v=1794250795",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-opt-out-of-the-people.jpg?v=1794301979",
+    "duration": 56,
+    "start": 1699.21,
+    "end": 1748.86,
+    "text": "When you opt out of service, when you opt to abdicate the wearing of the crown, you also opt out of the people themselves. You opt out of the lineage, of the very heritage that you refuse to wear upon your head. The vast majority of Jews today who are biological Jews, born of Jewish parents, who identify as Jews, are Jews because close to six, seven, maybe eight generations back, their ancestors were observant Jews, their ancestors were faithful to the service. The ancestors wore the weight of the crown on their heads. And that is simply a fact.",
+    "why": "The first sentence states the claim: abdicating service means leaving the people. It ends on a hard fact about why most Jews today are Jews at all.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-opt-out-of-the-people-pre.mp4?v=1794253147",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-opt-out-of-the-people-nomusic.mp4?v=1794250834",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-opt-out-of-the-people-nomusic-pre.mp4?v=1794253174"
+   },
+   {
+    "id": "haftara:haftarat-toledot-2026-would-you-wear-it:being-jewish-is-wearing-the-crown",
+    "kind": "reel",
+    "title": "Being Jewish means choosing to wear the crown",
+    "hook": [
+     "Being Jewish means",
+     "choosing to wear the crown"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-being-jewish-is-wearing-the-crown.mp4?v=1794250893",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-being-jewish-is-wearing-the-crown.jpg?v=1794301994",
+    "duration": 40,
+    "start": 1789.61,
+    "end": 1823.47,
+    "text": "But as we read this parashah and we read this Haftara, it is important for us to remember that the tethering of our lives with in Judaism and within the Jewish people is not the fight against antisemitism. It isn't fighting and remembering the Holocaust. It is being Jewish. It is choosing to wear the crown. It is engaging to live within the service, whether our lives be long or short.",
+    "why": "A clear reframe: what ties us to Judaism is not fighting antisemitism or remembering the Holocaust but living Jewishly. It is self-contained and ends on a finished line.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-being-jewish-is-wearing-the-crown-pre.mp4?v=1794253200",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-being-jewish-is-wearing-the-crown-nomusic.mp4?v=1794250923",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-being-jewish-is-wearing-the-crown-nomusic-pre.mp4?v=1794253221"
+   },
+   {
+    "id": "haftara:haftarat-toledot-2026-would-you-wear-it:never-like-everyone-else",
+    "kind": "reel",
+    "title": "We have never been like everyone else",
+    "hook": [
+     "We have never been",
+     "like everyone else"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-never-like-everyone-else.mp4?v=1794250988",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-never-like-everyone-else.jpg?v=1794302008",
+    "duration": 42,
+    "start": 1901.73,
+    "end": 1937.2,
+    "text": "We have never been like everyone else. We haven't been like anyone else for 3,000 years. And we can choose to wear that crown and bear its weight on our heads, or we can, as our twin brother Esav did, abrogate the covenant, abdicate the crown, and choose to dissolve into the backdrop of humanity, to lose our names, to lose the sacred name of G-d that rides within us, and to be like everyone else.",
+    "why": "It opens on the thesis and gives a clear choice between wearing the crown and dissolving like Esav. It starts after the riskier lines about critics and the homeland.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-never-like-everyone-else-pre.mp4?v=1794253243",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-never-like-everyone-else-nomusic.mp4?v=1794251019",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-never-like-everyone-else-nomusic-pre.mp4?v=1794253266"
+   },
+   {
+    "id": "haftara:haftarat-toledot-2026-would-you-wear-it:messengers-of-g-d",
+    "kind": "reel",
+    "title": "You, the Jewish people, are messengers of G-d",
+    "hook": [
+     "You, the Jewish people,",
+     "are messengers of G-d"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d.mp4?v=1794251099",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d.jpg?v=1794302022",
+    "duration": 49,
+    "start": 1562.05,
+    "end": 1605.0,
+    "text": "And there's something here about this Haftara that says to us, you, the Jewish people, you are the messengers of G-d. You are the ones who are to live by His covenant, who in your life are to set example for the entire world. You, the kohanim. Right, and in a certain sense, the people of Israel, the Jewish people, are kohanim. They, as it says in the Torah, that they are a mamlechet kohanim. This was one of the first things that G-d says to the people before He gives them the Torah. You are a kingdom of kohanim, a kingdom of priests. You hold a crown of priestliness, of the priesthood, on your head.",
+    "why": "The first line says the Jewish people are G-d's messengers, and it builds to the kingdom of priests wearing the crown of priesthood. It needs nothing from earlier in the class.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d-pre.mp4?v=1794253292",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d-nomusic.mp4?v=1794251134",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-messengers-of-g-d-nomusic-pre.mp4?v=1794253319"
+   },
+   {
+    "id": "haftara:haftarat-toledot-2026-would-you-wear-it:the-monarch-is-service",
+    "kind": "reel",
+    "title": "The role of the monarch is service",
+    "hook": [
+     "The role of the monarch",
+     "is service"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-the-monarch-is-service.mp4?v=1794251218",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-the-monarch-is-service.jpg?v=1794302037",
+    "duration": 55,
+    "start": 1060.16,
+    "end": 1108.97,
+    "text": "I've always said that the last great monarch on Earth was Queen Elizabeth II. She, at 21 years old from Cape Town, famously broadcast to the entire empire, then the British Empire, that she would, with her entire life, whether it be long or short, live devoted to their service. And she understood that the role of the she understood that the role of the monarch was essentially service, avodah, and she also recognized that it was the meaning of her life, it was who she was. That is a very difficult thing to say at any point in life, much less 21 years old. And the amazing thing is is that she adhered to it faithfully for her entire reign.",
+    "why": "A vivid opening line and a moving story of Queen Elizabeth II's lifelong vow, used to teach that carrying a crown means a lifetime of service.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-the-monarch-is-service-pre.mp4?v=1794253347",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-the-monarch-is-service-nomusic.mp4?v=1794251258",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-toledot-2026-would-you-wear-it/reel-the-monarch-is-service-nomusic-pre.mp4?v=1794253374"
+   }
+  ]
+ },
+ {
   "slug": "toledot-src-toledot-src",
   "parasha": "toledot-src",
   "title": "toledot-src",
