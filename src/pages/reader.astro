@@ -1,0 +1,145 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Newsletter from '../components/Newsletter.astro';
+import AppPromo from '../components/AppPromo.astro';
+import readers from '../data/readers.json';
+
+const latest = readers[0];
+const fmt = (d: string) => new Date(d + 'T12:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<Layout title="The Parasha Reader" description="The Parasha Reader: two printable pages each week from Rabbi Joseph Dweck's shiur, with the verses, a close gloss and the central idea.">
+
+  <section class="page-hero">
+    <p class="eyebrow">Weekly · Free · Printable</p>
+    <h1>The Parasha Reader</h1>
+    <p>Two pages from Rabbi Dweck's weekly shiur, set out for the Shabbat table: the verses in Hebrew with a close English gloss, the idea at the centre, a quotation to think with and a book to read further.</p>
+    <div class="gold-rule"></div>
+  </section>
+
+  <section class="section">
+    <div class="container reader-layout">
+      <div class="reader-side">
+        <p class="eyebrow">This edition · {latest.series}</p>
+        <h2 class="r-title">{latest.parasha}</h2>
+        <p class="r-sub">{latest.title}</p>
+        <p class="r-meta">Shabbat {fmt(latest.date)} · {latest.pages} pages · {latest.langs.join(', ')}</p>
+        <div class="r-ctas">
+          <a href={latest.pdf} target="_blank" rel="noopener" class="btn btn-solid">Open the PDF</a>
+          <a href={latest.pdf} download class="btn">Download to print</a>
+        </div>
+
+        <div class="r-how">
+          <h3>What's inside</h3>
+          <ul>
+            <li><strong>The verses</strong> from the Parasha and Haftara, in Hebrew, with a line-by-line gloss</li>
+            <li><strong>The Idea</strong>: the heart of the shiur in a few lines</li>
+            <li><strong>A quotation</strong> to discuss at the table</li>
+            <li><strong>Further reading</strong>, with a QR code to the book</li>
+          </ul>
+        </div>
+
+        <div class="r-sub-box">
+          <p>Get the Reader every week, before Shabbat.</p>
+          <a href="#newsletter" class="btn btn-gold">Subscribe free</a>
+        </div>
+      </div>
+
+      <div class="reader-preview" id="readerPreview" data-pdf={latest.pdf}>
+        <div class="pdf-pages" id="pdfPages" aria-label={`${latest.parasha} Parasha Reader, page preview`}></div>
+        <div class="pdf-fallback" id="pdfFallback">
+          <p>Loading the preview…</p>
+          <a href={latest.pdf} target="_blank" rel="noopener" class="btn btn-solid">Open the PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {readers.length > 1 && (
+    <section class="section archive">
+      <div class="container">
+        <h2 class="section-title">Earlier editions</h2>
+        <div class="gold-divider"></div>
+        <div class="arch-grid">
+          {readers.slice(1).map((r) => (
+            <a href={r.pdf} target="_blank" rel="noopener" class="arch-card">
+              <span class="eyebrow">{r.series}</span>
+              <strong>{r.parasha}</strong>
+              <span>{r.title}</span>
+              <small>Shabbat {fmt(r.date)}</small>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <AppPromo compact />
+  <Newsletter heading="Get the Parasha Reader every week" lede="Sign up and the Parasha Reader arrives in your inbox before Shabbat, with the week's new shiurim and news from the Office of Rabbi Dweck." />
+
+</Layout>
+
+<script is:inline src="/vendor/pdfjs/pdf.min.js"></script>
+<script is:inline>
+  (function () {
+    var box = document.getElementById('readerPreview');
+    var pages = document.getElementById('pdfPages');
+    var fb = document.getElementById('pdfFallback');
+    if (!box || !window.pdfjsLib) { if (fb) fb.querySelector('p').textContent = 'Open the Reader as a PDF:'; return; }
+    pdfjsLib.GlobalWorkerOptions.workerSrc = '/vendor/pdfjs/pdf.worker.min.js';
+    pdfjsLib.getDocument(box.dataset.pdf).promise.then(function (pdf) {
+      var chain = Promise.resolve();
+      for (var n = 1; n <= pdf.numPages; n++) {
+        (function (n) {
+          chain = chain.then(function () { return pdf.getPage(n); }).then(function (page) {
+            var width = pages.clientWidth || 600;
+            var base = page.getViewport({ scale: 1 });
+            var dpr = Math.min(window.devicePixelRatio || 1, 2);
+            var vp = page.getViewport({ scale: (width / base.width) * dpr });
+            var c = document.createElement('canvas');
+            c.width = vp.width; c.height = vp.height;
+            c.setAttribute('role', 'img'); c.setAttribute('aria-label', 'Page ' + n);
+            pages.appendChild(c);
+            return page.render({ canvasContext: c.getContext('2d'), viewport: vp }).promise;
+          });
+        })(n);
+      }
+      return chain;
+    }).then(function () { fb.hidden = true; })
+      .catch(function () { fb.querySelector('p').textContent = 'The preview could not load here. Open the Reader as a PDF:'; });
+  })();
+</script>
+
+<style>
+  .page-hero .eyebrow { color: var(--gold-bright); }
+  .reader-layout { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 3.5rem; align-items: start; }
+  .r-title { font-size: clamp(2.4rem, 5vw, 3.4rem); line-height: 1.05; }
+  .r-sub { font-family: var(--font-serif); font-size: 1.5rem; color: var(--gold-dark); margin-top: 0.25rem; }
+  .r-meta { color: var(--text-light); margin-top: 0.5rem; font-size: 0.95rem; }
+  .r-ctas { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 1.5rem 0 2rem; }
+  .r-how { background: var(--paper); border: 1px solid var(--rule); border-radius: var(--radius); padding: 1.5rem; }
+  .r-how h3 { font-size: 1.35rem; margin-bottom: 0.75rem; }
+  .r-how ul { list-style: none; display: grid; gap: 0.6rem; }
+  .r-how li { padding-left: 1.4rem; position: relative; font-size: 0.97rem; }
+  .r-how li::before { content: '✦'; position: absolute; left: 0; top: 0.15rem; color: var(--gold); font-size: 0.75rem; }
+  .r-sub-box { margin-top: 1.25rem; background: var(--ink) var(--star-pattern); color: var(--on-ink); border-radius: var(--radius); padding: 1.4rem 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .r-sub-box p { font-family: var(--font-serif); font-size: 1.2rem; }
+
+  .reader-preview { position: sticky; top: 100px; max-height: calc(100vh - 120px); overflow-y: auto; background: var(--paper); border: 1px solid var(--rule); border-radius: var(--radius); box-shadow: 0 20px 50px rgba(19,24,48,0.12); overflow: hidden; }
+  .pdf-pages { display: grid; gap: 0; }
+  .pdf-pages canvas { display: block; width: 100%; height: auto; border-bottom: 1px solid var(--rule); }
+  .pdf-pages:empty + .pdf-fallback { min-height: 420px; align-content: center; }
+  .pdf-fallback[hidden] { display: none; }
+  .pdf-fallback { padding: 3rem 2rem; text-align: center; display: grid; gap: 1rem; justify-items: center; }
+
+  .archive { background: var(--parchment-dark); }
+  .arch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+  .arch-card { background: var(--paper); border: 1px solid var(--rule); border-radius: var(--radius); padding: 1.25rem; display: flex; flex-direction: column; }
+  .arch-card strong { font-family: var(--font-serif); font-weight: 400; font-size: 1.4rem; color: var(--ink); }
+  .arch-card small { color: var(--text-light); margin-top: 0.4rem; }
+
+  @media (max-width: 900px) {
+    .reader-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+    .reader-preview { position: static; max-height: none; }
+  }
+</style>
