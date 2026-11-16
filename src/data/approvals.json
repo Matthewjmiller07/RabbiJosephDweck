@@ -1,5 +1,66 @@
 [
  {
+  "slug": "in-memory-of-bobby-i-dweck-a-h-on-hinuch",
+  "parasha": "In Memory of Bobby I. Dweck A”H",
+  "title": "On Hinuch",
+  "items": [
+   {
+    "id": "haftara:in-memory-of-bobby-i-dweck-a-h-on-hinuch:full",
+    "kind": "full",
+    "title": "In Memory of Bobby I. Dweck A”H: On Hinuch",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/in-memory-of-bobby-i-dweck-a-h-on-hinuch/full-review-720p/index.m3u8?v=1794865161",
+    "hls": true,
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/in-memory-of-bobby-i-dweck-a-h-on-hinuch/full-poster.jpg?v=1794865159",
+    "duration": 2065,
+    "master": "in-memory-of-bobby-i-dweck-a-h-on-hinuch-full-1080p.mp4"
+   },
+   {
+    "id": "haftara:in-memory-of-bobby-i-dweck-a-h-on-hinuch:description",
+    "kind": "description",
+    "title": "On Hinuch | In Memory of Bobby I. Dweck A”H",
+    "text": "The most important thing we will ever teach our children isn't information or behavior. It's that they are loved, and that wherever they wander, they can always come back to our embrace. Our children learn far more from what we do than from what we tell them, and every child comes into the world with a unique soul that we must recognize, celebrate and guide. In memory of little Bobby Isaac Dweck, of blessed memory, we look at the verse in Proverbs 'Educate a child according to his way' through Rashi, the Vilna Gaon and the Rambam, and at Aaron the High Priest, whose heart held no jealousy and whose light connects to the Festival of Lights.\n\nChapters\n0:00 In Memory of Bobby\n2:35 Educate a Child by His Way\n5:34 Children Learn What We Do\n6:42 Miriam, Daughter of Bilgah\n11:28 Each Child's Unique Way\n16:19 The Culture of the Home\n21:04 Love and a Secure Bond\n25:46 Aaron's Heart Without Jealousy\n31:24 The Festival of Lights and the Child's Light\n\nThis class is dedicated in loving memory of Bobby Isaac Dweck A”H, Yisrael ben Chanah. May his pure soul be a merit for his parents, his family and all of Israel, and may the Holy One, blessed be He, bring them comfort.\n\nThe Parasha with Rabbi Dweck · A Special Class\nListen on Spotify: “The Parasha with Rabbi Dweck”\nThe app: RabbiJosephDweck.com/app\nMore from Rabbi Dweck: RabbiJosephDweck.com\n\n#Torah #Parenting #Education #Chanukah #Judaism #RabbiDweck",
+    "chapters": [
+     {
+      "t": 0,
+      "title": "In Memory of Bobby"
+     },
+     {
+      "t": 154.8,
+      "title": "Educate a Child by His Way"
+     },
+     {
+      "t": 333.8,
+      "title": "Children Learn What We Do"
+     },
+     {
+      "t": 401.8,
+      "title": "Miriam, Daughter of Bilgah"
+     },
+     {
+      "t": 687.8,
+      "title": "Each Child's Unique Way"
+     },
+     {
+      "t": 978.8,
+      "title": "The Culture of the Home"
+     },
+     {
+      "t": 1263.8,
+      "title": "Love and a Secure Bond"
+     },
+     {
+      "t": 1545.8,
+      "title": "Aaron's Heart Without Jealousy"
+     },
+     {
+      "t": 1883.8,
+      "title": "The Festival of Lights and the Child's Light"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "slug": "haftarat-toledot-2026-would-you-wear-it",
   "parasha": "Haftarat Toledot 2026",
   "title": "Would You Wear It?",
