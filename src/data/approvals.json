@@ -1,5 +1,182 @@
 [
  {
+  "slug": "haftarat-vayetse-2026-rest-when-you-re-dead",
+  "parasha": "Haftarat Vayetse 2026",
+  "title": "Rest When You're Dead",
+  "items": [
+   {
+    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:full",
+    "kind": "full",
+    "title": "Haftarat Vayetse 2026: Rest When You're Dead",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/full-review-720p/index.m3u8?v=1794930295",
+    "hls": true,
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/full-poster.jpg?v=1794930293",
+    "duration": 2278,
+    "master": "haftarat-vayetse-2026-rest-when-you-re-dead-full-1080p.mp4"
+   },
+   {
+    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:description",
+    "kind": "description",
+    "title": "Rest When You're Dead | Haftarat Vayetse 2026",
+    "text": "Satisfaction is more dangerous than we allow ourselves to think. A person who is satisfied mistakes the plateau for the summit, and as long as we are alive, we are not done climbing. Hosea's rebuke, read alongside the life of Jacob and his ladder, warns us against settling where we are.\n\nChapters\n0:00 Two Readings of One Prophecy\n2:41 Hosea's Strange Marriage\n5:46 G-d Calls Israel Back\n9:58 The Ladder and Constant Movement\n15:09 Jacob's Life of Struggle\n18:32 Plateau Versus Summit\n21:42 Independence Day as a Plateau\n23:26 Learning Never Ends\n27:40 Hillel: Never Stop Adding\n31:09 Regular Self-Assessment\n\nThe Parasha with Rabbi Dweck · Haftara Series · Haftarat Vayetse\nListen on Spotify: “The Parasha with Rabbi Dweck”\nThe app: RabbiJosephDweck.com/app\nMore from Rabbi Dweck: RabbiJosephDweck.com\n\n#Torah #Haftara #Parasha #Vayetse #Judaism #RabbiDweck",
+    "chapters": [
+     {
+      "t": 0,
+      "title": "Two Readings of One Prophecy"
+     },
+     {
+      "t": 161.1,
+      "title": "Hosea's Strange Marriage"
+     },
+     {
+      "t": 346.1,
+      "title": "G-d Calls Israel Back"
+     },
+     {
+      "t": 598.1,
+      "title": "The Ladder and Constant Movement"
+     },
+     {
+      "t": 909.1,
+      "title": "Jacob's Life of Struggle"
+     },
+     {
+      "t": 1112.1,
+      "title": "Plateau Versus Summit"
+     },
+     {
+      "t": 1302.1,
+      "title": "Independence Day as a Plateau"
+     },
+     {
+      "t": 1406.1,
+      "title": "Learning Never Ends"
+     },
+     {
+      "t": 1660.1,
+      "title": "Hillel: Never Stop Adding"
+     },
+     {
+      "t": 1869.1,
+      "title": "Regular Self-Assessment"
+     }
+    ]
+   },
+   {
+    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:reader",
+    "kind": "reader",
+    "title": "The Parasha with Rabbi Dweck · Haftara Series: Vayetse: Rest When You're Dead",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/parasha-reader-en.pdf?v=1794927587",
+    "google_doc": "https://docs.google.com/document/d/1_faQ10_xHGwxpt4gCROZjw_xUD8UdxMrlcooUSSsERo/edit?usp=drivesdk&ouid=100458736908357145507",
+    "pages": 2,
+    "note": "1) The English editor doc is still PRIVATE: sharing as Anyone with the link → Editor failed with invalid_grant (gws sign-in expired). get_file_permissions shows only the owner. Fix: run `gws auth login`, then re-run the permissions create call on fileId 1_faQ10_xHGwxpt4gCROZjw_xUD8UdxMrlcooUSSsERo, or share manually (Share › General access › Anyone with the link › Editor). 2) Spelling: the folder and the request say 'Vayetse'; the transcript says 'Vayetze'. Confirm. 3) Web search was not permitted, so the Quote and Reading were chosen without a live search. Quote: Hillel, Pirkei Avot 1:13, with my own translation, 'Whoever does not add, subtracts'. Reading: Bahya ibn Paquda, Book of Direction to the Duties of the Heart, trans. Menahem Mansoor (OUP, 1984), date and publisher taken from the Open Library record; URL https://openlibrary.org/works/OL25639187W. Please verify both. 4) Fonts: Frank Ruehl CLM was loaded from the TeX Live TTFs and Marcellus from Google Fonts; the template's file names are unchanged. 5) Hebrew verses are from Sefaria with cantillation stripped: Hosea 11:7, Genesis 28:12 (fragment), Hosea 12:4, Deuteronomy 32:15, Hosea 13:13, Hosea 13:6. The Hillel gloss is not set in Hebrew. 6) Marcellus's numeral 1 reads like a capital I, so 'Ashkenazim 12:13–14:10' and 'HOSEA 11–14' look as designed but may read oddly. 7) Spelling choices: 'Abot' (table form, used for 'Pirkei Abot'), 'Ramhal' (rule ח=h), 'Ha'atsmaut', 'Haazinu'. 8) Translit lint is clean except two English false positives ('beaches', 'childbirth'). 9) The Overleaf zip is in the same folder. 10) The pull quote is verbatim from the transcript. Section bodies were trimmed to fit two pages. The Summary and body are in Rabbi Dweck's voice, but the editor should check the connected-thought standard, especially the 'Measure Yourself' paragraph. 11) Rabbi Dweck has not yet reviewed this draft. Stage 2 has not been started."
+   },
+   {
+    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:thumbnail",
+    "kind": "thumb",
+    "title": "Haftarat Vayetse: Rest When You're Dead",
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/thumbnail.jpg?v=1794927661",
+    "size": "2688×1520",
+    "note": "Series template, made with GPT Image 2.5 (Flare, high) on Higgsfield."
+   },
+   {
+    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:stop-learning-not-done",
+    "kind": "reel",
+    "title": "We stop learning. We are not done.",
+    "hook": [
+     "We stop learning.",
+     "We are not done."
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-stop-learning-not-done.mp4?v=1794951785",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-stop-learning-not-done.jpg?v=1794951830",
+    "duration": 54,
+    "start": 1443.86,
+    "end": 1491.81,
+    "text": "And then we get to a point in which we have just about enough working knowledge to be able to get up and navigate the world in the most remedial way, and the majority of us stop there. We stop learning. We stop growing. We stop developing ourselves. And the reality is is that as long as we are alive, we are not done. And as long as we are breathing in this body, as there is a pulse in our veins that the blood is running through, we have a requirement to continue up on the ladder of ascension towards G-d, towards the greatest expression of ourselves.",
+    "why": "Opens on the claim that most people stop growing, then argues that as long as we are alive we are not done, and ends on the goal of reaching our full potential. Re-cut 2026-11-17 (Rabbi Dweck: start earlier, 'We stop what?') to open on 'And then we get to a point...'.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-stop-learning-not-done-pre.mp4?v=1794951854",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-stop-learning-not-done-nomusic.mp4?v=1794951829",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-stop-learning-not-done-nomusic-pre.mp4?v=1794951883"
+   },
+   {
+    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:no-retirement-in-this-life",
+    "kind": "reel",
+    "title": "There is no retirement in this life.",
+    "hook": [
+     "There is no retirement",
+     "in this life."
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-no-retirement-in-this-life.mp4?v=1794927969",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-no-retirement-in-this-life.jpg?v=1794951887",
+    "duration": 47,
+    "start": 1764.34,
+    "end": 1805.74,
+    "text": "And the sad truth is, you really cannot wait at any rung. You cannot camp out at any point. If you are not ascending, you begin the descent. And the descent is a descent into deterioration and, ultimately, oblivion. There is no retirement in this life. There is no rest on that level in this life. That's why the Chachamim say, talmidei Chachamim ein lahem menuchah. They have no rest, not in Olam Hazeh, not in Olam Haba. What does that mean? They are constantly ascending to greater and greater heights in their, in their own being, and in their relationship with HaKadosh Baruch Hu.",
+    "why": "Makes one clear point: if you stop ascending you start descending, so no rung is a place to rest, and it closes with what that means.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-no-retirement-in-this-life-pre.mp4?v=1794930406",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-no-retirement-in-this-life-nomusic.mp4?v=1794928002",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-no-retirement-in-this-life-nomusic-pre.mp4?v=1794930430"
+   },
+   {
+    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:am-i-still-growing",
+    "kind": "reel",
+    "title": "Am I still growing where I am?",
+    "hook": [
+     "Am I still growing",
+     "where I am?"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-am-i-still-growing.mp4?v=1794928084",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-am-i-still-growing.jpg?v=1794951905",
+    "duration": 48,
+    "start": 1608.96,
+    "end": 1651.31,
+    "text": "Am I still developing in the station of life that I am currently that I am currently living? Or do I need to continue up the ladder? Is it time for me to be able to move up the rungs and actually put the efforts in to be able to meet more of my potential in life? More often than not, we suffice with where we are at because it's easy, because it's the path of least resistance, because we wish to remain beshalvah. We wish to remain complacent. We wish to remain content where it is that we are without too much friction. But that is not what this life is about.",
+    "why": "Gives a concrete self-check for any life decision and ends on the conclusion that settling for comfort is not what life is about.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-am-i-still-growing-pre.mp4?v=1794930457",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-am-i-still-growing-nomusic.mp4?v=1794928118",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-am-i-still-growing-nomusic-pre.mp4?v=1794930484"
+   },
+   {
+    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:yisrael-means-to-fight",
+    "kind": "reel",
+    "title": "Yisrael means to fight. Is this the summit?",
+    "hook": [
+     "Yisrael means to fight.",
+     "Is this the summit?"
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-yisrael-means-to-fight.mp4?v=1794928210",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-yisrael-means-to-fight.jpg?v=1794951922",
+    "duration": 54,
+    "start": 2186.96,
+    "end": 2234.66,
+    "text": "Yisrael means to fight. Yisrael means to push forward. And as a people, that is precisely what we've been doing for 3,000 years, which is why we're still here as a people. And it is an inspiration that we should draw to our own personal lives, and indeed to look at ourselves as a people currently, in terms of what it is that we're doing and where it is that we're going. Are we simply sufficing with where we are, looking at the current state of affairs that we're in as the the summit of our lives, or do we realize that this might be a plateau, but the summit has yet to be reached? That is something that we should look at both nationally, collectively, and individually.",
+    "why": "Turns the meaning of the name Yisrael into a personal challenge: are you content at a plateau that you mistake for the summit?",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-yisrael-means-to-fight-pre.mp4?v=1794930513",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-yisrael-means-to-fight-nomusic.mp4?v=1794928248",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-yisrael-means-to-fight-nomusic-pre.mp4?v=1794930540"
+   },
+   {
+    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:children-constantly-testing",
+    "kind": "reel",
+    "title": "Children are constantly testing their world.",
+    "hook": [
+     "Children are constantly",
+     "testing their world."
+    ],
+    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-children-constantly-testing.mp4?v=1794928347",
+    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-children-constantly-testing.jpg?v=1794951938",
+    "duration": 52,
+    "start": 1397.48,
+    "end": 1443.91,
+    "text": "When we are young, when we are children, we are constantly striving to learn. We know nothing about this world. We know nothing about life and how it is that it works. And that is why children will constantly be learning, constantly be testing their world to see how it is that it works. They get in a lot of trouble for it, but that's the way that the cookie crumbles. So, you have a kid who's, you know, a little baby who's sitting on his highchair, and he's kind of, you know, has a ball, and he bounces the ball, and the ball bounces, and then he takes his his dinner and does, you know, drops that, that doesn't bounce, and then he kind of feels how his dinner feels all over his face, and so on, right? All of that is testing. It's a massive laboratory for a toddler, for their entire life, for their entire period.",
+    "why": "A self-contained picture of how children learn through constant testing, which sets up the point that adults stop doing this.",
+    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-children-constantly-testing-pre.mp4?v=1794930569",
+    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-children-constantly-testing-nomusic.mp4?v=1794928386",
+    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-children-constantly-testing-nomusic-pre.mp4?v=1794930597"
+   }
+  ]
+ },
+ {
   "slug": "in-memory-of-bobby-i-dweck-a-h-on-hinuch",
   "parasha": "In Memory of Bobby I. Dweck A”H",
   "title": "On Hinuch",
@@ -145,183 +322,6 @@
     "end": 1699.33,
     "text": "Aharon was a man who had no jealousy in his heart. And the reason why he had no jealousy in his heart was because, one, he was very clear on who he was, and what were his talents, and what were his abilities, and what were not. And therefore, he was able to see anyone around him in his life, even those close to him, even those that were similar to him, and recognize, \\ But they are not me.\\ And when one can recognize the unique difference of everyone around them, all that we do when they accomplish great things, when they fill, fulfill their potentials, is we applaud them, we celebrate them.",
     "why": "A self-contained teaching: when you know clearly who you are, others' success doesn't threaten you, and all you do is applaud and celebrate them."
-   }
-  ]
- },
- {
-  "slug": "haftarat-vayetse-2026-rest-when-you-re-dead",
-  "parasha": "Haftarat Vayetse 2026",
-  "title": "Rest When You're Dead",
-  "items": [
-   {
-    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:full",
-    "kind": "full",
-    "title": "Haftarat Vayetse 2026: Rest When You're Dead",
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/full-review-720p/index.m3u8?v=1794930295",
-    "hls": true,
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/full-poster.jpg?v=1794930293",
-    "duration": 2278,
-    "master": "haftarat-vayetse-2026-rest-when-you-re-dead-full-1080p.mp4"
-   },
-   {
-    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:description",
-    "kind": "description",
-    "title": "Rest When You're Dead | Haftarat Vayetse 2026",
-    "text": "Satisfaction is more dangerous than we allow ourselves to think. A person who is satisfied mistakes the plateau for the summit, and as long as we are alive, we are not done climbing. Hosea's rebuke, read alongside the life of Jacob and his ladder, warns us against settling where we are.\n\nChapters\n0:00 Two Readings of One Prophecy\n2:41 Hosea's Strange Marriage\n5:46 G-d Calls Israel Back\n9:58 The Ladder and Constant Movement\n15:09 Jacob's Life of Struggle\n18:32 Plateau Versus Summit\n21:42 Independence Day as a Plateau\n23:26 Learning Never Ends\n27:40 Hillel: Never Stop Adding\n31:09 Regular Self-Assessment\n\nThe Parasha with Rabbi Dweck · Haftara Series · Haftarat Vayetse\nListen on Spotify: “The Parasha with Rabbi Dweck”\nThe app: RabbiJosephDweck.com/app\nMore from Rabbi Dweck: RabbiJosephDweck.com\n\n#Torah #Haftara #Parasha #Vayetse #Judaism #RabbiDweck",
-    "chapters": [
-     {
-      "t": 0,
-      "title": "Two Readings of One Prophecy"
-     },
-     {
-      "t": 161.1,
-      "title": "Hosea's Strange Marriage"
-     },
-     {
-      "t": 346.1,
-      "title": "G-d Calls Israel Back"
-     },
-     {
-      "t": 598.1,
-      "title": "The Ladder and Constant Movement"
-     },
-     {
-      "t": 909.1,
-      "title": "Jacob's Life of Struggle"
-     },
-     {
-      "t": 1112.1,
-      "title": "Plateau Versus Summit"
-     },
-     {
-      "t": 1302.1,
-      "title": "Independence Day as a Plateau"
-     },
-     {
-      "t": 1406.1,
-      "title": "Learning Never Ends"
-     },
-     {
-      "t": 1660.1,
-      "title": "Hillel: Never Stop Adding"
-     },
-     {
-      "t": 1869.1,
-      "title": "Regular Self-Assessment"
-     }
-    ]
-   },
-   {
-    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:reader",
-    "kind": "reader",
-    "title": "The Parasha with Rabbi Dweck · Haftara Series: Vayetse: Rest When You're Dead",
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/parasha-reader-en.pdf?v=1794927587",
-    "google_doc": "https://docs.google.com/document/d/1_faQ10_xHGwxpt4gCROZjw_xUD8UdxMrlcooUSSsERo/edit?usp=drivesdk&ouid=100458736908357145507",
-    "pages": 2,
-    "note": "1) The English editor doc is still PRIVATE: sharing as Anyone with the link → Editor failed with invalid_grant (gws sign-in expired). get_file_permissions shows only the owner. Fix: run `gws auth login`, then re-run the permissions create call on fileId 1_faQ10_xHGwxpt4gCROZjw_xUD8UdxMrlcooUSSsERo, or share manually (Share › General access › Anyone with the link › Editor). 2) Spelling: the folder and the request say 'Vayetse'; the transcript says 'Vayetze'. Confirm. 3) Web search was not permitted, so the Quote and Reading were chosen without a live search. Quote: Hillel, Pirkei Avot 1:13, with my own translation, 'Whoever does not add, subtracts'. Reading: Bahya ibn Paquda, Book of Direction to the Duties of the Heart, trans. Menahem Mansoor (OUP, 1984), date and publisher taken from the Open Library record; URL https://openlibrary.org/works/OL25639187W. Please verify both. 4) Fonts: Frank Ruehl CLM was loaded from the TeX Live TTFs and Marcellus from Google Fonts; the template's file names are unchanged. 5) Hebrew verses are from Sefaria with cantillation stripped: Hosea 11:7, Genesis 28:12 (fragment), Hosea 12:4, Deuteronomy 32:15, Hosea 13:13, Hosea 13:6. The Hillel gloss is not set in Hebrew. 6) Marcellus's numeral 1 reads like a capital I, so 'Ashkenazim 12:13–14:10' and 'HOSEA 11–14' look as designed but may read oddly. 7) Spelling choices: 'Abot' (table form, used for 'Pirkei Abot'), 'Ramhal' (rule ח=h), 'Ha'atsmaut', 'Haazinu'. 8) Translit lint is clean except two English false positives ('beaches', 'childbirth'). 9) The Overleaf zip is in the same folder. 10) The pull quote is verbatim from the transcript. Section bodies were trimmed to fit two pages. The Summary and body are in Rabbi Dweck's voice, but the editor should check the connected-thought standard, especially the 'Measure Yourself' paragraph. 11) Rabbi Dweck has not yet reviewed this draft. Stage 2 has not been started."
-   },
-   {
-    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:thumbnail",
-    "kind": "thumb",
-    "title": "Haftarat Vayetse: Rest When You're Dead",
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/thumbnail.jpg?v=1794927661",
-    "size": "2688×1520",
-    "note": "Series template, made with GPT Image 2.5 (Flare, high) on Higgsfield."
-   },
-   {
-    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:stop-learning-not-done",
-    "kind": "reel",
-    "title": "We stop learning. We are not done.",
-    "hook": [
-     "We stop learning.",
-     "We are not done."
-    ],
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-stop-learning-not-done.mp4?v=1794927865",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-stop-learning-not-done.jpg?v=1794930334",
-    "duration": 39,
-    "start": 1458.96,
-    "end": 1491.81,
-    "text": "We stop learning. We stop growing. We stop developing ourselves. And the reality is is that as long as we are alive, we are not done. And as long as we are breathing in this body, as there is a pulse in our veins that the blood is running through, we have a requirement to continue up on the ladder of ascension towards G-d, towards the greatest expression of ourselves.",
-    "why": "Opens on the claim that most people stop growing, then argues that as long as we are alive we are not done, and ends on the goal of reaching our full potential.",
-    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-stop-learning-not-done-pre.mp4?v=1794930356",
-    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-stop-learning-not-done-nomusic.mp4?v=1794927893",
-    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-stop-learning-not-done-nomusic-pre.mp4?v=1794930379"
-   },
-   {
-    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:no-retirement-in-this-life",
-    "kind": "reel",
-    "title": "There is no retirement in this life.",
-    "hook": [
-     "There is no retirement",
-     "in this life."
-    ],
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-no-retirement-in-this-life.mp4?v=1794927969",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-no-retirement-in-this-life.jpg?v=1794930382",
-    "duration": 47,
-    "start": 1764.34,
-    "end": 1805.74,
-    "text": "And the sad truth is, you really cannot wait at any rung. You cannot camp out at any point. If you are not ascending, you begin the descent. And the descent is a descent into deterioration and, ultimately, oblivion. There is no retirement in this life. There is no rest on that level in this life. That's why the Chachamim say, talmidei Chachamim ein lahem menuchah. They have no rest, not in Olam Hazeh, not in Olam Haba. What does that mean? They are constantly ascending to greater and greater heights in their, in their own being, and in their relationship with HaKadosh Baruch Hu.",
-    "why": "Makes one clear point: if you stop ascending you start descending, so no rung is a place to rest, and it closes with what that means.",
-    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-no-retirement-in-this-life-pre.mp4?v=1794930406",
-    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-no-retirement-in-this-life-nomusic.mp4?v=1794928002",
-    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-no-retirement-in-this-life-nomusic-pre.mp4?v=1794930430"
-   },
-   {
-    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:am-i-still-growing",
-    "kind": "reel",
-    "title": "Am I still growing where I am?",
-    "hook": [
-     "Am I still growing",
-     "where I am?"
-    ],
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-am-i-still-growing.mp4?v=1794928084",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-am-i-still-growing.jpg?v=1794930434",
-    "duration": 48,
-    "start": 1608.96,
-    "end": 1651.31,
-    "text": "Am I still developing in the station of life that I am currently that I am currently living? Or do I need to continue up the ladder? Is it time for me to be able to move up the rungs and actually put the efforts in to be able to meet more of my potential in life? More often than not, we suffice with where we are at because it's easy, because it's the path of least resistance, because we wish to remain beshalvah. We wish to remain complacent. We wish to remain content where it is that we are without too much friction. But that is not what this life is about.",
-    "why": "Gives a concrete self-check for any life decision and ends on the conclusion that settling for comfort is not what life is about.",
-    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-am-i-still-growing-pre.mp4?v=1794930457",
-    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-am-i-still-growing-nomusic.mp4?v=1794928118",
-    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-am-i-still-growing-nomusic-pre.mp4?v=1794930484"
-   },
-   {
-    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:yisrael-means-to-fight",
-    "kind": "reel",
-    "title": "Yisrael means to fight. Is this the summit?",
-    "hook": [
-     "Yisrael means to fight.",
-     "Is this the summit?"
-    ],
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-yisrael-means-to-fight.mp4?v=1794928210",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-yisrael-means-to-fight.jpg?v=1794930489",
-    "duration": 54,
-    "start": 2186.96,
-    "end": 2234.66,
-    "text": "Yisrael means to fight. Yisrael means to push forward. And as a people, that is precisely what we've been doing for 3,000 years, which is why we're still here as a people. And it is an inspiration that we should draw to our own personal lives, and indeed to look at ourselves as a people currently, in terms of what it is that we're doing and where it is that we're going. Are we simply sufficing with where we are, looking at the current state of affairs that we're in as the the summit of our lives, or do we realize that this might be a plateau, but the summit has yet to be reached? That is something that we should look at both nationally, collectively, and individually.",
-    "why": "Turns the meaning of the name Yisrael into a personal challenge: are you content at a plateau that you mistake for the summit?",
-    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-yisrael-means-to-fight-pre.mp4?v=1794930513",
-    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-yisrael-means-to-fight-nomusic.mp4?v=1794928248",
-    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-yisrael-means-to-fight-nomusic-pre.mp4?v=1794930540"
-   },
-   {
-    "id": "haftara:haftarat-vayetse-2026-rest-when-you-re-dead:children-constantly-testing",
-    "kind": "reel",
-    "title": "Children are constantly testing their world.",
-    "hook": [
-     "Children are constantly",
-     "testing their world."
-    ],
-    "url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-children-constantly-testing.mp4?v=1794928347",
-    "poster": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-children-constantly-testing.jpg?v=1794930544",
-    "duration": 52,
-    "start": 1397.48,
-    "end": 1443.91,
-    "text": "When we are young, when we are children, we are constantly striving to learn. We know nothing about this world. We know nothing about life and how it is that it works. And that is why children will constantly be learning, constantly be testing their world to see how it is that it works. They get in a lot of trouble for it, but that's the way that the cookie crumbles. So, you have a kid who's, you know, a little baby who's sitting on his highchair, and he's kind of, you know, has a ball, and he bounces the ball, and the ball bounces, and then he takes his his dinner and does, you know, drops that, that doesn't bounce, and then he kind of feels how his dinner feels all over his face, and so on, right? All of that is testing. It's a massive laboratory for a toddler, for their entire life, for their entire period.",
-    "why": "A self-contained picture of how children learn through constant testing, which sets up the point that adults stop doing this.",
-    "pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-children-constantly-testing-pre.mp4?v=1794930569",
-    "nomusic_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-children-constantly-testing-nomusic.mp4?v=1794928386",
-    "nomusic_pre_url": "https://qukziojymwlvmrzapgyo.supabase.co/storage/v1/object/public/dweck-reels/reels/haftara/haftarat-vayetse-2026-rest-when-you-re-dead/reel-children-constantly-testing-nomusic-pre.mp4?v=1794930597"
    }
   ]
  },
